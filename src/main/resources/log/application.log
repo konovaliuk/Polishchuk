@@ -1,0 +1,17 @@
+09:43:32,433 INFO  Test.main:read:18 - File URL have been gotten
+09:43:32,449 INFO  Test.main:read:21 - Byte array from file have been gotten
+09:43:32,450 INFO  Test.main:read:24 - Message from file have been gotten
+09:43:52,116 INFO  Test.main:read:18 - File URL ---= have been gotten
+09:43:52,135 INFO  Test.main:read:21 - Byte array from file have been gotten
+09:43:52,136 INFO  Test.main:read:24 - Message from file have been gotten
+17:42:04,761 ERROR AdministratorImpl.main:createAdministrator:44 - java.sql.SQLException: Can''t call commit when autocommit=true
+17:43:22,752 ERROR AdministratorImpl.main:createAdministrator:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+17:44:38,260 INFO  AdministratorImpl.main:createAdministrator:42 - Administrator Tolik was created
+17:46:09,687 ERROR AdministratorImpl.main:createAdministrator:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+17:46:27,889 INFO  AdministratorImpl.main:createAdministrator:42 - Administrator IIEtro was created
+17:50:06,834 INFO  AdministratorImpl.main:createAdministrator:42 - Administrator Victor was created
+17:54:13,538 INFO  AdministratorImpl.main:deleteAdministratorByUsername:135 - Administrator with username Tolik was successful deleted.
+17:55:21,366 INFO  AdministratorImpl.main:deleteAdministratorByUsername:135 - Administrator with username AJIadin was successful deleted.
+01:34:20,600 ERROR CalculatorImpl.main:createCalculator:35 - java.sql.SQLSyntaxErrorException: Table 'MyProject.CALCULATOR' doesn't exist
+01:35:03,528 INFO  CalculatorImpl.main:createCalculator:33 - Calculator was created
+01:52:02,983 INFO  CalculatorImpl.main:createCalculator:33 - Calculator was created
