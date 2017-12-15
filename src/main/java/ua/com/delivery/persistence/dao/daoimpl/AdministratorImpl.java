@@ -21,22 +21,26 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public void createAdministrator(Administrator administrator) {
+        if (administrator.getAdminID() != null) {
+            LOGGER.info("Administrator is already created, the adminID is not null.");
+        } else {
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR)
-        ) {  //чи потрібно тут закривати connection
-            //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
-            preparedStatement.setLong(1, administrator.getAdminID());
-            preparedStatement.setString(2, administrator.getName());
-            preparedStatement.setString(3, administrator.getUsername());
-            preparedStatement.setString(4, administrator.getPassword());
-            preparedStatement.setString(5, administrator.getEmail());
-            preparedStatement.setLong(6, administrator.getPhone());
-            preparedStatement.executeUpdate();
-            connection.commit();
-            LOGGER.info("Administrator " + administrator.getName() + " was created");
-        } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            try (Connection connection = SimpleConnection.getInstance().getConnection();
+                 PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR)
+            ) {  //чи потрібно тут закривати connection
+                //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
+                preparedStatement.setLong(1, administrator.getAdminID());
+                preparedStatement.setString(2, administrator.getName());
+                preparedStatement.setString(3, administrator.getUsername());
+                preparedStatement.setString(4, administrator.getPassword());
+                preparedStatement.setString(5, administrator.getEmail());
+                preparedStatement.setLong(6, administrator.getPhone());
+                preparedStatement.executeUpdate();
+                connection.commit();
+                LOGGER.info("Administrator " + administrator.getName() + " was created");
+            } catch (SQLException e) {
+                LOGGER.error(e.toString());
+            }
         }
     }
 
@@ -99,22 +103,26 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public void updateAdministrator(Administrator administrator) {
+        if (administrator.getAdminID() == null) {
+            LOGGER.info("Administrator is not created yet, the adminID is null.");
+        } else {
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR)
-        ) {
+            try (Connection connection = SimpleConnection.getInstance().getConnection();
+                 PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR)
+            ) {
 
-            preparedStatement.setString(1, administrator.getName());
-            preparedStatement.setString(2, administrator.getUsername());
-            preparedStatement.setString(3, administrator.getPassword());
-            preparedStatement.setString(4, administrator.getEmail());
-            preparedStatement.setLong(5, administrator.getPhone());
-            preparedStatement.setLong(6, administrator.getAdminID());
-            preparedStatement.executeUpdate();
-            connection.commit();
-            LOGGER.info("Administrator " + administrator.getName() + " was updated");
-        } catch (SQLException e) {
-            LOGGER.error(e.toString());
+                preparedStatement.setString(1, administrator.getName());
+                preparedStatement.setString(2, administrator.getUsername());
+                preparedStatement.setString(3, administrator.getPassword());
+                preparedStatement.setString(4, administrator.getEmail());
+                preparedStatement.setLong(5, administrator.getPhone());
+                preparedStatement.setLong(6, administrator.getAdminID());
+                preparedStatement.executeUpdate();
+                connection.commit();
+                LOGGER.info("Administrator " + administrator.getName() + " was updated");
+            } catch (SQLException e) {
+                LOGGER.error(e.toString());
+            }
         }
     }
 

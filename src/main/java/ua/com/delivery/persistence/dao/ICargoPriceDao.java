@@ -3,7 +3,10 @@ package ua.com.delivery.persistence.dao;
 import ua.com.delivery.persistence.entity.CargoPrice;
 
 import java.util.List;
-
+/**
+ * This interface represents a contract for a DAO for the {@link CargoPrice} model.
+ *
+ */
 public interface ICargoPriceDao {
     //create new CargoPrice
     void createCargoPrice(CargoPrice cargoPrice);

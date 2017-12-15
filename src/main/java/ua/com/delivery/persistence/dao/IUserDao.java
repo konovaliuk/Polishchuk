@@ -3,7 +3,10 @@ package ua.com.delivery.persistence.dao;
 import ua.com.delivery.persistence.entity.User;
 
 import java.util.List;
-
+/**
+ * This interface represents a contract for a DAO for the {@link User} model.
+ *
+ */
 public interface IUserDao {
     //create new user
     void createUser(User user);
