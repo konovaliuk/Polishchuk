@@ -18,5 +18,5 @@ public interface IOrderFromWarehouseDao {
     void updateOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse);
 
     //this method will be delete one orderFormWarehouse
-    void deleteOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse);
+    void deleteOrderFromWarehouseById(Long id);
 }

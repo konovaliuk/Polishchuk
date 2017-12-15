@@ -12,9 +12,9 @@ import java.sql.Date;
 @ToString
 public class Calculator implements Serializable {
     private Long calculatorID;
-    private int directionID;
-    private int cargoID;
-    private int parcelID;
+    private Long directionID;
+    private Long cargoID;
+    private Long parcelID;
     private Date dateToDelivery;
     private int declaredPrice;
     private int weight;

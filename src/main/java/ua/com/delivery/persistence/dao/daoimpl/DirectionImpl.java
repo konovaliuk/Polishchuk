@@ -101,6 +101,8 @@ public class DirectionImpl implements IDirectionDao {
             preparedStatement.setString(2, direction.getToCity());
             preparedStatement.setInt(3, direction.getPriceDirection());
             preparedStatement.setLong(4, direction.getDirectionID());
+            connection.commit();
+            LOGGER.info("Direction with id:  " + direction.getDirectionID() + " was updated");
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }

@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IAdministratorDao;
 import ua.com.delivery.persistence.entity.Administrator;
-import ua.com.delivery.persistence.util.ConnectionPool;
+import ua.com.delivery.persistence.util.SimpleConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -22,8 +22,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public void createAdministrator(Administrator administrator) {
         PreparedStatement preparedStatement;
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             //чи потрібно тут закривати connection
             //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
             preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR);
@@ -45,8 +45,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public List<Administrator> getListAdministrators() {
         List<Administrator> administratorList = new ArrayList<>();
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_LIST_ADMINISTRATORS);
             if (resultSet.next()) {
@@ -73,8 +73,8 @@ public class AdministratorImpl implements IAdministratorDao {
     public Administrator getById(Long id) {
         PreparedStatement preparedStatement;
         Administrator administrator = new Administrator();
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             preparedStatement = connection.prepareStatement(GET_BY_ID);
             //вказую значення id, яке приходить до нас із параметра
             preparedStatement.setLong(1, id);
@@ -102,8 +102,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public void updateAdministrator(Administrator administrator) {
         PreparedStatement preparedStatement;
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR);
 
             preparedStatement.setString(1, administrator.getName());
@@ -123,8 +123,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public void deleteAdministratorByUsername(String username) {
         PreparedStatement preparedStatement;
-        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             preparedStatement = connection.prepareStatement(DELETE_ADMINISTRATOR_BY_USERNAME);
             preparedStatement.setString(1, username);
             preparedStatement.executeUpdate();
