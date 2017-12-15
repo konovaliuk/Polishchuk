@@ -20,10 +20,10 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void createCargoPrice(CargoPrice cargoPrice) {
-        PreparedStatement preparedStatement;
         //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(CREATE_CARGO_PRICE);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_CARGO_PRICE)
+        ) {
             preparedStatement.setLong(1, cargoPrice.getCargopriceID());
             preparedStatement.setInt(2, cargoPrice.getWeight());
             preparedStatement.setInt(3, cargoPrice.getPrice());
@@ -39,9 +39,10 @@ public class CargoPriceImpl implements ICargoPriceDao {
     public List<CargoPrice> getListCargoPrices() {
         List<CargoPrice> cargoPriceList = new ArrayList<>();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_LIST_CARGO_PRICE);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(GET_LIST_CARGO_PRICE)
+        ) {
             if (resultSet.next()) {
                 do {
                     CargoPrice cargoPrice = new CargoPrice();
@@ -61,11 +62,11 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public CargoPrice getById(Long id) {
-        PreparedStatement preparedStatement;
         CargoPrice cargoPrice = new CargoPrice();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(GET_CARGO_PRICE_BY_ID);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_CARGO_PRICE_BY_ID)
+        ) {
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -86,10 +87,10 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void updateCargoPrice(CargoPrice cargoPrice) {
-        PreparedStatement preparedStatement;
         //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(UPDATE_CARGO_PRICE_DATA);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_CARGO_PRICE_DATA)
+        ) {
             preparedStatement.setInt(1, cargoPrice.getWeight());
             preparedStatement.setInt(2, cargoPrice.getPrice());
             preparedStatement.setLong(3, cargoPrice.getCargopriceID());
@@ -103,10 +104,10 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void deleteCargoPriceByWeight(int weight) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(DELETE_CARGO_PRICE_BY_WEIGHT);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CARGO_PRICE_BY_WEIGHT)
+        ) {
             preparedStatement.setInt(1, weight);
             preparedStatement.executeUpdate();
             connection.commit();

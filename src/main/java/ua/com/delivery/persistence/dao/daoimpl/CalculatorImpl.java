@@ -15,11 +15,10 @@ public class CalculatorImpl implements ICalculatorDao {
             "parcelID, date_to_delivery, declared_price, weight, volume) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     @Override
     public void createCalculator(Calculator calculator) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(CREATE_CALCULATOR);
-
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_CALCULATOR)
+        ){
             preparedStatement.setLong(1, calculator.getCalculatorID());
             preparedStatement.setLong(2, calculator.getDirectionID());
             preparedStatement.setLong(3, calculator.getCargoID());

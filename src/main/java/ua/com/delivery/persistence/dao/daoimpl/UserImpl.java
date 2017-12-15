@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserImpl implements IUserDao{
+public class UserImpl implements IUserDao {
     private static final Logger LOGGER = Logger.getLogger(UserImpl.class);
     private static final String GET_LIST_USERS = "SELECT * FROM Users";
     private static final String GET_BY_ID = "SELECT * FROM Users WHERE userID=?";
@@ -21,13 +21,12 @@ public class UserImpl implements IUserDao{
 
     @Override
     public void createUser(User user) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            //чи потрібно тут закривати connection
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER)
+        ) {
+            //чи потрібно тут закривати connectionpool
             //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
-            preparedStatement = connection.prepareStatement(CREATE_USER);
-
             preparedStatement.setLong(1, user.getUserID());
             preparedStatement.setString(2, user.getUsername());
             preparedStatement.setString(3, user.getPassword());
@@ -50,9 +49,10 @@ public class UserImpl implements IUserDao{
     public List<User> getListUsers() {
         List<User> userList = new ArrayList<>();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_LIST_USERS);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(GET_LIST_USERS)
+        ) {
             if (resultSet.next()) {
                 do {
                     User user = new User();
@@ -78,15 +78,15 @@ public class UserImpl implements IUserDao{
 
     @Override
     public User getById(Long id) {
-        PreparedStatement preparedStatement;
         User user = new User();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(GET_BY_ID);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)
+        ) {
             //вказую значення id, яке приходить до нас із параметра
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 do {
                     user.setUserID(resultSet.getLong("userID"));
                     user.setUsername(resultSet.getString("username"));
@@ -110,11 +110,10 @@ public class UserImpl implements IUserDao{
 
     @Override
     public void updateUser(User user) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(UPDATE_DATA_USER);
-
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_USER)
+        ) {
             preparedStatement.setString(1, user.getUsername());
             preparedStatement.setString(2, user.getPassword());
             preparedStatement.setString(3, user.getFirstName());
@@ -127,22 +126,22 @@ public class UserImpl implements IUserDao{
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("User " + user.getUsername() + " was updated");
-        } catch (SQLException e){
+        } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
     }
 
     @Override
     public void deleteUserByUsername(String username) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(DELETE_USER_BY_USERNAME);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USER_BY_USERNAME)
+        ) {
             preparedStatement.setString(1, username);
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("User with username " + username + " was successful deleted.");
-        } catch (SQLException e){
+        } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
     }

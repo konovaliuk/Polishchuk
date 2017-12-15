@@ -67,11 +67,11 @@ public class DirectionImpl implements IDirectionDao {
 
     @Override
     public Direction getDirectionByFromCity(String fromCity) {
-        PreparedStatement preparedStatement;
         Direction direction = new Direction();
         //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(GET_DIRECTION_BY_FROM_CITY);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_DIRECTION_BY_FROM_CITY)
+        ) {
             preparedStatement.setString(1, fromCity);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -93,10 +93,10 @@ public class DirectionImpl implements IDirectionDao {
 
     @Override
     public void updateDirection(Direction direction) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(UPDATE_DIRECTION_DATA);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DIRECTION_DATA)
+        ) {
             preparedStatement.setString(1, direction.getFromCity());
             preparedStatement.setString(2, direction.getToCity());
             preparedStatement.setInt(3, direction.getPriceDirection());
@@ -110,10 +110,10 @@ public class DirectionImpl implements IDirectionDao {
 
     @Override
     public void deleteDirectionById(Long id) {
-        PreparedStatement preparedStatement;
         //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            preparedStatement = connection.prepareStatement(DELETE_DIRECTION_BY_ID);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_DIRECTION_BY_ID)
+        ) {
             preparedStatement.setLong(1, id);
             preparedStatement.executeUpdate();
             connection.commit();

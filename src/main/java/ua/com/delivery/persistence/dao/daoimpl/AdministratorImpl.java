@@ -21,13 +21,11 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public void createAdministrator(Administrator administrator) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            //чи потрібно тут закривати connection
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR)
+        ) {  //чи потрібно тут закривати connection
             //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
-            preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR);
-
             preparedStatement.setLong(1, administrator.getAdminID());
             preparedStatement.setString(2, administrator.getName());
             preparedStatement.setString(3, administrator.getUsername());
@@ -46,9 +44,10 @@ public class AdministratorImpl implements IAdministratorDao {
     public List<Administrator> getListAdministrators() {
         List<Administrator> administratorList = new ArrayList<>();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_LIST_ADMINISTRATORS);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(GET_LIST_ADMINISTRATORS)
+        ) {
             if (resultSet.next()) {
                 do {
                     Administrator administrator = new Administrator();
@@ -71,15 +70,14 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public Administrator getById(Long id) {
-        PreparedStatement preparedStatement;
         Administrator administrator = new Administrator();
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(GET_BY_ID);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)) {
             //вказую значення id, яке приходить до нас із параметра
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 do {
                     administrator.setAdminID(resultSet.getLong("adminID"));
                     administrator.setName(resultSet.getString("name"));
@@ -101,10 +99,10 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public void updateAdministrator(Administrator administrator) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR)
+        ) {
 
             preparedStatement.setString(1, administrator.getName());
             preparedStatement.setString(2, administrator.getUsername());
@@ -115,22 +113,22 @@ public class AdministratorImpl implements IAdministratorDao {
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Administrator " + administrator.getName() + " was updated");
-        } catch (SQLException e){
+        } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
     }
 
     @Override
     public void deleteAdministratorByUsername(String username) {
-        PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
-            preparedStatement = connection.prepareStatement(DELETE_ADMINISTRATOR_BY_USERNAME);
+        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ADMINISTRATOR_BY_USERNAME)
+        ) {
             preparedStatement.setString(1, username);
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Administrator with username " + username + " was successful deleted.");
-        } catch (SQLException e){
+        } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
     }
