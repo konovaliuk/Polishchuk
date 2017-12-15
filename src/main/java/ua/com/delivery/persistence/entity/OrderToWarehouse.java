@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.entity;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 
 @Getter
 @Setter

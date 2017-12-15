@@ -3,7 +3,6 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IOrderFromWarehouseDao;
 import ua.com.delivery.persistence.entity.OrderFromWarehouse;
-import ua.com.delivery.persistence.util.ConnectionPool;
 import ua.com.delivery.persistence.util.SimpleConnection;
 
 import java.sql.*;
@@ -25,8 +24,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     @Override
     public void createOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
         PreparedStatement preparedStatement;
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+        try  (Connection connection = SimpleConnection.getInstance().getConnection()){
             preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE);
             preparedStatement.setLong(1, orderFromWarehouse.getOrderFromWarehouseID());
             preparedStatement.setInt(2, orderFromWarehouse.getNumberOfOrder());
