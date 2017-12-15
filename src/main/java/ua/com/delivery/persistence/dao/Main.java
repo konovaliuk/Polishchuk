@@ -1,5 +1,7 @@
 package ua.com.delivery.persistence.dao;
 
+import ua.com.delivery.persistence.entity.CargoPrice;
+
 //як провіти чи дійсно заносить дані
 public class Main {
     public static void main(String[] args) {
@@ -44,6 +46,16 @@ public class Main {
         calculator.setVolume(9);
 
         calculatorDao.createCalculator(calculator);*/
+
+//it's for CargoPrice
+        CargoPrice cargoPrice = new CargoPrice();
+        cargoPrice.setCargopriceID(11L);
+        cargoPrice.setWeight(20);
+        cargoPrice.setPrice(90);
+
+//        cargoPriceDao.createCargoPrice(cargoPrice);
+//        cargoPriceDao.getListCargoPrices();
+        cargoPriceDao.deleteCargoPriceByWeight(20);
 
     }
 }

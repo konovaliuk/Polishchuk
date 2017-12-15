@@ -15,3 +15,9 @@
 01:34:20,600 ERROR CalculatorImpl.main:createCalculator:35 - java.sql.SQLSyntaxErrorException: Table 'MyProject.CALCULATOR' doesn't exist
 01:35:03,528 INFO  CalculatorImpl.main:createCalculator:33 - Calculator was created
 01:52:02,983 INFO  CalculatorImpl.main:createCalculator:33 - Calculator was created
+10:09:35,156 INFO  CargoPriceImpl.main:createCargoPrice:31 - Cargo price was created
+10:10:39,402 ERROR CargoPriceImpl.main:createCargoPrice:33 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '11' for key 'PRIMARY'
+10:12:37,339 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 90 was successful deleted.
+10:14:14,468 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 90 was successful deleted.
+10:15:52,195 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 90 was successful deleted.
+10:16:36,022 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 20 was successful deleted.

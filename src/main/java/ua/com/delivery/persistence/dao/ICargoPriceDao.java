@@ -18,5 +18,5 @@ public interface ICargoPriceDao {
     void updateCargoPrice(CargoPrice cargoPrice);
 
     //this method will be delete one CargoPrice
-    void deleteCargoPriceByWeight(CargoPrice cargoPrice);
+    void deleteCargoPriceByWeight(int weight);
 }

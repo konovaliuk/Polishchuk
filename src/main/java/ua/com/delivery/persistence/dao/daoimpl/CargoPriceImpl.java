@@ -13,7 +13,7 @@ public class CargoPriceImpl implements ICargoPriceDao {
     private static final Logger LOGGER = Logger.getLogger(CargoPriceImpl.class);
     private static final String GET_LIST_CARGO_PRICE = "SELECT * FROM CargoPrice";
     private static final String DELETE_CARGO_PRICE_BY_WEIGHT = "DELETE FROM CargoPrice WHERE WEIGHT=?";
-    private static final String GET_BY_ID = "SELECT * FROM CargoPrice WHERE cargopriceID=?";
+    private static final String GET_BY_ID = "DELETE * FROM CargoPrice WHERE cargopriceID=?";
     private static final String UPDATE_CARGO_PRICE_DATA = "UPDATE CargoPrice SET weight=?, volume=? WHERE cargopriceID=?";
     private static final String CREATE_CARGO_PRICE = "INSERT INTO CargoPrice (cargopriceID, weight, price) " +
             "VALUES (?, ?, ?)";
@@ -101,15 +101,15 @@ public class CargoPriceImpl implements ICargoPriceDao {
     }
 
     @Override
-    public void deleteCargoPriceByWeight(CargoPrice cargoPrice) {
+    public void deleteCargoPriceByWeight(int weight) {
         PreparedStatement preparedStatement;
 //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
         try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             preparedStatement = connection.prepareStatement(DELETE_CARGO_PRICE_BY_WEIGHT);
-            preparedStatement.setInt(1, cargoPrice.getWeight());
+            preparedStatement.setInt(1, weight);
             preparedStatement.executeUpdate();
             connection.commit();
-            LOGGER.info("Caк");
+            LOGGER.info("Cargo price with weight: " + weight + " was successful deleted.");
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
