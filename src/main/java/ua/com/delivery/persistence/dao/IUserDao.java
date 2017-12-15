@@ -18,5 +18,5 @@ public interface IUserDao {
     void updateUser(User user);
 
     //this method will be delete one user
-    void deleteUser(User user);
+    void deleteUserByUsername(String username);
 }
