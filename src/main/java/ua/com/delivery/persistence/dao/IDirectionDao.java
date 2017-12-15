@@ -12,12 +12,12 @@ public interface IDirectionDao {
     List<Direction> getListDirections();
 
     //will return us one directions by field
-    Direction getById(Long id);
+    Direction getDirectionByFromCity(String  fromCity);
 
     //this part will be update our data
     void updateDirection(Direction direction);
 
     //this method will be delete one direction
-    void deleteDirection(Direction direction);
+    void deleteDirectionById(Long id);
 
 }
