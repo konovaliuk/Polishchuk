@@ -18,5 +18,5 @@ public interface IParcelPriceDao {
     void updateParcelPrice(ParcelPrice parcelPrice);
 
     //this method will be delete one parcelPrice
-    void deleteParcelPrice(ParcelPrice parcelPrice);
+    void deleteParcelPriceByWeight(Integer weight);
 }

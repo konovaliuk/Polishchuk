@@ -12,9 +12,9 @@ import java.util.List;
 public class CargoPriceImpl implements ICargoPriceDao {
     private static final Logger LOGGER = Logger.getLogger(CargoPriceImpl.class);
     private static final String GET_LIST_CARGO_PRICE = "SELECT * FROM CargoPrice";
-    private static final String GET_CARGO_PRICE_BY_ID = "DELETE * FROM CargoPrice WHERE cargopriceID=?";
-    private static final String DELETE_CARGO_PRICE_BY_WEIGHT = "DELETE FROM CargoPrice WHERE WEIGHT=?";
-    private static final String UPDATE_CARGO_PRICE_DATA = "UPDATE CargoPrice SET weight=?, volume=? WHERE cargopriceID=?";
+    private static final String GET_CARGO_PRICE_BY_ID = "SELECT * FROM CargoPrice WHERE cargopriceID=?";
+    private static final String DELETE_CARGO_PRICE_BY_WEIGHT = "DELETE FROM CargoPrice WHERE weight=?";
+    private static final String UPDATE_CARGO_PRICE_DATA = "UPDATE CargoPrice SET weight=?, price=? WHERE cargopriceID=?";
     private static final String CREATE_CARGO_PRICE = "INSERT INTO CargoPrice (cargopriceID, weight, price) " +
             "VALUES (?, ?, ?)";
 
