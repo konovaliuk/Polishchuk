@@ -21,3 +21,9 @@
 10:14:14,468 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 90 was successful deleted.
 10:15:52,195 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 90 was successful deleted.
 10:16:36,022 INFO  CargoPriceImpl.main:deleteCargoPriceByWeight:112 - Cargo price with weight: 20 was successful deleted.
+16:27:42,475 ERROR UserImpl.main:createUser:45 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'phone' at row 1
+16:28:11,508 INFO  UserImpl.main:createUser:43 - User AJIadin was created
+16:30:49,533 INFO  ParcelPriceImpl.main:createParcelPrice:32 - Parcel price was created
+16:31:42,742 INFO  ParcelPriceImpl.main:deleteParcelPriceByWeight:114 - Parcel price with weight: 40 was successful deleted.
+16:32:04,455 INFO  ParcelPriceImpl.main:createParcelPrice:32 - Parcel price was created
+16:37:04,962 INFO  OrderToWarehouse.main:createOrderToWarehouse:42 - Order to warehouse was successful created

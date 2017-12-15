@@ -54,6 +54,47 @@ public class Main {
 //        cargoPriceDao.createCargoPrice(cargoPrice);
 //        cargoPriceDao.getListCargoPrices();
         cargoPriceDao.deleteCargoPriceByWeight(20);*/
+/*
+//it's for user
+        User user = new User();
+        user.setUserID(1L);
+        user.setUsername("AJIadin");
+        user.setPassword("qwerty");
+        user.setFirstName("Tolik");
+        user.setSecondName("Petrishin");
+        user.setEmail("blabla@ukr.net");
+        user.setAddress("kreshchatyk");
+        user.setCity("IIepcia");
+        user.setPhone(380682312L);
+
+        userDao.createUser(user);
+*/
+/*
+//it's for ParcelPrice
+        ParcelPrice parcelPrice = new ParcelPrice();
+        parcelPrice.setParcelpriceID(10L);
+        parcelPrice.setWeight(10);
+        parcelPrice.setPrice(40);
+
+        parcelPriceDao.createParcelPrice(parcelPrice);
+//        parcelPriceDao.deleteParcelPriceByWeight(40);
+*/
+/*//it's for orderToWarehouse
+        OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
+        orderToWarehouse.setOrderToWarehouseID(1L);
+        orderToWarehouse.setDateToReceipt(java.sql.Date.valueOf("2014-02-04"));
+        orderToWarehouse.setDirectionID(2L);
+        orderToWarehouse.setUserID(3L);
+        orderToWarehouse.setCargoID(6L);
+        orderToWarehouse.setParcelID(7L);
+        orderToWarehouse.setWeight(12);
+        orderToWarehouse.setVolume(61);
+        orderToWarehouse.setNumberOfOrder(2);
+        orderToWarehouse.setTotalPrice(6521);
+
+        orderToWarehouseDao.createOrderToWarehouse(orderToWarehouse);*/
+
+
 
     }
 }

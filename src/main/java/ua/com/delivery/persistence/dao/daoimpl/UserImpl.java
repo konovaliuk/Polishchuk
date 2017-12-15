@@ -36,7 +36,7 @@ public class UserImpl implements IUserDao{
             preparedStatement.setString(6, user.getEmail());
             preparedStatement.setString(7, user.getAddress());
             preparedStatement.setString(8, user.getCity());
-            preparedStatement.setInt(9, user.getPhone());
+            preparedStatement.setLong(9, user.getPhone());
 
             preparedStatement.executeUpdate();
             connection.commit();
@@ -64,7 +64,7 @@ public class UserImpl implements IUserDao{
                     user.setEmail(resultSet.getString("email"));
                     user.setAddress(resultSet.getString("address"));
                     user.setCity(resultSet.getString("city"));
-                    user.setPhone(resultSet.getInt("phone"));
+                    user.setPhone(resultSet.getLong("phone"));
                     userList.add(user);
                 } while (resultSet.next());
             } else {
@@ -96,7 +96,7 @@ public class UserImpl implements IUserDao{
                     user.setEmail(resultSet.getString("email"));
                     user.setAddress(resultSet.getString("address"));
                     user.setCity(resultSet.getString("city"));
-                    user.setPhone(resultSet.getInt("phone"));
+                    user.setPhone(resultSet.getLong("phone"));
                     preparedStatement.executeUpdate();
                 } while (resultSet.next());
             } else {
@@ -122,7 +122,7 @@ public class UserImpl implements IUserDao{
             preparedStatement.setString(5, user.getEmail());
             preparedStatement.setString(6, user.getAddress());
             preparedStatement.setString(7, user.getCity());
-            preparedStatement.setInt(8, user.getPhone());
+            preparedStatement.setLong(8, user.getPhone());
             preparedStatement.setLong(9, user.getUserID());
             preparedStatement.executeUpdate();
             connection.commit();
