@@ -27,3 +27,19 @@
 16:31:42,742 INFO  ParcelPriceImpl.main:deleteParcelPriceByWeight:114 - Parcel price with weight: 40 was successful deleted.
 16:32:04,455 INFO  ParcelPriceImpl.main:createParcelPrice:32 - Parcel price was created
 16:37:04,962 INFO  OrderToWarehouse.main:createOrderToWarehouse:42 - Order to warehouse was successful created
+13:06:26,542 INFO  UserImpl.http-nio-8086-exec-6:createUser:42 - User marshal was created
+13:44:46,246 ERROR UserImpl.http-nio-8086-exec-9:createUser:45 - java.sql.SQLException: Cannot create JDBC driver of class 'com.mysql.cj.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/MyProject?autoReconnect=true&useSSL=false'
+13:57:13,808 ERROR UserImpl.http-nio-8086-exec-9:createUser:45 - java.sql.SQLException: Cannot create JDBC driver of class 'com.mysql.cj.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/MyProject?autoReconnect=true&useSSL=false'
+13:59:19,404 ERROR UserImpl.http-nio-8086-exec-5:createUser:45 - java.sql.SQLException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL 'jdbc:mysql//localhost:3306/MyProject?autoReconnect=true&useSSL=false'
+14:01:40,854 ERROR UserImpl.http-nio-8086-exec-7:createUser:45 - com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'phone' at row 1
+14:02:38,523 ERROR UserImpl.http-nio-8086-exec-6:createUser:45 - java.sql.SQLException: Can''t call commit when autocommit=true
+14:04:23,968 ERROR UserImpl.http-nio-8086-exec-7:createUser:45 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+14:05:24,044 ERROR UserImpl.http-nio-8086-exec-5:createUser:45 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'victor@mns.gov.ua' for key 'email_UNIQUE'
+14:06:11,359 ERROR UserImpl.http-nio-8086-exec-7:createUser:45 - java.sql.SQLException: Can''t call commit when autocommit=true
+14:10:58,813 ERROR UserImpl.http-nio-8086-exec-6:createUser:44 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4' for key 'PRIMARY'
+19:19:25,255 INFO  UserImpl.http-nio-8086-exec-9:createUser:42 - User polkjs was created
+19:22:18,578 INFO  UserImpl.http-nio-8086-exec-5:createUser:43 - User sdr was created
+20:12:12,817 ERROR UserImpl.http-nio-8086-exec-6:getById:107 - java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() for SELECTs
+20:15:45,213 ERROR UserImpl.http-nio-8086-exec-8:getById:107 - java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() for SELECTs
+21:02:05,160 ERROR UserImpl.http-nio-8086-exec-7:getById:106 - java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() for SELECTs
+21:07:40,417 INFO  UserImpl.http-nio-8086-exec-5:deleteUserByUsername:143 - User with username polkjs was successful deleted.

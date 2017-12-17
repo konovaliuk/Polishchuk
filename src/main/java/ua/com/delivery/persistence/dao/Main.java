@@ -1,3 +1,4 @@
+/*
 package ua.com.delivery.persistence.dao;
 
 //як провіти чи дійсно заносить дані
@@ -14,7 +15,8 @@ public class Main {
         IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
         IUserDao userDao = factory.createUserDao();
 
-  /// it's for administrator
+        /// it's for administrator
+*/
 /*
         Administrator administrator = new Administrator();
         administrator.setAdminID(2L);
@@ -27,13 +29,15 @@ public class Main {
 
         administrator.createAdministrator(administrator);
         administrator.deleteAdministratorByUsername("Mypaxa");
-*/
+*//*
+
 
 //it's only checking simple connection
 //      SimpleConnection.getInstance().getConnection();
 
 //it's for calculator
-      /*  Calculator calculator = new Calculator();
+      */
+/*  Calculator calculator = new Calculator();
         calculator.setCalculatorID(2L);
         calculator.setDirectionID(4);
         calculator.setCargoID(1);
@@ -43,9 +47,12 @@ public class Main {
         calculator.setWeight(1);
         calculator.setVolume(9);
 
-        calculatorDao.createCalculator(calculator);*/
+        calculatorDao.createCalculator(calculator);*//*
 
-/*//it's for CargoPrice
+
+*/
+/*//*
+/it's for CargoPrice
         CargoPrice cargoPrice = new CargoPrice();
         cargoPrice.setCargopriceID(11L);
         cargoPrice.setWeight(20);
@@ -53,7 +60,9 @@ public class Main {
 
 //        cargoPriceDao.createCargoPrice(cargoPrice);
 //        cargoPriceDao.getListCargoPrices();
-        cargoPriceDao.deleteCargoPriceByWeight(20);*/
+        cargoPriceDao.deleteCargoPriceByWeight(20);*//*
+
+*/
 /*
 //it's for user
         User user = new User();
@@ -68,6 +77,8 @@ public class Main {
         user.setPhone(380682312L);
 
         userDao.createUser(user);
+*//*
+
 */
 /*
 //it's for ParcelPrice
@@ -78,8 +89,11 @@ public class Main {
 
         parcelPriceDao.createParcelPrice(parcelPrice);
 //        parcelPriceDao.deleteParcelPriceByWeight(40);
+*//*
+
 */
-/*//it's for orderToWarehouse
+/*//*
+/it's for orderToWarehouse
         OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
         orderToWarehouse.setOrderToWarehouseID(1L);
         orderToWarehouse.setDateToReceipt(java.sql.Date.valueOf("2014-02-04"));
@@ -92,9 +106,10 @@ public class Main {
         orderToWarehouse.setNumberOfOrder(2);
         orderToWarehouse.setTotalPrice(6521);
 
-        orderToWarehouseDao.createOrderToWarehouse(orderToWarehouse);*/
+        orderToWarehouseDao.createOrderToWarehouse(orderToWarehouse);*//*
 
 
 
     }
 }
+*/

@@ -21,7 +21,7 @@ public class UserImpl implements IUserDao {
 
     @Override
     public void createUser(User user) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+//        try (Connection connection = ConnectionPool.getInstance().getConnection();
         try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER)
         ) {
@@ -79,7 +79,7 @@ public class UserImpl implements IUserDao {
     @Override
     public User getById(Long id) {
         User user = new User();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+//        try (Connection connection = ConnectionPool.getInstance().getConnection();
         try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)
         ) {

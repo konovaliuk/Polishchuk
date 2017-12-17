@@ -13,6 +13,19 @@ import java.sql.SQLException;
 public class ConnectionPool {
     private static final Logger LOGGER = Logger.getLogger(ConnectionPool.class);
 
+   /* private static DataSource dataSource;
+
+    public static DataSource getDataSource() throws SQLException {
+        if (dataSource == null) {
+            try {
+                InitialContext initContext = new InitialContext();
+                dataSource = (DataSource) initContext.lookup("java:comp/env/jdbc/delivery");
+            } catch (NamingException e) {
+                throw new SQLException("Cant create data source. " + e.getMessage());
+            }
+        }
+        return dataSource;
+    }*/
     private ConnectionPool() {
     }
 
@@ -32,8 +45,9 @@ public class ConnectionPool {
         Connection connection = null;
         try {
             context = new InitialContext();
-            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/mydbpool");
+            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/delivery");
             connection = dataSource.getConnection();
+            System.out.println("bbb");
             //для транзакций,чтобы после каждого запроса делать коммит
             connection.setAutoCommit(false);
         } catch (NamingException | SQLException e) {
