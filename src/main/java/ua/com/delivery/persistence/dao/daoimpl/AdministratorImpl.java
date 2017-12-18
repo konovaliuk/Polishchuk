@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IAdministratorDao;
 import ua.com.delivery.persistence.entity.Administrator;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.util.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -24,11 +24,10 @@ public class AdministratorImpl implements IAdministratorDao {
         if (administrator.getAdminID() != null) {
             LOGGER.info("Administrator is already created, the adminID is not null.");
         } else {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-            try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//            try (Connection connection = SimpleConnection.getInstance().getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ADMINISTRATOR)
-            ) {  //чи потрібно тут закривати connection
-                //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
+            ) {
                 preparedStatement.setLong(1, administrator.getAdminID());
                 preparedStatement.setString(2, administrator.getName());
                 preparedStatement.setString(3, administrator.getUsername());
@@ -47,8 +46,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public List<Administrator> getListAdministrators() {
         List<Administrator> administratorList = new ArrayList<>();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_ADMINISTRATORS)
         ) {
@@ -75,8 +74,8 @@ public class AdministratorImpl implements IAdministratorDao {
     @Override
     public Administrator getById(Long id) {
         Administrator administrator = new Administrator();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)) {
             //вказую значення id, яке приходить до нас із параметра
             preparedStatement.setLong(1, id);
@@ -106,8 +105,8 @@ public class AdministratorImpl implements IAdministratorDao {
         if (administrator.getAdminID() == null) {
             LOGGER.info("Administrator is not created yet, the adminID is null.");
         } else {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-            try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//            try (Connection connection = SimpleConnection.getInstance().getConnection();
                  PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ADMINISTRATOR)
             ) {
 
@@ -128,8 +127,8 @@ public class AdministratorImpl implements IAdministratorDao {
 
     @Override
     public void deleteAdministratorByUsername(String username) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ADMINISTRATOR_BY_USERNAME)
         ) {
             preparedStatement.setString(1, username);

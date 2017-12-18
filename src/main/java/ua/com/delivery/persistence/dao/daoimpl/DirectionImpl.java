@@ -3,6 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IDirectionDao;
 import ua.com.delivery.persistence.entity.Direction;
+import ua.com.delivery.persistence.util.ConnectionPool;
 import ua.com.delivery.persistence.util.SimpleConnection;
 
 import java.sql.*;
@@ -68,9 +69,9 @@ public class DirectionImpl implements IDirectionDao {
     @Override
     public Direction getDirectionByFromCity(String fromCity) {
         Direction direction = new Direction();
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(GET_DIRECTION_BY_FROM_CITY)
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                     PreparedStatement preparedStatement = connection.prepareStatement(GET_DIRECTION_BY_FROM_CITY)
         ) {
             preparedStatement.setString(1, fromCity);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -93,8 +94,8 @@ public class DirectionImpl implements IDirectionDao {
 
     @Override
     public void updateDirection(Direction direction) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DIRECTION_DATA)
         ) {
             preparedStatement.setString(1, direction.getFromCity());
@@ -110,8 +111,8 @@ public class DirectionImpl implements IDirectionDao {
 
     @Override
     public void deleteDirectionById(Long id) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_DIRECTION_BY_ID)
         ) {
             preparedStatement.setLong(1, id);

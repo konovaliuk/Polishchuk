@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Setter
 @EqualsAndHashCode
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 public class CargoPrice implements Serializable {
     private Long cargopriceID;

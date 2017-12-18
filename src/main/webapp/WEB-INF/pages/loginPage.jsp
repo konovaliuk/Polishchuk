@@ -11,7 +11,7 @@
 <body>
     <div class="box">
         <h2>Sign in</h2>
-        <form action="signInSite" method="post">
+        <form action="" method="post">
             <div class="inputBox">
                 <input type="text" name="username" required="">
                 <label>Username</label>

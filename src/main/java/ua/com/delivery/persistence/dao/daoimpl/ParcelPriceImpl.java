@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IParcelPriceDao;
 import ua.com.delivery.persistence.entity.ParcelPrice;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.util.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -20,9 +20,9 @@ public class ParcelPriceImpl implements IParcelPriceDao{
 
     @Override
     public void createParcelPrice(ParcelPrice parcelPrice) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PARCEL_PRICE)
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                     PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PARCEL_PRICE)
         ) {
             preparedStatement.setLong(1, parcelPrice.getParcelpriceID());
             preparedStatement.setInt(2, parcelPrice.getWeight());
@@ -38,8 +38,8 @@ public class ParcelPriceImpl implements IParcelPriceDao{
     @Override
     public List<ParcelPrice> getListParcelPrices() {
         List<ParcelPrice> parcelPriceList = new ArrayList<>();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_PARCEL_PRICE)
         ) {
@@ -64,8 +64,8 @@ public class ParcelPriceImpl implements IParcelPriceDao{
     @Override
     public ParcelPrice getById(Long id) {
         ParcelPrice parcelPrice = new ParcelPrice();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_ID)) {
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -87,8 +87,8 @@ public class ParcelPriceImpl implements IParcelPriceDao{
 
     @Override
     public void updateParcelPrice(ParcelPrice parcelPrice) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PARCEL_PRICE_DATA)
         ) {
             preparedStatement.setInt(1, parcelPrice.getWeight());
@@ -104,8 +104,8 @@ public class ParcelPriceImpl implements IParcelPriceDao{
 
     @Override
     public void deleteParcelPriceByWeight(Integer weight) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_PARCEL_PRICE_BY_WEIGHT)
         ) {
             preparedStatement.setInt(1, weight);

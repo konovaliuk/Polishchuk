@@ -43,3 +43,7 @@
 20:15:45,213 ERROR UserImpl.http-nio-8086-exec-8:getById:107 - java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() for SELECTs
 21:02:05,160 ERROR UserImpl.http-nio-8086-exec-7:getById:106 - java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() for SELECTs
 21:07:40,417 INFO  UserImpl.http-nio-8086-exec-5:deleteUserByUsername:143 - User with username polkjs was successful deleted.
+20:16:40,809 ERROR CargoPriceImpl.http-nio-8086-exec-4:createCargoPrice:35 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+20:17:27,279 ERROR CargoPriceImpl.http-nio-8086-exec-10:createCargoPrice:35 - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+20:18:09,715 INFO  CargoPriceImpl.http-nio-8086-exec-4:createCargoPrice:33 - Cargo price was created
+23:04:01,529 INFO  CargoPriceImpl.http-nio-8086-exec-5:deleteCargoPriceByWeight:115 - Cargo price with weight: 5 was successful deleted.

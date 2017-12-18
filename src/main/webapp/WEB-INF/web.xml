@@ -14,8 +14,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
-        <url-pattern>/signInLink</url-pattern>
-        <!--<url-pattern>/registrationLink</url-pattern>-->
-        <url-pattern>/signInSite</url-pattern>
+        <url-pattern>/loginPage</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -11,7 +11,7 @@
 <body>
 <div class="box">
     <h2>Registration</h2>
-    <form action="#">
+    <form action="">
         <div class="inputWrap">
             <div class="inputWrap__element">
                 <div class="inputBox">

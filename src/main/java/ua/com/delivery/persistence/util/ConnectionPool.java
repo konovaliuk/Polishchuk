@@ -13,19 +13,6 @@ import java.sql.SQLException;
 public class ConnectionPool {
     private static final Logger LOGGER = Logger.getLogger(ConnectionPool.class);
 
-   /* private static DataSource dataSource;
-
-    public static DataSource getDataSource() throws SQLException {
-        if (dataSource == null) {
-            try {
-                InitialContext initContext = new InitialContext();
-                dataSource = (DataSource) initContext.lookup("java:comp/env/jdbc/delivery");
-            } catch (NamingException e) {
-                throw new SQLException("Cant create data source. " + e.getMessage());
-            }
-        }
-        return dataSource;
-    }*/
     private ConnectionPool() {
     }
 

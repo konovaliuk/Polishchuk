@@ -3,6 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IUserDao;
 import ua.com.delivery.persistence.entity.User;
+import ua.com.delivery.persistence.util.ConnectionPool;
 import ua.com.delivery.persistence.util.SimpleConnection;
 
 import java.sql.*;
@@ -21,8 +22,8 @@ public class UserImpl implements IUserDao {
 
     @Override
     public void createUser(User user) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection();
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER)
         ) {
             //чи потрібно тут закривати connectionpool
@@ -48,8 +49,8 @@ public class UserImpl implements IUserDao {
     @Override
     public List<User> getListUsers() {
         List<User> userList = new ArrayList<>();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_USERS)
         ) {
@@ -79,8 +80,8 @@ public class UserImpl implements IUserDao {
     @Override
     public User getById(Long id) {
         User user = new User();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection();
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)
         ) {
             //вказую значення id, яке приходить до нас із параметра
@@ -110,8 +111,8 @@ public class UserImpl implements IUserDao {
 
     @Override
     public void updateUser(User user) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_USER)
         ) {
             preparedStatement.setString(1, user.getUsername());
@@ -133,8 +134,8 @@ public class UserImpl implements IUserDao {
 
     @Override
     public void deleteUserByUsername(String username) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USER_BY_USERNAME)
         ) {
             preparedStatement.setString(1, username);

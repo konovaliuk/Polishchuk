@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.ICargoPriceDao;
 import ua.com.delivery.persistence.entity.CargoPrice;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.util.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -20,8 +20,8 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void createCargoPrice(CargoPrice cargoPrice) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_CARGO_PRICE)
         ) {
             preparedStatement.setLong(1, cargoPrice.getCargopriceID());
@@ -38,8 +38,8 @@ public class CargoPriceImpl implements ICargoPriceDao {
     @Override
     public List<CargoPrice> getListCargoPrices() {
         List<CargoPrice> cargoPriceList = new ArrayList<>();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_CARGO_PRICE)
         ) {
@@ -63,8 +63,8 @@ public class CargoPriceImpl implements ICargoPriceDao {
     @Override
     public CargoPrice getById(Long id) {
         CargoPrice cargoPrice = new CargoPrice();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_CARGO_PRICE_BY_ID)
         ) {
             preparedStatement.setLong(1, id);
@@ -87,8 +87,8 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void updateCargoPrice(CargoPrice cargoPrice) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_CARGO_PRICE_DATA)
         ) {
             preparedStatement.setInt(1, cargoPrice.getWeight());
@@ -104,8 +104,8 @@ public class CargoPriceImpl implements ICargoPriceDao {
 
     @Override
     public void deleteCargoPriceByWeight(int weight) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CARGO_PRICE_BY_WEIGHT)
         ) {
             preparedStatement.setInt(1, weight);

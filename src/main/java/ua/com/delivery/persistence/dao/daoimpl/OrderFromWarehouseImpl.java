@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IOrderFromWarehouseDao;
 import ua.com.delivery.persistence.entity.OrderFromWarehouse;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.util.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -23,9 +23,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     @Override
     public void createOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try  (Connection connection = SimpleConnection.getInstance().getConnection();
-              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE)
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try  (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE)
         ){
             preparedStatement.setLong(1, orderFromWarehouse.getOrderFromWarehouseID());
             preparedStatement.setInt(2, orderFromWarehouse.getNumberOfOrder());
@@ -46,8 +46,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     @Override
     public List<OrderFromWarehouse> getListOrdersFromWarehouse() {
         List<OrderFromWarehouse> orderFromWarehouseList = new ArrayList<>();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_ORDER_FROM_WAREHOUSE)
         ) {
@@ -76,8 +76,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     @Override
     public OrderFromWarehouse getById(Long id) {
         OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_ORDER_BY_ID)
         ) {
             //вказую значення id, яке приходить до нас із параметра
@@ -107,8 +107,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     @Override
     public void updateOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ORDER_FROM_WAREHOUSE)
         ) {
             preparedStatement.setInt(1, orderFromWarehouse.getNumberOfOrder());
@@ -129,8 +129,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     @Override
     public void deleteOrderFromWarehouseById(Long id) {
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection();
+                try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ORDER_FROM_WAREHOUSE_BY_ID)
         ) {
             preparedStatement.setLong(1, id);
