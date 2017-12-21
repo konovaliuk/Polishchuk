@@ -3,8 +3,8 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IDirectionDao;
 import ua.com.delivery.persistence.entity.Direction;
-import ua.com.delivery.persistence.util.ConnectionPool;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.utilDao.ConnectionPool;
+import ua.com.delivery.persistence.utilDao.SimpleConnection;
 
 import java.sql.*;
 import java.util.ArrayList;

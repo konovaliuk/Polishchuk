@@ -3,8 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IUserDao;
 import ua.com.delivery.persistence.entity.User;
-import ua.com.delivery.persistence.util.ConnectionPool;
-import ua.com.delivery.persistence.util.SimpleConnection;
+import ua.com.delivery.persistence.utilDao.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,6 +13,7 @@ public class UserImpl implements IUserDao {
     private static final Logger LOGGER = Logger.getLogger(UserImpl.class);
     private static final String GET_LIST_USERS = "SELECT * FROM Users";
     private static final String GET_BY_ID = "SELECT * FROM Users WHERE userID=?";
+    private static final String GET_USER_BY_USERNAME = "SELECT * FROM Users WHERE username=?";
     private static final String DELETE_USER_BY_USERNAME = "DELETE FROM Users WHERE username=?";
     private static final String UPDATE_DATA_USER = "UPDATE Users SET username=?, password=?, first_name=?," +
             "second_name=?, email=?, address=?, city=?, phone=? WHERE userID=?";
@@ -104,6 +104,38 @@ public class UserImpl implements IUserDao {
                 LOGGER.info("No given id");
             }
         } catch (SQLException e) {
+            LOGGER.error(e.toString());
+        }
+        return user;
+    }
+
+    @Override
+    public User getUserByUsername(String username) {
+        User user = new User();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_USER_BY_USERNAME)
+        ){
+            preparedStatement.setString(1, username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                do {
+                    //ВИИИИИИИИИИИИИИИИИИПРАВИТИ ЩОБ НЕ БУЛО ДУБЛІКАТИ
+                    //ЗРОБИТИ БІЛДЕР
+                    user.setUserID(resultSet.getLong("userID"));
+                    user.setUsername(resultSet.getString("username"));
+                    user.setPassword(resultSet.getString("password"));
+                    user.setFirstName(resultSet.getString("first_name"));
+                    user.setSecondName(resultSet.getString("second_name"));
+                    user.setEmail(resultSet.getString("email"));
+                    user.setAddress(resultSet.getString("address"));
+                    user.setCity(resultSet.getString("city"));
+                    user.setPhone(resultSet.getLong("phone"));
+                    preparedStatement.executeUpdate();
+                } while (resultSet.next());
+            } else {
+                LOGGER.info("No given username");
+            }
+        } catch (SQLException e){
             LOGGER.error(e.toString());
         }
         return user;

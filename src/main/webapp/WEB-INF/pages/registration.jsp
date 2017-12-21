@@ -11,7 +11,7 @@
 <body>
 <div class="box">
     <h2>Registration</h2>
-    <form action="">
+    <form action="Registration" method="post">
         <div class="inputWrap">
             <div class="inputWrap__element">
                 <div class="inputBox">
@@ -65,7 +65,7 @@
                     <label>Address</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="" required="x">
                     <label>City</label>
                 </div>
                 <div class="inputBox">

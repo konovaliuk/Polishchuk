@@ -3,7 +3,7 @@ package ua.com.delivery.persistence.dao.daoimpl;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.ICargoPriceDao;
 import ua.com.delivery.persistence.entity.CargoPrice;
-import ua.com.delivery.persistence.util.ConnectionPool;
+import ua.com.delivery.persistence.utilDao.ConnectionPool;
 
 import java.sql.*;
 import java.util.ArrayList;

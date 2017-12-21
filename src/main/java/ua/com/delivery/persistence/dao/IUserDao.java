@@ -17,6 +17,9 @@ public interface IUserDao {
     //will return us one user by field
     User getById(Long id);
 
+    //will return us one user by username
+    User getUserByUsername(String username);
+
     //this part will be update our user
     void updateUser(User user);
 
