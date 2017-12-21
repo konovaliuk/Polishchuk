@@ -16,9 +16,9 @@ public class UserImpl implements IUserDao {
     private static final String GET_USER_BY_USERNAME = "SELECT * FROM Users WHERE username=?";
     private static final String DELETE_USER_BY_USERNAME = "DELETE FROM Users WHERE username=?";
     private static final String UPDATE_DATA_USER = "UPDATE Users SET username=?, password=?, first_name=?," +
-            "second_name=?, email=?, address=?, city=?, phone=? WHERE userID=?";
+            "second_name=?, email=?, address=?, city=?, phone=?, admin=? WHERE userID=?";
     private static final String CREATE_USER = "INSERT INTO Users (userID, username, password, first_name, second_name," +
-            "email, address, city, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            "email, address, city, phone, admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void createUser(User user) {
@@ -37,6 +37,7 @@ public class UserImpl implements IUserDao {
             preparedStatement.setString(7, user.getAddress());
             preparedStatement.setString(8, user.getCity());
             preparedStatement.setLong(9, user.getPhone());
+            preparedStatement.setBoolean(10, user.getAdmin());
 
             preparedStatement.executeUpdate();
             connection.commit();
@@ -66,6 +67,7 @@ public class UserImpl implements IUserDao {
                     user.setAddress(resultSet.getString("address"));
                     user.setCity(resultSet.getString("city"));
                     user.setPhone(resultSet.getLong("phone"));
+                    user.setAdmin(resultSet.getBoolean("admin"));
                     userList.add(user);
                 } while (resultSet.next());
             } else {
@@ -98,6 +100,7 @@ public class UserImpl implements IUserDao {
                     user.setAddress(resultSet.getString("address"));
                     user.setCity(resultSet.getString("city"));
                     user.setPhone(resultSet.getLong("phone"));
+                    user.setAdmin(resultSet.getBoolean("admin"));
                     preparedStatement.executeUpdate();
                 } while (resultSet.next());
             } else {
@@ -142,7 +145,7 @@ public class UserImpl implements IUserDao {
     }
 
     @Override
-    public void updateUser(User user) {
+    public User updateUser(User user) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_USER)
@@ -156,12 +159,14 @@ public class UserImpl implements IUserDao {
             preparedStatement.setString(7, user.getCity());
             preparedStatement.setLong(8, user.getPhone());
             preparedStatement.setLong(9, user.getUserID());
+            preparedStatement.setBoolean(10, user.getAdmin());
             preparedStatement.executeUpdate();
             connection.commit();
-            LOGGER.info("User " + user.getUsername() + " was updated");
+//            LOGGER.info("User " + user.getUsername() + " was updated");
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
+        return user;
     }
 
     @Override
@@ -173,7 +178,7 @@ public class UserImpl implements IUserDao {
             preparedStatement.setString(1, username);
             preparedStatement.executeUpdate();
             connection.commit();
-            LOGGER.info("User with username " + username + " was successful deleted.");
+//            LOGGER.info("User with username " + username + " was successful deleted.");
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }

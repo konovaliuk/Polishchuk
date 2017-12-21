@@ -19,6 +19,19 @@ public class User implements Serializable {
     private String address;
     private String city;
     private Long phone;
+    private Boolean admin;
+
+    public boolean isAdmin(){
+        return admin;
+    }
+
+    public void makeAdmin(){
+        admin = true;
+    }
+
+    public void makeUser(){
+        admin = false;
+    }
 
 }
 

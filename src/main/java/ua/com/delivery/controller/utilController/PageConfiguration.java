@@ -7,8 +7,10 @@ public class PageConfiguration {
     private static ResourceBundle resourceBundle;
     private static final String NAME_OF_BUNDLE = "pageConfiguration";
 
-//    public static final String
     public static final String ERROR_PAGE = "pageConfiguration.errorPage";
+    public static final String LOGIN_PAGE = "pageConfiguration.loginPage";
+    public static final String ADMIN_PAGE = "pageConfiguration.adminPage";
+    public static final String DATE = "pageConfiguration.datePage";
 
 
     private PageConfiguration() {

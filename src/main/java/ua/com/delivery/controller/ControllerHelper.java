@@ -17,6 +17,7 @@ public class ControllerHelper {
     private ControllerHelper(){
         ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
+//        commandMap.put(bundle.getString("command.registration", new ));
     }
 
     public static ControllerHelper getInstance(){

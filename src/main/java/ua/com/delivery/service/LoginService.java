@@ -6,7 +6,7 @@ import ua.com.delivery.persistence.dao.IAbstractFactory;
 import ua.com.delivery.persistence.entity.User;
 
 public class LoginService {
-    private static final Logger LOGGER = Logger.getLogger(LoginService.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(LoginService.class);
     private static LoginService INSTANCE;
     private static final String USER = "UserDAO";
 
@@ -27,6 +27,9 @@ public class LoginService {
         return INSTANCE;
     }
 
+    public boolean checkPasswordForUsername(User user, String password){
+        return user.getPassword().equals(password);
+    }
     public User existUsername(String username){
         User user = factory.createUserDao().getUserByUsername(username);
         LOGGER.info(username + ": is present in our DB");

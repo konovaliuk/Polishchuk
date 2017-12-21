@@ -21,7 +21,7 @@ public interface IUserDao {
     User getUserByUsername(String username);
 
     //this part will be update our user
-    void updateUser(User user);
+    User updateUser(User user);
 
     //this method will be delete one user
     void deleteUserByUsername(String username);
