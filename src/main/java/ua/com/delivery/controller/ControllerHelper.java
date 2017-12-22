@@ -1,8 +1,6 @@
 package ua.com.delivery.controller;
 
-import ua.com.delivery.command.ICommand;
-import ua.com.delivery.command.LoginCommand;
-import ua.com.delivery.command.MissingCommand;
+import ua.com.delivery.command.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -17,7 +15,8 @@ public class ControllerHelper {
     private ControllerHelper(){
         ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
-//        commandMap.put(bundle.getString("command.registration", new ));
+        commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
+        commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
     }
 
     public static ControllerHelper getInstance(){
