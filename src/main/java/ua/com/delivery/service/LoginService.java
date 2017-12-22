@@ -30,6 +30,7 @@ public class LoginService {
     public boolean checkPasswordForUsername(User user, String password){
         return user.getPassword().equals(password);
     }
+
     public User existUsername(String username){
         User user = factory.createUserDao().getUserByUsername(username);
         LOGGER.info(username + ": is present in our DB");

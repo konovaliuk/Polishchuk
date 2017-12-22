@@ -11,6 +11,7 @@ public class PageConfiguration {
     public static final String LOGIN_PAGE = "pageConfiguration.loginPage";
     public static final String ADMIN_PAGE = "pageConfiguration.adminPage";
     public static final String DATE = "pageConfiguration.datePage";
+    public static final String REGISTRATION_PAGE = "pageConfiguration.registrationPage";
 
 
     private PageConfiguration() {
