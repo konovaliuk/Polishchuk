@@ -21,7 +21,7 @@ public class Controller extends HttpServlet {
     private static final String PAGE_IS_NULL = "Page is NULL";
 
     //controllerHelper - обєкт в якому лежить список моїх можливих команд
-    ControllerHelper controllerHelper = ControllerHelper.getInstance();
+    private ControllerHelper controllerHelper = ControllerHelper.getInstance();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
