@@ -1,6 +1,8 @@
 package ua.com.delivery.controller;
 
 import ua.com.delivery.command.*;
+import ua.com.delivery.command.locale.LanguageEnCommand;
+import ua.com.delivery.command.locale.LanguageUkCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -17,6 +19,9 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
+
+        commandMap.put(bundle.getString("command.languageEN"), new LanguageEnCommand());
+        commandMap.put(bundle.getString("command.languageUK"), new LanguageUkCommand());
     }
 
     public static ControllerHelper getInstance(){

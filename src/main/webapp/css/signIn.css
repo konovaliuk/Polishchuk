@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: url(/resources/img/bg.jpeg);
+	background: lightseagreen;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -51,7 +51,7 @@ body {
 	padding: 10px 0;
 	font-size: 16px;
 	color: #fff;
-	pointer-events:none;
+	pointer-events: none;
 	transition: .5s;
 }
 .box .inputBox input:focus ~ label,
@@ -61,7 +61,7 @@ body {
 	color: #03a9f4;
 	font-size: 12px;
 }
-.box input[type="submit"], .box input[type="button"] {
+.box input[type="submit"] {
 	border: none;
 	outline: none;
 	color: #fff;

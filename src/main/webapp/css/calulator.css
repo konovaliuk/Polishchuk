@@ -1,0 +1,28 @@
+/* CALCULATOR */
+.calculator {
+	padding-bottom: 50px;
+}
+.calculator label {
+	font-size: 18px;
+}
+.calculator h2 {
+	padding: 15px 0;
+	margin-bottom: 50px;
+	border-bottom: 3px solid #f3f4f6;
+}
+.calculator select {
+	width: 100%;
+}
+.fa-calculator {
+	font-size: 120px;
+}
+input[type="submit"] {
+	margin-top: 30px;
+	padding: 15px 0;
+	border: none;
+	width: 100%;
+	font-size: 20px;
+	color: #fff;	
+	cursor: pointer;
+}
+/* /CALCULATOR */
