@@ -1,28 +1,51 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/signIn.css"/>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css"
+          href="/css/signIn.css">
+          <%--href="<c:url value="css/signIn.css"/>">--%>
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+    <fmt:setBundle basename="login" var="login"/>
 
 </head>
 <body>
-<div class="box">
-    <h2>Sign in</h2>
-    <form action="#">
-        <div class="inputBox">
-            <input type="text" name="" required="">
-            <label>Username</label>
+<jsp:include page="/WEB-INF/includeJSP/navbar.jsp"/>
+
+<div class="container-fluid bg">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <!-- form start -->
+            <form class="form-container" method="post" action="#">
+                <h1>Sign in</h1>
+                <div class="form-group">
+                    <input type="text" id="inputUsername" required="">
+                    <label for="inputUsername"><fmt:message key="login.placeholderUsername" bundle="${login}"/> </label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="inputPassword" required="">
+                    <label for="inputPassword"><fmt:message key="login.placeholderPassword" bundle="${login}"/> </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+            </form>
+            <!-- form end -->
         </div>
-        <div class="inputBox">
-            <input type="text" name="" required="">
-            <label>Password</label>
-        </div>
-        <input type="submit" name="registration" value="Registration">
-        <input type="submit" name="submit" value="Submit">
-    </form>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
 </div>
 </body>
 </html>

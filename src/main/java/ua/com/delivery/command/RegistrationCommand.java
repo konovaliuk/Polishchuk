@@ -12,18 +12,27 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class RegistrationCommand implements ICommand{
+    private static final String USERNAME = "username";
+    private static final String PASSWORD = "password";
+    private static final String FIRST_NAME = "firstName";
+    private static final String SECOND_NAME = "secondName";
+    private static final String EMAIL = "email";
+    private static final String ADDRESS = "address";
+    private static final String CITY = "city";
+    private static final String PHONE = "phone";
+
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String page;
-        String username = request.getParameter("username").trim();
-        String password = request.getParameter("password").trim();
-        String firstName = request.getParameter("firstName").trim();
-        String secondName = request.getParameter("secondName").trim();
-        String email = request.getParameter("email").trim();
-        String address = request.getParameter("address").trim();
-        String city = request.getParameter("city").trim();
-        Long phone = Long.valueOf(request.getParameter("phone").trim());
+        String username = request.getParameter(USERNAME).trim();
+        String password = request.getParameter(PASSWORD).trim();
+        String firstName = request.getParameter(FIRST_NAME).trim();
+        String secondName = request.getParameter(SECOND_NAME).trim();
+        String email = request.getParameter(EMAIL).trim();
+        String address = request.getParameter(ADDRESS).trim();
+        String city = request.getParameter(CITY).trim();
+        Long phone = Long.valueOf(request.getParameter(PHONE).trim());
 
         if (LoginService.getInstance().existUsername(username) == null){
 //            IAbstractFactory factory = new AbstractFactory();
@@ -47,7 +56,7 @@ public class RegistrationCommand implements ICommand{
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
         }
         } else {
-            request.setAttribute("You have some thouble, bro", true);
+            request.setAttribute("You have some trouble, bro", true);
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
         }
         return page;

@@ -18,5 +18,6 @@ public class LanguageUkCommand implements ICommand{
         Locale ukrainian = new Locale("uk", "UA");
         Config.set(request.getSession(false), Config.FMT_LOCALE, ukrainian);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
+
     }
 }

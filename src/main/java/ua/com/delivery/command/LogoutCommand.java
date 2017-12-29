@@ -1,5 +1,6 @@
 package ua.com.delivery.command;
 
+import ua.com.delivery.command.utilCommand.UtilForCommand;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 
 import javax.servlet.ServletException;
@@ -16,6 +17,7 @@ public class LogoutCommand implements ICommand {
         if (session.getAttribute("user") != null){
             session.setAttribute("user", null);
         }
+        UtilForCommand.setDefaultLocale();
         return page;
     }
 }

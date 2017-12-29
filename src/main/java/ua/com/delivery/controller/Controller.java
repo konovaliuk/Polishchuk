@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+
 public class Controller extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
     private static final String ENCODING = "UTF-8";
@@ -42,12 +43,17 @@ public class Controller extends HttpServlet {
             if (session == null) {
                 session = request.getSession(true);
             }
+            //определение команды, пришедшей из JSP
             ICommand command = controllerHelper.getCommand(request);
+            /*вызов реализованного метода execute() интерфейса ICommand и передача параметров
+             классу-обработчику конкретной команды*/
             page = command.execute(request, response);
+            //метод возвращает страницу ответа
         } catch (ServletException e) {
             LOGGER.info(e.getMessage());
             request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
                     MessageException.getInstance().getMessageException(MessageException.SERVLET_EXCEPTION));
+            //вызов JSP-страницы с сообщением об ошибке
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (IOException e) {
             LOGGER.info(e.getMessage());
@@ -69,7 +75,9 @@ public class Controller extends HttpServlet {
 
         response.setCharacterEncoding(ENCODING);
         response.setContentType(CONTENT_TYPE);
+        //вызов страницы ответа на запрос
         RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher(page);
+        LOGGER.info("Redirect to: " + page);
         requestDispatcher.forward(request, response);
     }
 }
@@ -80,7 +88,6 @@ public class Controller extends HttpServlet {
     CargoPriceImpl cargoPrice = factory.createCargoDao();
 //        cargoPrice.createCargoPrice(new CargoPrice(11L, 5,8));
 //        cargoPrice.deleteCargoPriceByWeight(5);
-
         request.getRequestDispatcher("WEB-INF/pages/loginPage.jsp").forward(request,response);
        *//* Cookie[] cookies = request.getCookies();
         for (Cookie cookie: cookies) {
@@ -90,10 +97,8 @@ public class Controller extends HttpServlet {
         Cookie cookie = new Cookie("testCookie", "valuecookie");
         //время жизни куки 5с
 //        cookie.setMaxAge(5);
-
         //тільки по цій урлі буде працювати кукі
 //        cookie.setPath("/someLink");
-
          //кукі будуть видні якщо тільки https зєднання
         cookie.setSecure(true);
         response.addCookie(cookie);*//*
