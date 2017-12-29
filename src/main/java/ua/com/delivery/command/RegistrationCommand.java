@@ -24,40 +24,42 @@ public class RegistrationCommand implements ICommand{
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String page;
-        String username = request.getParameter(USERNAME).trim();
-        String password = request.getParameter(PASSWORD).trim();
-        String firstName = request.getParameter(FIRST_NAME).trim();
-        String secondName = request.getParameter(SECOND_NAME).trim();
-        String email = request.getParameter(EMAIL).trim();
-        String address = request.getParameter(ADDRESS).trim();
-        String city = request.getParameter(CITY).trim();
-        Long phone = Long.valueOf(request.getParameter(PHONE).trim());
+        String page = null;
+        if (request.getParameter("registration") != null && request.getParameter("registration").equals("Registration")) {
+            String username = request.getParameter(USERNAME);
+            String password = request.getParameter(PASSWORD);
+            String firstName = request.getParameter(FIRST_NAME);
+            String secondName = request.getParameter(SECOND_NAME);
+            String email = request.getParameter(EMAIL);
+            String address = request.getParameter(ADDRESS);
+            String city = request.getParameter(CITY);
+            String phone = request.getParameter(PHONE);
 
-        if (LoginService.getInstance().existUsername(username) == null){
+            if (LoginService.getInstance().existUsername(username) == null) {
 //            IAbstractFactory factory = new AbstractFactory();
 //            UserImpl user = factory.createUserDao();
-            UserImpl userImpl = new AbstractFactory().createUserDao();
-            User user = new User();
-            user.setUsername(username);
-            user.setPassword(password);
-            user.setFirstName(firstName);
-            user.setSecondName(secondName);
-            user.setEmail(email);
-            user.setAddress(address);
-            user.setCity(city);
-            user.setPhone(phone);
-            user.setAdmin(false);
+                UserImpl userImpl = new AbstractFactory().createUserDao();
+                User user = new User();
+                user.setUsername(username);
+                user.setPassword(password);
+                user.setFirstName(firstName);
+                user.setSecondName(secondName);
+                user.setEmail(email);
+                user.setAddress(address);
+                user.setCity(city);
+                user.setPhone(Long.valueOf(phone));
+                user.setAdmin(false);
 
-            userImpl.createUser(user);
-        if (user.getUserID() == null){
-            page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
-        } else {
-            page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
-        }
-        } else {
-            request.setAttribute("You have some trouble, bro", true);
-            page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+                userImpl.createUser(user);
+                if (user.getUserID() == null) {
+                    page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+                } else {
+                    page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
+                }
+            } else {
+                request.setAttribute("You have some trouble, bro", true);
+                page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+            }
         }
         return page;
     }

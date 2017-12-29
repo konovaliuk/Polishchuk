@@ -54,16 +54,19 @@ public class Controller extends HttpServlet {
             request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
                     MessageException.getInstance().getMessageException(MessageException.SERVLET_EXCEPTION));
             //вызов JSP-страницы с сообщением об ошибке
+            e.printStackTrace();
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (IOException e) {
             LOGGER.info(e.getMessage());
             request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
                     MessageException.getInstance().getMessageException(MessageException.IO_EXCEPTION));
+            e.printStackTrace();
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (Exception e) {
             LOGGER.info(e.getMessage());
             request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
                     MessageException.getInstance().getMessageException(MessageException.EXCEPTION));
+            e.printStackTrace();
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         }
         if (page == null) {

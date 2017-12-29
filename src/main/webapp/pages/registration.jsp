@@ -11,45 +11,45 @@
 <body>
 <div class="box">
     <h2>Registration</h2>
-    <form action="#">
+    <form action="polik" method="post">
         <div class="inputWrap">
             <div class="inputWrap__element">
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="username" required="">
                     <label>Username</label>
                 </div>
                 <div class="inputBox">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password" required="">
                     <label>Password</label>
                 </div>
                 <div class="inputBox">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password" required="">
                     <label>Password again</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="firstName" required="">
                     <label>First name</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="secondName" required="">
                     <label>Second name</label>
                 </div>
             </div>
             <div class="inputWrap__element">
                 <div class="inputBox">
-                    <input type="email" name="" required="">
+                    <input type="email" name="email" required="">
                     <label>E-mail</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="address" required="">
                     <label>Adress</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="city" required="">
                     <label>City</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="">
+                    <input type="text" name="phone" required="">
                     <label>Phone</label>
                 </div>
             </div>

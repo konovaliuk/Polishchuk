@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 
 <fmt:setLocale value="${sessionScope.locale}"/>
-<fmt:setBundle basename="language" />
+<fmt:setBundle basename="language"/>
 
 
 <html>
@@ -11,11 +11,12 @@
     <jsp:include page="/WEB-INF/includeJSP/header.jsp"/>
 </head>
 <body>
+
 <jsp:include page="/WEB-INF/includeJSP/navbar.jsp"/>
 <div class="row">
     <div class="col-md-5"></div>
     <div class="col-md-2" style="text-align: center;">
-        <p class="message"><fmt:message key="notregistered" />
+        <p class="message"><fmt:message key="notregistered"  />
             <a href="<c:url value="/pages/registration.jsp"/>">
                 <fmt:message key="signUp" /></a></p>
     </div>

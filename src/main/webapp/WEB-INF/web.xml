@@ -15,10 +15,10 @@
         <url-pattern>/polik</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-       <servlet-name>Controller</servlet-name>
-       <url-pattern>*.css</url-pattern>
-   </servlet-mapping>
+    <!--<servlet-mapping>-->
+       <!--<servlet-name>Controller</servlet-name>-->
+       <!--<url-pattern>*.css</url-pattern>-->
+   <!--</servlet-mapping>-->
 
     <session-config>
         <session-timeout>
