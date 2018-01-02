@@ -13,6 +13,7 @@ import java.io.IOException;
 public class SetLocaleUaCommand implements ICommand{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getSession(false).setAttribute("user", null);
         UtilForCommand.setLocale(UtilForCommand.UKRAINIAN);
         Config.set(request.getSession(), Config.FMT_LOCALE, UtilForCommand.UKRAINIAN);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);

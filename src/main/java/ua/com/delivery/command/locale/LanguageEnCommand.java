@@ -17,6 +17,6 @@ public class LanguageEnCommand implements ICommand {
 
         request.getSession(false).setAttribute("user", null);
         Config.set(request.getSession(false), Config.FMT_LOCALE, Locale.ENGLISH);
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
     }
 }

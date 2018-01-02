@@ -5,11 +5,10 @@
 <fmt:setLocale value='${sessionScope.locale}'/>
 <fmt:setBundle basename="language"/>
 
-
     <nav class="navbar navbar-default" >
         <div class="container-fluid">
             <div class="navbar-header">
-                    <a class="navbar-brand"  href="/" > Polik Delivery</a>
+                    <a class="navbar-brand"  href="${pageContext.request.contextPath}/polik/home"> Polik Delivery</a>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/polik?command=localeUa">EN</a></li>
                     <li><a href="/polik?command=localeEn">UKR</a></li>
@@ -18,6 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                     <a href="/polik?command=registration&registration=Registration">
+
                         <span class="glyphicon glyphicon-user"></span><fmt:message key="signUp"/>
                     </a>
 

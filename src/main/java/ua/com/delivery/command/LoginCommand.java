@@ -20,7 +20,6 @@ public class LoginCommand implements ICommand{
         @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String page = null;
-        if (request.getParameter("login") != null && request.getParameter("login").equals("Login")) {
             //извлечение из запроса логина и пароля
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
@@ -32,7 +31,6 @@ public class LoginCommand implements ICommand{
             } else {
                 page = checkUserPassword(request, user, password);
             }
-        }
         return null;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {

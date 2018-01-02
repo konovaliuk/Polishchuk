@@ -17,14 +17,14 @@
 
 </head>
 <body>
-<jsp:include page="/WEB-INF/includeJSP/navbar.jsp"/>
 
 <div class="container-fluid bg">
     <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12"></div>
         <div class="col-md-4 col-sm-4 col-xs-12">
             <!-- form start -->
-            <form class="form-container" method="post" action="polik">
+            <form class="form-container" method="post" action="polik" name="loginForm">
+                <input type="hidden" name="command" value="login">
                 <h1>Sign in</h1>
                 <div class="form-group">
                     <input type="text" id="inputUsername" required="">

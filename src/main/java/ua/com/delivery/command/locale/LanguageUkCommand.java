@@ -15,9 +15,8 @@ public class LanguageUkCommand implements ICommand{
     public String execute(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.getSession(false).setAttribute("user", null);
-        Locale ukrainian = new Locale("uk", "UA");
-        Config.set(request.getSession(false), Config.FMT_LOCALE, ukrainian);
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
+        Config.set(request.getSession(false), Config.FMT_LOCALE, new Locale("uk", "UA"));
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
 
     }
 }
