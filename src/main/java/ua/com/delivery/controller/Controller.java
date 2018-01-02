@@ -105,4 +105,4 @@ public class Controller extends HttpServlet {
          //кукі будуть видні якщо тільки https зєднання
         cookie.setSecure(true);
         response.addCookie(cookie);*//*
-//            request.getRequestDispatcher("WEB-INF/pages/registration.jsp").forward(request,response);*/
+//            request.getRequestDispatcher("WEB-INF/pages/registrationPage.jsp").forward(request,response);*/

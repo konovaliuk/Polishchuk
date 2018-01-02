@@ -7,11 +7,10 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Polik</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="stylesheet" href="css/jorik.css">
+    <title>Polik Delivery</title>
 </head>
 <body>
 <!-- HEADER -->
@@ -40,21 +39,22 @@
 <section id="topMenu" class="topMenu">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="pages/mainPage.jsp">Главная</a></li>
-                        <li><a href="pages/conditionPage.jsp">Условия доставки</a></li>
-                        <li><a href="pages/calculatorPage.jsp">Калькулятор доставки</a></li>
-                        <li><a href="pages/contactsPage.jsp">Контакты</a></li>
+                        <li class="active"><a href="/" >Главная</a ></li>
+                        <li><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
+                        <li><a href="/pages/calculatorPage.jsp">Калькулятор&nbspдоставки</a></li>
+                        <li><a href="/pages/contactsPage.jsp">Контакти</a></li>
+                        <li><a href="/pages/orderPage.jsp">Створити&nbspзаявку</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-4 d-flex justify-content-end ml-auto">
+            <div class="col-lg-3 d-flex justify-content-end ml-auto">
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <a href="pages/loginPage.jsp">Sign in <i class=" fa fa-sign-in"></i></a>
+                    <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
         </div>
@@ -69,10 +69,10 @@
                 <div class="slides">
                     <ul class="slides__item d-flex">
                         <li><img src="img/1.jpg" alt="1"></li>
-                        <li><img src="../img/2.jpeg" alt="2"></li>
-                        <li><img src="../img/3.jpg" alt="3"></li>
-                        <li><img src="../img/4.jpg" alt="4"></li>
-                        <li><img src="../img/5.jpg" alt="5"></li>
+                        <li><img src="img/2.jpeg" alt="2"></li>
+                        <li><img src="img/3.jpg" alt="3"></li>
+                        <li><img src="img/4.jpg" alt="4"></li>
+                        <li><img src="img/5.jpg" alt="5"></li>
                     </ul>
                 </div>
             </div>

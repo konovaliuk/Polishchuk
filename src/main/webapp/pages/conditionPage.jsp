@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Polik Delivery</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jorik.css">
 </head>
 <body>
     it's a page for condition

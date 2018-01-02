@@ -1,5 +1,5 @@
-body{
-	color: orangered;
+*{
+	color: #800000;
 }
 .bg{
 	/*background: url("../images/bg.jpg") no-repeat; */
@@ -8,7 +8,7 @@ body{
 	height: 100vh;
 }
 .form-container{
-	border: 0 solid #fff ;
+	border: 0px solid #fff ;
 	border-radius: 10px;
 	padding: 20px 60px;
 	margin-top: 20vh;
@@ -45,6 +45,6 @@ body{
 .form-container .form-group input:valid ~ label {
 	top: -4px;
 	left: 0;
-	color: #03a9;
+	color: #03a9f4;
 	font-size: 12px;
 }
