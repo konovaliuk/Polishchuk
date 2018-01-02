@@ -7,6 +7,16 @@ public class UtilForCommand {
 
 //    private static final String ERROR = "error";
     public static final String ERROR_MESSAGE = "errorMessage";
+    public static final String USER = "user";
+    public static final String USERS = "users";
+//    static final String USERNAME = "username";
+
+    public static final String ADDRESS_FROM = "cityFrom";
+    public static final String ADDRESS_TO = "cityTo";
+
+    public static final String DATE = "dd-MM-yyyy";
+    public  static final String NOW_DATE = "dateNow";
+
     private static final String BUNDLE_NAME = "language";
     private static ResourceBundle resourceBundle = ResourceBundle.getBundle(BUNDLE_NAME);
 

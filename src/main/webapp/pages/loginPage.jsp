@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 
-    <fmt:setBundle basename="login" var="login"/>
+    <%--<fmt:setBundle basename="login" var="login"/>--%>
 
 </head>
 <body>
@@ -24,15 +24,15 @@
         <div class="col-md-4 col-sm-4 col-xs-12"></div>
         <div class="col-md-4 col-sm-4 col-xs-12">
             <!-- form start -->
-            <form class="form-container" method="post" action="#">
+            <form class="form-container" method="post" action="polik">
                 <h1>Sign in</h1>
                 <div class="form-group">
                     <input type="text" id="inputUsername" required="">
-                    <label for="inputUsername"><fmt:message key="login.placeholderUsername" bundle="${login}"/> </label>
+                    <label for="inputUsername"><fmt:message key="placeholderUsername" /> </label>
                 </div>
                 <div class="form-group">
                     <input type="password" id="inputPassword" required="">
-                    <label for="inputPassword"><fmt:message key="login.placeholderPassword" bundle="${login}"/> </label>
+                    <label for="inputPassword"><fmt:message key="placeholderPassword" /> </label>
                 </div>
 
                 <div class="checkbox">
@@ -40,7 +40,7 @@
                         <input type="checkbox"> Remember me
                     </label>
                 </div>
-                <button type="submit" class="btn btn-success btn-block">Submit</button>
+                <button type="submit" class="btn btn-success btn-block" name="login" value="Login">Submit</button>
             </form>
             <!-- form end -->
         </div>

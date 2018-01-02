@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/signIn.css" type="text/css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/registration.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/signIn.css" type="text/css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/registration.css" type="text/css">
 </head>
 <body>
 <div class="box">
     <h2>Registration</h2>
-    <form action="polik" method="post">
+    <form action="polik" method="post" name="registrationForm">
+        <input type="hidden" name="command" value="registration">
         <div class="inputWrap">
             <div class="inputWrap__element">
                 <div class="inputBox">
