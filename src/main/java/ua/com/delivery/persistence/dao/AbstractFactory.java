@@ -4,10 +4,6 @@ import ua.com.delivery.persistence.dao.daoimpl.*;
 
 public class AbstractFactory implements IAbstractFactory {
 
-    public AdministratorImpl createAdminDao() {
-        return new AdministratorImpl();
-    }
-
     public CalculatorImpl createCalculatorDao() {
         return new CalculatorImpl();
     }

@@ -19,8 +19,9 @@ public class LoginCommand implements ICommand{
 
         @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        String page = null;
+            String page = null;
             //извлечение из запроса логина и пароля
+//            if (request.getParameter("sub") != null && request.getParameter("sub").equals("sub")) {
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
 //            System.out.println(username);
@@ -33,7 +34,9 @@ public class LoginCommand implements ICommand{
             } else {
                 page = checkUserPassword(request, user, password);
             }
-        return null;
+//        }
+            //<сторінка на якій буде привітання для юзера
+        return page;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {
         String page;
@@ -57,7 +60,7 @@ public class LoginCommand implements ICommand{
     }
 
     private String redirectOnAdminPage(User user, HttpServletRequest request){
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
 
         request.setAttribute(UtilForCommand.USERS, AdministratorService.getInstance().getAdminsAndUsers());
@@ -67,7 +70,7 @@ public class LoginCommand implements ICommand{
 
     //////розібратись
     private String redirectOnUserPage (User user, HttpServletRequest request){
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
 
         request.setAttribute(UtilForCommand.ADDRESS_FROM, DirectionService.getInstance().searchFromToCity());
@@ -77,7 +80,7 @@ public class LoginCommand implements ICommand{
         request.setAttribute(UtilForCommand.NOW_DATE, format.format(new Date()));
 
         request.setAttribute(USERNAME, user.getUsername());
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.DATE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
     }
 
 

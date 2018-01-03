@@ -41,23 +41,23 @@
 <section id="topMenu" class="topMenu">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <nav>
                     <ul class="menu d-flex">
                         <li><a href="/">Главная</a></li>
-                        <li><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
-                        <li><a href="/pages/calculatorPage.jsp">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/pages/contactsPage.jsp">Контакти</a></li>
-                        <li><a href="/pages/orderPage.jsp">Створити&nbspзаявку</a></li>
+                        <li><a href="/con?command=condition">Умови&nbspдоставки</a></li>
+                        <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
+                        <li><a href="/con?command=contact">Контакти</a></li>
+                        <li><a href="/con?command=order">Створити&nbspзаявку</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-4 d-flex justify-content-end ml-auto">
+            <div class="col-lg-3 d-flex justify-content-end ml-auto">
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
                     <li>
-                        <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                     </li>
                 </div>
             </div>

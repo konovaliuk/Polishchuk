@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.IDirectionDao;
 import ua.com.delivery.persistence.entity.Direction;
 import ua.com.delivery.persistence.utilDao.ConnectionPool;
-import ua.com.delivery.persistence.utilDao.SimpleConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -24,8 +23,8 @@ public class DirectionImpl implements IDirectionDao {
     @Override
     public void createDirection(Direction direction) {
         PreparedStatement preparedStatement;
-//        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
+        try (Connection connection = ConnectionPool.getInstance().getConnection()){
+//        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             preparedStatement = connection.prepareStatement(CREATE_DIRECTION);
             preparedStatement.setLong(1, direction.getDirectionID());
             preparedStatement.setString(2, direction.getFromCity());
@@ -44,8 +43,8 @@ public class DirectionImpl implements IDirectionDao {
     public List<Direction> getListDirections() {
         List<Direction> directionList = new ArrayList<>();
         Statement statement;
-        //        try (Connection connection = ConnectionPool.getInstance().getConnection()){
-        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
+                try (Connection connection = ConnectionPool.getInstance().getConnection()){
+//        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_LIST_DIRECTIONS);
             if (resultSet.next()) {

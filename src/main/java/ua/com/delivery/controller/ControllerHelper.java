@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import ua.com.delivery.command.*;
 import ua.com.delivery.command.locale.LanguageEnCommand;
 import ua.com.delivery.command.locale.LanguageUkCommand;
+import ua.com.delivery.command.ContactCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -24,6 +25,11 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
+        commandMap.put("condition", new ConditionCommand());
+        commandMap.put("signIn", new SignInCommand());
+        commandMap.put("calculator", new CalculatorCommand());
+        commandMap.put("contact", new ContactCommand());
+        commandMap.put("order", new OrderCommand());
 //
         /* Locale commands */
         commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
@@ -36,7 +42,8 @@ public class ControllerHelper {
     public ICommand getCommand(HttpServletRequest request){
         //извлечение команды из запроса
         //получение объекта, соответствующего команде
-        ICommand command = commandMap.get(request.getParameter(PARAMETER));
+        String parameter = request.getParameter("command");
+        ICommand command = commandMap.get(parameter);
         if (command == null ){
             //якщо команди немає, то переходить на missing
             command = commandMap.get("missingCommand");

@@ -56,19 +56,19 @@
             <div class="col-lg-9">
                 <nav>
                     <ul class="menu d-flex align-items-center">
-                        <li class="active"><a href="/" >${Main}</a ></li>
-                        <li><a href="/pages/conditionPage.jsp">${Condition}</a></li>
-                        <li><a href="/pages/calculatorPage.jsp">${Calculator}</a></li>
-                        <li><a href="/pages/contactsPage.jsp">${Contact}</a></li>
-                        <li><a href="/pages/orderPage.jsp">${Order}</a></li>
+                        <li class="active"><a href="/con?command=home" >${Main}</a ></li>
+                        <li><a href="/con?command=condition">${Condition}</a></li>
+                        <li><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li><a href="/con?command=contact">${Contact}</a></li>
+                        <li><a href="/con?command=order">${Order}</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="/?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="/?command=localeEn">En</a></span>
-                    <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                    <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
+                    <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
+                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-12">

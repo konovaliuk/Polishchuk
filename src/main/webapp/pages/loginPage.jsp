@@ -33,11 +33,11 @@
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <!-- form start -->
-                <form class="form-container" method="post" action="/" name="loginForm">
+                <form class="form-container" method="post" action="con" name="loginForm">
                     <input type="hidden" name="command" value="login">
                     <h1>${SignIn}</h1>
                     <div class="form-group">
-                        <input type="text" id="inputUsername" required="" name="login">
+                        <input type="text" id="inputUsername" required="" name="username">
                         <label for="inputUsername">${Username} </label>
                     </div>
                     <div class="form-group">
@@ -51,8 +51,7 @@
                         </label>
                     </div>
                     <div class="btn-login">
-                        <button type="submit" class="btn btn-success btn-block" name="command"
-                                value="login">${Submit}</button>
+                        <button type="submit" class="btn btn-success btn-block" <%--name="sub" value="sub"--%>>${Submit}</button>
                         <a href="/pages/registrationPage.jsp"> ${Registration}</a>
                     </div>
                     <%--<c:if test="${requestScope.errorMessage != null}">--%>

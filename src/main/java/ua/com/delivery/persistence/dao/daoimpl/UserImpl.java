@@ -135,6 +135,7 @@ public class UserImpl implements IUserDao {
                     preparedStatement.execute();
                 } while (resultSet.next());
             } else {
+                user = null;
                 LOGGER.info("No given username");
             }
         } catch (SQLException e){

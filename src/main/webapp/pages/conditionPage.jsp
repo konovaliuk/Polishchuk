@@ -1,11 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: olexandr
-  Date: 02.01.18
-  Time: 13:21
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
+<c:set var="priceL" value=""/>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -48,10 +43,10 @@
                 <nav>
                     <ul class="menu d-flex">
                         <li><a href="/">Главная</a></li>
-                        <li class="active"><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
-                        <li><a href="/pages/calculatorPage.jsp">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/pages/contactsPage.jsp">Контакти</a></li>
-                        <li><a href="/pages/orderPage.jsp">Створити&nbspзаявку</a></li>
+                        <li class="active"><a href="/con?command=condition">Умови&nbspдоставки</a></li>
+                        <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
+                        <li><a href="/con?command=contact">Контакти</a></li>
+                        <li><a href="/con?command=order">Створити&nbspзаявку</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,7 +55,7 @@
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
                     <li>
-                        <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                     </li>
                 </div>
             </div>
@@ -92,52 +87,59 @@
                             Тарифікація доставки
                         </thead>
                         <tbody>
+                        <c:forEach items="${listPrice}" var="elem">
                             <tr>
-                                <td>Звідки</td>
-                                <td>Куди</td>
-                                <td>Ціна</td>
+                                <td><c:out value="${elem.fromCity}"/></td>
+                                <td><c:out value="${elem.toCity}"/></td>
+                                <td><c:out value="${elem.priceDirection}"/></td>
                             </tr>
-                            <tr>
-                                <td>Київ</td>
-                                <td>Львів</td>
-                                <td>50</td>
-                            </tr>
-                                <td>Київ</td>
-                                <td>Одеса</td>
-                                <td>70</td>
-                            </tr>
-                                <td>Київ</td>
-                                <td>Полтава</td>
-                                <td>40</td>
-                            </tr>
-                                <td>Львів</td>
-                                <td>Київ</td>
-                                <td>50</td>
-                            </tr>
-                                <td>Львів</td>
-                                <td>Одеса</td>
-                                <td>60</td>
-                            </tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                        </c:forEach>
+                            <%--<tr>--%>
+                                <%--<td>Звідки</td>--%>
+                                <%--<td>Куди</td>--%>
+                                <%--<td>Ціна</td>--%>
+                            <%--</tr>--%>
+                            <%--<tr>--%>
+                                <%--<td>Київ</td>--%>
+                                <%--<td>Львів</td>--%>
+                                <%--<td>50</td>--%>
+                            <%--</tr>--%>
+                                <%--<td>Київ</td>--%>
+                                <%--<td>Одеса</td>--%>
+                                <%--<td>70</td>--%>
+                            <%--</tr>--%>
+                                <%--<td>Київ</td>--%>
+                                <%--<td>Полтава</td>--%>
+                                <%--<td>40</td>--%>
+                            <%--</tr>--%>
+                                <%--<td>Львів</td>--%>
+                                <%--<td>Київ</td>--%>
+                                <%--<td>50</td>--%>
+                            <%--</tr>--%>
+                                <%--<td>Львів</td>--%>
+                                <%--<td>Одеса</td>--%>
+                                <%--<td>60</td>--%>
+                            <%--</tr>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                            <%--</tr>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                            <%--</tr>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                            <%--</tr>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                            <%--</tr>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                                <%--<td></td>--%>
+                            <%--</tr>--%>
                         </tbody>
                     </table>
                 </div>

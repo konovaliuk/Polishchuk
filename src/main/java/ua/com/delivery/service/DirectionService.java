@@ -35,4 +35,8 @@ public class DirectionService {
         LOGGER.info("It's a list from/to city");
         return directionList;
     }
+
+    public List<Direction> listForPrice(){
+        return factory.createDirectionDao().getListDirections();
+    }
 }

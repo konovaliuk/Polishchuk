@@ -11,6 +11,12 @@ public class PageConfiguration {
     public static final String HOME_PAGE = "pageConfiguration.homePage";
     public static final String ERROR_PAGE = "pageConfiguration.errorPage";
     public static final String LOGIN_PAGE = "pageConfiguration.loginPage";
+    public static final String CONDITION_PAGE = "pageConfiguration.conditionPage";
+    public static final String CALCULATOR_PAGE = "pageConfiguration.calculatorPage";
+    public static final String CONTACT_PAGE = "pageConfiguration.contactPage";
+    public static final String ORDER_PAGE = "pageConfiguration.orderPage";
+
+
     public static final String ADMIN_PAGE = "pageConfiguration.adminPage";
     public static final String REGISTRATION_PAGE = "pageConfiguration.registrationPage";
 
