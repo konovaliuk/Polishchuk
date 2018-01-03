@@ -23,6 +23,8 @@ public class LoginCommand implements ICommand{
             //извлечение из запроса логина и пароля
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
+//            System.out.println(username);
+//            System.out.println(password);
 
             User user = LoginService.getInstance().existUsername(username);
 
@@ -46,7 +48,7 @@ public class LoginCommand implements ICommand{
 
     private String checkIfAdmin (User user, HttpServletRequest request){
         String page;
-        if (user.isAdmin()){
+        if (user.getAdmin()){
             page = redirectOnAdminPage(user, request);
         } else {
             page = redirectOnUserPage(user, request);
@@ -63,6 +65,7 @@ public class LoginCommand implements ICommand{
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ADMIN_PAGE);
     }
 
+    //////розібратись
     private String redirectOnUserPage (User user, HttpServletRequest request){
         HttpSession session = request.getSession(false);
         session.setAttribute(UtilForCommand.USER, user);
@@ -76,8 +79,11 @@ public class LoginCommand implements ICommand{
         request.setAttribute(USERNAME, user.getUsername());
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.DATE);
     }
+
+
     private String redirectOnErrorPage(HttpServletRequest request){
         request.setAttribute(UtilForCommand.ERROR_MESSAGE, true);
+//        перенапралвення на логін пейдж, якщоне правильно ввів логігн
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
     }
 

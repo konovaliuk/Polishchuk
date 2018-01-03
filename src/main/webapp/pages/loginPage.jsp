@@ -11,6 +11,7 @@
 <fmt:message key="login.registration" var="Registration"/>
 <fmt:message key="login.submit" var="Submit"/>
 <fmt:message key="login.signIn" var="SignIn"/>
+<fmt:message key="login.invalidMessage" var="InvalidMessage"/>
 
 
 <html>
@@ -32,15 +33,15 @@
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <!-- form start -->
-                <form class="form-container" method="post" action="polik" name="loginForm">
+                <form class="form-container" method="post" action="/" name="loginForm">
                     <input type="hidden" name="command" value="login">
                     <h1>${SignIn}</h1>
                     <div class="form-group">
-                        <input type="text" id="inputUsername" required="">
+                        <input type="text" id="inputUsername" required="" name="login">
                         <label for="inputUsername">${Username} </label>
                     </div>
                     <div class="form-group">
-                        <input type="password" id="inputPassword" required="">
+                        <input type="password" id="inputPassword" required="" name="password">
                         <label for="inputPassword">${Password} </label>
                     </div>
 
@@ -50,10 +51,13 @@
                         </label>
                     </div>
                     <div class="btn-login">
-                        <button type="submit" class="btn btn-success btn-block" name="login"
-                                value="Login">${Submit}</button>
+                        <button type="submit" class="btn btn-success btn-block" name="command"
+                                value="login">${Submit}</button>
                         <a href="/pages/registrationPage.jsp"> ${Registration}</a>
                     </div>
+                    <%--<c:if test="${requestScope.errorMessage != null}">--%>
+                        <%--<h4>${InvalidMessage} /></h4>--%>
+                    <%--</c:if>--%>
                 </form>
                 <!-- form end -->
             </div>

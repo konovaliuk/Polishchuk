@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/terms.css">
+    <link rel="stylesheet" href="../css/termsPolik.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -25,13 +25,15 @@
                     <img src="../img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>Доставка грузов</small></h1>
+                    <h1>Polik
+                        <small>Доставка грузов</small>
+                    </h1>
                 </div>
             </div>
             <div class="col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                 </div>
             </div>
         </div>
@@ -46,7 +48,7 @@
                 <nav>
                     <ul class="menu d-flex">
                         <li><a href="/">Главная</a></li>
-                        <li  class="active"><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
+                        <li class="active"><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
                         <li><a href="/pages/calculatorPage.jsp">Калькулятор&nbspдоставки</a></li>
                         <li><a href="/pages/contactsPage.jsp">Контакти</a></li>
                         <li><a href="/pages/orderPage.jsp">Створити&nbspзаявку</a></li>
@@ -77,14 +79,67 @@
                 <div class="terms__text">
                     <p>При оформлении заказа до 12.00 и наличии его на складе,
                         мы отправляем товар в тот же день.</p>
-                    <p>Уведомление об отправке с номером декларации, отправим
-                        Вам с помощью СМС.</p>
                     <p>Доставляется заказ в течении 2 дней, в зависимости от
                         вашего месторасположения.</p>
-                    <p>Как только товар поступит в отделение "Polik Delivery" -
-                        вы получите извещение СМС сообщением. Вы сможете забрать
+                    <p>Как только товар поступит в отделение "Polik Delivery", вы сможете забрать
                         товар в любое удобное, для вас время на протяжении 4 дней.</p>
-                    </p>
+                    <p>Щоб дізнатись чи присутня посилка на складі, ви можете зателефонувати
+                        за номером (063)-625-48-22 </p>
+                </div>
+                <div class="terms__priceList">
+                    <table>
+                        <thead>
+                            Тарифікація доставки
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Звідки</td>
+                                <td>Куди</td>
+                                <td>Ціна</td>
+                            </tr>
+                            <tr>
+                                <td>Київ</td>
+                                <td>Львів</td>
+                                <td>50</td>
+                            </tr>
+                                <td>Київ</td>
+                                <td>Одеса</td>
+                                <td>70</td>
+                            </tr>
+                                <td>Київ</td>
+                                <td>Полтава</td>
+                                <td>40</td>
+                            </tr>
+                                <td>Львів</td>
+                                <td>Київ</td>
+                                <td>50</td>
+                            </tr>
+                                <td>Львів</td>
+                                <td>Одеса</td>
+                                <td>60</td>
+                            </tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -96,7 +151,8 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
+                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4">
                 <div class="adress ">

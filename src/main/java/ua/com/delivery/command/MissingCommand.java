@@ -10,6 +10,6 @@ public class MissingCommand implements ICommand {
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         /*в случае прямого обращения к контроллеру переадресация на страницу ввода логина*/
 
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.DATE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
     }
 }

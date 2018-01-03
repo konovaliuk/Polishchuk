@@ -10,3 +10,12 @@
 .terms__text p:last-child {
 	padding-bottom: 30px;
 }
+.terms__priceList{
+	margin-bottom: 30px;
+}
+.terms__priceList td{
+	border: 1px solid crimson;
+	padding: 6px;
+
+
+}

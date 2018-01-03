@@ -3,7 +3,7 @@
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
 
-<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
+<fmt:setLocale value="${sessionScope.locale}"/>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="home.delivery" var="Delivery"/>
@@ -67,7 +67,7 @@
             <div class="col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
                     <span class="lang__item"><a href="/?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="?command=localeEn">En</a></span>
+                    <span class="lang__item"><a href="/?command=localeEn">En</a></span>
                     <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>

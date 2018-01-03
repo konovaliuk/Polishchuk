@@ -122,8 +122,6 @@ public class UserImpl implements IUserDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
-                    //ВИИИИИИИИИИИИИИИИИИПРАВИТИ ЩОБ НЕ БУЛО ДУБЛІКАТИ
-                    //ЗРОБИТИ БІЛДЕР
                     user.setUserID(resultSet.getLong("userID"));
                     user.setUsername(resultSet.getString("username"));
                     user.setPassword(resultSet.getString("password"));
@@ -133,7 +131,8 @@ public class UserImpl implements IUserDao {
                     user.setAddress(resultSet.getString("address"));
                     user.setCity(resultSet.getString("city"));
                     user.setPhone(resultSet.getLong("phone"));
-                    preparedStatement.executeUpdate();
+                    user.setAdmin(resultSet.getBoolean("admin"));
+                    preparedStatement.execute();
                 } while (resultSet.next());
             } else {
                 LOGGER.info("No given username");

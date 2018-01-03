@@ -21,17 +21,11 @@ public class User implements Serializable {
     private Long phone;
     private Boolean admin;
 
-    public boolean isAdmin(){
-        return admin;
-    }
-
-    public void makeAdmin(){
-        admin = true;
-    }
-
-    public void makeUser(){
-        admin = false;
-    }
+//    public boolean isAdmin(){
+//        return admin;
+//    }
+//
+//
 
 }
 

@@ -81,7 +81,7 @@
                     <div class="receiptTab">
                         <div class="receiptTab__element">
                             <label for="recDate">Дата забора:</label>
-                            <input type="text" id="recDate" required="">
+                            <input type="date" id="recDate" required="">
                             <label for="recPhone">Телефон:</label>
                             <input type="text" id="recPhone" required="">
                         </div>

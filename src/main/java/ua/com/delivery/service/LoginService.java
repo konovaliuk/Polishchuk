@@ -33,6 +33,7 @@ public class LoginService {
 
     public User existUsername(String username){
         User user = factory.createUserDao().getUserByUsername(username);
+//        User user = factory.createUserDao().getUserByUsername(username);
         LOGGER.info(username + ": is present in our DB");
         return user;
     }
