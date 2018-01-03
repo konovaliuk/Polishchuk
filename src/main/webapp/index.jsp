@@ -1,15 +1,26 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page contentType="text/html;" language="java" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
-<fmt:setLocale value="${sessionScope.locale}"/>
+
+<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
+
+<fmt:message key="home.delivery" var="Delivery"/>
+<fmt:message key="home.schedule" var="Schedule"/>
+<fmt:message key="home.main" var="Main"/>
+<fmt:message key="home.condition" var="Condition"/>
+<fmt:message key="home.calculator" var="Calculator"/>
+<fmt:message key="home.contacts" var="Contact"/>
+<fmt:message key="home.order" var="Order"/>
+<fmt:message key="home.language" var="Language"/>
+
 
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jorik.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Polik Delivery</title>
 </head>
 <body>
@@ -22,13 +33,13 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>Доставка грузов</small></h1>
+                    <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
             <div class="col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
                 </div>
             </div>
         </div>
@@ -39,23 +50,29 @@
 <section id="topMenu" class="topMenu">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+                <div class="line"></div>
+            </div>
             <div class="col-lg-9">
                 <nav>
-                    <ul class="menu d-flex">
-                        <li class="active"><a href="/" >Главная</a ></li>
-                        <li><a href="/pages/conditionPage.jsp">Умови&nbspдоставки</a></li>
-                        <li><a href="/pages/calculatorPage.jsp">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/pages/contactsPage.jsp">Контакти</a></li>
-                        <li><a href="/pages/orderPage.jsp">Створити&nbspзаявку</a></li>
+                    <ul class="menu d-flex align-items-center">
+                        <li class="active"><a href="/" >${Main}</a ></li>
+                        <li><a href="/pages/conditionPage.jsp">${Condition}</a></li>
+                        <li><a href="/pages/calculatorPage.jsp">${Calculator}</a></li>
+                        <li><a href="/pages/contactsPage.jsp">${Contact}</a></li>
+                        <li><a href="/pages/orderPage.jsp">${Order}</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3 d-flex justify-content-end ml-auto">
+            <div class="col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
+                    <span class="lang__item"><a href="/?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
                     <a href="/pages/loginPage.jsp">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="line"></div>
             </div>
         </div>
     </div>
@@ -113,6 +130,9 @@
                     quo veritatis, ut architecto veniam.
                     Voluptas obcaecati dolorem, quos.
                     Qui illo quas, sunt.</p>
+            </div>
+            <div class="col-lg-12">
+                <div class="line"></div>
             </div>
         </div>
     </div>

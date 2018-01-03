@@ -1,0 +1,18 @@
+
+.contact h2 {
+	padding: 15px 0;
+	border-bottom: 3px solid #cac8c5;
+}
+.contact__info {
+	padding-top: 40px;
+}
+.info__item {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+.info__item i {
+	margin-right: 20px;
+}
+.map{
+	border-radius: 5px;
+}

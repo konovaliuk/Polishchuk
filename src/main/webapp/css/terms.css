@@ -1,0 +1,12 @@
+.terms h2 {
+	padding: 15px 0;
+	margin-bottom: 40px;
+	border-bottom: 3px solid #f3f4f6;
+}
+.terms__text p {
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.terms__text p:last-child {
+	padding-bottom: 30px;
+}

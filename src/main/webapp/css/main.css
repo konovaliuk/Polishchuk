@@ -1,17 +1,23 @@
 /* General styles */
 body {
-	background: #cac8c5;
-	color: #b7784e;
+	background: url("../img/pattern.png") no-repeat;
+	background-size: cover;
+	color: rgba(43, 123, 78, 0.92);
 }
 ul, li, p {
 	padding: 0;
 	margin: 0;
 	display: block;
 }
+.line {
+	height: 3px;
+	background: #f3f4f6;
+	margin: 10px 0;
+}
 /* /General*/
 /* HEADER */
 .header {
-	background: #f3f4f6;
+	/*background: rgba(138, 171, 149, 0.53);*/
 	padding: 20px 0;
 }
 .logo__text h1{
@@ -20,7 +26,7 @@ ul, li, p {
 	padding-left:60px;
 }
 .schedule {
-	padding-left: 89px;
+	padding-left: 96px;
 	font-size: 18px;
 }
 .schedule span {
@@ -39,7 +45,7 @@ ul, li, p {
 .menu li a, .lang a {
 	font-size: 16px;
 	font-weight: bold;
-	color: #fff;
+	color: #834a5a;
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;
@@ -62,7 +68,7 @@ ul, li, p {
 	padding: 3px;
 	border-radius: 5px;
 	color: green;
-	background:  deeppink;
+	background:  #ad9986;
 }
 .lang__item a{
 	font-size: 15px;
@@ -102,11 +108,14 @@ ul, li, p {
 	padding: 50px 0;
 	text-align: center;
 }
+.info p {
+	margin-bottom: 30px;
+}
 /* /INFO */
 /* MAP */
 .map {
-	padding: 40px ;
-	background: #f3f4f6;
+	padding-bottom: 60px;
+	/*background: #f3f4f6;*/
 }
 .adress {
 	font-size: 24px;
@@ -115,9 +124,29 @@ ul, li, p {
 /* /MAP */
 /* FOOTER*/
 .footer {
-	background: #73472e;
+	background: rgba(0,0,0,0.35);
 }
 .copy {
 	padding: 30px 0;
 }
 /* /FOOTER*/
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1199px) {
+	.logo__text h1 {
+		font-size: 41px;
+	}
+	.schedule {
+		padding-left: 51px;
+	}
+	.menu li a, .lang a {
+		font-size: 15px;
+	}
+	.slides__item li {
+		height: 340px;
+	}
+	.adress {
+		font-size: 22px;
+		padding: 0 65px;
+	}
+}
+/*MEDIA QUERIES*/

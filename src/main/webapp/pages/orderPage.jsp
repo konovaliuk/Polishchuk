@@ -5,15 +5,15 @@
   Time: 16:26
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Order Delivery</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/jorik.css">
-    <link rel="stylesheet" href="/css/order.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/order.css">
 </head>
 <body>
 <!-- HEADER -->
