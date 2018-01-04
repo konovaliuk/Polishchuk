@@ -25,5 +25,7 @@ input[type="submit"] {
 	color: #fff;	
 	cursor: pointer;
 }
-
+.dateDel {
+    margin-left: 53px;
+}
 /* /CALCULATOR */

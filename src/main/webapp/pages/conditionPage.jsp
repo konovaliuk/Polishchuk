@@ -7,8 +7,8 @@
     <title>Polik</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/termsPolik.css">
+    <link rel="stylesheet" href="../css/mainPolik.css">
+    <link rel="stylesheet" href="../css/conditionPolik.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -21,14 +21,14 @@
                 </div>
                 <div class="logo__text">
                     <h1>Polik
-                        <small>Доставка грузов</small>
+                        <small>Доставка вантажу</small>
                     </h1>
                 </div>
             </div>
             <div class="col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
+                    <p>Розклад роботи Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="col-lg-9">
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Головна</a></li>
                         <li class="active"><a href="/con?command=condition">Умови&nbspдоставки</a></li>
                         <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
                         <li><a href="/con?command=contact">Контакти</a></li>
@@ -72,19 +72,26 @@
             </div>
             <div class="col-lg-12">
                 <div class="terms__text">
-                    <p>При оформлении заказа до 12.00 и наличии его на складе,
-                        мы отправляем товар в тот же день.</p>
-                    <p>Доставляется заказ в течении 2 дней, в зависимости от
-                        вашего месторасположения.</p>
-                    <p>Как только товар поступит в отделение "Polik Delivery", вы сможете забрать
-                        товар в любое удобное, для вас время на протяжении 4 дней.</p>
+                    <p>При оформленні замовлення до 12.00 і наявності його на складі,
+                        ми відправляємо товар у той же день.</p>
+                    <p> Доставляється замовлення протягом 2 днів, в залежності від
+                        вашого місця розташування. </p>
+                    <p> Як тільки товар надійде до відділення "Polik Delivery", ви зможете забрати
+                        товар в будь-який зручний, для вас час протягом 4 днів. </p>
                     <p>Щоб дізнатись чи присутня посилка на складі, ви можете зателефонувати
                         за номером (063)-625-48-22 </p>
                 </div>
                 <div class="terms__priceList">
                     <table>
                         <thead>
-                            Тарифікація доставки
+                        <tr>
+                            <th colspan="3">Тарифікація доставки</th>
+                        </tr>
+                        <tr>
+                            <th>Звідки</th>
+                            <th>Куди</th>
+                            <th>Ціна</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <c:forEach items="${listPrice}" var="elem">
@@ -111,8 +118,8 @@
                         width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4">
-                <div class="adress ">
-                    01032 г. Киев ул. Гончара 55а (063)-625-48-22
+                <div class="address">
+                    01032 м.Київ вул. Гончара 55а (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -125,7 +132,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Все права защищены
+                    &#169; 2017 Всі права захищені
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ public class LocaleFilter implements Filter {
             throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
 
-        if(req.getParameter(LANG) != null) {
+        if(request.getParameter(LANG) != null) {
             replaceUserLocale(req);
         }
 

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/mainPolik.css">
-    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="stylesheet" href="../css/calculatorPolik.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -111,25 +111,25 @@
                     </select>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <label>Дата отправления:</label>
+                    <label>Дата відправлення:</label>
                 </div>
                 <div class="col-lg-2">
                     <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
                 </div>
-                <div class="col-lg-2 d-flex justify-content-center">
-                    <label>Ориентировочная дата получения:</label>
+                <div class="col-lg-2 d-flex justify-content-center dateDel">
+                    <label>Бажана дата отримання:</label>
                 </div>
                 <div class="col-lg-2">
                     <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <label>Обьявленая стоимость:</label>
+                    <label>Оголошена вартість:</label>
                 </div>
                 <div class="col-lg-8">
                     <input type="number" min="10" required="">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <label>Вес:</label>
+                    <label>Вага:</label>
                 </div>
                 <div class="col-lg-8">
                     <input type="number" name="weight" min="1" max="19" required="">
@@ -150,15 +150,15 @@
                     <i class="fa fa-calculator"></i>
                 </div>
                 <div class="col-lg-5">
-                    <h3>Расчет стоимости:</h3>
-                    <span>Стоимость доставки:</span>
+                    <h3>Розрахунок вартості:</h3>
+                    <span>Вартість доставки:</span>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Стоимость:</h3>
+                    <h3>Вартість:</h3>
                     <span>1000 грн.</span>
                 </div>
                 <div class="offset-lg-3 col-lg-5">
-                    <h3>Итого к оплате:</h3>
+                    <h3>Разом до сплати:</h3>
                 </div>
                 <div class="col-lg-4">
                     <h3>1000 грн.</h3>
@@ -176,8 +176,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4">
-                <div class="adress ">
-                    01032 г. Киев ул. Гончара 55а (063)-625-48-22
+                <div class="address ">
+                    01032 м.Київ вул. Гончара 55а (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Все права защищены
+                    &#169; 2017 Всі права захищені
                 </div>
             </div>
         </div>

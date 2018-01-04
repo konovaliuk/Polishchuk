@@ -68,7 +68,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-lg-12">
-                <h2>Мой кабинет</h2>
+                <h2>Мій кабінет</h2>
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
@@ -185,8 +185,8 @@
                         width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4">
-                <div class="adress ">
-                    01032 г. Киев ул. Гончара 55а (063)-625-48-22
+                <div class="address ">
+                    01032 м.Киев вул. Гончара 55а (063)-625-48-22
                 </div>
             </div>
         </div>

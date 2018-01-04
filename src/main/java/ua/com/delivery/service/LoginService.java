@@ -34,7 +34,11 @@ public class LoginService {
     public User existUsername(String username){
         User user = factory.createUserDao().getUserByUsername(username);
 //        User user = factory.createUserDao().getUserByUsername(username);
-        LOGGER.info(username + ": is present in our DB");
+        if (user != null){
+            LOGGER.info(username + ": is present in our DB");
+        } else {
+            LOGGER.error(username+ ": isn't present in our DB");
+        }
         return user;
     }
 

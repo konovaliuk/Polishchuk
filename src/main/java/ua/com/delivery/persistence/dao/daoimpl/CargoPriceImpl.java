@@ -43,17 +43,20 @@ public class CargoPriceImpl implements ICargoPriceDao {
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_CARGO_PRICE)
         ) {
-            if (resultSet.next()) {
-                do {
-                    CargoPrice cargoPrice = new CargoPrice();
-                    cargoPrice.setCargopriceID(resultSet.getLong("cargopriceID"));
-                    cargoPrice.setWeight(resultSet.getInt("weight"));
-                    cargoPrice.setPrice(resultSet.getInt("price"));
-                    cargoPriceList.add(cargoPrice);
-                } while (resultSet.next());
-            } else {
-                LOGGER.info("ResultSet doesn't have next element");
+            while (resultSet.next()){
+                CargoPrice cargoPrice = new CargoPrice();
+                cargoPrice.setCargopriceID(resultSet.getLong("cargopriceID"));
+                cargoPrice.setWeight(resultSet.getInt("weight"));
+                cargoPrice.setPrice(resultSet.getInt("price"));
+                cargoPriceList.add(cargoPrice);
             }
+//            if (resultSet.next()) {
+//                do {
+//
+//                } while (resultSet.next());
+//            } else {
+//                LOGGER.info("ResultSet doesn't have next element");
+//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
@@ -69,16 +72,19 @@ public class CargoPriceImpl implements ICargoPriceDao {
         ) {
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                do {
-                    cargoPrice.setCargopriceID(resultSet.getLong("cargopriceID"));
-                    cargoPrice.setWeight(resultSet.getInt("weight"));
-                    cargoPrice.setPrice(resultSet.getInt("volume"));
-                    preparedStatement.executeUpdate();
-                } while (resultSet.next());
-            } else {
-                LOGGER.info("No CargoPrice with id: " + id);
+            while (resultSet.next()){
+                cargoPrice.setCargopriceID(resultSet.getLong("cargopriceID"));
+                cargoPrice.setWeight(resultSet.getInt("weight"));
+                cargoPrice.setPrice(resultSet.getInt("volume"));
+                preparedStatement.executeUpdate();
             }
+//            if (resultSet.next()) {
+//                do {
+//
+//                } while (resultSet.next());
+//            } else {
+//                LOGGER.info("No CargoPrice with id: " + id);
+//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }

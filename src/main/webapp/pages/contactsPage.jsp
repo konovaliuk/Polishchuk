@@ -12,7 +12,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainPolik.css">
     <link rel="stylesheet" href="../css/contactPolik.css">
 </head>
 <body>
@@ -79,7 +79,7 @@
                         <i class="fa fa-phone"></i>(063)-625-48-22
                     </div>
                     <div class="info__item">
-                        <i class="fa fa-home"></i>01032 г. Киев ул. Гончара 55а
+                        <i class="fa fa-home"></i>01032 м.Київ вул. Гончара 55а
                     </div>
                     <div class="info__item">
                         <i class="fa fa-envelope"></i>polik@polik-delivery.com

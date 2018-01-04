@@ -48,15 +48,21 @@ public class DirectionImpl implements IDirectionDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_LIST_DIRECTIONS);
-            if (resultSet.next()) {
-                do {
-                    Direction direction = new Direction();
-                    direction.setFromCity(resultSet.getString("from_city"));
-                    directionList.add(direction);
-                } while (resultSet.next());
-            } else {
-                LOGGER.info("Your list directions is empty");
+            if (resultSet == null){
+                LOGGER.error("Your list directions is empty");
             }
+            while (resultSet.next()){
+                Direction direction = new Direction();
+                direction.setFromCity(resultSet.getString("from_city"));
+                directionList.add(direction);
+            }
+//            if (resultSet.next()) {
+//                do {
+//
+//                } while (resultSet.next());
+//            } else {
+//
+//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
@@ -71,18 +77,24 @@ public class DirectionImpl implements IDirectionDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_PRICE_LIST_DIRECTIONS);
-            if (resultSet.next()) {
-                do {
-                    Direction direction = new Direction();
-                    direction.setDirectionID(resultSet.getLong("directionID"));
-                    direction.setFromCity(resultSet.getString("from_city"));
-                    direction.setToCity(resultSet.getString("to_city"));
-                    direction.setPriceDirection(resultSet.getInt("price_direction"));
-                    directionList.add(direction);
-                } while (resultSet.next());
-            } else {
-                LOGGER.info("Your price list directions is empty");
+            if (resultSet == null){
+                LOGGER.error("Your price list directions is empty");
             }
+            while (resultSet.next()){
+                Direction direction = new Direction();
+                direction.setDirectionID(resultSet.getLong("directionID"));
+                direction.setFromCity(resultSet.getString("from_city"));
+                direction.setToCity(resultSet.getString("to_city"));
+                direction.setPriceDirection(resultSet.getInt("price_direction"));
+                directionList.add(direction);
+            }
+//            if (resultSet.next()) {
+//                do {
+//
+//                } while (resultSet.next());
+//            } else {
+//
+//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
@@ -98,17 +110,23 @@ public class DirectionImpl implements IDirectionDao {
         ) {
             preparedStatement.setString(1, fromCity);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()) {
-                do {
-                    direction.setDirectionID(resultSet.getLong("directionID"));
-                    direction.setFromCity(resultSet.getString("from_city"));
-                    direction.setToCity(resultSet.getString("to_city"));
-                    direction.setPriceDirection(resultSet.getInt("price_direction"));
-                    preparedStatement.executeUpdate();
-                } while (resultSet.next());
-            } else {
+            if (resultSet == null){
                 LOGGER.info("City " + fromCity + " doesn't have in list");
             }
+            while (resultSet.next()){
+                direction.setDirectionID(resultSet.getLong("directionID"));
+                direction.setFromCity(resultSet.getString("from_city"));
+                direction.setToCity(resultSet.getString("to_city"));
+                direction.setPriceDirection(resultSet.getInt("price_direction"));
+                preparedStatement.executeUpdate();
+            }
+//            if (resultSet.next()) {
+//                do {
+//
+//                } while (resultSet.next());
+//            } else {
+//                LOGGER.info("City " + fromCity + " doesn't have in list");
+//
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }

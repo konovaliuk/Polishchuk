@@ -4,18 +4,16 @@ import ua.com.delivery.command.utilCommand.UtilForCommand;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 import ua.com.delivery.persistence.entity.User;
 import ua.com.delivery.service.AdministratorService;
-import ua.com.delivery.service.DirectionService;
 import ua.com.delivery.service.LoginService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class LoginCommand implements ICommand{
     private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
+
 
         @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
@@ -36,6 +34,7 @@ public class LoginCommand implements ICommand{
             }
 //        }
             //<сторінка на якій буде привітання для юзера
+            request.getSession().setAttribute("user", username);
         return page;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {
@@ -73,11 +72,11 @@ public class LoginCommand implements ICommand{
         HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
 
-        request.setAttribute(UtilForCommand.ADDRESS_FROM, DirectionService.getInstance().searchFromToCity());
-        request.setAttribute(UtilForCommand.ADDRESS_TO, DirectionService.getInstance().searchFromToCity());
-
-        SimpleDateFormat format = new SimpleDateFormat(UtilForCommand.DATE);
-        request.setAttribute(UtilForCommand.NOW_DATE, format.format(new Date()));
+//        request.setAttribute(UtilForCommand.ADDRESS_FROM, DirectionService.getInstance().searchFromToCity());
+//        request.setAttribute(UtilForCommand.ADDRESS_TO, DirectionService.getInstance().searchFromToCity());
+//
+//        SimpleDateFormat format = new SimpleDateFormat(UtilForCommand.DATE);
+//        request.setAttribute(UtilForCommand.NOW_DATE, format.format(new Date()));
 
         request.setAttribute(USERNAME, user.getUsername());
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
