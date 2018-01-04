@@ -22,14 +22,16 @@ public class ControllerHelper {
         ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);
 //        //заполнение таблицы командами
         commandMap.put(bundle.getString("command.home"), new HomeCommand());
+        commandMap.put(bundle.getString("command.order"), new OrderCommand());
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
+        commandMap.put(bundle.getString("command.signIn"), new SignInCommand());
+        commandMap.put(bundle.getString("command.contact"), new ContactCommand());
+        commandMap.put(bundle.getString("command.condition"), new ConditionCommand());
+        commandMap.put(bundle.getString("command.calculator"), new CalculatorCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
-        commandMap.put("condition", new ConditionCommand());
-        commandMap.put("signIn", new SignInCommand());
-        commandMap.put("calculator", new CalculatorCommand());
-        commandMap.put("contact", new ContactCommand());
-        commandMap.put("order", new OrderCommand());
+
+        commandMap.put(bundle.getString("command.forRegist"), new ForRegistrCommand());
 //
         /* Locale commands */
         commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());

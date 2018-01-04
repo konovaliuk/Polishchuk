@@ -1,12 +1,29 @@
-
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
+
+<jsp:useBean id="nowDate" class="ua.com.delivery.service.DateService"/>
+
+<fmt:setLocale value="${sessionScope.locale}"/>
+<fmt:setBundle basename="language"/>
+
+<fmt:message key="calculator.delivery" var="Delivery"/>
+<fmt:message key="calculator.schedule" var="Schedule"/>
+<fmt:message key="calculator.main" var="Main"/>
+<fmt:message key="calculator.condition" var="Condition"/>
+<fmt:message key="calculator.calculator" var="Calculator"/>
+<fmt:message key="calculator.contacts" var="Contact"/>
+<fmt:message key="calculator.order" var="Order"/>
+<fmt:message key="calculator.signIn" var="SignIn"/>
+
+
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainPolik.css">
     <link rel="stylesheet" href="../css/calculator.css">
 </head>
 <body>
@@ -19,13 +36,13 @@
                     <img src="../img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>Доставка грузов</small></h1>
+                    <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
             <div class="col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
                 </div>
             </div>
         </div>
@@ -39,11 +56,11 @@
             <div class="col-lg-9">
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/con?command=condition">Умови&nbspдоставки</a></li>
-                        <li class="active"><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/con?command=contact">Контакти</a></li>
-                        <li><a href="/con?command=order">Створити&nbspзаявку</a></li>
+                        <li><a href="/">${Main}</a></li>
+                        <li><a href="/con?command=condition">${Condition}</a></li>
+                        <li class="active"><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li><a href="/con?command=contact">${Contact}</a></li>
+                        <li><a href="/con?command=order">${Order}</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +69,7 @@
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
                     <li>
-                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                        <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
                     </li>
                 </div>
             </div>
@@ -75,9 +92,11 @@
                 </div>
                 <div class="col-lg-3 d-flex justify-content-center">
                     <select name="from_city" id="from">
-                        <option value="Kiev">Киев</option>
-                        <option value="Odessa">Одесса</option>
-                        <option value="Lviv">Львов</option>
+                        <c:forEach items="${listFromToCity}" var="elem">
+                            <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                        </c:forEach>
+                        <%--<option value="Odessa">Одесса</option>--%>
+                        <%--<option value="Lviv">Львов</option>--%>
                     </select>
                 </div>
                 <div class="col-lg-1 d-flex justify-content-center">
@@ -85,41 +104,42 @@
                 </div>
                 <div class="col-lg-3">
                     <select name="to_city" id="to">
-                        <option value="Kiev">Киев</option>
-                        <option value="Odessa">Одесса</option>
-                        <option value="Lviv">Львов</option>
+                        <c:forEach items="${listFromToCity}" var="elem">
+                            <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                        </c:forEach>
+                        <%--<option value="Lviv">Львов</option>--%>
                     </select>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <label>Дата отправления:</label>
                 </div>
                 <div class="col-lg-2">
-                    <input type="date" required="">
+                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
                 </div>
                 <div class="col-lg-2 d-flex justify-content-center">
                     <label>Ориентировочная дата получения:</label>
                 </div>
                 <div class="col-lg-2">
-                    <input type="date" required="">
+                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <label>Обьявленая стоимость:</label>
                 </div>
                 <div class="col-lg-8">
-                    <input type="number" required="">
+                    <input type="number" min="10" required="">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
                     <label>Вес:</label>
                 </div>
                 <div class="col-lg-8">
-                    <input type="number" required="">
+                    <input type="number" name="weight" min="1" max="19" required="">
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center">
-                    <label>Обьем:</label>
-                </div>
-                <div class="col-lg-8">
-                    <input type="number" required="">
-                </div>
+                <%--<div class="col-lg-4 d-flex justify-content-center">--%>
+                    <%--<label>Обьем:</label>--%>
+                <%--</div>--%>
+                <%--<div class="col-lg-8">--%>
+                    <%--<input type="number" min="1" required="">--%>
+                <%--</div>--%>
             </div>
             <div class="offset-lg-4 col-lg-4">
                 <input type="submit" value="Расчитать">

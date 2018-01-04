@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <%--<link rel="stylesheet" type="text/css" href="../css/main.css" >--%>
+    <%--<link rel="stylesheet" type="text/css" href="../css/mainPolik.css" >--%>
     <link rel="stylesheet" type="text/css" href="../css/registrationF.css">
 </head>
 <body>
@@ -12,8 +12,7 @@
     <section id="registrrationForm" class="registrationForm">
         <div class="box">
             <h2>Registration</h2>
-            <form action="polik" method="post" name="registrationForm">
-                <input type="hidden" name="command" value="registration">
+            <form action="con" method="post" name="registrationForm">
                 <div class="inputWrap">
                     <div class="inputWrap__element">
                         <div class="inputBox">
@@ -23,10 +22,6 @@
                         <div class="inputBox">
                             <input type="password" name="password" required="">
                             <label>Password</label>
-                        </div>
-                        <div class="inputBox">
-                            <input type="password" name="password" required="">
-                            <label>Password again</label>
                         </div>
                         <div class="inputBox">
                             <input type="text" name="firstName" required="">
@@ -44,7 +39,7 @@
                         </div>
                         <div class="inputBox">
                             <input type="text" name="address" required="">
-                            <label>Adress</label>
+                            <label>Address</label>
                         </div>
                         <div class="inputBox">
                             <input type="text" name="city" required="">
@@ -58,7 +53,9 @@
                 </div>
                 <div class="regInput">
                     <a href="/">На головну</a>
-                    <input type="submit" name="registration" value="Registration">
+                    <%--<button type="submit" class="btn btn-success btn-block" &lt;%&ndash;name="sub" value="sub"&ndash;%&gt;>MySubmit</button>--%>
+                    <input type="submit" value="Registration">
+                    <input type="hidden" name="command" value="registration">
                 </div>
             </form>
         </div>

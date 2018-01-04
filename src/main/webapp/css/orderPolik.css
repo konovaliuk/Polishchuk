@@ -55,8 +55,29 @@ input[type="submit"] {
 	font-size: 20px;
 	cursor: pointer;
 }
-.receiptTab, .deliveryTab {
+/*input[type="date"]{*/
+	/*border: none;*/
+	/*width: 180px;*/
+	/*cursor: pointer;*/
+	/*padding-left: 38px;*/
+/*}*/
+.receiptTab, .deliveryTab, input[type="checkbox"], form {
 	display: none;
+}
+input[type="checkbox"]:checked  ~ form {
+	display: block;
+}
+.myButton {
+	color: rgba(43, 123, 78, 0.92);
+	background: rgba(62, 230, 255, 0.53);
+	padding: 10px;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	width: 160px;
+	margin: 1% 32% 1% 43%;
+	cursor: pointer;
+	font-size: 18px;
 }
 
 /* ORDER */

@@ -37,4 +37,5 @@ public class LoginService {
         LOGGER.info(username + ": is present in our DB");
         return user;
     }
+
 }

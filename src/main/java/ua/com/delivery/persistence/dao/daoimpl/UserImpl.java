@@ -17,8 +17,8 @@ public class UserImpl implements IUserDao {
     private static final String DELETE_USER_BY_USERNAME = "DELETE FROM Users WHERE username=?";
     private static final String UPDATE_DATA_USER = "UPDATE Users SET username=?, password=?, first_name=?," +
             "second_name=?, email=?, address=?, city=?, phone=?, admin=? WHERE userID=?";
-    private static final String CREATE_USER = "INSERT INTO Users (userID, username, password, first_name, second_name," +
-            "email, address, city, phone, admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    private static final String CREATE_USER = "INSERT INTO Users (username, password, first_name, second_name," +
+            "email, address, city, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void createUser(User user) {
@@ -28,16 +28,16 @@ public class UserImpl implements IUserDao {
         ) {
             //чи потрібно тут закривати connectionpool
             //чи він просто після опрацювання повертаєтсья в пул? - якщо через ConnectionPool
-            preparedStatement.setLong(1, user.getUserID());
-            preparedStatement.setString(2, user.getUsername());
-            preparedStatement.setString(3, user.getPassword());
-            preparedStatement.setString(4, user.getFirstName());
-            preparedStatement.setString(5, user.getSecondName());
-            preparedStatement.setString(6, user.getEmail());
-            preparedStatement.setString(7, user.getAddress());
-            preparedStatement.setString(8, user.getCity());
-            preparedStatement.setLong(9, user.getPhone());
-            preparedStatement.setBoolean(10, user.getAdmin());
+//            preparedStatement.setLong(1, user.getUserID());
+            preparedStatement.setString(1, user.getUsername());
+            preparedStatement.setString(2, user.getPassword());
+            preparedStatement.setString(3, user.getFirstName());
+            preparedStatement.setString(4, user.getSecondName());
+            preparedStatement.setString(5, user.getEmail());
+            preparedStatement.setString(6, user.getAddress());
+            preparedStatement.setString(7, user.getCity());
+            preparedStatement.setLong(8, user.getPhone());
+//            preparedStatement.setBoolean(9, user.getAdmin());
 
             preparedStatement.executeUpdate();
             connection.commit();

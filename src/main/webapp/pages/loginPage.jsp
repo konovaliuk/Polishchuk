@@ -52,11 +52,9 @@
                     </div>
                     <div class="btn-login">
                         <button type="submit" class="btn btn-success btn-block" <%--name="sub" value="sub"--%>>${Submit}</button>
-                        <a href="/pages/registrationPage.jsp"> ${Registration}</a>
+                        <%--<a href="/con?command=registration"> ${Registration}</a>--%>
+                        <a href="/con?command=forRegist"> ${Registration}</a>
                     </div>
-                    <%--<c:if test="${requestScope.errorMessage != null}">--%>
-                        <%--<h4>${InvalidMessage} /></h4>--%>
-                    <%--</c:if>--%>
                 </form>
                 <!-- form end -->
             </div>

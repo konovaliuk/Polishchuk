@@ -33,10 +33,11 @@ public class DirectionService {
         List<Direction> directionList = factory.createDirectionDao().getListDirections();
         directionList.sort(Comparator.comparing(Direction::getFromCity));
         LOGGER.info("It's a list from/to city");
+
         return directionList;
     }
 
     public List<Direction> listForPrice(){
-        return factory.createDirectionDao().getListDirections();
+        return factory.createDirectionDao().getPriceListDirections();
     }
 }

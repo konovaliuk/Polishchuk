@@ -24,8 +24,8 @@ public class RegistrationCommand implements ICommand{
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String page = null;
-        if (request.getParameter("registration") != null && request.getParameter("registration").equals("Registration")) {
+        String page;
+//        if (request.getParameter("registration") != null && request.getParameter("registration").equals("Registration")) {
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
             String firstName = request.getParameter(FIRST_NAME);
@@ -56,11 +56,12 @@ public class RegistrationCommand implements ICommand{
                 } else {
                     page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
                 }
+                /* Дописати вивід успішної реєстрації або помилки на якомусь*/
             } else {
                 request.setAttribute("You have some trouble, bro", true);
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
             }
-        }
+//        }
         return page;
     }
 }

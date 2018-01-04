@@ -6,21 +6,21 @@
 <fmt:setLocale value="${sessionScope.locale}"/>
 <fmt:setBundle basename="language"/>
 
-<fmt:message key="home.delivery" var="Delivery"/>
-<fmt:message key="home.schedule" var="Schedule"/>
-<fmt:message key="home.main" var="Main"/>
-<fmt:message key="home.condition" var="Condition"/>
-<fmt:message key="home.calculator" var="Calculator"/>
-<fmt:message key="home.contacts" var="Contact"/>
-<fmt:message key="home.order" var="Order"/>
-<fmt:message key="home.signIn" var="SignIn"/>
+<fmt:message key="userPage.delivery" var="Delivery"/>
+<fmt:message key="userPage.schedule" var="Schedule"/>
+<fmt:message key="userPage.main" var="Main"/>
+<fmt:message key="userPage.condition" var="Condition"/>
+<fmt:message key="userPage.calculator" var="Calculator"/>
+<fmt:message key="userPage.contacts" var="Contact"/>
+<fmt:message key="userPage.order" var="Order"/>
+<fmt:message key="userPage.logout" var="Logout"/>
 
 
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Polik Delivery</title>
 </head>
 <body>
@@ -60,7 +60,7 @@
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
-                        <%--<li><a href="/con?command=order">${Order}</a></li>--%>
+                        <li><a href="/con?command=order">My cabinet</a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,7 +68,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
+                    <a href="/con?command=logout">${Logout} <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-12">

@@ -15,4 +15,6 @@ public class Direction implements Serializable {
     private String fromCity;
     private String toCity;
     private int priceDirection;
+
+
 }
