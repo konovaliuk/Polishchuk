@@ -16,7 +16,7 @@ public class TagForName extends TagSupport {
     @Override
     public int doStartTag() throws JspException {
         try {
-            pageContext.getOut().write(bundle.getString("tagResources.hello") + " " + name);
+            pageContext.getOut().write("hello " +  name);
         } catch (IOException e) {
             e.printStackTrace();
         }
