@@ -61,9 +61,9 @@
             <div class="col-md-9 col-lg-9">
                 <nav>
                     <ul class="menu d-flex align-items-center">
-                        <li><a href="/con?command=home" >${Main}</a ></li>
+                        <li class="active"><a href="/con?command=home" >${Main}</a ></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
-                        <li class="active"><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
