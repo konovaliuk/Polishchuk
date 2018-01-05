@@ -55,9 +55,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <li>
-                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
-                    </li>
+                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
         </div>
@@ -78,7 +76,7 @@
                     <p> Доставляється замовлення протягом 2 днів, в залежності від
                         вашого місця розташування. </p>
                     <p> Як тільки товар надійде до відділення "Polik Delivery", ви зможете забрати
-                        товар в будь-який зручний, для вас час протягом 4 днів. </p>
+                            товар в будь-який зручний, для вас час протягом 4 днів. </p>
                     <p>Щоб дізнатись чи присутня посилка на складі, ви можете зателефонувати
                         за номером (063)-625-48-22 </p>
                 </div>

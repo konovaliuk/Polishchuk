@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/mainPolik.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Polik Delivery</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-7 col-lg-7 d-flex">
+            <div class="col-md-8 col-lg-7 d-flex">
                 <div class="logo">
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
@@ -38,7 +39,7 @@
                     <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>

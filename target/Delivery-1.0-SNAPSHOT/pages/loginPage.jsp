@@ -12,6 +12,8 @@
 <fmt:message key="login.submit" var="Submit"/>
 <fmt:message key="login.signIn" var="SignIn"/>
 <fmt:message key="login.invalidMessage" var="InvalidMessage"/>
+<fmt:message key="login.home" var="Home"/>
+
 
 
 <html>
@@ -55,6 +57,7 @@
                         <button type="submit" class="btn btn-success btn-block" <%--name="sub" value="sub"--%>>${Submit}</button>
                         <%--<a href="/con?command=registration"> ${Registration}</a>--%>
                         <a href="/con?command=forRegist"> ${Registration}</a>
+                        <a href="/">${Home}</a>
                     </div>
                 </form>
                 <!-- form end -->
