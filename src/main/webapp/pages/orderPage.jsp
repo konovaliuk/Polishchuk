@@ -54,9 +54,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <li>
-                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
-                    </li>
+                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
         </div>
@@ -87,7 +85,7 @@
                         <div class="receiptTab">
                             <div class="receiptTab__element">
                                 <label for="recDate">Дата забора:</label>
-                                <input class="forDate" type="date"  id="recDate"
+                                <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required="">
                                 <label for="recPhone">Телефон:</label>

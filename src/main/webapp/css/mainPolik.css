@@ -157,6 +157,26 @@ ul, li, p {
 	}
 }
 @media only screen and (max-width: 991px) {
-
+	.logo img {
+		width: 85px;
+	}
+	.logo__text h1 {
+		font-size: 30px;
+		padding-left: 39px;
+	}
+	.topMenu {
+		padding: 0;
+	}
+	.menu li a, .lang a {
+		font-size: 14px;
+	}
+	.lang__item:nth-child(2) {
+		margin-right: 18px;
+	}
+	.address {
+		font-size: 20px;
+		padding: 0 25px;
+	}
 }
+
 /*MEDIA QUERIES*/

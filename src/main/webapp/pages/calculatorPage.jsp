@@ -69,9 +69,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <li>
-                        <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
-                    </li>
+                    <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
         </div>

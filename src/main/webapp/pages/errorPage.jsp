@@ -25,13 +25,15 @@
                     <img src="../img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>Доставка грузов</small></h1>
+                    <h1>Polik
+                        <small>Доставка грузов</small>
+                    </h1>
                 </div>
             </div>
             <div class="col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                 </div>
             </div>
         </div>
@@ -57,9 +59,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <li>
-                        <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
-                    </li>
+                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
         </div>
@@ -83,7 +83,8 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
+                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-4">
                 <div class="adress ">
