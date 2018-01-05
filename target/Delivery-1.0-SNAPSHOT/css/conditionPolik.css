@@ -1,0 +1,25 @@
+.terms h2 {
+	padding: 15px 0;
+	margin-bottom: 40px;
+	border-bottom: 3px solid #f3f4f6;
+}
+.terms__text p {
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.terms__text p:last-child {
+	padding-bottom: 30px;
+}
+.terms__priceList{
+	margin-bottom: 30px;
+}
+.terms__priceList td, th {
+	border: 1px solid crimson;
+	padding: 8px;
+}
+.terms__priceList tr:nth-child(even){
+    background: rgba(0, 179, 244, 0.22);
+}
+.terms__priceList tr:nth-child(odd){
+	background: rgba(153, 255, 95, 0.39);
+}

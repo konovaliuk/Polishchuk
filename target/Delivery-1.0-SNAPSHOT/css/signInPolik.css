@@ -1,0 +1,68 @@
+body{
+	color: #020303;
+}
+.bg{
+	/*background: url("../images/bg.jpg") no-repeat; */
+	background: url("https://www.nastol.com.ua/pic/201712/1366x768/nastol.com.ua-261868.jpg");
+	width: 100%;
+	height: 100vh;
+}
+.form-container{
+	border: 0 solid #fff;
+	border-radius: 10px;
+	background: rgba(255,255, 255, 0.1);
+	padding: 20px 60px;
+	margin-top: 20vh;
+	-webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+	position: absolute;
+}
+.form-container .form-group {
+	position: relative;
+}
+
+.form-container .form-group input{
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #000;
+	background-color: transparent;
+	border-bottom: 1px solid #000;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding-top: 10px;
+}
+.form-container .form-group label {
+	position: absolute;
+	top: 11px;
+	left: 0;
+	letter-spacing: 1px;
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+}
+.form-container .form-group input:focus ~ label,
+.form-container .form-group input:valid ~ label {
+	top: -4px;
+	left: 0;
+	/*color: #ff1300;*/
+	color: #cf0a17;
+	font-size: 14px;
+}
+.btn-login a{
+	display: block;
+	background: #87aeb4;
+	border-radius: 5px;
+	padding: 5px;
+	color: #1b132e;
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+}
+.btn-login .btn-success{
+	margin-bottom: 11px;
+}
