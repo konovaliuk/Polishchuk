@@ -20,20 +20,18 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-7 d-flex">
+            <div class="col-md-8 col-lg-7 d-flex">
                 <div class="logo">
-                    <img src="../img/logo.png" alt="logo" width="100">
+                    <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik
-                        <small>Доставка грузов</small>
-                    </h1>
+                    <h1>Polik Delivery</h1>
                 </div>
             </div>
-            <div class="col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
+                    <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
                 </div>
             </div>
         </div>
@@ -44,28 +42,34 @@
 <section id="topMenu" class="topMenu">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-md-12 col-lg-12">
+                <div class="line"></div>
+            </div>
+            <div class="col-md-9 col-lg-9">
                 <nav>
-                    <ul class="menu d-flex">
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/con?command=condition">Умови&nbspдоставки</a></li>
-                        <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/con?command=contact">Контакти</a></li>
-                        <li><a href="/con?command=order">Створити&nbspзаявку</a></li>
+                    <ul class="menu d-flex align-items-center">
+                        <li><a href="/con?command=home" >Main</a ></li>
+                        <li><a href="/con?command=condition">Condition</a></li>
+                        <li><a href="/con?command=calculator">Calculator</a></li>
+                        <li><a href="/con?command=contact">Contact</a></li>
+                        <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3 d-flex justify-content-end ml-auto">
+            <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                    <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
+                    <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
+                    <a href="/con?command=signIn">SignIn <i class=" fa fa-sign-in"></i></a>
                 </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="line"></div>
             </div>
         </div>
     </div>
 </section>
-<!-- /MENU -->
+<!-- CONTACT -->
 <!-- ERROR -->
 <section id="error" class="error">
     <div class="container">
