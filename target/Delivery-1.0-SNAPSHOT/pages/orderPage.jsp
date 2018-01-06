@@ -87,10 +87,10 @@
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="receipt">
-                        <label for="receipt">Забор груза</label>
+                        <label for="receipt">Отримання вантажу</label>
                         <div class="receiptTab">
                             <div class="receiptTab__element">
-                                <label for="recDate">Дата забора:</label>
+                                <label for="recDate">Дата отримання:</label>
                                 <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required="">
@@ -98,23 +98,25 @@
                                 <input type="text" id="recPhone" required="">
                             </div>
                             <div class="receiptTab__element">
-                                <label for="recCity">Город:</label>
+                                <label for="recCity">Місто відправлення:</label>
                                 <input type="text" id="recCity" required="">
-                                <label for="recAdress">Адрес доставки:</label>
+                                <label for="recAdress">Адреса отримання:</label>
                                 <input type="text" id="recAdress" required="">
                             </div>
                             <div class="receiptTab__element">
-                                <label for="recLast">Фамилия:</label>
-                                <input type="text" id="recLast" required="">
-                                <label for="recWeight">Вес груза:</label>
+                                <%--<label for="recLast">Фамилия:</label>--%>
+                                <%--<input type="text" id="recLast" required="">--%>
+                                <label for="recName">Ім'я:</label>
+                                <input type="text" id="recName" required="">
+                                <label for="recWeight">Вага вантажу:</label>
                                 <input type="text" id="recWeight" required="">
                             </div>
-                            <div class="receiptTab__element">
-                                <label for="recName">Имя:</label>
-                                <input type="text" id="recName" required="">
-                                <label for="recVolume">Обьем груза:</label>
-                                <input type="text" id="recVolume" required="">
-                            </div>
+                            <%--<div class="receiptTab__element">--%>
+                            <%--<label for="recName">Имя:</label>--%>
+                            <%--<input type="text" id="recName" required="">--%>
+                            <%--<label for="recVolume">Обьем груза:</label>--%>
+                            <%--<input type="text" id="recVolume" required="">--%>
+                            <%--</div>--%>
                             <div class="receiptTab__element">
                                 <label for="recEmail">E-mail:</label>
                                 <input type="text" id="recEmail" required="">
@@ -128,10 +130,10 @@
                     <!-- Доставка груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
-                        <label for="delivery">Доставка груза</label>
+                        <label for="delivery">Доставка вантажу</label>
                         <div class="deliveryTab">
                             <div class="deliveryTab__element">
-                                <label for="delDate">Дата забора:</label>
+                                <label for="delDate">Дата відправлення:</label>
                                 <input class="forDate" type="date" id="delDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required="">
@@ -139,23 +141,25 @@
                                 <input type="text" id="delPhone" required="">
                             </div>
                             <div class="deliveryTab__element">
-                                <label for="delCity">Город:</label>
+                                <label for="delCity">Адрес відправлення:</label>
                                 <input type="text" id="delCity" required="">
-                                <label for="delAdress">Адрес доставки:</label>
+                                <label for="delAdress">Місто отримання:</label>
                                 <input type="text" id="delAdress" required="">
                             </div>
                             <div class="deliveryTab__element">
-                                <label for="delLast">Фамилия:</label>
-                                <input type="text" id="delLast" required="">
-                                <label for="delWeight">Вес груза:</label>
-                                <input type="text" id="delWeight" required="">
-                            </div>
-                            <div class="deliveryTab__element">
+                                <%--<label for="delLast">Фамилия:</label>--%>
+                                <%--<input type="text" id="delLast" required="">--%>
                                 <label for="delName">Имя:</label>
                                 <input type="text" id="delName" required="">
-                                <label for="delVolume">Обьем груза:</label>
-                                <input type="text" id="delVolume" required="">
+                                <label for="delWeight">Вага вантажу:</label>
+                                <input type="text" id="delWeight" required="">
                             </div>
+                            <%--<div class="deliveryTab__element">--%>
+                            <%--<label for="delName">Имя:</label>--%>
+                            <%--<input type="text" id="delName" required="">--%>
+                            <%--<label for="delVolume">Обьем груза:</label>--%>
+                            <%--<input type="text" id="delVolume" required="">--%>
+                            <%--</div>--%>
                             <div class="deliveryTab__element">
                                 <label for="delEmail">E-mail:</label>
                                 <input type="text" id="delEmail" required="">
