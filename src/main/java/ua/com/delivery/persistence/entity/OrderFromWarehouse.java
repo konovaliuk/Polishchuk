@@ -18,6 +18,7 @@ public class OrderFromWarehouse implements Serializable {
     private Long userID;
     private int phone;
     private String addressToDelivery;
+    private String email;
     private int totalPrice;
 
 }

@@ -15,10 +15,10 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
     private static final String GET_LIST_ORDER_TO_WAREHOUSE = "SELECT * FROM OrderToWarehouse";
     private static final String DELETE_ORDER_TO_WAREHOUSE_BY_ID = "DELETE FROM OrderToWarehouse WHERE ordertowarehouseID=?";
     private static final String UPDATE_DATA_ORDER_TO_WAREHOUSE = "UPDATE OrderToWarehouse SET date_of_receipt=?," +
-            " directionID=?, userID=?, cargoID=?, parcelID=?,  weight=?, volume=?, number_of_order=?, total_price=? " +
+            " directionID=?, userID=?, cargoID=?, parcelID=?,  weight=?, number_of_order=?, email=? ,total_price=? " +
             "WHERE ordertowarehouseID=?";
     private static final String CREATE_ORDER_TO_WAREHOUSE = "INSERT INTO OrderToWarehouse (ordertowarehouseID, " +
-            "date_of_receipt, directionID, userID, cargoID, parcelID, weight, volume, number_of_order, total_price)" +
+            "date_of_receipt, directionID, userID, cargoID, parcelID, weight, number_of_order, email, total_price)" +
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
@@ -34,8 +34,8 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
             preparedStatement.setLong(5, orderToWarehouse.getCargoID());
             preparedStatement.setLong(6, orderToWarehouse.getParcelID());
             preparedStatement.setInt(7, orderToWarehouse.getWeight());
-            preparedStatement.setInt(8, orderToWarehouse.getVolume());
-            preparedStatement.setInt(9, orderToWarehouse.getNumberOfOrder());
+            preparedStatement.setInt(8, orderToWarehouse.getNumberOfOrder());
+            preparedStatement.setString(9, orderToWarehouse.getEmail());
             preparedStatement.setInt(10, orderToWarehouse.getTotalPrice());
             preparedStatement.executeUpdate();
             connection.commit();
@@ -63,8 +63,8 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
                     orderToWarehouse.setCargoID(resultSet.getLong("cargoID"));
                     orderToWarehouse.setParcelID(resultSet.getLong("parcelID"));
                     orderToWarehouse.setWeight(resultSet.getInt("weight"));
-                    orderToWarehouse.setVolume(resultSet.getInt("volume"));
                     orderToWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
+                    orderToWarehouse.setEmail(resultSet.getString("email"));
                     orderToWarehouse.setTotalPrice(resultSet.getInt("total_price"));
                     orderToWarehouseList.add(orderToWarehouse);
                 } while (resultSet.next());
@@ -95,8 +95,8 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
                     orderToWarehouse.setCargoID(resultSet.getLong("cargoID"));
                     orderToWarehouse.setParcelID(resultSet.getLong("parcelID"));
                     orderToWarehouse.setWeight(resultSet.getInt("weight"));
-                    orderToWarehouse.setVolume(resultSet.getInt("volume"));
                     orderToWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
+                    orderToWarehouse.setEmail(resultSet.getString("email"));
                     orderToWarehouse.setTotalPrice(resultSet.getInt("total_price"));
                     preparedStatement.executeUpdate();
                 } while (resultSet.next());
@@ -121,8 +121,8 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
             preparedStatement.setLong(4, orderToWarehouse.getCargoID());
             preparedStatement.setLong(5, orderToWarehouse.getParcelID());
             preparedStatement.setInt(6, orderToWarehouse.getWeight());
-            preparedStatement.setInt(7, orderToWarehouse.getVolume());
-            preparedStatement.setInt(8, orderToWarehouse.getNumberOfOrder());
+            preparedStatement.setInt(7, orderToWarehouse.getNumberOfOrder());
+            preparedStatement.setString(8, orderToWarehouse.getEmail());
             preparedStatement.setInt(9, orderToWarehouse.getTotalPrice());
             preparedStatement.setLong(10, orderToWarehouse.getOrderToWarehouseID());
             preparedStatement.executeUpdate();

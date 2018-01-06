@@ -18,8 +18,8 @@ public class OrderToWarehouse implements Serializable {
     private Long cargoID;
     private Long parcelID;
     private int weight;
-    private int volume;
     private int numberOfOrder;
+    private String email;
     private int totalPrice;
 
 }

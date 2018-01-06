@@ -15,11 +15,11 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderFromWarehouse WHERE orderfromwarehouseID=?";
     private static final String DELETE_ORDER_FROM_WAREHOUSE_BY_ID = "DELETE FROM OrderFromWarehouse WHERE orderfromwarehouseID=?";
     private static final String UPDATE_DATA_ORDER_FROM_WAREHOUSE = "UPDATE OrderFromWarehouse SET number_of_order=?," +
-            " date_to_delivery=?, directionID=?, userID=?, phone=?, address_to_delivery=?, total_price=? " +
+            " date_to_delivery=?, directionID=?, userID=?, phone=?, address_to_delivery=?, email=?, total_price=? " +
             "WHERE orderfromwarehouseID=?";
     private static final String CREATE_ORDER_FROM_WAREHOUSE = "INSERT INTO OrderFromWarehouse (orderfromwarehouseID, " +
-            "number_of_order, date_to_delivery, directionID, userID, phone, address_to_delivery, total_price)" +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            "number_of_order, date_to_delivery, directionID, userID, phone, address_to_delivery, email,  total_price)" +
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void createOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
@@ -34,7 +34,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setLong(5, orderFromWarehouse.getUserID());
             preparedStatement.setInt(6, orderFromWarehouse.getPhone());
             preparedStatement.setString(7, orderFromWarehouse.getAddressToDelivery());
-            preparedStatement.setInt(8, orderFromWarehouse.getTotalPrice());
+            preparedStatement.setString(8, orderFromWarehouse.getEmail());
+            preparedStatement.setInt(9, orderFromWarehouse.getTotalPrice());
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Order from warehouse was successful created");
@@ -61,6 +62,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setUserID(resultSet.getLong("userID"));
                     orderFromWarehouse.setPhone(resultSet.getInt("phone"));
                     orderFromWarehouse.setAddressToDelivery(resultSet.getString("address_to_delivery"));
+                    orderFromWarehouse.setEmail(resultSet.getString("email"));
                     orderFromWarehouse.setTotalPrice(resultSet.getInt("total_price"));
                     orderFromWarehouseList.add(orderFromWarehouse);
                 } while (resultSet.next());
@@ -92,6 +94,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setUserID(resultSet.getLong("userID"));
                     orderFromWarehouse.setPhone(resultSet.getInt("phone"));
                     orderFromWarehouse.setAddressToDelivery(resultSet.getString("address_to_delivery"));
+                    orderFromWarehouse.setEmail(resultSet.getString("email"));
                     orderFromWarehouse.setTotalPrice(resultSet.getInt("total_price"));
 
                     preparedStatement.executeUpdate();
@@ -117,8 +120,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setLong(4, orderFromWarehouse.getUserID());
             preparedStatement.setInt(5, orderFromWarehouse.getPhone());
             preparedStatement.setString(6, orderFromWarehouse.getAddressToDelivery());
-            preparedStatement.setInt(7, orderFromWarehouse.getTotalPrice());
-            preparedStatement.setLong(8, orderFromWarehouse.getOrderFromWarehouseID());
+            preparedStatement.setString(7, orderFromWarehouse.getEmail());
+            preparedStatement.setInt(8, orderFromWarehouse.getTotalPrice());
+            preparedStatement.setLong(9, orderFromWarehouse.getOrderFromWarehouseID());
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Order from warehouse with id:  " + orderFromWarehouse.getOrderFromWarehouseID() + " was updated");
