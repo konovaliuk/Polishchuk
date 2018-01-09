@@ -42,7 +42,7 @@
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
-                    <p>Hello my friend, <b>${user}</b></p>
+                    <p>Hello my friend, <b>${user.username}</b></p>
                 </div>
             </div>
         </div>

@@ -93,23 +93,29 @@
                                 <label for="recDate">Дата отримання:</label>
                                 <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
-                                       required="">
+                                       required=""
+                                       name="dateOfDelivery">
                                 <label for="recPhone">Телефон:</label>
-                                <input type="text" id="recPhone" required="">
+                                <input type="text" id="recPhone" required=""
+                                       name="phone">
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recCity">Місто відправлення:</label>
-                                <input type="text" id="recCity" required="">
+                                <input type="text" id="recCity" required=""
+                                       name="directionId">
                                 <label for="recAdress">Адреса отримання:</label>
-                                <input type="text" id="recAdress" required="">
+                                <input type="text" id="recAdress" required=""
+                                       name="addressOfDelivery">
                             </div>
                             <div class="receiptTab__element">
                                 <%--<label for="recLast">Фамилия:</label>--%>
                                 <%--<input type="text" id="recLast" required="">--%>
                                 <label for="recName">Ім'я:</label>
-                                <input type="text" id="recName" required="">
+                                <input type="text" id="recName" required=""
+                                       name="userId">
                                 <label for="recWeight">Вага вантажу:</label>
-                                <input type="text" id="recWeight" required="">
+                                <input type="text" id="recWeight" required=""
+                                name="weightOfParcel">
                             </div>
                             <%--<div class="receiptTab__element">--%>
                             <%--<label for="recName">Имя:</label>--%>
@@ -119,7 +125,8 @@
                             <%--</div>--%>
                             <div class="receiptTab__element">
                                 <label for="recEmail">E-mail:</label>
-                                <input type="text" id="recEmail" required="">
+                                <input type="text" id="recEmail" required=""
+                                name="email">
                             </div>
                         </div>
                     </div>

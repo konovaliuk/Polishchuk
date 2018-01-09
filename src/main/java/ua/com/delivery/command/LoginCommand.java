@@ -3,7 +3,6 @@ package ua.com.delivery.command;
 import ua.com.delivery.command.utilCommand.UtilForCommand;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 import ua.com.delivery.persistence.entity.User;
-import ua.com.delivery.service.AdministratorService;
 import ua.com.delivery.service.LoginService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,11 +18,8 @@ public class LoginCommand implements ICommand{
     public String execute(HttpServletRequest request, HttpServletResponse response) {
             String page = null;
             //извлечение из запроса логина и пароля
-//            if (request.getParameter("sub") != null && request.getParameter("sub").equals("sub")) {
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
-//            System.out.println(username);
-//            System.out.println(password);
 
             User user = LoginService.getInstance().existUsername(username);
 
@@ -32,9 +28,10 @@ public class LoginCommand implements ICommand{
             } else {
                 page = checkUserPassword(request, user, password);
             }
-//        }
             //<сторінка на якій буде привітання для юзера
-            request.getSession().setAttribute("user", username);
+//            request.getSession().setAttribute("user", username);
+//            request.getSession().setAttribute("user", user);
+
         return page;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {
@@ -62,7 +59,7 @@ public class LoginCommand implements ICommand{
         HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
 
-        request.setAttribute(UtilForCommand.USERS, AdministratorService.getInstance().getAdminsAndUsers());
+//        request.setAttribute(UtilForCommand.USERS, AdministratorService.getInstance().getAdminsAndUsers());
         request.setAttribute(USERNAME, user.getUsername());
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ADMIN_PAGE);
     }
@@ -71,12 +68,6 @@ public class LoginCommand implements ICommand{
     private String redirectOnUserPage (User user, HttpServletRequest request){
         HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
-
-//        request.setAttribute(UtilForCommand.ADDRESS_FROM, DirectionService.getInstance().searchFromToCity());
-//        request.setAttribute(UtilForCommand.ADDRESS_TO, DirectionService.getInstance().searchFromToCity());
-//
-//        SimpleDateFormat format = new SimpleDateFormat(UtilForCommand.DATE);
-//        request.setAttribute(UtilForCommand.NOW_DATE, format.format(new Date()));
 
         request.setAttribute(USERNAME, user.getUsername());
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);

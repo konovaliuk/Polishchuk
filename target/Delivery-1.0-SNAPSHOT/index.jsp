@@ -63,6 +63,7 @@
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
+
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
