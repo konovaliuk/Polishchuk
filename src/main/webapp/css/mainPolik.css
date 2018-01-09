@@ -20,7 +20,9 @@ ul, li, p {
 	cursor: pointer;
 	padding-left: 38px;
 }
-
+#hideMenu, #hideMenu + label {
+	display: none;
+}
 /* /General*/
 /* HEADER */
 .header {

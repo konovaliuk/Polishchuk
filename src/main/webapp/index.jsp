@@ -57,9 +57,11 @@
                 <div class="line"></div>
             </div>
             <div class="col-md-9 col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
-                        <li class="active"><a href="/con?command=home" >${Main}</a ></li>
+                    <ul class="menu d-flex">
+                        <li><a class="active" href="/con?command=home" >${Main}</a ></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
