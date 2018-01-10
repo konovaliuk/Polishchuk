@@ -3,7 +3,7 @@
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
 
-<fmt:setLocale value="${sessionScope.locale}"/>
+<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="home.delivery" var="Delivery"/>
@@ -65,8 +65,10 @@
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
+                        <c:if test="${visible == true}">
+                            <li><a href="/con?command=order">${Order}</a></li>
+                        </c:if>
 
-                        <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
             </div>

@@ -2,9 +2,7 @@ package ua.com.delivery.controller;
 
 import org.apache.log4j.Logger;
 import ua.com.delivery.command.*;
-import ua.com.delivery.command.locale.LanguageEnCommand;
-import ua.com.delivery.command.locale.LanguageUkCommand;
-import ua.com.delivery.command.ContactCommand;
+import ua.com.delivery.command.CalculateCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -27,15 +25,17 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
         commandMap.put(bundle.getString("command.signIn"), new SignInCommand());
         commandMap.put(bundle.getString("command.contact"), new ContactCommand());
+        commandMap.put(bundle.getString("command.calculate"), new CalculateCommand());
         commandMap.put(bundle.getString("command.condition"), new ConditionCommand());
         commandMap.put(bundle.getString("command.calculator"), new CalculatorCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
 
         commandMap.put(bundle.getString("command.forRegist"), new ForRegistrCommand());
+
 //
         /* Locale commands */
-        commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
-        commandMap.put(bundle.getString("command.localeUa"), new LanguageUkCommand());
+//        commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
+//        commandMap.put(bundle.getString("command.localeUa"), new LanguageUkCommand());
 
         commandMap.put("command.missingCommand", new MissingCommand());
 

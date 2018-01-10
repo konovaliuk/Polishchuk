@@ -44,8 +44,10 @@
                 <div class="line"></div>
             </div>
             <div class="col-md-9 col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
+                    <ul class="menu d-flex">
                         <li><a href="/">Головна</a></li>
                         <li><a href="/con?command=condition">Умови&nbspдоставки</a></li>
                         <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>

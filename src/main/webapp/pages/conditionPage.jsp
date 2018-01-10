@@ -1,6 +1,29 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
-<c:set var="priceL" value=""/>
+
+<fmt:setBundle basename="language"/>
+
+<fmt:message key="condition.delivery" var="Delivery"/>
+<fmt:message key="condition.schedule" var="Schedule"/>
+<fmt:message key="condition.main" var="Main"/>
+<fmt:message key="condition.condition" var="Condition"/>
+<fmt:message key="condition.calculator" var="Calculator"/>
+<fmt:message key="condition.contacts" var="Contact"/>
+<fmt:message key="condition.order" var="Order"/>
+<fmt:message key="condition.signIn" var="SignIn"/>
+<fmt:message key="condition.first" var="firstPar"/>
+<fmt:message key="condition.second" var="secondPar"/>
+<fmt:message key="condition.third" var="thirdPar"/>
+<fmt:message key="condition.fourth" var="fourthPar"/>
+<fmt:message key="condition.tariffing" var="tariffingPar"/>
+<fmt:message key="condition.from" var="from"/>
+<fmt:message key="condition.to" var="to"/>
+<fmt:message key="condition.price" var="price"/>
+<fmt:message key="condition.address" var="address"/>
+<fmt:message key="condition.allRight" var="allRight"/>
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -23,13 +46,13 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik Delivery</h1>
+                    <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
                 </div>
             </div>
         </div>
@@ -44,12 +67,17 @@
                 <div class="line"></div>
             </div>
             <div class="col-md-9 col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
-                        <li><a href="/con?command=home" >Main</a ></li>
-                        <li class="active"><a href="/con?command=condition">Condition</a></li>
-                        <li><a href="/con?command=calculator">Calculator</a></li>
-                        <li><a href="/con?command=contact">Contact</a></li>
+                    <ul class="menu d-flex">
+                        <li><a href="/con?command=home">${Main}</a ></li>
+                        <li class="active"><a href="/con?command=condition">${Condition}</a></li>
+                        <li><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li><a href="/con?command=contact">${Contact}</a></li>
+                        <c:if test="${visible == true}">
+                            <li><a href="/con?command=order">${Order}</a></li>
+                        </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
@@ -58,7 +86,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">SignIn <i class=" fa fa-sign-in"></i></a>
+                    <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
             <div class="col-md-12 col-lg-12">
@@ -73,29 +101,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Умови доставки</h2>
+                <h2>${Condition}</h2>
             </div>
             <div class="col-lg-12">
                 <div class="terms__text">
-                    <p>При оформленні замовлення до 12.00 і наявності його на складі,
-                        ми відправляємо товар у той же день.</p>
-                    <p> Доставляється замовлення протягом 2 днів, в залежності від
-                        вашого місця розташування. </p>
-                    <p> Як тільки товар надійде до відділення "Polik Delivery", ви зможете забрати
-                            товар в будь-який зручний, для вас час протягом 4 днів. </p>
-                    <p>Щоб дізнатись чи присутня посилка на складі, ви можете зателефонувати
-                        за номером (063)-625-48-22 </p>
+                    <p>${firstPar}</p>
+                    <p>${secondPar} </p>
+                    <p>${thirdPar}</p>
+                    <p>${fourthPar}(063)-625-48-22 </p>
                 </div>
                 <div class="terms__priceList">
                     <table>
                         <thead>
                         <tr>
-                            <th colspan="3">Тарифікація доставки</th>
+                            <th colspan="3">${tariffingPar}</th>
                         </tr>
                         <tr>
-                            <th>Звідки</th>
-                            <th>Куди</th>
-                            <th>Ціна</th>
+                            <th>${from}</th>
+                            <th>${to}</th>
+                            <th>${price}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -124,7 +148,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="address">
-                    01032 м.Київ вул. Гончара 55а (063)-625-48-22
+                    01032 ${address} (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -137,7 +161,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Всі права захищені
+                    &#169; 2017 ${allRight}
                 </div>
             </div>
         </div>

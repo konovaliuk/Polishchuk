@@ -3,7 +3,7 @@
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
 
-<fmt:setLocale value="${sessionScope.locale}"/>
+<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="userPage.delivery" var="Delivery"/>
@@ -57,8 +57,10 @@
                 <div class="line"></div>
             </div>
             <div class="col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
+                    <ul class="menu d-flex">
                         <li class="active"><a href="/con?command=home" >${Main}</a ></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>

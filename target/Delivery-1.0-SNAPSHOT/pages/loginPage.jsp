@@ -2,7 +2,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
-<fmt:setLocale value="${sessionScope.locale}"/>
+<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="login.placeholderUsername" var="Username"/>
@@ -48,11 +48,11 @@
                         <label for="inputPassword">${Password} </label>
                     </div>
 
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"> ${Remember}
-                        </label>
-                    </div>
+                    <%--<div class="checkbox">--%>
+                        <%--<label>--%>
+                            <%--<input type="checkbox"> ${Remember}--%>
+                        <%--</label>--%>
+                    <%--</div>--%>
                     <div class="btn-login">
                         <button type="submit" class="btn btn-success btn-block" <%--name="sub" value="sub"--%>>${Submit}</button>
                         <%--<a href="/con?command=registration"> ${Registration}</a>--%>

@@ -12,7 +12,7 @@ import java.util.List;
 public class ParcelPriceImpl implements IParcelPriceDao{
     private static final Logger LOGGER = Logger.getLogger(ParcelPriceImpl.class);
     private static final String GET_LIST_PARCEL_PRICE = "SELECT * FROM ParcelPrice";
-    private static final String GET_PARCEL_PRICE_BY_ID = "SELECT * FROM ParcelPrice WHERE parcelpriceID=?";
+    private static final String GET_PARCEL_PRICE_BY_WEIGHT = "SELECT price FROM ParcelPrice WHERE weight=?";
     private static final String DELETE_PARCEL_PRICE_BY_WEIGHT = "DELETE FROM ParcelPrice WHERE weight=?";
     private static final String UPDATE_PARCEL_PRICE_DATA = "UPDATE ParcelPrice SET weight=?, price=? WHERE parcelpriceID=?";
     private static final String CREATE_PARCEL_PRICE = "INSERT INTO ParcelPrice (parcelpriceID, weight, price) " +
@@ -62,27 +62,22 @@ public class ParcelPriceImpl implements IParcelPriceDao{
     }
 
     @Override
-    public ParcelPrice getById(Long id) {
-        ParcelPrice parcelPrice = new ParcelPrice();
+    public Integer getByWeight(int weight) {
+        Integer priceByWeight = null;
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_ID)) {
-            preparedStatement.setLong(1, id);
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_WEIGHT)) {
+            preparedStatement.setInt(1, weight);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                do {
-                    parcelPrice.setParcelpriceID(resultSet.getLong("parcelpriceID"));
-                    parcelPrice.setWeight(resultSet.getInt("weight"));
-                    parcelPrice.setPrice(resultSet.getInt("volume"));
-                    preparedStatement.executeUpdate();
-                } while (resultSet.next());
+                priceByWeight = resultSet.getInt(1);
             } else {
-                LOGGER.info("No ParcelPrice with id: " + id);
+                LOGGER.info("No ParcelPrice with weight: " + weight);
             }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
-        return parcelPrice;
+        return priceByWeight;
     }
 
     @Override

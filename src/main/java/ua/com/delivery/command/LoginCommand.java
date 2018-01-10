@@ -31,7 +31,7 @@ public class LoginCommand implements ICommand{
             //<сторінка на якій буде привітання для юзера
 //            request.getSession().setAttribute("user", username);
 //            request.getSession().setAttribute("user", user);
-
+        request.getSession().setAttribute("visible", true);
         return page;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {
@@ -64,13 +64,13 @@ public class LoginCommand implements ICommand{
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ADMIN_PAGE);
     }
 
-    //////розібратись
     private String redirectOnUserPage (User user, HttpServletRequest request){
         HttpSession session = request.getSession();
         session.setAttribute(UtilForCommand.USER, user);
 
         request.setAttribute(USERNAME, user.getUsername());
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
+//        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }
 
 

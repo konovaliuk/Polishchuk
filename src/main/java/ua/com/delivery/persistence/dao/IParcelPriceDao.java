@@ -15,7 +15,7 @@ public interface IParcelPriceDao {
     List<ParcelPrice> getListParcelPrices();
 
     //will return us one parcelPrice by field
-    ParcelPrice getById(Long id);
+    Integer getByWeight(int weight);
 
     //this part will be update our parcelPrice
     void updateParcelPrice(ParcelPrice parcelPrice);

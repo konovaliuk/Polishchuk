@@ -15,6 +15,7 @@ public class DirectionImpl implements IDirectionDao {
     private static final String GET_PRICE_LIST_DIRECTIONS = "SELECT * FROM Directions";
     private static final String GET_DIRECTION_BY_FROM_CITY = "SELECT * FROM Directions WHERE from_city=?";
     private static final String DELETE_DIRECTION_BY_ID = "DELETE FROM Directions WHERE directionID=?";
+    private static final String GET_PRICE_FROM_TO_CITY = "SELECT price_direction FROM Directions WHERE from_city=? AND to_city=?";
     private static final String UPDATE_DIRECTION_DATA = "UPDATE Directions SET from_city=?, to_city=?, price_direction=? " +
             "WHERE directionID=?";
     private static final String CREATE_DIRECTION = "INSERT INTO Directions (directionID, from_city, to_city, " +
@@ -149,6 +150,29 @@ public class DirectionImpl implements IDirectionDao {
             LOGGER.error(e.toString());
         }
     }
+
+    @Override
+    public Integer getPriceByCity(String from, String to){
+        int price = 0;
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_PRICE_FROM_TO_CITY)
+        ) {
+            preparedStatement.setString(1, from);
+            preparedStatement.setString(2, to);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                price = resultSet.getInt(1);
+            } else{
+                LOGGER.error("Can't find at the table price for city");
+                return null;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return price;
+    }
+
 
     @Override
     public void deleteDirectionById(Long id) {

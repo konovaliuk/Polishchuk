@@ -11,10 +11,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class CalculatorCommand implements ICommand{
-    @Override
+       @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Direction> list = DirectionService.getInstance().searchFromToCity();
-        request.setAttribute("listFromToCity", list);
+        request.getSession().setAttribute("listFromToCity", list);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CALCULATOR_PAGE);
     }
 }

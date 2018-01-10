@@ -1,10 +1,11 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%--<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 
 <jsp:useBean id="nowDate" class="ua.com.delivery.service.DateService"/>
 
-<fmt:setLocale value="${sessionScope.locale}"/>
+<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="calculator.delivery" var="Delivery"/>
@@ -59,12 +60,17 @@
                 <div class="line"></div>
             </div>
             <div class="col-md-9 col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
+                    <ul class="menu d-flex">
                         <li><a href="/con?command=home" >${Main}</a ></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li class="active"><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
+                        <c:if test="${visible == true}">
+                            <li><a href="/con?command=order">${Order}</a></li>
+                        </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
@@ -91,7 +97,8 @@
                 <h2>Калькулятор</h2>
             </div>
         </div>
-        <form action="#">
+        <form action="con" name="calculatorForm" method="post">
+            <input type="hidden" name="command" value="calculate">
             <div class="row align-items-center">
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center">
                     <label >Маршрут:</label>
@@ -138,7 +145,7 @@
                     <label>Вага:</label>
                 </div>
                 <div class="col-md-8 col-lg-8">
-                    <input type="number" name="weight" min="1" max="19" required="">
+                    <input type="number" name="weight" min="1" max="19" required="" >
                 </div>
                 <%--<div class="col-lg-4 d-flex justify-content-center">--%>
                     <%--<label>Обьем:</label>--%>
@@ -161,7 +168,7 @@
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <h3>Вартість:</h3>
-                    <span>1000 грн.</span>
+                    <span>${priceFromToCity} грн.</span>
                 </div>
                 <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
                     <h3>Разом до сплати:</h3>

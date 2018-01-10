@@ -1,11 +1,23 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: olexandr
-  Date: 02.01.18
-  Time: 13:23
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
+
+<fmt:setBundle basename="language"/>
+
+<fmt:message key="contact.delivery" var="Delivery"/>
+<fmt:message key="contact.schedule" var="Schedule"/>
+<fmt:message key="contact.main" var="Main"/>
+<fmt:message key="contact.condition" var="Condition"/>
+<fmt:message key="contact.calculator" var="Calculator"/>
+<fmt:message key="contact.contacts" var="Contact"/>
+<fmt:message key="contact.order" var="Order"/>
+<fmt:message key="contact.signIn" var="SignIn"/>
+<fmt:message key="contact.address" var="address"/>
+<fmt:message key="contact.allRight" var="allRight"/>
+
+
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -15,6 +27,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/mainPolik.css">
     <link rel="stylesheet" href="../css/contactPolik.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -26,13 +39,13 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik Delivery</h1>
+                    <h1>${Delivery}</h1>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
                 </div>
             </div>
         </div>
@@ -47,12 +60,17 @@
                 <div class="line"></div>
             </div>
             <div class="col-md-9 col-lg-9">
+                <input type="checkbox" id="hideMenu">
+                <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
-                    <ul class="menu d-flex align-items-center">
-                        <li><a href="/con?command=home" >Main</a ></li>
-                        <li><a href="/con?command=condition">Condition</a></li>
-                        <li><a href="/con?command=calculator">Calculator</a></li>
-                        <li class="active"><a href="/con?command=contact">Contact</a></li>
+                    <ul class="menu d-flex">
+                        <li><a href="/con?command=home" >${Main}</a ></li>
+                        <li><a href="/con?command=condition">${Condition}</a></li>
+                        <li><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li class="active"><a href="/con?command=contact">${Contact}</a></li>
+                        <c:if test="${visible == true}">
+                            <li><a href="/con?command=order">${Order}</a></li>
+                        </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
@@ -61,7 +79,7 @@
                 <div class="lang">
                     <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">SignIn <i class=" fa fa-sign-in"></i></a>
+                    <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
                 </div>
             </div>
             <div class="col-md-12 col-lg-12">
@@ -75,7 +93,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Контакти</h2>
+                <h2>${Contact}</h2>
             </div>
             <div class="col-lg-12">
                 <div class="contact__info">
@@ -83,7 +101,7 @@
                         <i class="fa fa-phone"></i>(063)-625-48-22
                     </div>
                     <div class="info__item">
-                        <i class="fa fa-home"></i>01032 м.Київ вул. Гончара 55а
+                        <i class="fa fa-home"></i>01032 ${address}
                     </div>
                     <div class="info__item">
                         <i class="fa fa-envelope"></i>polik@polik-delivery.com
@@ -113,7 +131,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Все права защищены
+                    &#169; 2017 ${allRight}
                 </div>
             </div>
         </div>
