@@ -18,6 +18,20 @@
 <fmt:message key="order.payment" var="Pay"/>
 <fmt:message key="order.cabinet" var="Cabinet"/>
 <fmt:message key="order.receipt" var="Receipt"/>
+<fmt:message key="order.dateOfReceipt" var="DateR"/>
+<fmt:message key="order.phone" var="Phone"/>
+<fmt:message key="order.cityFrom" var="CityDeparture"/>
+<fmt:message key="order.addressTo" var="ToAddress"/>
+<fmt:message key="order.name" var="Name"/>
+<fmt:message key="order.weight" var="Weight"/>
+<fmt:message key="order.email" var="Email"/>
+<fmt:message key="order.dateOfDeparture" var="DateD"/>
+<fmt:message key="order.addressFrom" var="FromAddress"/>
+<fmt:message key="order.cityTo" var="CityReceipt"/>
+<fmt:message key="order.price" var="Price"/>
+<fmt:message key="order.sendOrder" var="SendOrder"/>
+<fmt:message key="order.address" var="Address"/>
+<fmt:message key="order.allRight" var="AllRight"/>
 
 
 
@@ -121,41 +135,35 @@
                         <label for="receipt">${Receipt}</label>
                         <div class="receiptTab">
                             <div class="receiptTab__element">
-                                <label for="recDate">Дата отримання:</label>
+                                <label for="recDate">${DateR}</label>
                                 <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required=""
                                        name="dateOfDelivery">
-                                <label for="recPhone">Телефон:</label>
+                                <label for="recPhone">${Phone}</label>
                                 <input type="text" id="recPhone" required=""
                                        name="phone">
                             </div>
                             <div class="receiptTab__element">
-                                <label for="recCity">Місто відправлення:</label>
+                                <label for="recCity">${CityDeparture}</label>
                                 <input type="text" id="recCity" required=""
                                        name="directionId">
-                                <label for="recAdress">Адреса отримання:</label>
+                                <label for="recAdress">${ToAddress}</label>
                                 <input type="text" id="recAdress" required=""
                                        name="addressOfDelivery">
                             </div>
                             <div class="receiptTab__element">
                                 <%--<label for="recLast">Фамилия:</label>--%>
                                 <%--<input type="text" id="recLast" required="">--%>
-                                <label for="recName">Ім'я:</label>
+                                <label for="recName">${Name}</label>
                                 <input type="text" id="recName" required=""
                                        name="userId">
-                                <label for="recWeight">Вага вантажу:</label>
+                                <label for="recWeight">${Weight}</label>
                                 <input type="text" id="recWeight" required=""
                                 name="weightOfParcel">
                             </div>
-                            <%--<div class="receiptTab__element">--%>
-                            <%--<label for="recName">Имя:</label>--%>
-                            <%--<input type="text" id="recName" required="">--%>
-                            <%--<label for="recVolume">Обьем груза:</label>--%>
-                            <%--<input type="text" id="recVolume" required="">--%>
-                            <%--</div>--%>
                             <div class="receiptTab__element">
-                                <label for="recEmail">E-mail:</label>
+                                <label for="recEmail">${Email}</label>
                                 <input type="text" id="recEmail" required=""
                                 name="email">
                             </div>
@@ -168,38 +176,30 @@
                     <!-- Доставка груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
-                        <label for="delivery">Доставка вантажу</label>
+                        <label for="delivery">${Delivery}</label>
                         <div class="deliveryTab">
                             <div class="deliveryTab__element">
-                                <label for="delDate">Дата відправлення:</label>
+                                <label for="delDate">${DateD}</label>
                                 <input class="forDate" type="date" id="delDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required="">
-                                <label for="delPhone">Телефон:</label>
+                                <label for="delPhone">${Phone}</label>
                                 <input type="text" id="delPhone" required="">
                             </div>
                             <div class="deliveryTab__element">
-                                <label for="delCity">Адрес відправлення:</label>
+                                <label for="delCity">${FromAddress}</label>
                                 <input type="text" id="delCity" required="">
-                                <label for="delAdress">Місто отримання:</label>
+                                <label for="delAdress">${CityReceipt}</label>
                                 <input type="text" id="delAdress" required="">
                             </div>
                             <div class="deliveryTab__element">
-                                <%--<label for="delLast">Фамилия:</label>--%>
-                                <%--<input type="text" id="delLast" required="">--%>
-                                <label for="delName">Имя:</label>
+                                <label for="delName">${Name}</label>
                                 <input type="text" id="delName" required="">
-                                <label for="delWeight">Вага вантажу:</label>
+                                <label for="delWeight">${Weight}</label>
                                 <input type="text" id="delWeight" required="">
                             </div>
-                            <%--<div class="deliveryTab__element">--%>
-                            <%--<label for="delName">Имя:</label>--%>
-                            <%--<input type="text" id="delName" required="">--%>
-                            <%--<label for="delVolume">Обьем груза:</label>--%>
-                            <%--<input type="text" id="delVolume" required="">--%>
-                            <%--</div>--%>
                             <div class="deliveryTab__element">
-                                <label for="delEmail">E-mail:</label>
+                                <label for="delEmail">${Email}</label>
                                 <input type="text" id="delEmail" required="">
                             </div>
                         </div>
@@ -210,12 +210,12 @@
                     <!-- /Line -->
                     <div class="offset-md-5 col-md-5 offset-lg-5 col-lg-6">
                         <div class="price d-flex justify-content-around align-items-center">
-                            <h3>Стоимость:</h3>
+                            <h3>${Price}</h3>
                             <p>1000 грн.</p>
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <input type="submit" value="Відправити заявку">
+                        <input type="submit" value="${SendOrder}">
                     </div>
                 </form>
             </div>
@@ -233,7 +233,7 @@
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="address ">
-                    01032 м.Киев вул. Гончара 55а (063)-625-48-22
+                    01032 ${Address} (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -246,7 +246,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Все права защищены
+                    &#169; 2017 ${AllRight}
                 </div>
             </div>
         </div>

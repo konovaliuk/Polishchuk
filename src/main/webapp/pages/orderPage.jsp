@@ -28,7 +28,6 @@
 <fmt:message key="order.dateOfDeparture" var="DateD"/>
 <fmt:message key="order.addressFrom" var="FromAddress"/>
 <fmt:message key="order.cityTo" var="CityReceipt"/>
-<fmt:message key="order.price" var="CityReceipt"/>
 <fmt:message key="order.price" var="Price"/>
 <fmt:message key="order.sendOrder" var="SendOrder"/>
 <fmt:message key="order.address" var="Address"/>

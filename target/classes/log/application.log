@@ -7581,3 +7581,157 @@
 01:48:15,573 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
 01:48:16,858 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@77c75b74
 01:48:16,859 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:21:49,431 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@71cfe037
+00:21:50,046 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:21:51,711 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@38016526
+00:21:51,736 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+00:21:51,737 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:21:55,493 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@77fddf40
+00:21:55,494 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:21:58,222 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@4709431e
+00:21:58,223 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:22:04,344 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@24b87208
+00:22:04,374 INFO  LoginService.http-nio-8080-exec-3:existUsername:38 - Polik: is present in our DB
+00:22:04,375 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /index.jsp
+00:22:05,764 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@423a82d6
+00:22:05,765 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:24:03,428 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@423a82d6
+00:24:03,429 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:28:38,258 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@39743c4c
+00:28:38,267 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:28:43,448 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@b128650
+00:28:43,828 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+00:28:43,829 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+00:28:46,300 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@273bf651
+00:28:46,301 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:29:03,440 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.LogoutCommand@3f7280c6
+00:29:03,441 INFO  LogoutCommand.http-nio-8080-exec-3:execute:18 - Was destroyed session: 388A41D969C7D64F5DD5C250C1FEC20D
+00:29:03,442 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /index.jsp
+00:29:05,839 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@39743c4c
+00:29:05,839 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:29:10,662 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@b128650
+00:29:10,667 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+00:29:10,667 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+00:29:14,388 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@4f260b41
+00:29:14,402 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:29:15,696 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@523f9f6b
+00:29:15,702 INFO  DirectionService.http-nio-8080-exec-10:searchFromToCity:35 - It's a list from/to city
+00:29:15,703 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:29:16,919 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@3de0fef8
+00:29:16,920 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:29:18,413 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@273bf651
+00:29:18,413 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:29:19,595 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@3de0fef8
+00:29:19,596 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:29:21,260 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@523f9f6b
+00:29:21,265 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+00:29:21,266 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:29:22,697 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@273bf651
+00:29:22,697 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:29:25,242 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@4f260b41
+00:29:25,246 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:29:27,733 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:53 - Was called command: ua.com.delivery.command.HomeCommand@4c43b601
+00:29:27,734 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /index.jsp
+00:31:56,246 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@39743c4c
+00:31:56,742 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:31:58,364 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@4c43b601
+00:31:58,390 INFO  DirectionService.http-nio-8080-exec-5:searchFromToCity:35 - It's a list from/to city
+00:31:58,393 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:32:00,327 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@b128650
+00:32:00,328 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:32:01,647 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@4c43b601
+00:32:01,655 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+00:32:01,657 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:32:02,919 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@3f7280c6
+00:32:02,919 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:32:07,988 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@3a32ea32
+00:32:08,016 INFO  LoginService.http-nio-8080-exec-5:existUsername:38 - Polik: is present in our DB
+00:32:08,017 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /index.jsp
+00:32:10,818 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@39743c4c
+00:32:10,826 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:32:14,951 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:53 - Was called command: ua.com.delivery.command.LogoutCommand@45de6031
+00:32:14,952 INFO  LogoutCommand.http-nio-8080-exec-9:execute:18 - Was destroyed session: 63CA33E65893CCFBF2D7D01EFC3F16FB
+00:32:14,953 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /index.jsp
+00:34:17,516 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@65100172
+00:34:17,527 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:34:26,764 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@65100172
+00:34:26,766 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:34:31,281 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@4f70399d
+00:34:31,629 INFO  LoginService.http-nio-8080-exec-3:existUsername:38 - Polik: is present in our DB
+00:34:31,629 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /index.jsp
+00:34:33,706 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@69b807c1
+00:34:33,707 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:34:39,379 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@2922764c
+00:34:39,397 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:34:41,340 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@69f9900b
+00:34:41,349 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+00:34:41,349 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:34:45,950 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@75d92581
+00:34:45,951 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:34:48,238 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@69b807c1
+00:34:48,239 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:36:23,720 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.SignInCommand@53dee065
+00:36:23,726 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:36:29,399 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.LoginCommand@68c10f02
+00:36:29,746 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+00:36:29,746 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+00:36:32,002 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@77a384c3
+00:36:32,016 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:36:34,287 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.ContactCommand@490d119d
+00:36:34,288 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+00:36:39,699 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@47a447ff
+00:36:39,700 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:36:41,633 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@b128650
+00:36:41,642 INFO  DirectionService.http-nio-8080-exec-5:searchFromToCity:35 - It's a list from/to city
+00:36:41,642 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:36:42,963 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:53 - Was called command: ua.com.delivery.command.ConditionCommand@77a384c3
+00:36:42,969 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+00:37:05,845 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:53 - Was called command: ua.com.delivery.command.OrderCommand@47a447ff
+00:37:05,846 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/orderPage.jsp
+00:37:09,249 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@b128650
+00:37:09,254 INFO  DirectionService.http-nio-8080-exec-9:searchFromToCity:35 - It's a list from/to city
+00:37:09,255 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:37:25,549 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.CalculateCommand@196be8dc
+00:37:25,560 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:45:41,945 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:45:42,338 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+00:45:42,346 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:47:27,597 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@39743c4c
+00:47:27,986 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+00:47:27,992 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:49:13,267 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:49:13,713 INFO  DirectionService.http-nio-8080-exec-10:searchFromToCity:35 - It's a list from/to city
+00:49:13,719 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:49:49,129 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:49:49,141 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:35 - It's a list from/to city
+00:49:49,147 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:49:49,711 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:49:49,714 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+00:49:49,728 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:49:50,673 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:49:50,676 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+00:49:50,677 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:49:52,808 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+00:49:52,812 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+00:49:52,813 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:50:20,751 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@3716a6ba
+00:50:21,176 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+00:50:21,189 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:51:08,713 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@a85800a
+00:51:09,435 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+00:51:09,443 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:52:05,834 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@707b7070
+00:52:06,509 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+00:52:06,517 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:52:33,219 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.CalculateCommand@77b09b03
+00:52:33,260 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:57:31,151 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@41e8e4
+00:57:31,745 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+00:57:31,761 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+00:58:02,071 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:53 - Was called command: ua.com.delivery.command.CalculateCommand@650c1312
+00:58:02,118 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+01:00:16,428 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:53 - Was called command: ua.com.delivery.command.CalculatorCommand@b817180
+01:00:16,840 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+01:00:16,847 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+01:00:30,736 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:53 - Was called command: ua.com.delivery.command.CalculateCommand@5156887e
+01:00:30,771 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp

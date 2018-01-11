@@ -8,10 +8,6 @@ public class AbstractFactory implements IAbstractFactory {
         return new CalculatorImpl();
     }
 
-    public CargoPriceImpl createCargoDao(){
-        return new CargoPriceImpl();
-    }
-
     public DirectionImpl createDirectionDao() {
         return new DirectionImpl();
     }

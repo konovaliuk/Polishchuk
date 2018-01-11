@@ -16,6 +16,7 @@
 <fmt:message key="calculator.contacts" var="Contact"/>
 <fmt:message key="calculator.order" var="Order"/>
 <fmt:message key="calculator.signIn" var="SignIn"/>
+<fmt:message key="calculator.logout" var="Logout"/>
 
 
 <html>
@@ -171,17 +172,20 @@
                 </div>
                 <div class="col-md-5 col-lg-5">
                     <h3>Розрахунок вартості:</h3>
-                    <span>Вартість доставки:</span>
+                    <span>Вартість за вагу посилки:</span><br>
+                    <span>Вартість між містами:</span><br>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <h3>Вартість:</h3>
-                    <span>${priceFromToCity} грн.</span>
+                    <span>${priceByWeight} грн.</span><br>
+                    <span>${priceBetweenCity} грн.</span><br>
+
                 </div>
                 <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
                     <h3>Разом до сплати:</h3>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <h3>1000 грн.</h3>
+                    <h3><span>${priceFromToCity} грн.</span></h3>
                 </div>
             </div>
         </form>

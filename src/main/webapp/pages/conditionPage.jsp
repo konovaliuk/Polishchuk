@@ -22,6 +22,7 @@
 <fmt:message key="condition.price" var="price"/>
 <fmt:message key="condition.address" var="address"/>
 <fmt:message key="condition.allRight" var="allRight"/>
+<fmt:message key="condition.logout" var="Logout"/>
 
 
 <html>

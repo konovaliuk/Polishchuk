@@ -20,8 +20,12 @@ public class CalculateCommand implements ICommand {
         int weight = Integer.parseInt(request.getParameter(WEIGHT));
 
         Integer price = DirectionService.getInstance().priceForCity(fromCity, toCity, weight);
+        Integer priceByWeight = DirectionService.getInstance().priceByWeight(weight);
+        Integer priceBetweenCity = DirectionService.getInstance().priceBetweenCity(fromCity, toCity);
         request.setAttribute("priceFromToCity", price);
-        request.setAttribute("w", weight);
+        request.setAttribute("priceByWeight", priceByWeight);
+        request.setAttribute("priceBetweenCity", priceBetweenCity);
+//        request.setAttribute("w", weight);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CALCULATOR_PAGE);
     }
 }

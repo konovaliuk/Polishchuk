@@ -52,4 +52,20 @@ public class DirectionService {
         }
         return resultPrice;
     }
+
+    public Integer priceBetweenCity(String from, String to){
+        Integer cityPrice = factory.createDirectionDao().getPriceByCity(from, to);
+        if (cityPrice == null){
+            LOGGER.error("Table hasn't include price for this city");
+        }
+        return cityPrice;
+    }
+
+    public Integer priceByWeight(int weight){
+        Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
+        if (weightPrice == null){
+            LOGGER.error("Table hasn't data for this weight: " + weight);
+        }
+        return weightPrice;
+    }
 }

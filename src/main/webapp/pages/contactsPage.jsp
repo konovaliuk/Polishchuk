@@ -14,6 +14,7 @@
 <fmt:message key="contact.signIn" var="SignIn"/>
 <fmt:message key="contact.address" var="address"/>
 <fmt:message key="contact.allRight" var="allRight"/>
+<fmt:message key="contact.logout" var="Logout"/>
 
 
 
