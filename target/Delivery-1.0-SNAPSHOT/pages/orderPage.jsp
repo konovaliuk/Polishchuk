@@ -1,5 +1,27 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
 <jsp:useBean id="nowDate" class="ua.com.delivery.service.DateService"/>
+
+<fmt:setBundle basename="language"/>
+
+<fmt:message key="order.delivery" var="Delivery"/>
+<fmt:message key="order.schedule" var="Schedule"/>
+<fmt:message key="order.main" var="Main"/>
+<fmt:message key="order.condition" var="Condition"/>
+<fmt:message key="order.calculator" var="Calculator"/>
+<fmt:message key="order.contacts" var="Contact"/>
+<fmt:message key="order.order" var="Order"/>
+<fmt:message key="order.signIn" var="SignIn"/>
+<fmt:message key="order.logout" var="Logout"/>
+<fmt:message key="order.createOrder" var="CreateOrder"/>
+<fmt:message key="order.payment" var="Pay"/>
+<fmt:message key="order.cabinet" var="Cabinet"/>
+<fmt:message key="order.receipt" var="Receipt"/>
+
+
+
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -22,14 +44,14 @@
                 </div>
                 <div class="logo__text">
                     <h1>Polik
-                        <small>Доставка грузов</small>
+                        <small>${Delivery}</small>
                     </h1>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Расписание работы Пн - Сб: 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                 </div>
             </div>
         </div>
@@ -48,11 +70,11 @@
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/">Головна</a></li>
-                        <li><a href="/con?command=condition">Умови&nbspдоставки</a></li>
-                        <li><a href="/con?command=calculator">Калькулятор&nbspдоставки</a></li>
-                        <li><a href="/con?command=contact">Контакти</a></li>
-                        <li class="active"><a href="/con?command=order">Створити&nbspзаявку</a></li>
+                        <li><a href="/">${Main}</a></li>
+                        <li><a href="/con?command=condition">${Condition}</a></li>
+                        <li><a href="/con?command=calculator">${Calculator}</a></li>
+                        <li><a href="/con?command=contact">${Contact}</a></li>
+                        <li class="active"><a href="/con?command=order">${Order}</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,7 +82,14 @@
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">Sign&nbspin <i class=" fa fa-sign-in"></i></a>
+                    <c:choose>
+                        <c:when test="${visibleLogout == true}">
+                            <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </div>
             <div class="col-md-12 col-lg-12">
@@ -75,13 +104,13 @@
     <div class="container">
         <div class="row ">
             <div class="col-md-12 col-lg-12">
-                <h2>Мій кабінет</h2>
+                <h2>${Cabinet}</h2>
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
                 <input type="checkbox" id="test">
-                <label class="myButton" for="test">Створити заявку</label>
-                <input class="myButton" type="button" value="Оплатити">
+                <label class="myButton" for="test">${CreateOrder}</label>
+                <input class="myButton" type="button" value="${Pay}">
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
@@ -89,7 +118,7 @@
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="receipt">
-                        <label for="receipt">Отримання вантажу</label>
+                        <label for="receipt">${Receipt}</label>
                         <div class="receiptTab">
                             <div class="receiptTab__element">
                                 <label for="recDate">Дата отримання:</label>

@@ -32,6 +32,7 @@ public class LoginCommand implements ICommand{
 //            request.getSession().setAttribute("user", username);
 //            request.getSession().setAttribute("user", user);
         request.getSession().setAttribute("visible", true);
+            request.getSession().setAttribute("visibleLogout", true);
         return page;
     }
     private String checkUserPassword(HttpServletRequest request, User user, String password) {

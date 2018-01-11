@@ -14,6 +14,7 @@
 <fmt:message key="home.contacts" var="Contact"/>
 <fmt:message key="home.order" var="Order"/>
 <fmt:message key="home.signIn" var="SignIn"/>
+<fmt:message key="home.logout" var="Logout"/>
 
 
 <html>
@@ -65,6 +66,7 @@
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
+
                         <c:if test="${visible == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
@@ -76,7 +78,16 @@
                 <div class="lang">
                     <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
-                    <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
+                    <c:choose>
+                        <c:when test="${visibleLogout == true}">
+                            <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
+                        </c:when>
+                        <c:otherwise>
+                            <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
+                        </c:otherwise>
+                    </c:choose>
+
+
                 </div>
             </div>
             <div class="col-md-12 col-lg-12">

@@ -10,6 +10,6 @@ import java.io.IOException;
 public class HomeCommand implements ICommand{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.HOME_PAGE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }
 }
