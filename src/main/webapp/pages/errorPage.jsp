@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/mainPolik.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
 <!-- HEADER -->
@@ -29,7 +30,7 @@
                     <h1>Polik Delivery</h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
@@ -84,7 +85,7 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <img src="../img/error.jpg" alt="error">
+                <img src="../img/error.jpg" width="100%" alt="error">
             </div>
         </div>
     </div>
@@ -94,11 +95,10 @@
 <section id="map" class="map">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
-                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="col-md-8 col-lg-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-lg-4">
                 <div class="adress ">
                     01032 м.Київ вул. Гончара 55а (063)-625-48-22
                 </div>
@@ -111,7 +111,7 @@
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="copy">
                     &#169; 2017 Всі права захищені
                 </div>
