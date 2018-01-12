@@ -11,10 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/contactPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/contactPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/vitalyaRegistr.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_en_EN.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_en_EN.properties" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/mainPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/mainPolik.css" />
@@ -125,16 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vitalyaRegistr.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/vitalyaRegistr.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1176,7 +1163,7 @@
       <workItem from="1515755127686" duration="2800000" />
       <workItem from="1515765773465" duration="1347000" />
       <workItem from="1515773659871" duration="21000" />
-      <workItem from="1515776215899" duration="2157000" />
+      <workItem from="1515776215899" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Add one method">
       <created>1513325113667</created>
@@ -1465,11 +1452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515778129687</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="changes all css files">
+      <created>1515778400388</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1515778400388</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="574483000" />
+    <option name="totallyTimeSpent" value="574539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1573,7 +1567,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="Add some new code in ControllerHelper and command.properties" />
     <MESSAGE value="Add FilterForEncoding and use him for Controller" />
     <MESSAGE value="Add several folders (css/img/pages) and configure them" />
     <MESSAGE value="Fix some moments&#10;Add utilCommand folder" />
@@ -1598,7 +1591,8 @@
     <MESSAGE value="Deletet cargoPrice and change calculateCommand" />
     <MESSAGE value="Full language" />
     <MESSAGE value="index.jsp with adaptability" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.jsp with adaptability" />
+    <MESSAGE value="changes all css files" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes all css files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
