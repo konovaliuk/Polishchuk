@@ -80,7 +80,7 @@
     /* /ORDER */
     /* CALCULATOR */
     .calculator select, .calculator input[type="date"], .calculator input[type="number"] {
-        width: 174px;
+        width: 173px;
     }
     /* /CALCULATOR */
 }
