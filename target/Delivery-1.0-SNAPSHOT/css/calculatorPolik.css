@@ -1,31 +1,49 @@
 /* CALCULATOR */
+select {
+	width: 210px;
+	border: 0;
+	background: #fff;
+	padding: 5px;
+	outline: 0;
+}
 .calculator {
 	padding-bottom: 50px;
 }
 .calculator label {
 	font-size: 18px;
+	width: 135px;
 }
-.calculator h2 {
-	padding: 15px 0;
-	margin-bottom: 50px;
-	border-bottom: 3px solid #f3f4f6;
+.calculator input[type="date"], .calculator input[type="number"] {
+	border: none;
+	width: 210px;
+	cursor: pointer;
+	padding-left: 38px;
 }
-.calculator select {
-	width: 100%;
+.calculator input[type="number"] {
+	padding-left: 0;
+	text-align: center;
+}
+.calculator input {
+	margin-right: 30px;
+}
+.fa-arrow-right {
+	margin: 0 76px;
 }
 .fa-calculator {
 	font-size: 120px;
 }
 input[type="submit"] {
+	background: rgba(62, 230, 255, 0.53);
 	margin-top: 30px;
 	padding: 15px 0;
-	border: none;
+	border: 0;
+	border-radius: 5px;
 	width: 100%;
 	font-size: 20px;
-	color: #fff;
+	color: rgba(43, 123, 78, 0.92);
 	cursor: pointer;
 }
 .dateDel {
-    margin-left: 53px;
+	margin-left: 53px;
 }
 /* /CALCULATOR */

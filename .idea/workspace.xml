@@ -11,8 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/vitalyaRegistr.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="calculatorPage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp">
+      <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="102">
+              <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -159,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/language_uk_UA.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
@@ -170,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/media.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
       </list>
     </option>
   </component>
@@ -1108,7 +1115,7 @@
       <workItem from="1515755127686" duration="2800000" />
       <workItem from="1515765773465" duration="1347000" />
       <workItem from="1515773659871" duration="21000" />
-      <workItem from="1515776215899" duration="3762000" />
+      <workItem from="1515776215899" duration="3988000" />
     </task>
     <task id="LOCAL-00001" summary="Add one method">
       <created>1513325113667</created>
@@ -1411,11 +1418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515778452098</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="calculator page with adapt">
+      <created>1515780023056</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1515780023056</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576088000" />
+    <option name="totallyTimeSpent" value="576314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1520,7 +1534,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="Add several folders (css/img/pages) and configure them" />
     <MESSAGE value="Fix some moments&#10;Add utilCommand folder" />
     <MESSAGE value="href direction" />
     <MESSAGE value="some changes" />
@@ -1545,7 +1558,8 @@
     <MESSAGE value="index.jsp with adaptability" />
     <MESSAGE value="changes all css files" />
     <MESSAGE value="delete vitalyaRegistr" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete vitalyaRegistr" />
+    <MESSAGE value="calculator page with adapt" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculator page with adapt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1779,14 +1793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="123" column="74" lean-forward="false" selection-start-line="123" selection-start-column="74" selection-end-line="123" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1834,14 +1840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1913,10 +1911,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-884">
           <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
           <folding />
         </state>
       </provider>

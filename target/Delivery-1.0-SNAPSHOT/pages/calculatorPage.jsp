@@ -59,7 +59,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
@@ -122,89 +122,81 @@
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <h2>${CalculatorMi}</h2>
+                <div class="line"></div>
             </div>
         </div>
-        <form action="con" name="calculatorForm" method="post">
-            <input type="hidden" name="command" value="calculate">
-            <div class="row align-items-center">
-                <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>${Route}</label>
-                </div>
-                <div class="col-md-3 col-lg-3 d-flex justify-content-center">
-                    <select name="from_city" id="from">
-                        <c:forEach items="${listFromToCity}" var="elem">
-                            <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
-                        </c:forEach>
-                        <%--<option value="Odessa">Одесса</option>--%>
-                        <%--<option value="Lviv">Львов</option>--%>
-                    </select>
-                </div>
-                <div class="col-md-1 col-lg-1 d-flex justify-content-center">
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <select name="to_city" id="to">
-                        <c:forEach items="${listFromToCity}" var="elem">
-                            <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
-                        </c:forEach>
-                        <%--<option value="Lviv">Львов</option>--%>
-                    </select>
-                </div>
-                <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>${DepartureDate}</label>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
-                           required="">
-                </div>
-                <div class="col-md-2 col-lg-2 d-flex justify-content-center dateDel">
-                    <label>${DesiredDate}</label>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
-                           required="">
-                </div>
-                <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>${DeclaredPrice}</label>
-                </div>
-                <div class="col-md-8 col-lg-8">
-                    <input type="number" min="10" required="">
-                </div>
-                <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>${Weight}</label>
-                </div>
-                <div class="col-md-8 col-lg-8">
-                    <input type="number" name="weight" min="1" max="20" required="">
-                </div>
-            </div>
-            <div class="offset-md-4 col-md-4 offset-lg-4 col-lg-4">
-                <input type="submit" value="${Calculate}">
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12"><h2></h2></div>
-                <div class="col-md-3 col-lg-3 d-flex justify-content-center">
-                    <i class="fa fa-calculator"></i>
-                </div>
-                <div class="col-md-5 col-lg-5">
-                    <h3>${CalculationPrice}</h3>
-                    <span>${ParcelWeightPrice}</span><br>
-                    <span>${BetweenCityPrice}</span><br>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <h3>${Price}</h3>
-                    <span>${priceByWeight} грн.</span><br>
-                    <span>${priceBetweenCity} грн.</span><br>
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-12 d-flex justify-content-center">
+                <form action="con" name="calculatorForm" method="post">
+                    <input type="hidden" name="command" value="calculate">
+                    <div class="calculator__block">
+                        <div class="block__element">
+                            <label>${Route}</label>
+                            <select name="from_city" id="from">
+                                <c:forEach items="${listFromToCity}" var="elem">
+                                    <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                                </c:forEach>
+                                <%--<option value="Odessa">Одесса</option>--%>
+                                <%--<option value="Lviv">Львов</option>--%>
+                            </select>
+                            <i class="fa fa-arrow-right"></i>
+                            <select name="to_city" id="to">
+                                <c:forEach items="${listFromToCity}" var="elem">
+                                    <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                                </c:forEach>
+                                <%--<option value="Lviv">Львов</option>--%>
+                            </select>
+                        </div>
+                        <div class="block__element">
+                            <label>${DepartureDate}</label>
+                            <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
+                                   required="">
+                            <label>${DesiredDate}</label>
+                            <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
+                                   required="">
+                        </div>
+                        <div class="block__element">
+                            <label>${DeclaredPrice}</label>
+                            <input type="number" min="10" required="">
+                        </div>
+                        <div class="block__element">
+                            <label>${Weight}</label>
+                            <input type="number" name="weight" min="1" max="20" required="">
+                        </div>
+                    </div>
+                    <div class="offset-md-4 col-md-4 offset-lg-4 col-lg-4">
+                        <input type="submit" value="${Calculate}">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 d-flex justify-content-center">
+                            <i class="fa fa-calculator"></i>
+                        </div>
+                        <div class="col-md-5 col-lg-5">
+                            <h3>${CalculationPrice}</h3>
+                            <span>${ParcelWeightPrice}</span><br>
+                            <span>${BetweenCityPrice}</span><br>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <h3>${Price}</h3>
+                            <span>${priceByWeight} грн.</span><br>
+                            <span>${priceBetweenCity} грн.</span><br>
 
-                </div>
-                <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
-                    <h3>${TotalPrice}</h3>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <h3><span>${priceFromToCity} грн.</span></h3>
-                </div>
+                        </div>
+                        <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
+                            <h3>${TotalPrice}</h3>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <h3><span>${priceFromToCity} грн.</span></h3>
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
 </section>
 <!-- CALCULATOR -->
 <!-- MAP -->
