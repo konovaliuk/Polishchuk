@@ -11,15 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/vitalyaRegistr.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
+      <file leaf-file-name="contactsPage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+            <state relative-caret-position="152">
+              <caret line="135" column="18" lean-forward="true" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -164,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/language_uk_UA.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" />
@@ -177,6 +168,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
       </list>
     </option>
   </component>
@@ -1115,7 +1107,7 @@
       <workItem from="1515755127686" duration="2800000" />
       <workItem from="1515765773465" duration="1347000" />
       <workItem from="1515773659871" duration="21000" />
-      <workItem from="1515776215899" duration="3988000" />
+      <workItem from="1515776215899" duration="4128000" />
     </task>
     <task id="LOCAL-00001" summary="Add one method">
       <created>1513325113667</created>
@@ -1425,11 +1417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515780023056</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="condition page with adapt">
+      <created>1515780222887</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1515780222887</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576314000" />
+    <option name="totallyTimeSpent" value="576454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1534,7 +1533,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="Fix some moments&#10;Add utilCommand folder" />
     <MESSAGE value="href direction" />
     <MESSAGE value="some changes" />
     <MESSAGE value="Addition some css style and other page" />
@@ -1559,7 +1557,8 @@
     <MESSAGE value="changes all css files" />
     <MESSAGE value="delete vitalyaRegistr" />
     <MESSAGE value="calculator page with adapt" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculator page with adapt" />
+    <MESSAGE value="condition page with adapt" />
+    <option name="LAST_COMMIT_MESSAGE" value="condition page with adapt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1769,14 +1768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1931,6 +1922,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="135" column="18" lean-forward="true" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
           <folding />
         </state>
       </provider>
