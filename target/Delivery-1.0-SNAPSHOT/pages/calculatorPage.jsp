@@ -16,6 +16,21 @@
 <fmt:message key="calculator.contacts" var="Contact"/>
 <fmt:message key="calculator.order" var="Order"/>
 <fmt:message key="calculator.signIn" var="SignIn"/>
+<fmt:message key="calculator.logout" var="Logout"/>
+<fmt:message key="calculator.calculatorMi" var="CalculatorMi"/>
+<fmt:message key="calculator.route" var="Route"/>
+<fmt:message key="calculator.dateOfDeparture" var="DepartureDate"/>
+<fmt:message key="calculator.desiredDate" var="DesiredDate"/>
+<fmt:message key="calculator.declaredPrice" var="DeclaredPrice"/>
+<fmt:message key="calculator.weight" var="Weight"/>
+<fmt:message key="calculator.calculate" var="Calculate"/>
+<fmt:message key="calculator.calculationPrice" var="CalculationPrice"/>
+<fmt:message key="calculator.priceByWeight" var="ParcelWeightPrice"/>
+<fmt:message key="calculator.priceBetweenCity" var="BetweenCityPrice"/>
+<fmt:message key="calculator.price" var="Price"/>
+<fmt:message key="calculator.totalPrice" var="TotalPrice"/>
+<fmt:message key="calculator.address" var="Address"/>
+<fmt:message key="calculator.allRight" var="AllRight"/>
 
 
 <html>
@@ -25,8 +40,8 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/mainPolik.css">
-    <link rel="stylesheet" href="../css/calculatorPolik.css">
+    <link rel="stylesheet" href="css/mainPolik.css">
+    <link rel="stylesheet" href="css/calculatorPolik.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -39,13 +54,18 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>${Delivery}</small></h1>
+                    <h1>Polik
+                        <small>${Delivery}</small>
+                    </h1>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
+                    <c:if test="${visibleOrder == true}">
+                        <p>Hello my friend ${visibleUser}</p>
+                    </c:if>
                 </div>
             </div>
         </div>
@@ -64,11 +84,11 @@
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/con?command=home" >${Main}</a ></li>
+                        <li><a href="/con?command=home">${Main}</a></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li class="active"><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
-                        <c:if test="${visible == true}">
+                        <c:if test="${visibleOrder == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
@@ -101,14 +121,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <h2>Калькулятор</h2>
+                <h2>${CalculatorMi}</h2>
             </div>
         </div>
         <form action="con" name="calculatorForm" method="post">
             <input type="hidden" name="command" value="calculate">
             <div class="row align-items-center">
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label >Маршрут:</label>
+                    <label>${Route}</label>
                 </div>
                 <div class="col-md-3 col-lg-3 d-flex justify-content-center">
                     <select name="from_city" id="from">
@@ -131,38 +151,34 @@
                     </select>
                 </div>
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>Дата відправлення:</label>
+                    <label>${DepartureDate}</label>
                 </div>
                 <div class="col-md-2 col-lg-2">
-                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
+                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
+                           required="">
                 </div>
                 <div class="col-md-2 col-lg-2 d-flex justify-content-center dateDel">
-                    <label>Бажана дата отримання:</label>
+                    <label>${DesiredDate}</label>
                 </div>
                 <div class="col-md-2 col-lg-2">
-                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>" required="">
+                    <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
+                           required="">
                 </div>
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>Оголошена вартість:</label>
+                    <label>${DeclaredPrice}</label>
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <input type="number" min="10" required="">
                 </div>
                 <div class="col-md-4 col-lg-4 d-flex justify-content-center">
-                    <label>Вага:</label>
+                    <label>${Weight}</label>
                 </div>
                 <div class="col-md-8 col-lg-8">
-                    <input type="number" name="weight" min="1" max="19" required="" >
+                    <input type="number" name="weight" min="1" max="20" required="">
                 </div>
-                <%--<div class="col-lg-4 d-flex justify-content-center">--%>
-                    <%--<label>Обьем:</label>--%>
-                <%--</div>--%>
-                <%--<div class="col-lg-8">--%>
-                    <%--<input type="number" min="1" required="">--%>
-                <%--</div>--%>
             </div>
             <div class="offset-md-4 col-md-4 offset-lg-4 col-lg-4">
-                <input type="submit" value="Расчитать">
+                <input type="submit" value="${Calculate}">
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12"><h2></h2></div>
@@ -170,18 +186,21 @@
                     <i class="fa fa-calculator"></i>
                 </div>
                 <div class="col-md-5 col-lg-5">
-                    <h3>Розрахунок вартості:</h3>
-                    <span>Вартість доставки:</span>
+                    <h3>${CalculationPrice}</h3>
+                    <span>${ParcelWeightPrice}</span><br>
+                    <span>${BetweenCityPrice}</span><br>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <h3>Вартість:</h3>
-                    <span>${priceFromToCity} грн.</span>
+                    <h3>${Price}</h3>
+                    <span>${priceByWeight} грн.</span><br>
+                    <span>${priceBetweenCity} грн.</span><br>
+
                 </div>
                 <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
-                    <h3>Разом до сплати:</h3>
+                    <h3>${TotalPrice}</h3>
                 </div>
                 <div class="col-md-4 col-lg-4">
-                    <h3>1000 грн.</h3>
+                    <h3><span>${priceFromToCity} грн.</span></h3>
                 </div>
             </div>
         </form>
@@ -193,11 +212,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-8 col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
+                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="address ">
-                    01032 м.Київ вул. Гончара 55а (063)-625-48-22
+                    01032 ${Address} (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -210,7 +230,7 @@
         <div class="row">
             <div class="col-lg-12 col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Всі права захищені
+                    &#169; 2017 ${AllRight}
                 </div>
             </div>
         </div>

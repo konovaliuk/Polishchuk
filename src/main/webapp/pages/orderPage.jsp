@@ -66,6 +66,9 @@
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
+                    <c:if test="${visibleOrder == true}">
+                        <p>Hello my friend ${visibleUser}</p>
+                    </c:if>
                 </div>
             </div>
         </div>
@@ -128,7 +131,8 @@
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
-                <form action="#">
+                <form action="con" name="orderForm" method="post">
+                    <input type="hidden" name="command" value="createOrder">
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="receipt">
@@ -146,8 +150,11 @@
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recCity">${CityDeparture}</label>
-                                <input type="text" id="recCity" required=""
-                                       name="directionId">
+                                <select name="directionId" id="recCity">
+                                    <c:forEach items="${cityFromTo}" var="elem">
+                                        <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                                    </c:forEach>
+                                </select>
                                 <label for="recAdress">${ToAddress}</label>
                                 <input type="text" id="recAdress" required=""
                                        name="addressOfDelivery">
@@ -189,8 +196,12 @@
                             <div class="deliveryTab__element">
                                 <label for="delCity">${FromAddress}</label>
                                 <input type="text" id="delCity" required="">
-                                <label for="delAdress">${CityReceipt}</label>
-                                <input type="text" id="delAdress" required="">
+                                <label for="toCity">${CityReceipt}</label>
+                                <select name="directionId" id="toCity">
+                                    <c:forEach items="${cityFromTo}" var="elem">
+                                        <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
+                                    </c:forEach>
+                                </select>
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delName">${Name}</label>

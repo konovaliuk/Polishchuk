@@ -28,6 +28,7 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.calculate"), new CalculateCommand());
         commandMap.put(bundle.getString("command.condition"), new ConditionCommand());
         commandMap.put(bundle.getString("command.calculator"), new CalculatorCommand());
+        commandMap.put(bundle.getString("command.createOrder"), new CreateOrderCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
 
         commandMap.put(bundle.getString("command.forRegist"), new ForRegistrCommand());

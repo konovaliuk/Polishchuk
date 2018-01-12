@@ -79,5 +79,4 @@ input[type="checkbox"]:checked  ~ form {
 	cursor: pointer;
 	font-size: 18px;
 }
-
 /* ORDER */

@@ -40,13 +40,16 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>${Delivery}</h1>
+                    <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 ml-auto">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <c:if test="${visibleOrder == true}">
+                        <p>Hello my friend ${visibleUser}</p>
+                    </c:if>
                 </div>
             </div>
         </div>
@@ -69,7 +72,7 @@
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li class="active"><a href="/con?command=contact">${Contact}</a></li>
-                        <c:if test="${visible == true}">
+                        <c:if test="${visibleOrder == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
                     </ul>

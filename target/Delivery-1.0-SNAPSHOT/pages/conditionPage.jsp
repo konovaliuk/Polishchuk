@@ -22,6 +22,7 @@
 <fmt:message key="condition.price" var="price"/>
 <fmt:message key="condition.address" var="address"/>
 <fmt:message key="condition.allRight" var="allRight"/>
+<fmt:message key="condition.logout" var="Logout"/>
 
 
 <html>
@@ -53,6 +54,9 @@
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <c:if test="${visibleOrder == true}">
+                        <p>Hello my friend ${visibleUser}</p>
+                    </c:if>
                 </div>
             </div>
         </div>
@@ -75,7 +79,7 @@
                         <li class="active"><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
-                        <c:if test="${visible == true}">
+                        <c:if test="${visibleOrder == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
@@ -117,8 +121,8 @@
                     <p>${thirdPar}</p>
                     <p>${fourthPar}(063)-625-48-22 </p>
                 </div>
-                <div class="terms__priceList">
-                    <table>
+                <div class="terms__priceList d-flex justify-content-center" >
+                    <table class="table_blur">
                         <thead>
                         <tr>
                             <th colspan="3">${tariffingPar}</th>

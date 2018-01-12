@@ -15,6 +15,11 @@
 <fmt:message key="home.order" var="Order"/>
 <fmt:message key="home.signIn" var="SignIn"/>
 <fmt:message key="home.logout" var="Logout"/>
+<fmt:message key="home.information" var="Information"/>
+<fmt:message key="home.reviews" var="Review"/>
+<fmt:message key="home.warranty" var="Warranty"/>
+<fmt:message key="home.address" var="Address"/>
+<fmt:message key="home.allRight" var="AllRight"/>
 
 
 <html>
@@ -44,6 +49,9 @@
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <c:if test="${visibleOrder == true}">
+                        <p>Hello my friend ${visibleUser}</p>
+                    </c:if>
                 </div>
             </div>
         </div>
@@ -67,7 +75,7 @@
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
 
-                        <c:if test="${visible == true}">
+                        <c:if test="${visibleOrder == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
 
@@ -121,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-lg-4">
-                <h2>Інформація</h2>
+                <h2>${Information}</h2>
                 <p>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
                     Fuga, commodi ea consectetur tempore
@@ -131,7 +139,7 @@
                     Qui illo quas, sunt.</p>
             </div>
             <div class="col-md-4 col-lg-4">
-                <h2>Гарантії</h2>
+                <h2>${Warranty}</h2>
                 <p>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
                     Fuga, commodi ea consectetur tempore
@@ -141,7 +149,7 @@
                     Qui illo quas, sunt.</p>
             </div>
             <div class="col-md-4 col-lg-4">
-                <h2>Відгуки</h2>
+                <h2>${Review}</h2>
                 <p>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
                     Fuga, commodi ea consectetur tempore
@@ -166,7 +174,7 @@
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="address ">
-                    01032 м.Київ вул. Гончара 55а (063)-625-48-22
+                    01032 ${Address} (063)-625-48-22
                 </div>
             </div>
         </div>
@@ -179,7 +187,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="copy">
-                    &#169; 2017 Всі права захищені
+                    &#169; 2017 ${AllRight}
                 </div>
             </div>
         </div>
