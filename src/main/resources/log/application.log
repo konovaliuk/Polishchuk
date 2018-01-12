@@ -8000,3 +8000,17 @@
 19:27:53,752 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:54 - Was called command: ua.com.delivery.command.CalculatorCommand@b128650
 19:27:53,763 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
 19:27:53,765 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+19:43:41,191 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:54 - Was called command: ua.com.delivery.command.CalculatorCommand@adb8562
+19:43:41,767 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+19:43:41,797 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+19:53:59,925 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:54 - Was called command: ua.com.delivery.command.CalculatorCommand@3f4d59a7
+19:54:00,962 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+19:54:00,967 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+19:54:30,532 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:54 - Was called command: ua.com.delivery.command.CalculateCommand@58363bde
+19:54:30,583 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+19:57:19,127 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:54 - Was called command: ua.com.delivery.command.CalculatorCommand@52ad8c88
+19:57:19,584 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:35 - It's a list from/to city
+19:57:19,589 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+19:59:02,418 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:54 - Was called command: ua.com.delivery.command.CalculatorCommand@39743c4c
+19:59:02,926 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+19:59:02,948 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
