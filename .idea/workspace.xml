@@ -10,60 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderCommand.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/command.properties" afterPath="$PROJECT_DIR$/src/main/resources/command.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/language_uk_UA.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_uk_UA.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includeJSP/footer.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includeJSP/header.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/includeJSP/navbar.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/mainPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/mainPolik.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/media.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/media.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/datePage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/command.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/command.properties" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_en_EN.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_en_EN.properties" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/OrderCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/OrderCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/ControllerHelper.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/ICargoPriceDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/CargoPriceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/CargoPrice.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/includeJSP/footer.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/includeJSP/header.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/includeJSP/navbar.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/datePage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/command.properties" afterPath="$PROJECT_DIR$/target/classes/command.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/language_en_EN.properties" afterPath="$PROJECT_DIR$/target/classes/language_en_EN.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/OrderCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/OrderCommand.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/ControllerHelper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_uk_UA.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/language_uk_UA.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/language_uk_UA.properties" afterPath="$PROJECT_DIR$/target/classes/language_uk_UA.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -126,8 +80,21 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="187">
               <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language_en_EN.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/language_en_EN.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -177,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/filter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/filter/RoleFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/media.css" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LogoutCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/pageConfiguration.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale/CommandLanguageUtil.java" />
@@ -210,17 +176,18 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/mainPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/language_uk_UA.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/language_en_EN.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/media.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/mainPolik.css" />
       </list>
     </option>
   </component>
@@ -1159,7 +1126,7 @@
       <workItem from="1515755127686" duration="2800000" />
       <workItem from="1515765773465" duration="1347000" />
       <workItem from="1515773659871" duration="21000" />
-      <workItem from="1515776215899" duration="1373000" />
+      <workItem from="1515776215899" duration="1876000" />
     </task>
     <task id="LOCAL-00001" summary="Add one method">
       <created>1513325113667</created>
@@ -1434,11 +1401,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515711780221</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Full language">
+      <created>1515777628094</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1515777628095</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="573699000" />
+    <option name="totallyTimeSpent" value="574202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1476,7 +1450,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.377916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26363635" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2621212" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30227274" sideWeight="0.5598756" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1543,7 +1517,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="Add resources.&#10;Controller, ControllerHelper" />
     <MESSAGE value="Add RegisterCommand and fix some yesterday code (PageConfiguration)" />
     <MESSAGE value="Add some new code in ControllerHelper and command.properties" />
     <MESSAGE value="Add FilterForEncoding and use him for Controller" />
@@ -1568,7 +1541,8 @@
     <MESSAGE value="Calculate delivery" />
     <MESSAGE value="Some translate" />
     <MESSAGE value="Deletet cargoPrice and change calculateCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deletet cargoPrice and change calculateCommand" />
+    <MESSAGE value="Full language" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full language" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1581,7 +1555,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale/CommandLanguageUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale/SetUKRCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale/SetENCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale/LocalIzation.java" />
@@ -1774,13 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mainPolik.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CalculatorCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1893,15 +1859,31 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="17">
+          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mainPolik.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="187">
           <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding />
         </state>
