@@ -1,82 +1,88 @@
 /* ORDER */
 .order label {
-	font-size: 18px;
-	cursor: pointer;
+    font-size: 18px;
+    cursor: pointer;
 }
 .order h2 {
-	padding: 15px 0;
+    padding: 15px 0;
 }
 input[type="radio"] {
-	display: none;
+    display: none;
 }
 #receipt + label, #delivery + label{
-	font-size: 20px;
-	font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 input[type="radio"]:checked + label {
-	color: #fff;
+    color: #fff;
 }
 input[id="receipt"]:checked ~ .receiptTab,
 input[id="delivery"]:checked ~ .deliveryTab {
-	display: block;
+    display: block;
 }
-.receiptTab, 
+.receiptTab,
 .deliveryTab {
-	padding: 50px 0 0 0;
+    padding: 50px 0 0 0;
 }
-.receiptTab__element label, 
+.receiptTab__element label,
 .deliveryTab__element label {
-	width: 170px;
+    width: 170px;
 }
 .receiptTab__element input,
-.deliveryTab__element input {
-	margin-right: 120px;
+.deliveryTab__element input,
+.receiptTab__element select,
+.deliveryTab__element select {
+    margin-right: 95px;
+    border: 0;
 }
-.receiptTab__element input:nth-child(4), 
+.receiptTab__element input:nth-child(4),
 .deliveryTab__element input:nth-child(4) {
-	margin-right: 0;
-}
-.line {
-	height: 3px;
-	background: #f3f4f6;
-	margin: 10px 0;
+    margin-right: 0;
 }
 .price {
-	font-size: 18px;
-	font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 input[type="submit"] {
-	width: 100%;
-	border: none;
-	margin: 50px 0;
-	padding: 10px 0;
-	background: #542584;
-	color: #fff;
-	font-size: 20px;
-	cursor: pointer;
+    width: 100%;
+    border: none;
+    margin: 50px 0;
+    padding: 10px 0;
+    background: #542584;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-/*input[type="date"]{*/
-	/*border: none;*/
-	/*width: 180px;*/
-	/*cursor: pointer;*/
-	/*padding-left: 38px;*/
-/*}*/
+input[type="date"], select{
+    border: none;
+    width: 176px;
+    cursor: pointer;
+    padding-left: 25px;
+}
+.receiptTab__element select,
+.deliveryTab__element select {
+    padding: 5px;
+    background: #fff;
+    cursor: pointer;
+}
 .receiptTab, .deliveryTab, input[type="checkbox"], form {
-	display: none;
+    display: none;
 }
 input[type="checkbox"]:checked  ~ form {
-	display: block;
+    display: block;
 }
 .myButton {
-	color: rgba(43, 123, 78, 0.92);
-	background: rgba(62, 230, 255, 0.53);
-	padding: 10px;
-	outline: none;
-	border: 0;
-	border-radius: 5px;
-	width: 160px;
-	margin: 1% 32% 1% 43%;
-	cursor: pointer;
-	font-size: 18px;
+    color: rgba(43, 123, 78, 0.92);
+    background: rgba(62, 230, 255, 0.53);
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 160px;
+    margin: 1% 32% 1% 43%;
+    cursor: pointer;
+    font-size: 18px;
 }
+
 /* ORDER */
