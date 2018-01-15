@@ -145,7 +145,7 @@
                                        required=""
                                        name="dateOfDelivery">
                                 <label for="recPhone">${Phone}</label>
-                                <input type="text" id="recPhone" required=""
+                                <input type="text" id="recPhone"   required=""
                                        name="phone">
                             </div>
                             <div class="receiptTab__element">
@@ -178,13 +178,19 @@
                                     <p>1000 грн.</p>
                                 </div>
                             </div>
+                            <div>
+                                <input type="submit" value="${SendOrder}">
+                            </div>
                         </div>
                     </div>
+                </form>
                     <!-- /Забор груза -->
                     <!-- Line -->
                     <div class="line"></div>
                     <!-- /Line -->
-                    <!-- Доставка груза -->
+                <!-- Доставка груза -->
+                <form action="con" name="orderForm" method="post">
+                    <input type="hidden" name="command" value="createOrder">
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
                         <label for="delivery">${Delivery}</label>
@@ -223,15 +229,15 @@
                                     <p>1000 грн.</p>
                                 </div>
                             </div>
+                            <div>
+                                <input type="submit" value="${SendOrder}">
+                            </div>
                         </div>
                     </div>
                     <!-- /Доставка груза -->
                     <!-- Line -->
                     <div class="line"></div>
                     <!-- /Line -->
-                    <div class="col-lg-12">
-                        <input type="submit" value="${SendOrder}">
-                    </div>
                 </form>
             </div>
         </div>

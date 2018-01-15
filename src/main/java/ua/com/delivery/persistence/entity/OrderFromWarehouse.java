@@ -14,10 +14,11 @@ public class OrderFromWarehouse implements Serializable {
     private Long orderFromWarehouseID;
     private int numberOfOrder;
     private Date dateToDelivery;
-    private Long directionID;
-    private Long userID;
+    private String cityDeparture;
+    private String userName;
     private int phone;
     private String addressToDelivery;
+    private int weight;
     private String email;
     private int totalPrice;
 

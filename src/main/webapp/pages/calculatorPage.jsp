@@ -197,6 +197,8 @@
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
 </section>
 <!-- CALCULATOR -->
 <!-- MAP -->
