@@ -8499,3 +8499,51 @@
 21:45:20,918 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:54 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@72db62d2
 21:45:20,946 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-7:createOrderFromWarehouse:41 - Order from warehouse was successful created
 21:45:20,947 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:51:20,724 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@3104f7a2
+21:51:20,736 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+21:51:28,932 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@75d92581
+21:51:29,367 INFO  LoginService.http-nio-8080-exec-9:existUsername:38 - Polik: is present in our DB
+21:51:29,368 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /index.jsp
+21:51:32,094 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@38dca63f
+21:51:32,124 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+21:51:32,124 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:52:06,382 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@51bea30d
+21:52:06,423 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-4:createOrderFromWarehouse:41 - Order from warehouse was successful created
+21:52:06,424 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:52:42,875 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderToCommand@5156887e
+21:52:42,892 INFO  OrderToWarehouse.http-nio-8080-exec-8:createOrderToWarehouse:41 - Order to warehouse was successful created
+21:52:42,893 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:54:06,462 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@26089e12
+21:54:06,496 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+21:54:14,580 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@3d39fb61
+21:54:14,990 INFO  LoginService.http-nio-8080-exec-2:existUsername:38 - Polik: is present in our DB
+21:54:14,991 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /index.jsp
+21:54:18,009 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@1c6b7470
+21:54:18,040 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+21:54:18,041 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:54:59,312 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@1c6b7470
+21:54:59,315 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+21:54:59,316 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:55:34,868 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@708ab485
+21:55:34,879 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+21:55:39,963 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@139383ac
+21:55:40,361 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+21:55:40,362 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+21:55:41,599 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@4f260b41
+21:55:41,623 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+21:55:41,627 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:56:09,407 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@4f260b41
+21:56:09,412 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+21:56:09,414 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+21:56:37,235 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:55 - Was called command: ua.com.delivery.command.ContactCommand@4c68b7a6
+21:56:37,236 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/contactsPage.jsp
+21:56:41,479 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.CalculatorCommand@c7052e0
+21:56:41,484 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+21:56:41,485 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+21:56:44,064 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.ConditionCommand@69b7d5b3
+21:56:44,070 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+21:56:45,723 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.HomeCommand@3f61ae30
+21:56:45,724 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /index.jsp
+21:56:49,566 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@4f260b41
+21:56:49,569 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+21:56:49,569 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/orderPage.jsp

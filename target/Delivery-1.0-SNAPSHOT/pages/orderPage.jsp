@@ -132,7 +132,7 @@
                 <div class="line"></div>
                 <!-- /Line -->
                 <form action="con" name="orderForm" method="post">
-                    <input type="hidden" name="command" value="createOrder">
+                    <input type="hidden" name="command" value="createOrderFrom">
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="receipt">
@@ -190,7 +190,7 @@
                     <!-- /Line -->
                 <!-- Доставка груза -->
                 <form action="con" name="orderForm" method="post">
-                    <input type="hidden" name="command" value="createOrder">
+                    <input type="hidden" name="command" value="createOrderTo">
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
                         <label for="delivery">${Delivery}</label>
