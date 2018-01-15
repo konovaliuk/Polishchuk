@@ -25,7 +25,6 @@ public class RegistrationCommand implements ICommand{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String page;
-//        if (request.getParameter("registration") != null && request.getParameter("registration").equals("Registration")) {
             String username = request.getParameter(USERNAME);
             String password = request.getParameter(PASSWORD);
             String firstName = request.getParameter(FIRST_NAME);
@@ -36,8 +35,6 @@ public class RegistrationCommand implements ICommand{
             String phone = request.getParameter(PHONE);
 
             if (LoginService.getInstance().existUsername(username) == null) {
-//            IAbstractFactory factory = new AbstractFactory();
-//            UserImpl user = factory.createUserDao();
                 UserImpl userImpl = new AbstractFactory().createUserDao();
                 User user = new User();
                 user.setUsername(username);

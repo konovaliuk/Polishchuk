@@ -62,7 +62,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
@@ -78,7 +78,7 @@
 <!-- MENU -->
 <section id="topMenu" class="topMenu">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="line"></div>
             </div>
@@ -95,7 +95,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-3 col-lg-3 d-flex justify-content-end ml-auto">
+            <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
                     <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
                     <span class="lang__item"><a href="?command=localeEn">En</a></span>
@@ -160,8 +160,6 @@
                                        name="addressOfDelivery">
                             </div>
                             <div class="receiptTab__element">
-                                <%--<label for="recLast">Фамилия:</label>--%>
-                                <%--<input type="text" id="recLast" required="">--%>
                                 <label for="recName">${Name}</label>
                                 <input type="text" id="recName" required=""
                                        name="userId">
@@ -173,6 +171,12 @@
                                 <label for="recEmail">${Email}</label>
                                 <input type="text" id="recEmail" required=""
                                 name="email">
+                            </div>
+                            <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
+                                <div class="price d-flex justify-content-around align-items-center">
+                                    <h3>${Price}:</h3>
+                                    <p>1000 грн.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,18 +217,18 @@
                                 <label for="delEmail">${Email}</label>
                                 <input type="text" id="delEmail" required="">
                             </div>
+                            <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
+                                <div class="price d-flex justify-content-around align-items-center">
+                                    <h3>${Price}:</h3>
+                                    <p>1000 грн.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- /Доставка груза -->
                     <!-- Line -->
                     <div class="line"></div>
                     <!-- /Line -->
-                    <div class="offset-md-5 col-md-5 offset-lg-5 col-lg-6">
-                        <div class="price d-flex justify-content-around align-items-center">
-                            <h3>${Price}</h3>
-                            <p>1000 грн.</p>
-                        </div>
-                    </div>
                     <div class="col-lg-12">
                         <input type="submit" value="${SendOrder}">
                     </div>

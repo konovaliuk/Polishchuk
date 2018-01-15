@@ -150,7 +150,7 @@
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recCity">${CityDeparture}</label>
-                                <select name="directionId" id="recCity">
+                                <select name="cityDeparture" id="recCity">
                                     <c:forEach items="${cityFromTo}" var="elem">
                                         <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
                                     </c:forEach>
@@ -162,14 +162,14 @@
                             <div class="receiptTab__element">
                                 <label for="recName">${Name}</label>
                                 <input type="text" id="recName" required=""
-                                       name="userId">
+                                       name="userName">
                                 <label for="recWeight">${Weight}</label>
-                                <input type="text" id="recWeight" required=""
+                                <input type="number" id="recWeight" min="1" max="20" required=""
                                 name="weightOfParcel">
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recEmail">${Email}</label>
-                                <input type="text" id="recEmail" required=""
+                                <input type="email" id="recEmail" required=""
                                 name="email">
                             </div>
                             <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
@@ -211,11 +211,11 @@
                                 <label for="delName">${Name}</label>
                                 <input type="text" id="delName" required="">
                                 <label for="delWeight">${Weight}</label>
-                                <input type="text" id="delWeight" required="">
+                                <input type="number" id="delWeight" min="1" max="20" required="">
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delEmail">${Email}</label>
-                                <input type="text" id="delEmail" required="">
+                                <input type="email" id="delEmail" required="">
                             </div>
                             <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
                                 <div class="price d-flex justify-content-around align-items-center">

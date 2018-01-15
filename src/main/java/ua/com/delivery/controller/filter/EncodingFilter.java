@@ -1,4 +1,4 @@
-package ua.com.delivery.controller.i18n.filter;
+package ua.com.delivery.controller.filter;
 
 
 import javax.servlet.*;
@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 public class EncodingFilter implements Filter {
-    private static final String ENCODING = "utf-8";
+    private static final String ENCODING = "UTF-8";
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

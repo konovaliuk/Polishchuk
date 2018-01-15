@@ -4,6 +4,7 @@
 
 
 <%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
+
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="home.delivery" var="Delivery"/>

@@ -50,7 +50,7 @@
                     <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto">
+            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
@@ -111,10 +111,10 @@
 <section id="terms" class="terms">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <h2>${Condition}</h2>
             </div>
-            <div class="col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="terms__text">
                     <p>${firstPar}</p>
                     <p>${secondPar} </p>
