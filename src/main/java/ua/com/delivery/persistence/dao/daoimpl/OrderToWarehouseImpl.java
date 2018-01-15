@@ -14,12 +14,12 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
     private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderToWarehouse WHERE ordertowarehouseID=?";
     private static final String GET_LIST_ORDER_TO_WAREHOUSE = "SELECT * FROM OrderToWarehouse";
     private static final String DELETE_ORDER_TO_WAREHOUSE_BY_ID = "DELETE FROM OrderToWarehouse WHERE ordertowarehouseID=?";
-    private static final String UPDATE_DATA_ORDER_TO_WAREHOUSE = "UPDATE OrderToWarehouse SET date_of_receipt=?," +
-            " directionID=?, userID=?, cargoID=?, parcelID=?,  weight=?, number_of_order=?, email=? ,total_price=? " +
+    private static final String UPDATE_DATA_ORDER_TO_WAREHOUSE = "UPDATE OrderToWarehouse SET date_of_departure=?," +
+            " departure_address=?, city_of_receipt=?, user_name=?, phone=?,  weight=?, number_of_order=?, email=? ,total_price=? " +
             "WHERE ordertowarehouseID=?";
-    private static final String CREATE_ORDER_TO_WAREHOUSE = "INSERT INTO OrderToWarehouse (ordertowarehouseID, " +
-            "date_of_receipt, directionID, userID, cargoID, parcelID, weight, number_of_order, email, total_price)" +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    private static final String CREATE_ORDER_TO_WAREHOUSE = "INSERT INTO OrderToWarehouse (date_of_departure, " +
+            "departure_address, city_of_receipt, user_name, phone, weight, email, number_of_order, total_price)" +
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void createOrderToWarehouse(OrderToWarehouse orderToWarehouse) {
@@ -27,20 +27,20 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_TO_WAREHOUSE)
         ) {
-            preparedStatement.setLong(1, orderToWarehouse.getOrderToWarehouseID());
-            preparedStatement.setDate(2, orderToWarehouse.getDateToReceipt());
-            preparedStatement.setLong(3, orderToWarehouse.getDirectionID());
-            preparedStatement.setLong(4, orderToWarehouse.getUserID());
-            preparedStatement.setLong(5, orderToWarehouse.getCargoID());
-            preparedStatement.setLong(6, orderToWarehouse.getParcelID());
-            preparedStatement.setInt(7, orderToWarehouse.getWeight());
+            preparedStatement.setDate(1, orderToWarehouse.getDateOfDeparture());
+            preparedStatement.setString(2, orderToWarehouse.getDepartureAddress());
+            preparedStatement.setString(3, orderToWarehouse.getCityOfReceipt());
+            preparedStatement.setString(4, orderToWarehouse.getUserName());
+            preparedStatement.setInt(5, orderToWarehouse.getPhone());
+            preparedStatement.setInt(6, orderToWarehouse.getWeight());
+            preparedStatement.setString(7, orderToWarehouse.getEmail());
             preparedStatement.setInt(8, orderToWarehouse.getNumberOfOrder());
-            preparedStatement.setString(9, orderToWarehouse.getEmail());
-            preparedStatement.setInt(10, orderToWarehouse.getTotalPrice());
+            preparedStatement.setInt(9, orderToWarehouse.getTotalPrice());
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Order to warehouse was successful created");
         } catch (SQLException e) {
+            LOGGER.error("Order to warehouse wasn't created");
             LOGGER.error(e.toString());
         }
     }
@@ -57,11 +57,11 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
                 do {
                     OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
                     orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("ordertowarehouseID"));
-                    orderToWarehouse.setDateToReceipt(resultSet.getDate("date_of_receipt"));
-                    orderToWarehouse.setDirectionID(resultSet.getLong("directionID"));
-                    orderToWarehouse.setUserID(resultSet.getLong("userID"));
-                    orderToWarehouse.setCargoID(resultSet.getLong("cargoID"));
-                    orderToWarehouse.setParcelID(resultSet.getLong("parcelID"));
+                    orderToWarehouse.setDateOfDeparture(resultSet.getDate("date_of_departure"));
+                    orderToWarehouse.setDepartureAddress(resultSet.getString("departure_address"));
+                    orderToWarehouse.setCityOfReceipt(resultSet.getString("city_of_receipt"));
+                    orderToWarehouse.setUserName(resultSet.getString("user_name"));
+                    orderToWarehouse.setPhone(resultSet.getInt("phone"));
                     orderToWarehouse.setWeight(resultSet.getInt("weight"));
                     orderToWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
                     orderToWarehouse.setEmail(resultSet.getString("email"));
@@ -89,11 +89,11 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
             if (resultSet.next()) {
                 do {
                     orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("ordertowarehouseID"));
-                    orderToWarehouse.setDateToReceipt(resultSet.getDate("date_of_receipt"));
-                    orderToWarehouse.setDirectionID((resultSet.getLong("directionID")));
-                    orderToWarehouse.setUserID(resultSet.getLong("userID"));
-                    orderToWarehouse.setCargoID(resultSet.getLong("cargoID"));
-                    orderToWarehouse.setParcelID(resultSet.getLong("parcelID"));
+                    orderToWarehouse.setDateOfDeparture(resultSet.getDate("date_of_departure"));
+                    orderToWarehouse.setDepartureAddress((resultSet.getString("departure_address")));
+                    orderToWarehouse.setCityOfReceipt(resultSet.getString("city_of_receipt"));
+                    orderToWarehouse.setUserName(resultSet.getString("user_name"));
+                    orderToWarehouse.setPhone(resultSet.getInt("phone"));
                     orderToWarehouse.setWeight(resultSet.getInt("weight"));
                     orderToWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
                     orderToWarehouse.setEmail(resultSet.getString("email"));
@@ -115,11 +115,11 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ORDER_TO_WAREHOUSE)
         ) {
-            preparedStatement.setDate(1, orderToWarehouse.getDateToReceipt());
-            preparedStatement.setLong(2, orderToWarehouse.getDirectionID());
-            preparedStatement.setLong(3, orderToWarehouse.getUserID());
-            preparedStatement.setLong(4, orderToWarehouse.getCargoID());
-            preparedStatement.setLong(5, orderToWarehouse.getParcelID());
+            preparedStatement.setDate(1, orderToWarehouse.getDateOfDeparture());
+            preparedStatement.setString(2, orderToWarehouse.getDepartureAddress());
+            preparedStatement.setString(3, orderToWarehouse.getCityOfReceipt());
+            preparedStatement.setString(4, orderToWarehouse.getUserName());
+            preparedStatement.setInt(5, orderToWarehouse.getPhone());
             preparedStatement.setInt(6, orderToWarehouse.getWeight());
             preparedStatement.setInt(7, orderToWarehouse.getNumberOfOrder());
             preparedStatement.setString(8, orderToWarehouse.getEmail());

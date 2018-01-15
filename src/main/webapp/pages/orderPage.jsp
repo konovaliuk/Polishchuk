@@ -132,7 +132,7 @@
                 <div class="line"></div>
                 <!-- /Line -->
                 <form action="con" name="orderForm" method="post">
-                    <input type="hidden" name="command" value="createOrder">
+                    <input type="hidden" name="command" value="createOrderFrom">
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="receipt">
@@ -143,7 +143,7 @@
                                 <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required=""
-                                       name="dateOfDelivery">
+                                       name="dateOfReceipt">
                                 <label for="recPhone">${Phone}</label>
                                 <input type="text" id="recPhone"   required=""
                                        name="phone">
@@ -190,7 +190,7 @@
                     <!-- /Line -->
                 <!-- Доставка груза -->
                 <form action="con" name="orderForm" method="post">
-                    <input type="hidden" name="command" value="createOrder">
+                    <input type="hidden" name="command" value="createOrderTo">
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
                         <label for="delivery">${Delivery}</label>
@@ -199,15 +199,16 @@
                                 <label for="delDate">${DateD}</label>
                                 <input class="forDate" type="date" id="delDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
-                                       required="">
+                                       required=""
+                                       name="dateOfDelivery">
                                 <label for="delPhone">${Phone}</label>
-                                <input type="text" id="delPhone" required="">
+                                <input type="text" id="delPhone" required="" name="phone">
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delCity">${FromAddress}</label>
-                                <input type="text" id="delCity" required="">
+                                <input type="text" id="delCity" required="" name="addressOfDeparture">
                                 <label for="toCity">${CityReceipt}</label>
-                                <select name="directionId" id="toCity">
+                                <select name="cityReceipt" id="toCity">
                                     <c:forEach items="${cityFromTo}" var="elem">
                                         <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
                                     </c:forEach>
@@ -215,13 +216,13 @@
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delName">${Name}</label>
-                                <input type="text" id="delName" required="">
+                                <input type="text" id="delName" required="" name="userName">
                                 <label for="delWeight">${Weight}</label>
-                                <input type="number" id="delWeight" min="1" max="20" required="">
+                                <input type="number" id="delWeight" min="1" max="20" required="" name="weightOfParcel">
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delEmail">${Email}</label>
-                                <input type="email" id="delEmail" required="">
+                                <input type="email" id="delEmail" required="" name="email">
                             </div>
                             <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
                                 <div class="price d-flex justify-content-around align-items-center">

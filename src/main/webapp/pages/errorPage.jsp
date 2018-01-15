@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/xml" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: olexandr
@@ -54,13 +54,16 @@
                         <li><a href="/con?command=condition">Condition</a></li>
                         <li><a href="/con?command=calculator">Calculator</a></li>
                         <li><a href="/con?command=contact">Contact</a></li>
+                        <c:if test="${visibleOrder == true}">
+                            <li><a href="/con?command=order">${Order}</a></li>
+                        </c:if>
                         <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
             </div>
             <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
+                    <span class="lang__item"><a href="/con?command=localeUa">Ук</a></span>
                     <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">

@@ -12,11 +12,11 @@ import java.sql.Date;
 @ToString
 public class OrderToWarehouse implements Serializable {
     private Long orderToWarehouseID;
-    private Date dateToReceipt;
-    private Long directionID;
-    private Long userID;
-    private Long cargoID;
-    private Long parcelID;
+    private Date dateOfDeparture;
+    private String departureAddress;
+    private String cityOfReceipt;
+    private String userName;
+    private int phone;
     private int weight;
     private int numberOfOrder;
     private String email;

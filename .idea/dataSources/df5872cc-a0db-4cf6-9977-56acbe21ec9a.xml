@@ -1142,32 +1142,34 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="233" name="date_of_receipt">
+    <column id="271" parent="233" name="date_of_departure">
       <Position>2</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="233" name="directionID">
+    <column id="272" parent="233" name="departure_address">
       <Position>3</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="233" name="userID">
+    <column id="273" parent="233" name="city_of_receipt">
       <Position>4</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(45)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="233" name="cargoID">
+    <column id="274" parent="233" name="user_name">
       <Position>5</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="233" name="parcelID">
+    <column id="275" parent="233" name="phone">
       <Position>6</Position>
-      <DataType>int(11)|0</DataType>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="276" parent="233" name="weight">
