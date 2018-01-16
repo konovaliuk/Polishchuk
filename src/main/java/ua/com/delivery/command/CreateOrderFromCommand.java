@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
 
-public class CreateOrderFromCommand implements ICommand{
+public class CreateOrderFromCommand implements ICommand {
     private static final String DATE_OF_RECEIPT = "dateOfReceipt";
     private static final String CITY_DEPARTURE = "cityDeparture";
     private static final String USER_NAME = "userName";
@@ -35,24 +35,26 @@ public class CreateOrderFromCommand implements ICommand{
         String email = request.getParameter(EMAIL);
         String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
 
-        int numberOfOrder = OrderService.getInstance().numberOfOrder();
-        int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
+        Integer numberOfOrder = OrderService.getInstance().numberOfOrder();
+        Integer totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
-            OrderFromWarehouseImpl orderFromWarehouseImpl = new AbstractFactory().createOrderFromWarehouseDao();
-            OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
-            orderFromWarehouse.setNumberOfOrder(numberOfOrder);
-            orderFromWarehouse.setDateToDelivery(dateOfReceipt);
-            orderFromWarehouse.setCityDeparture(cityDeparture);
-            orderFromWarehouse.setUserName(userName);
-            orderFromWarehouse.setPhone(phone);
-            orderFromWarehouse.setAddressToDelivery(addressOfDelivery);
-            orderFromWarehouse.setWeight(weightOfParcel);
-            orderFromWarehouse.setEmail(email);
-            orderFromWarehouse.setTotalPrice(totalPrice);
-            orderFromWarehouse.setTypeOfParcel(typeOfParcel);
+        request.setAttribute("totalPriceOfReceipt", totalPrice);
 
-            orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
+        OrderFromWarehouseImpl orderFromWarehouseImpl = new AbstractFactory().createOrderFromWarehouseDao();
+        OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
+        orderFromWarehouse.setNumberOfOrder(numberOfOrder);
+        orderFromWarehouse.setDateToDelivery(dateOfReceipt);
+        orderFromWarehouse.setCityDeparture(cityDeparture);
+        orderFromWarehouse.setUserName(userName);
+        orderFromWarehouse.setPhone(phone);
+        orderFromWarehouse.setAddressToDelivery(addressOfDelivery);
+        orderFromWarehouse.setWeight(weightOfParcel);
+        orderFromWarehouse.setEmail(email);
+        orderFromWarehouse.setTotalPrice(totalPrice);
+        orderFromWarehouse.setTypeOfParcel(typeOfParcel);
 
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ORDER_PAGE);
+        orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
+
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }
 }

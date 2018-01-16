@@ -13,6 +13,7 @@ public class PageConfiguration {
     public static final String ORDER_PAGE = "pageConfiguration.orderPage";
     public static final String ADMIN_PAGE = "pageConfiguration.adminPage";
     public static final String CONTACT_PAGE = "pageConfiguration.contactPage";
+    public static final String PAYMENT_PAGE = "pageConfiguration.paymentPage";
     public static final String CONDITION_PAGE = "pageConfiguration.conditionPage";
     public static final String CALCULATOR_PAGE = "pageConfiguration.calculatorPage";
     public static final String REGISTRATION_PAGE = "pageConfiguration.registrationPage";

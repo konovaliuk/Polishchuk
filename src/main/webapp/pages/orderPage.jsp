@@ -30,7 +30,7 @@
 <fmt:message key="order.addressFrom" var="FromAddress"/>
 <fmt:message key="order.cityTo" var="CityReceipt"/>
 <fmt:message key="order.price" var="Price"/>
-<fmt:message key="order.sendOrder" var="SendOrder"/>
+<fmt:message key="order.sendOrderPay" var="SendOrderPay"/>
 <fmt:message key="order.address" var="Address"/>
 <fmt:message key="order.allRight" var="AllRight"/>
 
@@ -128,7 +128,7 @@
                 <!-- /Line -->
                 <input type="checkbox" id="test">
                 <label class="myButton" for="test">${CreateOrder}</label>
-                <input class="myButton" type="button" value="${Pay}">
+                <%--<input class="myButton" type="button" value="${Pay}">--%>
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
@@ -182,7 +182,7 @@
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="${SendOrder}">
+                                <input type="submit" value="${SendOrderPay}">
                             </div>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="${SendOrder}">
+                                <input type="submit" value="${SendOrderPay}">
                             </div>
                         </div>
                     </div>

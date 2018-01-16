@@ -37,6 +37,8 @@ public class CreateOrderToCommand implements ICommand {
         int numberOfOrder = OrderService.getInstance().numberOfOrder();
         int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
+        request.setAttribute("totalPriceOfDelivery", totalPrice);
+
         OrderToWarehouseImpl orderToWarehouseImpl = new AbstractFactory().createOrderToWarehouseDao();
         OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
         orderToWarehouse.setDateOfDeparture(dateOfDelivery);
@@ -52,6 +54,6 @@ public class CreateOrderToCommand implements ICommand {
 
         orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
 
-        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ORDER_PAGE);
+        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }
 }
