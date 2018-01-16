@@ -86,8 +86,8 @@
             </div>
             <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
+                    <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
+                    <span class="lang__item"><a href="?command=localeEn">En</a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">
                             <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>

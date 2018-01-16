@@ -8547,3 +8547,33 @@
 21:56:49,566 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@4f260b41
 21:56:49,569 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
 21:56:49,569 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/orderPage.jsp
+23:38:04,812 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@39743c4c
+23:38:04,825 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /index.jsp
+23:38:06,309 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@39743c4c
+23:38:06,311 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /index.jsp
+23:38:08,539 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageEnCommand@b128650
+23:38:08,542 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /index.jsp
+23:38:09,885 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@39743c4c
+23:38:09,886 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /index.jsp
+23:38:11,048 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageEnCommand@b128650
+23:38:11,049 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /index.jsp
+23:38:12,304 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@39743c4c
+23:38:12,306 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /index.jsp
+23:58:28,827 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@24892ee9
+23:58:28,837 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /index.jsp
+23:58:31,393 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.localization.LanguageEnCommand@763d3fcb
+23:58:31,397 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /index.jsp
+16:34:36,366 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@b817180
+16:34:36,377 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/loginPage.jsp
+16:34:43,125 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@30dbb55e
+16:34:43,555 INFO  LoginService.http-nio-8080-exec-10:existUsername:38 - Polik: is present in our DB
+16:34:43,555 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /index.jsp
+16:34:45,290 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@139383ac
+16:34:45,314 INFO  DirectionService.http-nio-8080-exec-5:searchFromToCity:35 - It's a list from/to city
+16:34:45,315 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/orderPage.jsp
+16:36:15,716 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@77a048f4
+16:36:15,740 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-8:createOrderFromWarehouse:41 - Order from warehouse was successful created
+16:36:15,741 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/orderPage.jsp
+16:36:41,698 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderToCommand@46bbdd71
+16:36:41,717 INFO  OrderToWarehouse.http-nio-8080-exec-2:createOrderToWarehouse:41 - Order to warehouse was successful created
+16:36:41,718 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/orderPage.jsp
