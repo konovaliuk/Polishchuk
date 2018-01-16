@@ -8588,3 +8588,25 @@
 17:03:22,320 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@76027a00
 17:03:22,347 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-6:createOrderFromWarehouse:43 - Order from warehouse was successful created
 17:03:22,349 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/orderPage.jsp
+17:10:15,944 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@7adfda1
+17:10:15,955 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+17:10:25,371 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@69af18a8
+17:10:25,859 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+17:10:25,860 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+17:10:27,532 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@5d812bd
+17:10:27,574 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+17:10:27,575 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/orderPage.jsp
+17:11:02,069 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderToCommand@691801a3
+17:11:02,094 INFO  OrderToWarehouse.http-nio-8080-exec-4:createOrderToWarehouse:42 - Order to warehouse was successful created
+17:11:02,096 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/orderPage.jsp
+17:14:08,355 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@26c1f08c
+17:14:08,365 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/loginPage.jsp
+17:14:13,451 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@77a048f4
+17:14:13,929 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+17:14:13,930 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+17:14:15,599 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@5f917dfc
+17:14:15,624 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+17:14:15,624 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/orderPage.jsp
+17:14:45,690 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderToCommand@277f067a
+17:14:45,714 INFO  OrderToWarehouse.http-nio-8080-exec-5:createOrderToWarehouse:42 - Order to warehouse was successful created
+17:14:45,716 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/orderPage.jsp

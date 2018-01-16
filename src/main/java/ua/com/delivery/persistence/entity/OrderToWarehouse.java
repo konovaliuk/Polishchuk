@@ -20,6 +20,7 @@ public class OrderToWarehouse implements Serializable {
     private int weight;
     private int numberOfOrder;
     private String email;
+    private String typeOfParcel;
     private int totalPrice;
 
 }

@@ -226,6 +226,8 @@
                             <div class="deliveryTab__element">
                                 <label for="delEmail">${Email}</label>
                                 <input type="email" id="delEmail" required="" name="email">
+                                <label for="delType">${Type}</label>
+                                <input type="text" id="delType" required="" name="typeOfParcel">
                             </div>
                             <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
                                 <div class="price d-flex justify-content-around align-items-center">

@@ -20,6 +20,7 @@ public class CreateOrderToCommand implements ICommand {
     private static final String ADDRESS_OF_DEPARTURE = "addressOfDeparture";
     private static final String WEIGHT_OF_PARCEL = "weightOfParcel";
     private static final String EMAIL = "email";
+    private static final String TYPE_OF_PARCEL = "typeOfParcel";
 
 
     @Override
@@ -31,23 +32,25 @@ public class CreateOrderToCommand implements ICommand {
         String addressOfDeparture = request.getParameter(ADDRESS_OF_DEPARTURE);
         int weightOfParcel = Integer.parseInt(request.getParameter(WEIGHT_OF_PARCEL));
         String email = request.getParameter(EMAIL);
+        String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
 
         int numberOfOrder = OrderService.getInstance().numberOfOrder();
         int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
-            OrderToWarehouseImpl orderToWarehouseImpl = new AbstractFactory().createOrderToWarehouseDao();
-            OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
-            orderToWarehouse.setDateOfDeparture(dateOfDelivery);
-            orderToWarehouse.setDepartureAddress(addressOfDeparture);
-            orderToWarehouse.setCityOfReceipt(cityReceipt);
-            orderToWarehouse.setUserName(userName);
-            orderToWarehouse.setPhone(phone);
-            orderToWarehouse.setWeight(weightOfParcel);
-            orderToWarehouse.setEmail(email);
-            orderToWarehouse.setNumberOfOrder(numberOfOrder);
-            orderToWarehouse.setTotalPrice(totalPrice);
+        OrderToWarehouseImpl orderToWarehouseImpl = new AbstractFactory().createOrderToWarehouseDao();
+        OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
+        orderToWarehouse.setDateOfDeparture(dateOfDelivery);
+        orderToWarehouse.setDepartureAddress(addressOfDeparture);
+        orderToWarehouse.setCityOfReceipt(cityReceipt);
+        orderToWarehouse.setUserName(userName);
+        orderToWarehouse.setPhone(phone);
+        orderToWarehouse.setWeight(weightOfParcel);
+        orderToWarehouse.setEmail(email);
+        orderToWarehouse.setTypeOfParcel(typeOfParcel);
+        orderToWarehouse.setNumberOfOrder(numberOfOrder);
+        orderToWarehouse.setTotalPrice(totalPrice);
 
-            orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
+        orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ORDER_PAGE);
     }
