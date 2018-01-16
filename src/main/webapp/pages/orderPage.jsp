@@ -25,6 +25,7 @@
 <fmt:message key="order.name" var="Name"/>
 <fmt:message key="order.weight" var="Weight"/>
 <fmt:message key="order.email" var="Email"/>
+<fmt:message key="order.typeOfParcel" var="Type"/>
 <fmt:message key="order.dateOfDeparture" var="DateD"/>
 <fmt:message key="order.addressFrom" var="FromAddress"/>
 <fmt:message key="order.cityTo" var="CityReceipt"/>
@@ -171,6 +172,8 @@
                                 <label for="recEmail">${Email}</label>
                                 <input type="email" id="recEmail" required=""
                                 name="email">
+                                <label for="recType">${Type}</label>
+                                <input type="text" id="recType" required="" name="typeOfParcel">
                             </div>
                             <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
                                 <div class="price d-flex justify-content-around align-items-center">

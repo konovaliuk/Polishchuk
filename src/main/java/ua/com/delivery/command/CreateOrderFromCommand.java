@@ -20,6 +20,7 @@ public class CreateOrderFromCommand implements ICommand{
     private static final String ADDRESS_OF_DELIVERY = "addressOfDelivery";
     private static final String WEIGHT_OF_PARCEL = "weightOfParcel";
     private static final String EMAIL = "email";
+    private static final String TYPE_OF_PARCEL = "typeOfParcel";
 
 
     @Override
@@ -32,6 +33,7 @@ public class CreateOrderFromCommand implements ICommand{
         String addressOfDelivery = request.getParameter(ADDRESS_OF_DELIVERY);
         int weightOfParcel = Integer.parseInt(request.getParameter(WEIGHT_OF_PARCEL));
         String email = request.getParameter(EMAIL);
+        String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
 
         int numberOfOrder = OrderService.getInstance().numberOfOrder();
         int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
@@ -47,6 +49,7 @@ public class CreateOrderFromCommand implements ICommand{
             orderFromWarehouse.setWeight(weightOfParcel);
             orderFromWarehouse.setEmail(email);
             orderFromWarehouse.setTotalPrice(totalPrice);
+            orderFromWarehouse.setTypeOfParcel(typeOfParcel);
 
             orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
 
