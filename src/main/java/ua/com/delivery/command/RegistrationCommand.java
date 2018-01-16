@@ -55,6 +55,7 @@ public class RegistrationCommand implements ICommand{
                 }
                 /* Дописати вивід успішної реєстрації або помилки на якомусь*/
             } else {
+                System.out.println("this username is exist';s");
                 request.setAttribute("You have some trouble, bro", true);
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
             }

@@ -130,10 +130,9 @@ public class UserImpl implements IUserDao {
         ){
             preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet == null){
-                LOGGER.info("No given username");
-            }
-            while (resultSet.next()){
+            if (resultSet.next()) {
+                do {
+
                 user.setUserID(resultSet.getLong("userID"));
                 user.setUsername(resultSet.getString("username"));
                 user.setPassword(resultSet.getString("password"));
@@ -145,15 +144,11 @@ public class UserImpl implements IUserDao {
                 user.setPhone(resultSet.getLong("phone"));
                 user.setAdmin(resultSet.getBoolean("admin"));
                 preparedStatement.execute();
+                } while (resultSet.next());
+            } else {
+                user = null;
+
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//                user = null;
-//
-//            }
         } catch (SQLException e){
             LOGGER.error(e.toString());
         }
