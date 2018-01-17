@@ -125,8 +125,18 @@
                     <p>${thirdPar}</p>
                     <p>${fourthPar}(063)-625-48-22 </p>
                 </div>
+                <%--test div--%>
+                <div class="col-md-12 col-lg-12">
+                    <div class="line"></div>
+                </div>
+                <div>
+                    <a href="/con?command=pagination&page=1">ViewEmployees</a>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="line"></div>
+                </div>
                 <div class="terms__priceList d-flex justify-content-center" >
-                    <table class="table_blur">
+                    <table class="table_blur" border="1" cellpadding="4">
                         <thead>
                         <tr>
                             <th colspan="3">${tariffingPar}</th>
@@ -138,8 +148,9 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach items="${listPrice}" var="elem">
+                        <c:forEach items="${directionListPage}" var="elem">
                             <tr>
+                                <td><c:out value="${elem.directionID}"/></td>
                                 <td><c:out value="${elem.fromCity}"/></td>
                                 <td><c:out value="${elem.toCity}"/></td>
                                 <td><c:out value="${elem.priceDirection}"/></td>
@@ -147,7 +158,40 @@
                         </c:forEach>
                         </tbody>
                     </table>
+                    <a href="/con?command=pagination&page=1">1</a>
+                    <a href="/con?command=pagination&page=2">2</a>
+                    <a href="/con?command=pagination&page=3">3</a>
+
                 </div>
+                <%--/testdiv--%>
+
+                <%--///////////////--%>
+                <%--<div class="terms__priceList d-flex justify-content-center" >--%>
+                    <%--<table class="table_blur">--%>
+                        <%--<thead>--%>
+                        <%--<tr>--%>
+                            <%--<th colspan="3">${tariffingPar}</th>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<th>${from}</th>--%>
+                            <%--<th>${to}</th>--%>
+                            <%--<th>${price}</th>--%>
+                        <%--</tr>--%>
+                        <%--</thead>--%>
+                        <%--<tbody>--%>
+                        <%--<c:forEach items="${listPrice}" var="elem">--%>
+                            <%--<tr>--%>
+                                <%--<td><c:out value="${elem.fromCity}"/></td>--%>
+                                <%--<td><c:out value="${elem.toCity}"/></td>--%>
+                                <%--<td><c:out value="${elem.priceDirection}"/></td>--%>
+                            <%--</tr>--%>
+                        <%--</c:forEach>--%>
+                        <%--</tbody>--%>
+                    <%--</table>--%>
+
+                <%--</div>--%>
+                <%--///////////////////////////////--%>
+
             </div>
         </div>
     </div>

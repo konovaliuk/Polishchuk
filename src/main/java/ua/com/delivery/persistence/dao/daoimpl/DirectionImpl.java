@@ -13,9 +13,10 @@ public class DirectionImpl implements IDirectionDao {
     private static final Logger LOGGER = Logger.getLogger(DirectionImpl.class);
     private static final String GET_LIST_DIRECTIONS = "SELECT * FROM Directions WHERE directionID IN(1,4,7,10)";
     private static final String GET_PRICE_LIST_DIRECTIONS = "SELECT * FROM Directions";
+    //    private static final String GET_LIST_RECORDS = "SELECT * FROM Directions LIMIT" + (start);
     private static final String GET_DIRECTION_BY_FROM_CITY = "SELECT * FROM Directions WHERE from_city=?";
     private static final String DELETE_DIRECTION_BY_ID = "DELETE FROM Directions WHERE directionID=?";
-    private static final String GET_COUNT_RECORD = "SELECT COUNT(1) FROM Directions";
+    private static final String GET_COUNT_RECORD = "SELECT COUNT(*) FROM Directions";
     private static final String GET_PRICE_FROM_TO_CITY = "SELECT price_direction FROM Directions WHERE from_city=? AND to_city=?";
     private static final String UPDATE_DIRECTION_DATA = "UPDATE Directions SET from_city=?, to_city=?, price_direction=? " +
             "WHERE directionID=?";
@@ -50,10 +51,10 @@ public class DirectionImpl implements IDirectionDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_LIST_DIRECTIONS);
-            if (resultSet == null){
+            if (resultSet == null) {
                 LOGGER.error("Your list directions is empty");
             }
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 Direction direction = new Direction();
                 direction.setFromCity(resultSet.getString("from_city"));
                 directionList.add(direction);
@@ -70,7 +71,37 @@ public class DirectionImpl implements IDirectionDao {
         }
         return directionList;
     }
+//////////////////////////////
+    @Override
+    public List<Direction> getRecords(int start, int total) {
+        List<Direction> directionList = new ArrayList<>();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Directions LIMIT ?,?");
+        ) {
+            preparedStatement.setInt(1, start - 1);
+            preparedStatement.setInt(2, total);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet == null) {
+                LOGGER.error("Your list directions for get records is empty");
+            }
 
+            while (resultSet.next()){
+                Direction direction = new Direction();
+                direction.setDirectionID(resultSet.getLong("directionID"));
+                direction.setFromCity(resultSet.getString("from_city"));
+                direction.setToCity(resultSet.getString("to_city"));
+                direction.setPriceDirection(resultSet.getInt("price_direction"));
+//                preparedStatement.executeUpdate();
+                directionList.add(direction);
+            }
+
+        } catch (SQLException e) {
+            LOGGER.error(e.toString());
+        }
+        return directionList;
+    }
+//////////////////////////
     @Override
     public List<Direction> getPriceListDirections() {
         List<Direction> directionList = new ArrayList<>();
@@ -79,10 +110,10 @@ public class DirectionImpl implements IDirectionDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_PRICE_LIST_DIRECTIONS);
-            if (resultSet == null){
+            if (resultSet == null) {
                 LOGGER.error("Your price list directions is empty");
             }
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 Direction direction = new Direction();
                 direction.setDirectionID(resultSet.getLong("directionID"));
                 direction.setFromCity(resultSet.getString("from_city"));
@@ -113,10 +144,10 @@ public class DirectionImpl implements IDirectionDao {
         ) {
             preparedStatement.setString(1, fromCity);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet == null){
+            if (resultSet == null) {
                 LOGGER.info("City " + fromCity + " doesn't have in list");
             }
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 direction.setDirectionID(resultSet.getLong("directionID"));
                 direction.setFromCity(resultSet.getString("from_city"));
                 direction.setToCity(resultSet.getString("to_city"));
@@ -154,14 +185,14 @@ public class DirectionImpl implements IDirectionDao {
     }
 
     @Override
-    public Integer countDirectionRecord(){
+    public Integer countDirectionRecord() {
         int count = 0;
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_COUNT_RECORD)
         ) {
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 count = resultSet.getInt(1);
             } else {
                 LOGGER.error("The table doesn't have record");
@@ -173,8 +204,9 @@ public class DirectionImpl implements IDirectionDao {
         return count;
     }
 
+
     @Override
-    public Integer getPriceByCity(String from, String to){
+    public Integer getPriceByCity(String from, String to) {
         int price = 0;
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
@@ -183,9 +215,9 @@ public class DirectionImpl implements IDirectionDao {
             preparedStatement.setString(1, from);
             preparedStatement.setString(2, to);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 price = resultSet.getInt(1);
-            } else{
+            } else {
                 LOGGER.error("Can't find at the table price for city");
                 return null;
             }

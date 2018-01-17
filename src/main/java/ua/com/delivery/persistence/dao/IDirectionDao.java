@@ -13,6 +13,8 @@ public interface IDirectionDao {
 
     Integer countDirectionRecord();
 
+    List<Direction> getRecords(int start, int total);
+
     Integer getPriceByCity(String from, String to);
 
     //will return us list all directions

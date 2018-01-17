@@ -140,7 +140,7 @@
                     <input type="hidden" name="command" value="createOrderFrom"/>
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
-                        <input type="radio" name="type" id="receipt"/>
+                        <input type="checkbox" name="type" id="receipt"/>
                         <label for="receipt">${Receipt}</label>
                         <div class="receiptTab">
                             <div class="receiptTab__element">
@@ -193,7 +193,7 @@
                 <form action="con" name="orderForm" method="post" class="orderForm">
                     <input type="hidden" name="command" value="createOrderTo">
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
-                        <input type="radio" name="type" id="delivery">
+                        <input type="checkbox" name="type" id="delivery">
                         <label for="delivery">${Delivery}</label>
                         <div class="deliveryTab">
                             <div class="deliveryTab__element">

@@ -41,10 +41,16 @@ public class DirectionService {
         return factory.createDirectionDao().getPriceListDirections();
     }
 
+    /////
     public Integer countDirecetionRecords(){
         return factory.createDirectionDao().countDirectionRecord();
     }
 
+    public List<Direction> getDirecetionRecords(int start, int total){
+//        return factory.createDirectionDao().countDirectionRecord();
+        return factory.createDirectionDao().getRecords(start, total);
+    }
+/////
     public Integer priceForCity(String from, String to, int weight){
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
         Integer cityPrice = factory.createDirectionDao().getPriceByCity(from, to);

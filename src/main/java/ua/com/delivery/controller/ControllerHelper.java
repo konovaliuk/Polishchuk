@@ -30,10 +30,11 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.condition"), new ConditionCommand());
         commandMap.put(bundle.getString("command.forRegist"), new ForRegistrCommand());
         commandMap.put(bundle.getString("command.calculator"), new CalculatorCommand());
+        commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
         commandMap.put(bundle.getString("command.createOrderTo"), new CreateOrderToCommand());
         commandMap.put(bundle.getString("command.createOrderFrom"), new CreateOrderFromCommand());
-        commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
 
+        commandMap.put(bundle.getString("command.pagination"), new PaginationCommand());
 
         /* Locale commands */
         commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
