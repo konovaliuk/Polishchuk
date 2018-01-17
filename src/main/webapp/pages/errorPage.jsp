@@ -30,7 +30,7 @@
                     <h1>Polik Delivery</h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
+            <div class="col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>

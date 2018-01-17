@@ -53,7 +53,7 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-8 col-lg-7 d-flex">
+            <div class="col-12 col-md-8 col-lg-7 d-flex logoCenter">
                 <div class="logo">
                     <img src="../img/logo.png" alt="logo" width="100">
                 </div>
@@ -63,7 +63,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
+            <div class="col-12 col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
@@ -96,10 +96,14 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
+            <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto colLang">
                 <div class="lang">
-                    <span class="lang__item"><a href="?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="?command=localeEn">En</a></span>
+                    <span class="lang__item"><a href="con?command=localeUa">
+                        <img src="img/lang_icon-ukr.png" width="16">
+                    </a></span>
+                    <span class="lang__item"><a href="con?command=localeEn">
+                        <img src="img/lang_icon-uk.png" width="16">
+                    </a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">
                             <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
@@ -132,11 +136,11 @@
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
-                <form action="con" name="orderForm" method="post">
-                    <input type="hidden" name="command" value="createOrderFrom">
+                <form action="con" name="orderForm" method="post" class="orderForm">
+                    <input type="hidden" name="command" value="createOrderFrom"/>
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
-                        <input type="radio" name="type" id="receipt">
+                        <input type="radio" name="type" id="receipt"/>
                         <label for="receipt">${Receipt}</label>
                         <div class="receiptTab">
                             <div class="receiptTab__element">
@@ -144,10 +148,10 @@
                                 <input class="forDate" type="date" id="recDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required=""
-                                       name="dateOfReceipt">
+                                       name="dateOfReceipt"/>
                                 <label for="recPhone">${Phone}</label>
                                 <input type="text" id="recPhone"   required=""
-                                       name="phone">
+                                       name="phone"/>
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recCity">${CityDeparture}</label>
@@ -158,31 +162,25 @@
                                 </select>
                                 <label for="recAdress">${ToAddress}</label>
                                 <input type="text" id="recAdress" required=""
-                                       name="addressOfDelivery">
+                                       name="addressOfDelivery"/>
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recName">${Name}</label>
                                 <input type="text" id="recName" required=""
-                                       name="userName">
+                                       name="userName"/>
                                 <label for="recWeight">${Weight}</label>
                                 <input type="number" id="recWeight" min="1" max="20" required=""
-                                name="weightOfParcel">
+                                name="weightOfParcel"/>
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recEmail">${Email}</label>
                                 <input type="email" id="recEmail" required=""
-                                name="email">
+                                name="email"/>
                                 <label for="recType">${Type}</label>
-                                <input type="text" id="recType" required="" name="typeOfParcel">
-                            </div>
-                            <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
-                                <div class="price d-flex justify-content-around align-items-center">
-                                    <h3>${Price}:</h3>
-                                    <p>1000 грн.</p>
-                                </div>
+                                <input type="text" id="recType" required="" name="typeOfParcel"/>
                             </div>
                             <div>
-                                <input type="submit" value="${SendOrderPay}">
+                                <input type="submit" value="${SendOrderPay}"/>
                             </div>
                         </div>
                     </div>
@@ -192,7 +190,7 @@
                     <div class="line"></div>
                     <!-- /Line -->
                 <!-- Доставка груза -->
-                <form action="con" name="orderForm" method="post">
+                <form action="con" name="orderForm" method="post" class="orderForm">
                     <input type="hidden" name="command" value="createOrderTo">
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">
                         <input type="radio" name="type" id="delivery">
@@ -203,13 +201,13 @@
                                 <input class="forDate" type="date" id="delDate"
                                        min="<jsp:getProperty name="nowDate" property="date"/>"
                                        required=""
-                                       name="dateOfDelivery">
+                                       name="dateOfDelivery"/>
                                 <label for="delPhone">${Phone}</label>
-                                <input type="text" id="delPhone" required="" name="phone">
+                                <input type="text" id="delPhone" required="" name="phone"/>
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delCity">${FromAddress}</label>
-                                <input type="text" id="delCity" required="" name="addressOfDeparture">
+                                <input type="text" id="delCity" required="" name="addressOfDeparture"/>
                                 <label for="toCity">${CityReceipt}</label>
                                 <select name="cityReceipt" id="toCity">
                                     <c:forEach items="${cityFromTo}" var="elem">
@@ -219,24 +217,18 @@
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delName">${Name}</label>
-                                <input type="text" id="delName" required="" name="userName">
+                                <input type="text" id="delName" required="" name="userName"/>
                                 <label for="delWeight">${Weight}</label>
-                                <input type="number" id="delWeight" min="1" max="20" required="" name="weightOfParcel">
+                                <input type="number" id="delWeight" min="1" max="20" required="" name="weightOfParcel"/>
                             </div>
                             <div class="deliveryTab__element">
                                 <label for="delEmail">${Email}</label>
-                                <input type="email" id="delEmail" required="" name="email">
+                                <input type="email" id="delEmail" required="" name="email"/>
                                 <label for="delType">${Type}</label>
-                                <input type="text" id="delType" required="" name="typeOfParcel">
-                            </div>
-                            <div class="offset-md-5 col-md-7 offset-lg-5 col-lg-6">
-                                <div class="price d-flex justify-content-around align-items-center">
-                                    <h3>${Price}:</h3>
-                                    <p>1000 грн.</p>
-                                </div>
+                                <input type="text" id="delType" required="" name="typeOfParcel"/>
                             </div>
                             <div>
-                                <input type="submit" value="${SendOrderPay}">
+                                <input type="submit" value="${SendOrderPay}"/>
                             </div>
                         </div>
                     </div>

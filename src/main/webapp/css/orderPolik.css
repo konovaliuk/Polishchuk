@@ -36,7 +36,8 @@ input[id="delivery"]:checked ~ .deliveryTab {
     border: 0;
 }
 .receiptTab__element input:nth-child(4),
-.deliveryTab__element input:nth-child(4) {
+.deliveryTab__element input:nth-child(4),
+.deliveryTab__element select {
     margin-right: 0;
 }
 .price {
@@ -54,19 +55,25 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 5px;
 }
-input[type="date"], select{
+input[type="date"],
+input[type="number"],
+input[type="text"],
+select {
     border: none;
-    width: 176px;
+    width: 210px;
     cursor: pointer;
-    padding-left: 25px;
-}
-.receiptTab__element select,
-.deliveryTab__element select {
-    padding: 5px;
     background: #fff;
-    cursor: pointer;
+    padding: 5px 0 5px 38px;
 }
-.receiptTab, .deliveryTab, input[type="checkbox"], form {
+input[type="number"],
+input[type="text"],
+select {
+    padding-left: 0;
+    text-align: center;
+}
+.receiptTab, .deliveryTab,
+input[type="checkbox"],
+form {
     display: none;
 }
 input[type="checkbox"]:checked  ~ form {
@@ -75,14 +82,15 @@ input[type="checkbox"]:checked  ~ form {
 .myButton {
     color: rgba(43, 123, 78, 0.92);
     background: rgba(62, 230, 255, 0.53);
-    padding: 10px;
+    padding: 15px;
     outline: none;
     border: 0;
     border-radius: 5px;
-    width: 160px;
-    margin: 1% 32% 1% 43%;
+    width: 400px;
+    margin: 1% 0% 1% 32.5%;
     cursor: pointer;
     font-size: 18px;
+    text-align: center;
 }
 
 /* ORDER */

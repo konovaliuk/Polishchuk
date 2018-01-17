@@ -30,7 +30,7 @@
                     <h1>Polik Delivery</h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
+            <div class="col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
@@ -63,8 +63,12 @@
             </div>
             <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="/con?command=localeUa">Ук</a></span>
-                    <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
+                    <span class="lang__item"><a href="con?command=localeUa">
+                        <img src="img/lang_icon-ukr.png" width="16">
+                    </a></span>
+                    <span class="lang__item"><a href="con?command=localeEn">
+                        <img src="img/lang_icon-uk.png" width="16">
+                    </a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">
                             <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>

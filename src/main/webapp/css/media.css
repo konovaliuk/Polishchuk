@@ -21,11 +21,17 @@
     .receiptTab__element select,
     .deliveryTab__element select {
         margin-right: 39px;
-        width: 176px;
+        width: 179px;
+    }
+    .deliveryTab__element select {
+        margin-right: 0;
     }
     .receiptTab__element label,
     .deliveryTab__element label {
         width: 145px;
+    }
+    .myButton {
+        margin: 1% 0% 1% 29.5%;
     }
     /* /ORDER */
 }
@@ -54,7 +60,8 @@
     #hideMenu, nav {
         display: none;
     }
-    #hideMenu:checked ~ nav, #hideMenu + label {
+    #hideMenu:checked ~ nav,
+    #hideMenu + label {
         display: block;
     }
     nav ul {
@@ -75,24 +82,84 @@
     .deliveryTab__element input,
     .receiptTab__element select,
     .deliveryTab__element select {
-        margin-right: 52px;
+        width: 190px;
+        margin-right: 42px;
+    }
+    .deliveryTab__element select {
+        margin-right: 0;
+    }
+    .myButton {
+        margin: 1% 0% 1% 22.5%;
     }
     /* /ORDER */
     /* CALCULATOR */
-    .calculator select, .calculator input[type="date"], .calculator input[type="number"] {
+    .calculator select,
+    .calculator input[type="date"],
+    .calculator input[type="number"] {
         width: 173px;
     }
     /* /CALCULATOR */
 }
 @media only screen and (max-width: 767px) {
     /* INDEX */
+    /* HEADER */
     .logo img {
         width: 55px;
     }
     .logo__text h1 {
-        font-size: 26px;
+        font-size: 24px;
         padding-left: 15px;
     }
+    .logoCenter {
+        justify-content: center;
+    }
+    .schedule {
+        width: 100%;
+        text-align: center;
+    }
+    /* /HEADER */
+    /* MENU */
+    .colLang {
+        flex-direction: column;
+    }
+    /* /MENU */
+    .slider {
+        display: none;
+    }
+    /* /SLIDER */
     /* /INDEX */
+    /* CONDITION */
+    .terms__text p {
+        font-size: 18px;
+    }
+    /* /CONDITION */
+    /* CLACULATOR */
+    .calculator label,
+    .calculator select,
+    .calculator input[type="date"],
+    .calculator input[type="number"] {
+        width: 100%;
+    }
+    .fa-arrow-right {
+        margin-left: 48%;
+    }
+    /* /CLACULATOR */
+    /* CONTACTS */
+    .info__item {
+        font-size: 22px;
+    }
+    /* /CONTACTS */
+    /* ORDER */
+    .myButton {
+        margin: 10px 0;
+        width: 100%;
+    }
+    /* /ORDER */
+    .receiptTab__element input,
+    .deliveryTab__element input,
+    .receiptTab__element select,
+    .deliveryTab__element select {
+        width: 100%;
+    }
 }
 /*MEDIA QUERIES*/

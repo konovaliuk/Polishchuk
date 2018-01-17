@@ -42,7 +42,7 @@
 <header id="header" class="header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-8 col-lg-7 d-flex">
+            <div class="col-12 col-md-8 col-lg-7 d-flex logoCenter">
                 <div class="logo">
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
@@ -50,7 +50,7 @@
                     <h1>Polik <small>${Delivery}</small></h1>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 ml-auto d-flex justify-content-end">
+            <div class="col-12 col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
@@ -70,7 +70,7 @@
             <div class="col-md-12 col-lg-12">
                 <div class="line"></div>
             </div>
-            <div class="col-md-9 col-lg-9">
+            <div class="col-6 col-md-9 col-lg-9">
                 <input type="checkbox" id="hideMenu">
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
@@ -86,7 +86,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
+            <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto colLang">
                 <div class="lang">
                     <span class="lang__item"><a href="con?command=localeUa">
                         <img src="img/lang_icon-ukr.png" width="16">
@@ -157,11 +157,11 @@
 <section id="map" class="map">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-md-8 col-lg-8">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
                         width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-lg-4">
                 <div class="address">
                     01032 ${address} (063)-625-48-22
                 </div>
@@ -174,7 +174,7 @@
 <footer id="footer" class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="copy">
                     &#169; 2017 ${allRight}
                 </div>
