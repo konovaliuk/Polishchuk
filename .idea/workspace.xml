@@ -12,29 +12,16 @@
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/media.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/media.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/signInPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/signInPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/registrationF.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/registrationF.css" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/13.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/bg.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/bg2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/logo2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/signInPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/signInPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -107,38 +94,8 @@
       <file leaf-file-name="orderPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conditionPolik.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainPolik.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mainPolik.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/media.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+            <state relative-caret-position="353">
+              <caret line="195" column="45" lean-forward="false" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -147,8 +104,8 @@
       <file leaf-file-name="orderPolik.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/orderPolik.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -157,7 +114,7 @@
       <file leaf-file-name="errorPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-664">
+            <state relative-caret-position="-650">
               <caret line="63" column="97" lean-forward="false" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
               <folding />
             </state>
@@ -264,14 +221,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/calculatorPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/contactPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/mainPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/media.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/signInPolik.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/orderPolik.css" />
       </list>
     </option>
   </component>
@@ -643,14 +600,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
@@ -1187,14 +1136,7 @@
       <workItem from="1515776215899" duration="11490000" />
       <workItem from="1516023744329" duration="24686000" />
       <workItem from="1516113184346" duration="14568000" />
-      <workItem from="1516175952887" duration="20199000" />
-    </task>
-    <task id="LOCAL-00012" summary="Change dao layer">
-      <created>1513631686556</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1513631686556</updated>
+      <workItem from="1516175952887" duration="20831000" />
     </task>
     <task id="LOCAL-00013" summary="Add resources.&#10;Controller, ControllerHelper">
       <created>1513849252361</created>
@@ -1532,11 +1474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516198551612</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="new changes in css">
+      <created>1516202962816</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1516202962817</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643269000" />
+    <option name="totallyTimeSpent" value="643901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1549,7 +1498,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1368" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1574,7 +1522,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28181818" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28181818" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30227274" sideWeight="0.5598756" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1601,7 +1549,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="was created a little menu with some adapting" />
     <MESSAGE value="Calculate delivery" />
     <MESSAGE value="Some translate" />
     <MESSAGE value="Deletet cargoPrice and change calculateCommand" />
@@ -1626,7 +1573,8 @@
     <MESSAGE value="change registration" />
     <MESSAGE value="Delete calculator entity" />
     <MESSAGE value="Locale en/ua is work and additional img" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locale en/ua is work and additional img" />
+    <MESSAGE value="new changes in css" />
+    <option name="LAST_COMMIT_MESSAGE" value="new changes in css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1911,14 +1859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-664">
-          <caret line="63" column="97" lean-forward="false" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/paymentPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
@@ -1959,42 +1899,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/contactPolik.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mainPolik.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/media.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2007,10 +1915,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mainPolik.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="63" column="97" lean-forward="false" selection-start-line="63" selection-start-column="97" selection-end-line="63" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="195" column="45" lean-forward="false" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/orderPolik.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>

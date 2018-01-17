@@ -13,13 +13,17 @@ select {
 	font-size: 18px;
 	width: 135px;
 }
-.calculator input[type="date"], .calculator input[type="number"] {
-	border: none;
+.calculator input[type="date"],
+.calculator input[type="number"],
+.calculator select {
+	border: 0;
 	width: 210px;
 	cursor: pointer;
-	padding-left: 38px;
+	padding: 5px 0 5px 38px;
+	background: #fff;
 }
-.calculator input[type="number"] {
+.calculator input[type="number"],
+.calculator select {
 	padding-left: 0;
 	text-align: center;
 }
