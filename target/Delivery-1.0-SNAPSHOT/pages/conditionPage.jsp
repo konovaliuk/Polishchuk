@@ -88,8 +88,12 @@
             </div>
             <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto">
                 <div class="lang">
-                    <span class="lang__item"><a href="/con?command=localeUa">Укр</a></span>
-                    <span class="lang__item"><a href="/con?command=localeEn">En</a></span>
+                    <span class="lang__item"><a href="con?command=localeUa">
+                        <img src="img/lang_icon-ukr.png" width="16">
+                    </a></span>
+                    <span class="lang__item"><a href="con?command=localeEn">
+                        <img src="img/lang_icon-uk.png" width="16">
+                    </a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">
                             <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
@@ -112,7 +116,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <h2>${Condition}</h2>
+                <h2>${Condition} + ${countRecord}</h2>
             </div>
             <div class="col-md-12 col-lg-12">
                 <div class="terms__text">

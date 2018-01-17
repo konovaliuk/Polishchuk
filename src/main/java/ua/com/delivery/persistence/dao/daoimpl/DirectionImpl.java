@@ -15,6 +15,7 @@ public class DirectionImpl implements IDirectionDao {
     private static final String GET_PRICE_LIST_DIRECTIONS = "SELECT * FROM Directions";
     private static final String GET_DIRECTION_BY_FROM_CITY = "SELECT * FROM Directions WHERE from_city=?";
     private static final String DELETE_DIRECTION_BY_ID = "DELETE FROM Directions WHERE directionID=?";
+    private static final String GET_COUNT_RECORD = "SELECT COUNT(1) FROM Directions";
     private static final String GET_PRICE_FROM_TO_CITY = "SELECT price_direction FROM Directions WHERE from_city=? AND to_city=?";
     private static final String UPDATE_DIRECTION_DATA = "UPDATE Directions SET from_city=?, to_city=?, price_direction=? " +
             "WHERE directionID=?";
@@ -102,6 +103,7 @@ public class DirectionImpl implements IDirectionDao {
         return directionList;
     }
 
+
     @Override
     public Direction getDirectionByFromCity(String fromCity) {
         Direction direction = new Direction();
@@ -149,6 +151,26 @@ public class DirectionImpl implements IDirectionDao {
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
+    }
+
+    @Override
+    public Integer countDirectionRecord(){
+        int count = 0;
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+//        try (Connection connection = SimpleConnection.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_COUNT_RECORD)
+        ) {
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()){
+                count = resultSet.getInt(1);
+            } else {
+                LOGGER.error("The table doesn't have record");
+                return null;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return count;
     }
 
     @Override

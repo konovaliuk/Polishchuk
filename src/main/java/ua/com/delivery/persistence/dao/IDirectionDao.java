@@ -11,6 +11,8 @@ public interface IDirectionDao {
     //create new direction(from-to-price)
     void createDirection(Direction direction);
 
+    Integer countDirectionRecord();
+
     Integer getPriceByCity(String from, String to);
 
     //will return us list all directions

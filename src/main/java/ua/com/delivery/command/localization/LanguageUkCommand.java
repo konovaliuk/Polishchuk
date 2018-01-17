@@ -11,11 +11,11 @@ import java.io.IOException;
 import java.util.Locale;
 
 public class LanguageUkCommand implements ICommand {
-    public static final Locale UKRAINIAN = new Locale("uk", "UA");
+    private static final Locale UKRAINIAN = new Locale("ua", "UA");
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getSession(false).setAttribute("user", null);
-        Config.set(request.getSession(false), Config.FMT_LOCALE, UKRAINIAN);
+        request.getSession().setAttribute("user", null);
+        Config.set(request.getSession(), Config.FMT_LOCALE, UKRAINIAN);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }
 }
