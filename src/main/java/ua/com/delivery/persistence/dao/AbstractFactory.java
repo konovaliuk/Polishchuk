@@ -4,10 +4,6 @@ import ua.com.delivery.persistence.dao.daoimpl.*;
 
 public class AbstractFactory implements IAbstractFactory {
 
-    public CalculatorImpl createCalculatorDao() {
-        return new CalculatorImpl();
-    }
-
     public DirectionImpl createDirectionDao() {
         return new DirectionImpl();
     }

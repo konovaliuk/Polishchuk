@@ -6,11 +6,14 @@ import java.io.IOException;
 
 
 public class EncodingFilter implements Filter {
-    private static final String ENCODING = "UTF-8";
+    private String encoding = "utf-8";
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        String encodingParam = filterConfig.getInitParameter("encoding");
+        if (encodingParam != null) {
+            encoding = encodingParam;
+        }
     }
 
     @Override
@@ -18,10 +21,9 @@ public class EncodingFilter implements Filter {
                          ServletResponse response,
                          FilterChain chain)
             throws IOException, ServletException {
-        request.setCharacterEncoding(ENCODING);
-        response.setCharacterEncoding(ENCODING);
-
+        request.setCharacterEncoding(encoding);
         chain.doFilter(request, response);
+        response.setContentType("text/html; charset=UTF-8");
     }
 
     @Override

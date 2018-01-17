@@ -8800,3 +8800,121 @@
 19:17:19,165 ERROR LoginService.http-nio-8080-exec-7:existUsername:40 - audiaudi: isn't present in our DB
 19:17:19,178 INFO  UserImpl.http-nio-8080-exec-7:createUser:42 - User audiaudi was created
 19:17:19,179 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+19:18:43,038 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@707b7070
+19:18:43,039 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/loginPage.jsp
+19:18:58,068 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@523f9f6b
+19:18:58,073 INFO  LoginService.http-nio-8080-exec-8:existUsername:38 - audiaudi: is present in our DB
+19:18:58,074 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /index.jsp
+19:19:03,118 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@3cd3fdc
+19:19:03,140 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+19:19:03,140 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/orderPage.jsp
+19:19:41,144 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.LogoutCommand@45f83372
+19:19:41,145 INFO  LogoutCommand.http-nio-8080-exec-5:execute:18 - Was destroyed session: 7B6DA98147AF3C23A2AE9DFC8B6B93C8
+19:19:41,147 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /index.jsp
+19:24:22,908 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@707b7070
+19:24:22,910 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/loginPage.jsp
+19:24:24,425 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@77a048f4
+19:24:24,425 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+19:24:51,364 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@5f917dfc
+19:24:51,428 ERROR LoginService.http-nio-8080-exec-8:existUsername:40 - rybalka: isn't present in our DB
+19:24:51,443 INFO  UserImpl.http-nio-8080-exec-8:createUser:42 - User rybalka was created
+19:24:51,444 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+23:52:58,177 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@52ad8c88
+23:52:58,184 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/loginPage.jsp
+23:52:58,257 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@52ad8c88
+23:52:58,259 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/loginPage.jsp
+23:52:59,797 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@459cefc1
+23:52:59,798 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+23:53:35,525 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@2be2c450
+23:53:35,977 ERROR LoginService.http-nio-8080-exec-9:existUsername:40 - filipkirkorov: isn't present in our DB
+23:53:35,994 INFO  UserImpl.http-nio-8080-exec-9:createUser:42 - User filipkirkorov was created
+23:53:35,995 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+23:58:51,448 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@7890506e
+23:58:51,460 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+23:58:54,032 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@392539f
+23:58:54,041 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+23:59:31,683 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@707f3ff4
+23:59:32,121 ERROR LoginService.http-nio-8080-exec-3:existUsername:40 - timur: isn't present in our DB
+23:59:32,135 INFO  UserImpl.http-nio-8080-exec-3:createUser:42 - User timur was created
+23:59:32,136 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+00:01:37,762 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@52ad8c88
+00:01:37,781 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:01:41,176 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@4dc78a17
+00:01:41,180 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+00:02:21,095 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@50e7161c
+00:02:21,549 ERROR LoginService.http-nio-8080-exec-3:existUsername:40 - lapisa: isn't present in our DB
+00:02:21,563 INFO  UserImpl.http-nio-8080-exec-3:createUser:42 - User lapisa was created
+00:02:21,565 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+00:11:39,408 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@3945fda
+00:11:39,418 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:20:44,040 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@3763c729
+00:20:44,048 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/loginPage.jsp
+00:20:46,678 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@763d3fcb
+00:20:46,683 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+00:21:20,076 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@70913cbd
+00:21:20,481 ERROR LoginService.http-nio-8080-exec-5:existUsername:40 - rekit: isn't present in our DB
+00:21:20,490 INFO  UserImpl.http-nio-8080-exec-5:createUser:42 - User rekit was created
+00:21:20,491 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:06:55,683 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@59deedff
+10:06:55,719 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:07:01,268 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@77a048f4
+10:07:01,271 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:07:30,544 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@4f260b41
+10:07:31,013 ERROR LoginService.http-nio-8080-exec-8:existUsername:40 - keder: isn't present in our DB
+10:07:31,025 ERROR UserImpl.http-nio-8080-exec-8:createUser:44 - java.sql.SQLException: Incorrect string value: '\xD0\xA2\xD0\xBE\xD1\x80' for column 'first_name' at row 1
+10:07:31,026 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:18:06,390 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@59deedff
+10:18:06,395 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:18:13,285 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@7e036fb9
+10:18:13,310 INFO  LoginService.http-nio-8080-exec-8:existUsername:38 - Polik: is present in our DB
+10:18:13,312 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /index.jsp
+10:18:14,652 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.OrderCommand@792c444b
+10:18:14,677 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+10:18:14,678 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/orderPage.jsp
+10:19:00,974 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:55 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@43d94d08
+10:19:00,995 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-1:createOrderFromWarehouse:45 - Order from warehouse wasn't created
+10:19:00,995 ERROR OrderFromWarehouseImpl.http-nio-8080-exec-1:createOrderFromWarehouse:46 - java.sql.SQLException: Incorrect string value: '\xD0\x92\xD0\xB8\xD0\xBA...' for column 'user_name' at row 1
+10:19:00,995 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/paymentPage.jsp
+10:54:42,630 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@3104f7a2
+10:54:42,676 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:54:45,356 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@523f9f6b
+10:54:45,360 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:55:18,219 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@1206da4b
+10:55:18,607 ERROR LoginService.http-nio-8080-exec-4:existUsername:40 - Serw: isn't present in our DB
+10:55:18,617 INFO  UserImpl.http-nio-8080-exec-4:createUser:42 - User Serw was created
+10:55:18,618 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:56:55,817 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@707b7070
+10:56:55,831 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:57:00,611 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@77a048f4
+10:57:00,970 INFO  LoginService.http-nio-8080-exec-6:existUsername:38 - Polik: is present in our DB
+10:57:00,971 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /index.jsp
+10:58:10,216 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@29e0cd5a
+10:58:10,231 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:58:15,217 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.LoginCommand@26ccc9b1
+10:58:16,075 ERROR LoginService.http-nio-8080-exec-6:existUsername:40 - Polik: isn't present in our DB
+10:58:16,077 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/loginPage.jsp
+10:58:17,890 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@4aa46a1d
+10:58:17,891 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+10:59:11,798 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@f2079cd
+10:59:11,803 ERROR LoginService.http-nio-8080-exec-5:existUsername:40 - Polik: isn't present in our DB
+10:59:11,816 INFO  UserImpl.http-nio-8080-exec-5:createUser:42 - User Polik was created
+10:59:11,818 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+11:07:15,805 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@5185621e
+11:07:15,817 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+11:07:17,686 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.ForRegistrCommand@3125481e
+11:07:17,687 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+11:07:40,021 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@5d01d98e
+11:07:40,443 ERROR LoginService.http-nio-8080-exec-3:existUsername:40 - geogi: isn't present in our DB
+11:07:40,449 INFO  UserImpl.http-nio-8080-exec-3:createUser:42 - User geogi was created
+11:07:40,450 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+11:10:31,001 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:55 - Was called command: ua.com.delivery.command.RegistrationCommand@5d01d98e
+11:10:31,008 ERROR LoginService.http-nio-8080-exec-5:existUsername:40 - Polik: isn't present in our DB
+11:10:31,012 INFO  UserImpl.http-nio-8080-exec-5:createUser:42 - User Polik was created
+11:10:31,014 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/registrationPage.jsp
+11:14:19,176 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:55 - Was called command: ua.com.delivery.command.SignInCommand@b817180
+11:14:19,189 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/loginPage.jsp
+11:14:21,504 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:55 - Was called command: ua.com.delivery.command.CalculatorCommand@5f917dfc
+11:14:22,536 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+11:14:22,537 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+11:14:40,412 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:55 - Was called command: ua.com.delivery.command.CalculateCommand@63e23629
+11:14:40,445 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/calculatorPage.jsp

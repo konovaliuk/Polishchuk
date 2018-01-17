@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page contentType="text/html" language="java" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
 
 <%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
@@ -18,8 +18,7 @@
 
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -47,15 +46,8 @@
                         <input type="password" id="inputPassword" required="" name="password">
                         <label for="inputPassword">${Password} </label>
                     </div>
-
-                    <%--<div class="checkbox">--%>
-                        <%--<label>--%>
-                            <%--<input type="checkbox"> ${Remember}--%>
-                        <%--</label>--%>
-                    <%--</div>--%>
                     <div class="btn-login">
-                        <button type="submit" class="btn btn-success btn-block" <%--name="sub" value="sub"--%>>${Submit}</button>
-                        <%--<a href="/con?command=registration"> ${Registration}</a>--%>
+                        <button type="submit" class="btn btn-success btn-block" >${Submit}</button>
                         <a href="/con?command=forRegist"> ${Registration}</a>
                         <a href="/">${Home}</a>
                     </div>
