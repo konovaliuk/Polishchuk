@@ -37,9 +37,9 @@ public class DirectionService {
         return directionList;
     }
 
-    public List<Direction> listForPrice(){
-        return factory.createDirectionDao().getPriceListDirections();
-    }
+//    public List<Direction> listForPrice(){
+//        return factory.createDirectionDao().getPriceListDirections();
+//    }
 
     /////
     public Integer countDirecetionRecords(){

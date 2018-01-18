@@ -13,7 +13,7 @@ public class DirectionImpl implements IDirectionDao {
     private static final Logger LOGGER = Logger.getLogger(DirectionImpl.class);
     private static final String GET_LIST_DIRECTIONS = "SELECT * FROM Directions WHERE directionID IN(1,4,7,10)";
     private static final String GET_PRICE_LIST_DIRECTIONS = "SELECT * FROM Directions";
-    //    private static final String GET_LIST_RECORDS = "SELECT * FROM Directions LIMIT" + (start);
+    private static final String GET_LIST_RECORDS = "SELECT * FROM Directions LIMIT ?,?";
     private static final String GET_DIRECTION_BY_FROM_CITY = "SELECT * FROM Directions WHERE from_city=?";
     private static final String DELETE_DIRECTION_BY_ID = "DELETE FROM Directions WHERE directionID=?";
     private static final String GET_COUNT_RECORD = "SELECT COUNT(*) FROM Directions";
@@ -71,13 +71,14 @@ public class DirectionImpl implements IDirectionDao {
         }
         return directionList;
     }
-//////////////////////////////
+
+    //////////////////////////////
     @Override
     public List<Direction> getRecords(int start, int total) {
         List<Direction> directionList = new ArrayList<>();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Directions LIMIT ?,?");
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_LIST_RECORDS)
         ) {
             preparedStatement.setInt(1, start - 1);
             preparedStatement.setInt(2, total);
@@ -86,33 +87,6 @@ public class DirectionImpl implements IDirectionDao {
                 LOGGER.error("Your list directions for get records is empty");
             }
 
-            while (resultSet.next()){
-                Direction direction = new Direction();
-                direction.setDirectionID(resultSet.getLong("directionID"));
-                direction.setFromCity(resultSet.getString("from_city"));
-                direction.setToCity(resultSet.getString("to_city"));
-                direction.setPriceDirection(resultSet.getInt("price_direction"));
-//                preparedStatement.executeUpdate();
-                directionList.add(direction);
-            }
-
-        } catch (SQLException e) {
-            LOGGER.error(e.toString());
-        }
-        return directionList;
-    }
-//////////////////////////
-    @Override
-    public List<Direction> getPriceListDirections() {
-        List<Direction> directionList = new ArrayList<>();
-        Statement statement;
-        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
-            statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(GET_PRICE_LIST_DIRECTIONS);
-            if (resultSet == null) {
-                LOGGER.error("Your price list directions is empty");
-            }
             while (resultSet.next()) {
                 Direction direction = new Direction();
                 direction.setDirectionID(resultSet.getLong("directionID"));
@@ -121,18 +95,44 @@ public class DirectionImpl implements IDirectionDao {
                 direction.setPriceDirection(resultSet.getInt("price_direction"));
                 directionList.add(direction);
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//
-//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
         return directionList;
     }
+
+    //////////////////////////
+//    @Override
+//    public List<Direction> getPriceListDirections() {
+//        List<Direction> directionList = new ArrayList<>();
+//        Statement statement;
+//        try (Connection connection = ConnectionPool.getInstance().getConnection()) {
+////        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
+//            statement = connection.createStatement();
+//            ResultSet resultSet = statement.executeQuery(GET_PRICE_LIST_DIRECTIONS);
+//            if (resultSet == null) {
+//                LOGGER.error("Your price list directions is empty");
+//            }
+//            while (resultSet.next()) {
+//                Direction direction = new Direction();
+//                direction.setDirectionID(resultSet.getLong("directionID"));
+//                direction.setFromCity(resultSet.getString("from_city"));
+//                direction.setToCity(resultSet.getString("to_city"));
+//                direction.setPriceDirection(resultSet.getInt("price_direction"));
+//                directionList.add(direction);
+//            }
+////            if (resultSet.next()) {
+////                do {
+////
+////                } while (resultSet.next());
+////            } else {
+////
+////            }
+//        } catch (SQLException e) {
+//            LOGGER.error(e.toString());
+//        }
+//        return directionList;
+//    }
 
 
     @Override

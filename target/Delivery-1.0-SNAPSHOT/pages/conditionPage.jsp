@@ -17,6 +17,7 @@
 <fmt:message key="condition.third" var="thirdPar"/>
 <fmt:message key="condition.fourth" var="fourthPar"/>
 <fmt:message key="condition.tariffing" var="tariffingPar"/>
+<fmt:message key="condition.number" var="number"/>
 <fmt:message key="condition.from" var="from"/>
 <fmt:message key="condition.to" var="to"/>
 <fmt:message key="condition.price" var="price"/>
@@ -139,9 +140,10 @@
                     <table class="table_blur" border="1" cellpadding="4">
                         <thead>
                         <tr>
-                            <th colspan="3">${tariffingPar}</th>
+                            <th colspan="4">${tariffingPar}</th>
                         </tr>
                         <tr>
+                            <th>${number}</th>
                             <th>${from}</th>
                             <th>${to}</th>
                             <th>${price}</th>
