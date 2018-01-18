@@ -20,8 +20,6 @@ public interface IDirectionDao {
     //will return us list all directions
     List<Direction> getListDirections();
 
-//    List<Direction> getPriceListDirections();
-
     //will return us one directions by field
     Direction getDirectionByFromCity(String  fromCity);
 

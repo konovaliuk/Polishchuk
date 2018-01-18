@@ -83,7 +83,6 @@
                         <c:if test="${visibleOrder == true}">
                             <li><a href="/con?command=order">${Order}</a></li>
                         </c:if>
-                        <%--<li><a href="/con?command=order">${Order}</a></li>--%>
                     </ul>
                 </nav>
             </div>
@@ -167,32 +166,6 @@
                 </div>
                 <%--/testdiv--%>
 
-                <%--///////////////--%>
-                <%--<div class="terms__priceList d-flex justify-content-center" >--%>
-                    <%--<table class="table_blur">--%>
-                        <%--<thead>--%>
-                        <%--<tr>--%>
-                            <%--<th colspan="3">${tariffingPar}</th>--%>
-                        <%--</tr>--%>
-                        <%--<tr>--%>
-                            <%--<th>${from}</th>--%>
-                            <%--<th>${to}</th>--%>
-                            <%--<th>${price}</th>--%>
-                        <%--</tr>--%>
-                        <%--</thead>--%>
-                        <%--<tbody>--%>
-                        <%--<c:forEach items="${listPrice}" var="elem">--%>
-                            <%--<tr>--%>
-                                <%--<td><c:out value="${elem.fromCity}"/></td>--%>
-                                <%--<td><c:out value="${elem.toCity}"/></td>--%>
-                                <%--<td><c:out value="${elem.priceDirection}"/></td>--%>
-                            <%--</tr>--%>
-                        <%--</c:forEach>--%>
-                        <%--</tbody>--%>
-                    <%--</table>--%>
-
-                <%--</div>--%>
-                <%--///////////////////////////////--%>
 
             </div>
         </div>
