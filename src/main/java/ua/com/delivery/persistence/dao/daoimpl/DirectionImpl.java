@@ -79,7 +79,7 @@ public class DirectionImpl implements IDirectionDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_LIST_RECORDS)
         ) {
-            preparedStatement.setInt(1, start - 1);
+            preparedStatement.setInt(1, start);
             preparedStatement.setInt(2, total);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet == null) {

@@ -16,16 +16,27 @@ public class PaginationCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String sPageId = request.getParameter(PAGE_ID);
-        int pageId = Integer.parseInt(sPageId);
-        int total = 5;
-        if (pageId == 1){
-        } else {
-            pageId = pageId - 1;
-            pageId = pageId * total + 1;
+//        String sPageId = request.getParameter(PAGE_ID);
+//        int pageId = Integer.parseInt(sPageId);
+//        int total = 5;
+//        if (pageId == 1){
+//        } else {
+//            pageId = pageId - 1;
+//            pageId = pageId * total + 1;
+//        }
+//        List<Direction> directionList = DirectionService.getInstance().getDirectionRecords(pageId,total);
+//        request.setAttribute("directionListPage", directionList);
+        int page = 1;
+        int recordPerPage = 6;
+        if (request.getParameter(PAGE_ID) != null){
+            page = Integer.parseInt(request.getParameter(PAGE_ID));
         }
-        List<Direction> directionList = DirectionService.getInstance().getDirecetionRecords(pageId,total);
-        request.setAttribute("directionListPage", directionList);
+        List<Direction> directionList = DirectionService.getInstance().getDirectionRecords((page -1) * recordPerPage, recordPerPage);
+        int countRecords = DirectionService.getInstance().countDirectionRecords();
+        int noOfPages = (int) Math.ceil(countRecords * 1.0 / recordPerPage);
+        request.setAttribute("directionListP", directionList);
+        request.setAttribute("noOfPages", noOfPages);
+        request.setAttribute("currentPage", page);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CONDITION_PAGE);
     }

@@ -129,14 +129,14 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="line"></div>
                 </div>
-                <div>
-                    <a href="/con?command=pagination&page=1">ViewEmployees</a>
-                </div>
+                <%--<div>--%>
+                    <%--<a href="/con?command=pagination&page=1">ViewEmployees</a>--%>
+                <%--</div>--%>
                 <div class="col-md-12 col-lg-12">
                     <div class="line"></div>
                 </div>
                 <div class="terms__priceList d-flex justify-content-center" >
-                    <table class="table_blur" border="1" cellpadding="4">
+                    <table class="table_blur" border="1" cellpadding="6" cellspacing="6">
                         <thead>
                         <tr>
                             <th colspan="4">${tariffingPar}</th>
@@ -149,7 +149,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach items="${directionListPage}" var="elem">
+
+                        <c:forEach items="${directionListP}" var="elem">
                             <tr>
                                 <td><c:out value="${elem.directionID}"/></td>
                                 <td><c:out value="${elem.fromCity}"/></td>
@@ -159,9 +160,27 @@
                         </c:forEach>
                         </tbody>
                     </table>
-                    <a href="/con?command=pagination&page=1">1</a>
-                    <a href="/con?command=pagination&page=2">2</a>
-                    <a href="/con?command=pagination&page=3">3</a>
+                    <c:if test="${currentPage != 1}">
+                        <td><a href="/con?command=pagination&page=${currentPage - 1}">Previous</a></td>
+                    </c:if>
+                    <table border="1" cellpadding="6" cellspacing="6">
+                        <tr>
+                            <c:forEach begin="1" end="${noOfPages}" var="i">
+                                <c:choose>
+                                    <c:when test="${currentPage eq i}">
+                                        <td>${i}</td>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <td><a href="/con?command=pagination&page=${i}">${i}</a></td>
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:forEach>
+                        </tr>
+                    </table>
+                    
+                    <c:if test="${currentPage lt noOfPages}">
+                        <td><a href="/con?command=pagination&page=${currentPage + 1}">Next</a></td>
+                    </c:if>
 
                 </div>
                 <%--/testdiv--%>

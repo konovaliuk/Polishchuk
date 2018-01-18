@@ -11,8 +11,8 @@ import java.io.IOException;
 public class ConditionCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Integer countRecord = DirectionService.getInstance().countDirecetionRecords();
-        request.setAttribute("countRecord", countRecord);
+        Integer countRecord = DirectionService.getInstance().countDirectionRecords();
+        request.getSession().setAttribute("countRecord", countRecord);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CONDITION_PAGE);
     }
 }

@@ -14,14 +14,14 @@ public class DirectionService {
 
     private IAbstractFactory factory;
 
-    private DirectionService(){
+    private DirectionService() {
         factory = new AbstractFactory();
     }
 
-    public static DirectionService getInstance(){
-        if (INSTANCE == null){
-            synchronized (DirectionService.class){
-                if (INSTANCE == null){
+    public static DirectionService getInstance() {
+        if (INSTANCE == null) {
+            synchronized (DirectionService.class) {
+                if (INSTANCE == null) {
                     INSTANCE = new DirectionService();
                 }
             }
@@ -29,7 +29,7 @@ public class DirectionService {
         return INSTANCE;
     }
 
-    public List<Direction> searchFromToCity(){
+    public List<Direction> searchFromToCity() {
         List<Direction> directionList = factory.createDirectionDao().getListDirections();
         directionList.sort(Comparator.comparing(Direction::getFromCity));
         LOGGER.info("It's a list from/to city");
@@ -37,39 +37,37 @@ public class DirectionService {
         return directionList;
     }
 
-    /////
-    public Integer countDirecetionRecords(){
+    public Integer countDirectionRecords() {
         return factory.createDirectionDao().countDirectionRecord();
     }
 
-    public List<Direction> getDirecetionRecords(int start, int total){
-//        return factory.createDirectionDao().countDirectionRecord();
+    public List<Direction> getDirectionRecords(int start, int total) {
         return factory.createDirectionDao().getRecords(start, total);
     }
-/////
-    public Integer priceForCity(String from, String to, int weight){
+
+    public Integer priceForCity(String from, String to, int weight) {
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
         Integer cityPrice = factory.createDirectionDao().getPriceByCity(from, to);
         Integer resultPrice;
-        if (weightPrice != null){
-            resultPrice  = weightPrice + cityPrice;
+        if (weightPrice != null) {
+            resultPrice = weightPrice + cityPrice;
         } else {
             resultPrice = cityPrice;
         }
         return resultPrice;
     }
 
-    public Integer priceBetweenCity(String from, String to){
+    public Integer priceBetweenCity(String from, String to) {
         Integer cityPrice = factory.createDirectionDao().getPriceByCity(from, to);
-        if (cityPrice == null){
+        if (cityPrice == null) {
             LOGGER.error("Table hasn't include price for this city");
         }
         return cityPrice;
     }
 
-    public Integer priceByWeight(int weight){
+    public Integer priceByWeight(int weight) {
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
-        if (weightPrice == null){
+        if (weightPrice == null) {
             LOGGER.error("Table hasn't data for this weight: " + weight);
         }
         return weightPrice;

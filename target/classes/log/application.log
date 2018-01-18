@@ -9466,3 +9466,190 @@
 14:59:43,149 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
 14:59:45,842 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7f214ef1
 14:59:45,846 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:03:08,808 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@39341f73
+15:03:09,229 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:03:11,935 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+15:03:11,952 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:03:17,320 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+15:03:17,325 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:03:20,933 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@1f418ee1
+15:03:20,934 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /index.jsp
+15:03:21,995 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@39341f73
+15:03:22,000 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:03:24,361 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+15:03:24,365 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:05:19,770 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@5185621e
+15:05:20,163 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:05:23,117 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4ebfe62b
+15:05:23,128 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:05:57,037 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@66271915
+15:05:57,425 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:06:40,094 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@44119579
+15:06:40,121 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+15:06:40,122 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+15:06:41,436 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@66271915
+15:06:41,444 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:06:43,407 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@459cefc1
+15:06:43,413 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:06:49,751 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.HomeCommand@3d65c906
+15:06:49,752 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /index.jsp
+15:28:40,469 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@708ab485
+15:28:41,110 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:28:48,274 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@47e244ab
+15:28:48,289 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,6' at line 1
+15:28:48,295 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:30:01,080 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@65100172
+15:30:01,594 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:30:05,345 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:30:05,374 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,6' at line 1
+15:30:05,389 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:30:09,617 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: null
+15:30:09,618 INFO  Controller.http-nio-8080-exec-9:processRequest:66 - 
+15:30:09,623 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/errorPage.jsp
+15:30:17,542 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: null
+15:30:17,543 INFO  Controller.http-nio-8080-exec-3:processRequest:66 - 
+15:30:17,545 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/errorPage.jsp
+15:32:22,491 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@479cd4dd
+15:32:23,149 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:32:27,480 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@42710a29
+15:32:27,497 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,6' at line 1
+15:32:27,501 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:32:30,646 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: null
+15:32:30,646 INFO  Controller.http-nio-8080-exec-8:processRequest:66 - 
+15:32:30,653 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/errorPage.jsp
+15:33:21,566 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@4034e067
+15:33:22,053 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:33:26,483 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@15b9e591
+15:33:26,513 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-13,6' at line 1
+15:33:26,523 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:33:30,036 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@15b9e591
+15:33:30,047 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:33:32,809 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@15b9e591
+15:33:32,812 ERROR DirectionImpl.http-nio-8080-exec-1:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,6' at line 1
+15:33:32,816 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:33:38,559 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@15b9e591
+15:33:38,562 ERROR DirectionImpl.http-nio-8080-exec-3:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,6' at line 1
+15:33:38,565 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:33:41,759 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@15b9e591
+15:33:41,766 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:18,854 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7890506e
+15:34:19,251 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:22,122 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:22,146 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,3' at line 1
+15:34:22,153 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:37,028 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:37,038 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:39,765 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:39,773 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:42,427 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:42,432 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:44,716 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:44,724 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:51,389 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:51,396 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:53,548 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:53,557 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:34:55,621 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:34:55,637 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:38:47,281 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7890506e
+15:38:47,745 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:38:55,823 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:38:55,841 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-7,3' at line 1
+15:38:55,844 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:38:57,852 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:38:57,873 ERROR DirectionImpl.http-nio-8080-exec-1:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,3' at line 1
+15:38:57,879 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:01,022 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:39:01,030 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:03,786 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:39:03,795 ERROR DirectionImpl.http-nio-8080-exec-3:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,3' at line 1
+15:39:03,800 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:09,627 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:39:09,631 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:12,617 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:39:12,627 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:14,754 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+15:39:14,758 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:39:59,886 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@73d114ae
+15:40:00,378 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:40:03,824 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:40:03,843 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-7,3' at line 1
+15:40:03,848 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:40:06,571 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:40:06,574 ERROR DirectionImpl.http-nio-8080-exec-6:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,3' at line 1
+15:40:06,578 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:40:08,245 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:40:08,248 ERROR DirectionImpl.http-nio-8080-exec-8:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,3' at line 1
+15:40:08,251 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:40:11,084 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:40:11,092 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:40:14,208 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5732233a
+15:40:14,215 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:15,586 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@73d114ae
+15:42:15,600 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /index.jsp
+15:42:16,805 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@2d256251
+15:42:17,447 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:24,022 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:24,037 ERROR DirectionImpl.http-nio-8080-exec-1:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-7,3' at line 1
+15:42:24,042 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:26,729 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:26,739 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:29,076 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:29,082 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:30,952 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:30,962 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:33,357 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:33,363 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:42:36,366 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@59a09ff6
+15:42:36,384 ERROR DirectionImpl.http-nio-8080-exec-9:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1,3' at line 1
+15:42:36,393 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:17,041 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@73d114ae
+15:43:17,467 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:20,659 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:20,691 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-4,3' at line 1
+15:43:20,699 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:22,534 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:22,545 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:25,235 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:25,243 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:29,401 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:29,408 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:32,905 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:32,911 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:43:34,864 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+15:43:34,869 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:44:43,708 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@2b389a3d
+15:45:21,280 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@195a0771
+15:45:21,676 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:24,428 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:24,453 ERROR DirectionImpl.http-nio-8080-exec-10:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,3' at line 1
+15:45:24,456 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:26,595 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:26,619 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:29,615 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:29,621 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:32,022 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:32,026 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:33,777 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:33,783 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:35,826 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:35,831 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:38,757 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:38,762 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:47,319 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:47,326 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:45:48,869 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@f2079cd
+15:45:48,878 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:14,645 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7890506e
+15:51:15,181 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:21,568 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:51:21,587 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-12,6' at line 1
+15:51:21,592 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:24,188 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:51:24,203 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:27,277 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:51:27,284 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:33,008 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:51:33,015 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+15:51:37,369 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+15:51:37,376 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp

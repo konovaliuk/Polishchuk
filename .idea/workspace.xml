@@ -9,16 +9,25 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/resources/language_en.properties" line="57" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="pagination some changes&#10;was added a new th for table">
+    <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,31 +95,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PaginationCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaginationCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="76" lean-forward="false" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
-              <folding />
+            <state relative-caret-position="98">
+              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding>
+                <marker date="1516283449732" expanded="true" signature="657:1076" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1376">
-              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConditionCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="251">
+              <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -119,41 +120,18 @@
       <file leaf-file-name="DirectionImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="664">
+              <caret line="81" column="45" lean-forward="false" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
               <folding>
-                <marker date="1516280474446" expanded="true" signature="509:564" ph="SELECT * FRO... Directions" />
-                <marker date="1516280474446" expanded="true" signature="619:643" ph="SELECT * FRO... Directions" />
-                <marker date="1516280474446" expanded="true" signature="619:653" ph="SELECT * FRO... Directions" />
-                <marker date="1516280474446" expanded="true" signature="718:760" ph="SELECT * FRO... Directions" />
-                <marker date="1516280474446" expanded="true" signature="821:863" ph="DELETE FROM Directions... " />
-                <marker date="1516280474446" expanded="true" signature="918:949" ph="SELECT COUNT... Directions" />
-                <marker date="1516280474446" expanded="true" signature="1010:1080" ph="SELECT price... Directions" />
-                <marker date="1516280474446" expanded="true" signature="1140:1240" ph="UPDATE Directions... " />
-                <marker date="1516280474446" expanded="true" signature="1295:1405" ph="INSERT INTO Directions... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IDirectionDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#1218#1219#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
+                <marker date="1516283444939" expanded="true" signature="509:564" ph="SELECT * FRO... Directions" />
+                <marker date="1516283444939" expanded="true" signature="619:643" ph="SELECT * FRO... Directions" />
+                <marker date="1516283444939" expanded="true" signature="619:653" ph="SELECT * FRO... Directions" />
+                <marker date="1516283444939" expanded="true" signature="718:760" ph="SELECT * FRO... Directions" />
+                <marker date="1516283444939" expanded="true" signature="821:863" ph="DELETE FROM Directions... " />
+                <marker date="1516283444939" expanded="true" signature="918:949" ph="SELECT COUNT... Directions" />
+                <marker date="1516283444939" expanded="true" signature="1010:1080" ph="SELECT price... Directions" />
+                <marker date="1516283444939" expanded="true" signature="1140:1240" ph="UPDATE Directions... " />
+                <marker date="1516283444939" expanded="true" signature="1295:1405" ph="INSERT INTO Directions... " />
               </folding>
             </state>
           </provider>
@@ -238,15 +216,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/utilCommand/LinearSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/command.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/language.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/language_en.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java" />
       </list>
     </option>
   </component>
@@ -1191,14 +1169,7 @@
       <workItem from="1516113184346" duration="14568000" />
       <workItem from="1516175952887" duration="34107000" />
       <workItem from="1516230470606" duration="1644000" />
-      <workItem from="1516278239377" duration="2264000" />
-    </task>
-    <task id="LOCAL-00016" summary="Add FilterForEncoding and use him for Controller">
-      <created>1513938278090</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1513938278090</updated>
+      <workItem from="1516278239377" duration="5320000" />
     </task>
     <task id="LOCAL-00017" summary="Add several folders (css/img/pages) and configure them">
       <created>1514211335232</created>
@@ -1536,11 +1507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516280435239</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="was deleted unnecessary rows of code">
+      <created>1516280549024</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1516280549024</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="661085000" />
+    <option name="totallyTimeSpent" value="664141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1579,9 +1557,10 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29090908" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29090908" sideWeight="0.44012442" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30227274" sideWeight="0.5598756" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5116641" order="7" side_tool="true" content_ui="tabs" />
@@ -1591,7 +1570,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1605,7 +1583,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="Full language" />
     <MESSAGE value="index.jsp with adaptability" />
     <MESSAGE value="changes all css files" />
     <MESSAGE value="delete vitalyaRegistr" />
@@ -1630,7 +1607,8 @@
     <MESSAGE value="checkbox in css" />
     <MESSAGE value="pagination is work, but need do some changes" />
     <MESSAGE value="pagination some changes&#10;was added a new th for table" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination some changes&#10;was added a new th for table" />
+    <MESSAGE value="was deleted unnecessary rows of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="was deleted unnecessary rows of code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1927,60 +1905,64 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <marker date="1516280474446" expanded="true" signature="509:564" ph="SELECT * FRO... Directions" />
-            <marker date="1516280474446" expanded="true" signature="619:643" ph="SELECT * FRO... Directions" />
-            <marker date="1516280474446" expanded="true" signature="619:653" ph="SELECT * FRO... Directions" />
-            <marker date="1516280474446" expanded="true" signature="718:760" ph="SELECT * FRO... Directions" />
-            <marker date="1516280474446" expanded="true" signature="821:863" ph="DELETE FROM Directions... " />
-            <marker date="1516280474446" expanded="true" signature="918:949" ph="SELECT COUNT... Directions" />
-            <marker date="1516280474446" expanded="true" signature="1010:1080" ph="SELECT price... Directions" />
-            <marker date="1516280474446" expanded="true" signature="1140:1240" ph="UPDATE Directions... " />
-            <marker date="1516280474446" expanded="true" signature="1295:1405" ph="INSERT INTO Directions... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1376">
-          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="81" column="45" lean-forward="false" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding>
+            <marker date="1516283444939" expanded="true" signature="509:564" ph="SELECT * FRO... Directions" />
+            <marker date="1516283444939" expanded="true" signature="619:643" ph="SELECT * FRO... Directions" />
+            <marker date="1516283444939" expanded="true" signature="619:653" ph="SELECT * FRO... Directions" />
+            <marker date="1516283444939" expanded="true" signature="718:760" ph="SELECT * FRO... Directions" />
+            <marker date="1516283444939" expanded="true" signature="821:863" ph="DELETE FROM Directions... " />
+            <marker date="1516283444939" expanded="true" signature="918:949" ph="SELECT COUNT... Directions" />
+            <marker date="1516283444939" expanded="true" signature="1010:1080" ph="SELECT price... Directions" />
+            <marker date="1516283444939" expanded="true" signature="1140:1240" ph="UPDATE Directions... " />
+            <marker date="1516283444939" expanded="true" signature="1295:1405" ph="INSERT INTO Directions... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="76" lean-forward="false" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+        <state relative-caret-position="98">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding>
+            <marker date="1516283449732" expanded="true" signature="657:1076" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="144" column="40" lean-forward="true" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
           <folding />
         </state>
       </provider>
