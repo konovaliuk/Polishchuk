@@ -16,18 +16,8 @@ public class PaginationCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-//        String sPageId = request.getParameter(PAGE_ID);
-//        int pageId = Integer.parseInt(sPageId);
-//        int total = 5;
-//        if (pageId == 1){
-//        } else {
-//            pageId = pageId - 1;
-//            pageId = pageId * total + 1;
-//        }
-//        List<Direction> directionList = DirectionService.getInstance().getDirectionRecords(pageId,total);
-//        request.setAttribute("directionListPage", directionList);
         int page = 1;
-        int recordPerPage = 6;
+        int recordPerPage = 5;
         if (request.getParameter(PAGE_ID) != null){
             page = Integer.parseInt(request.getParameter(PAGE_ID));
         }
@@ -37,6 +27,7 @@ public class PaginationCommand implements ICommand {
         request.setAttribute("directionListP", directionList);
         request.setAttribute("noOfPages", noOfPages);
         request.setAttribute("currentPage", page);
+        request.setAttribute("visibleTable", true);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CONDITION_PAGE);
     }

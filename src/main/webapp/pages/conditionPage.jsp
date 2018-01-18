@@ -48,13 +48,15 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>${Delivery}</small></h1>
+                    <h1>Polik
+                        <small>${Delivery}</small>
+                    </h1>
                 </div>
             </div>
             <div class="col-12 col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                     <c:if test="${visibleOrder == true}">
                         <p>Hello my friend ${visibleUser}</p>
                     </c:if>
@@ -76,7 +78,7 @@
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/con?command=home">${Main}</a ></li>
+                        <li><a href="/con?command=home">${Main}</a></li>
                         <li class="active"><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li><a href="/con?command=contact">${Contact}</a></li>
@@ -116,7 +118,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <h2>${Condition} + ${countRecord}</h2>
+                <h2>${Condition}</h2>
             </div>
             <div class="col-md-12 col-lg-12">
                 <div class="terms__text">
@@ -125,70 +127,69 @@
                     <p>${thirdPar}</p>
                     <p>${fourthPar}(063)-625-48-22 </p>
                 </div>
-                <%--test div--%>
                 <div class="col-md-12 col-lg-12">
                     <div class="line"></div>
                 </div>
-                <%--<div>--%>
-                    <%--<a href="/con?command=pagination&page=1">ViewEmployees</a>--%>
-                <%--</div>--%>
+                <div>
+                    <a href="/con?command=pagination&page=1">View Tariffing</a>
+                </div>
                 <div class="col-md-12 col-lg-12">
                     <div class="line"></div>
                 </div>
-                <div class="terms__priceList d-flex justify-content-center" >
-                    <table class="table_blur" border="1" cellpadding="6" cellspacing="6">
-                        <thead>
-                        <tr>
-                            <th colspan="4">${tariffingPar}</th>
-                        </tr>
-                        <tr>
-                            <th>${number}</th>
-                            <th>${from}</th>
-                            <th>${to}</th>
-                            <th>${price}</th>
-                        </tr>
-                        </thead>
-                        <tbody>
+                <c:if test="${visibleTable == true}">
+                    <div class="terms__priceList d-flex justify-content-center">
+                        <table class="table_blur" border="1" cellpadding="6" cellspacing="6">
 
-                        <c:forEach items="${directionListP}" var="elem">
+                            <thead>
                             <tr>
-                                <td><c:out value="${elem.directionID}"/></td>
-                                <td><c:out value="${elem.fromCity}"/></td>
-                                <td><c:out value="${elem.toCity}"/></td>
-                                <td><c:out value="${elem.priceDirection}"/></td>
+                                <th colspan="4">${tariffingPar}</th>
                             </tr>
-                        </c:forEach>
-                        </tbody>
-                    </table>
-                    <c:if test="${currentPage != 1}">
-                        <td><a href="/con?command=pagination&page=${currentPage - 1}">Previous</a></td>
-                    </c:if>
-                    <table border="1" cellpadding="6" cellspacing="6">
-                        <tr>
+                            <tr>
+                                <th>${number}</th>
+                                <th>${from}</th>
+                                <th>${to}</th>
+                                <th>${price}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <c:forEach items="${directionListP}" var="elem">
+                                <tr>
+                                    <td><c:out value="${elem.directionID}"/></td>
+                                    <td><c:out value="${elem.fromCity}"/></td>
+                                    <td><c:out value="${elem.toCity}"/></td>
+                                    <td><c:out value="${elem.priceDirection}"/></td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
+                <div class="col md-12 col lg-12 d-flex justify-content-center">
+                    <div class="paginationCenter">
+                        <div class="pagination">
+                            <c:if test="${currentPage != 1 }">
+                                <a href="/con?command=pagination&page=${currentPage - 1}">&laquo;</a>
+                            </c:if>
                             <c:forEach begin="1" end="${noOfPages}" var="i">
                                 <c:choose>
                                     <c:when test="${currentPage eq i}">
-                                        <td>${i}</td>
+                                        <a href="" class="active">${i}</a>
                                     </c:when>
                                     <c:otherwise>
-                                        <td><a href="/con?command=pagination&page=${i}">${i}</a></td>
+                                        <a href="/con?command=pagination&page=${i}">${i}</a>
                                     </c:otherwise>
                                 </c:choose>
                             </c:forEach>
-                        </tr>
-                    </table>
-                    
-                    <c:if test="${currentPage lt noOfPages}">
-                        <td><a href="/con?command=pagination&page=${currentPage + 1}">Next</a></td>
-                    </c:if>
-
+                            <c:if test="${currentPage lt noOfPages}">
+                                <a href="/con?command=pagination&page=${currentPage + 1}">&raquo;</a>
+                            </c:if>
+                        </div>
+                    </div>
                 </div>
-                <%--/testdiv--%>
-
-
+            </div>
+                </c:if>
             </div>
         </div>
-    </div>
 </section>
 <!-- /TERMS OF DELIVRRY -->
 <!-- MAP -->

@@ -9653,3 +9653,293 @@
 15:51:33,015 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
 15:51:37,369 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
 15:51:37,376 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:07:00,791 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@73d114ae
+16:07:01,221 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:07:45,594 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@708ab485
+16:07:46,109 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:07:59,350 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@6606fc6a
+16:07:59,426 ERROR DirectionImpl.http-nio-8080-exec-5:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-12,6' at line 1
+16:07:59,438 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:08:03,329 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@6606fc6a
+16:08:03,337 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:12:50,471 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@66746854
+16:12:50,838 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:12:56,408 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@cda3699
+16:12:56,422 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:13:01,203 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@cda3699
+16:13:01,208 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:13:43,373 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@cda3699
+16:13:43,381 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:13:45,726 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@cda3699
+16:13:45,731 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:13:49,106 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@66746854
+16:13:49,110 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:15:32,984 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@708ab485
+16:15:33,385 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:15:36,684 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@63a5a106
+16:15:36,703 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:15:39,233 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@63a5a106
+16:15:39,269 ERROR DirectionImpl.http-nio-8080-exec-2:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6,6' at line 1
+16:15:39,272 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:15:42,239 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@63a5a106
+16:15:42,244 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:18:41,027 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@39743c4c
+16:18:41,429 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:18:45,317 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+16:18:45,331 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:18:49,803 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+16:18:49,815 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:18:52,027 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+16:18:52,033 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:18:54,903 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+16:18:54,912 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:22:56,187 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@708ab485
+16:22:56,625 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:23:26,184 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@1f418ee1
+16:23:26,215 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:24:55,776 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@39743c4c
+16:24:56,215 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:25:04,024 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@61081a08
+16:25:04,045 ERROR DirectionImpl.http-nio-8080-exec-1:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-12,6' at line 1
+16:25:04,048 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:25:12,472 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@61081a08
+16:25:12,475 ERROR DirectionImpl.http-nio-8080-exec-2:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-18,6' at line 1
+16:25:12,478 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:26:06,002 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@706adc74
+16:26:06,419 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:26:16,770 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@44119579
+16:26:16,789 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:27:48,595 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7169d075
+16:27:49,300 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:27:54,380 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5d56942
+16:27:54,397 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:27:59,461 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5d56942
+16:27:59,466 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:28:02,068 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5d56942
+16:28:02,078 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:30:11,277 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@403093b0
+16:30:11,626 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:30:16,056 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+16:30:16,074 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:30:20,245 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+16:30:20,251 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:30:22,167 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+16:30:22,189 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:30:33,213 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+16:30:33,220 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:31:26,298 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@a0e56e3
+16:31:26,713 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:39:37,705 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@6164fba7
+16:39:38,190 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:39:44,018 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7d8aabb7
+16:39:44,029 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:39:47,110 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7d8aabb7
+16:39:47,116 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:41:23,688 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@66271915
+16:41:23,699 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /index.jsp
+16:41:25,866 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@4f260b41
+16:41:26,328 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:41:30,208 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@769a25aa
+16:41:30,218 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:41:32,344 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@769a25aa
+16:41:32,351 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:41:34,633 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@769a25aa
+16:41:34,639 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:42:08,641 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@53dee065
+16:42:09,064 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:42:14,264 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@b128650
+16:42:14,281 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:42:59,246 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7890506e
+16:42:59,657 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:43:03,420 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@139383ac
+16:43:03,440 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:43:07,756 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@139383ac
+16:43:07,769 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:43:49,628 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@73d114ae
+16:43:50,374 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:43:55,501 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+16:43:55,517 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:44:00,129 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+16:44:00,135 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:45:39,755 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@5b9269ad
+16:45:40,159 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:45:42,943 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@50fed4cc
+16:45:42,971 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:45:46,412 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@50fed4cc
+16:45:46,418 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:46:50,553 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@50fed4cc
+16:46:50,559 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:46:52,793 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@50fed4cc
+16:46:52,798 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:53:07,874 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@3104f7a2
+16:53:08,260 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:53:11,906 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5156887e
+16:53:11,920 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:53:42,720 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5156887e
+16:53:42,726 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+16:53:46,230 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5156887e
+16:53:46,236 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:09:45,375 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@24892ee9
+17:09:45,824 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:09:48,516 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@49ceb457
+17:09:48,536 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:09:52,032 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@49ceb457
+17:09:52,037 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:12:29,463 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@66271915
+17:12:29,948 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:12:33,020 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@139383ac
+17:12:33,051 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:12:35,603 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@139383ac
+17:12:35,612 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:13:11,478 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@35242122
+17:13:12,033 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:13:15,242 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5dca484a
+17:13:15,274 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:13:26,429 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@5dca484a
+17:13:26,435 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:15:58,944 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@3104f7a2
+17:15:59,376 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:16:02,611 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:16:02,622 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:16:06,000 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:16:06,012 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:13,464 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@707b7070
+17:17:14,271 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:16,737 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@77a048f4
+17:17:16,759 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:19,342 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@77a048f4
+17:17:19,350 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:21,535 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@77a048f4
+17:17:21,542 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:23,998 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@77a048f4
+17:17:24,003 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:17:27,711 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@77a048f4
+17:17:27,717 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:20:24,962 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@31e1fa70
+17:20:25,629 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:20:29,962 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3d2198c2
+17:20:29,984 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:20:33,947 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3d2198c2
+17:20:33,964 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:20:36,650 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3d2198c2
+17:20:36,656 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:20:43,293 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3d2198c2
+17:20:43,303 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:22:28,069 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@3f44bb67
+17:22:28,558 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:22:36,945 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:22:36,961 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:22:39,278 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:22:39,286 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:22:41,119 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:22:41,126 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:22:45,172 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@523f9f6b
+17:22:45,180 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:30,371 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@479cd4dd
+17:24:31,021 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:33,567 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:24:33,591 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:36,242 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:24:36,263 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:37,946 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:24:37,955 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:39,910 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:24:39,923 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:24:41,918 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:24:41,925 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:25:37,391 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:25:37,397 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:25:39,872 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@594d22e9
+17:25:39,878 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:37:06,606 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@69c4860c
+17:37:07,288 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:37:09,998 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@b128650
+17:37:10,014 INFO  Controller.http-nio-8080-exec-7:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:37:12,890 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@b128650
+17:37:12,901 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:37:15,327 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@b128650
+17:37:15,333 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:37:18,609 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@b128650
+17:37:18,616 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:38:27,119 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7890506e
+17:38:27,531 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:38:30,311 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+17:38:30,327 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:38:52,082 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+17:38:52,089 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:38:54,643 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@3125481e
+17:38:54,649 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:40:59,209 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@706adc74
+17:40:59,641 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:41:02,150 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2d256251
+17:41:02,172 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:42:12,309 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@53dee065
+17:42:12,975 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:42:23,825 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@53b54999
+17:42:23,838 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:43:27,574 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@53dee065
+17:43:27,580 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:44:04,137 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7b1234c8
+17:44:04,618 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:45:09,485 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@5b9269ad
+17:45:10,239 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:45:19,138 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2ce31b56
+17:45:19,153 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:45:21,624 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@2ce31b56
+17:45:21,638 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:45:25,361 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@141ab253
+17:45:25,374 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+17:45:25,375 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+17:45:27,676 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@5b9269ad
+17:45:27,681 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:31,539 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@707b7070
+17:50:31,843 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@707b7070
+17:50:31,972 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:31,972 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:32,176 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@707b7070
+17:50:32,188 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:34,822 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7f214ef1
+17:50:34,839 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:38,501 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7f214ef1
+17:50:38,509 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:40,535 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@7f214ef1
+17:50:40,540 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:50:49,967 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@6722835
+17:50:49,977 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+17:50:49,977 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+17:50:51,427 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@707b7070
+17:50:51,432 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:51:35,798 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@41e8e4
+17:51:36,229 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:51:39,675 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@26ccc9b1
+17:51:39,689 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:51:41,710 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@26ccc9b1
+17:51:41,720 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:51:44,673 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@4aa46a1d
+17:51:44,683 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+17:51:44,683 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+17:51:46,500 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@41e8e4
+17:51:46,504 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:51:49,482 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@26ccc9b1
+17:51:49,492 INFO  Controller.http-nio-8080-exec-5:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:52:55,190 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7169d075
+17:52:55,615 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:53:00,702 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+17:53:00,725 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:53:03,056 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+17:53:03,070 INFO  Controller.http-nio-8080-exec-2:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:53:05,209 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+17:53:05,214 INFO  Controller.http-nio-8080-exec-3:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+17:53:08,627 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.HomeCommand@59e41725
+17:53:08,627 INFO  Controller.http-nio-8080-exec-4:processRequest:83 - Redirect to: /index.jsp
+18:03:59,800 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7169d075
+18:03:59,859 INFO  Controller.http-nio-8080-exec-6:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+18:04:01,345 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+18:04:01,351 INFO  Controller.http-nio-8080-exec-10:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+18:04:04,039 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@508ea5c0
+18:04:04,072 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+18:04:04,075 INFO  Controller.http-nio-8080-exec-1:processRequest:83 - Redirect to: /pages/calculatorPage.jsp
+18:04:05,650 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@7169d075
+18:04:05,654 INFO  Controller.http-nio-8080-exec-8:processRequest:83 - Redirect to: /pages/conditionPage.jsp
+18:04:07,697 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@4c43b601
+18:04:07,704 INFO  Controller.http-nio-8080-exec-9:processRequest:83 - Redirect to: /pages/conditionPage.jsp
