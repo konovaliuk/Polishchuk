@@ -17,6 +17,7 @@
 <fmt:message key="condition.third" var="thirdPar"/>
 <fmt:message key="condition.fourth" var="fourthPar"/>
 <fmt:message key="condition.tariffing" var="tariffingPar"/>
+<fmt:message key="condition.viewTarif" var="viewTarif"/>
 <fmt:message key="condition.number" var="number"/>
 <fmt:message key="condition.from" var="from"/>
 <fmt:message key="condition.to" var="to"/>
@@ -120,22 +121,14 @@
             <div class="col-md-12 col-lg-12">
                 <h2>${Condition}</h2>
             </div>
-            <div class="col-md-12 col-lg-12">
-                <div class="terms__text">
-                    <p>${firstPar}</p>
-                    <p>${secondPar} </p>
-                    <p>${thirdPar}</p>
-                    <p>${fourthPar}(063)-625-48-22 </p>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <div class="line"></div>
-                </div>
+
                 <div>
-                    <a href="/con?command=pagination&page=1">View Tariffing</a>
+                    <a href="/con?command=pagination&page=1">${viewTarif}</a>
                 </div>
                 <div class="col-md-12 col-lg-12">
                     <div class="line"></div>
                 </div>
+            <div class="col-md-12 col-lg-12">
                 <c:if test="${visibleTable == true}">
                     <div class="terms__priceList d-flex justify-content-center">
                         <table class="table_blur" border="1" cellpadding="6" cellspacing="6">
@@ -164,32 +157,47 @@
                             </tbody>
                         </table>
                     </div>
-                <div class="col md-12 col lg-12 d-flex justify-content-center">
-                    <div class="paginationCenter">
-                        <div class="pagination">
-                            <c:if test="${currentPage != 1 }">
-                                <a href="/con?command=pagination&page=${currentPage - 1}">&laquo;</a>
-                            </c:if>
-                            <c:forEach begin="1" end="${noOfPages}" var="i">
-                                <c:choose>
-                                    <c:when test="${currentPage eq i}">
-                                        <a href="" class="active">${i}</a>
-                                    </c:when>
-                                    <c:otherwise>
-                                        <a href="/con?command=pagination&page=${i}">${i}</a>
-                                    </c:otherwise>
-                                </c:choose>
-                            </c:forEach>
-                            <c:if test="${currentPage lt noOfPages}">
-                                <a href="/con?command=pagination&page=${currentPage + 1}">&raquo;</a>
-                            </c:if>
+                    <div class="col md-12 col lg-12 d-flex justify-content-center">
+                        <div class="paginationCenter">
+                            <div class="pagination">
+                                <c:if test="${currentPage != 1 }">
+                                    <a href="/con?command=pagination&page=${currentPage - 1}">&laquo;</a>
+                                </c:if>
+                                <c:forEach begin="1" end="${noOfPages}" var="i">
+                                    <c:choose>
+                                        <c:when test="${currentPage eq i}">
+                                            <a href="" class="active">${i}</a>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <a href="/con?command=pagination&page=${i}">${i}</a>
+                                        </c:otherwise>
+                                    </c:choose>
+                                </c:forEach>
+                                <c:if test="${currentPage lt noOfPages}">
+                                    <a href="/con?command=pagination&page=${currentPage + 1}">&raquo;</a>
+                                </c:if>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="line"></div>
+                    </div>
                 </c:if>
             </div>
+
+                <div class="terms__text">
+                    <p>${firstPar}</p>
+                    <p>${secondPar} </p>
+                    <p>${thirdPar}</p>
+                    <p>${fourthPar}(063)-625-48-22 </p>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="line"></div>
+                </div>
+
+
         </div>
+    </div>
 </section>
 <!-- /TERMS OF DELIVRRY -->
 <!-- MAP -->

@@ -9,12 +9,18 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/resources/language_en.properties" line="57" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="pagination almost in good condition">
+    <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/language.properties" afterPath="$PROJECT_DIR$/src/main/resources/language.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/language_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_en.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/language_ua.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,12 +101,51 @@
       <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+            <state relative-caret-position="200">
+              <caret line="183" column="26" lean-forward="false" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
               <folding>
-                <element signature="e#7636#7643#1#HTML" expanded="true" />
-                <element signature="e#8436#8443#1#HTML" expanded="true" />
+                <element signature="e#7354#7361#1#HTML" expanded="true" />
+                <element signature="e#8206#8213#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language_ua.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/language_ua.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="51" column="125" lean-forward="false" selection-start-line="51" selection-start-column="125" selection-end-line="51" selection-end-column="125" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language_en.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/language_en.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="language.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/language.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,15 +268,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/utilCommand/LinearSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/command.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/language.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/language_en.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DirectionService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/language.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/language_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
       </list>
     </option>
@@ -1186,14 +1231,7 @@
       <workItem from="1516175952887" duration="34107000" />
       <workItem from="1516230470606" duration="1644000" />
       <workItem from="1516278239377" duration="5387000" />
-      <workItem from="1516283641825" duration="7707000" />
-    </task>
-    <task id="LOCAL-00018" summary="Fix some moments&#10;Add utilCommand folder">
-      <created>1514553085104</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1514553085104</updated>
+      <workItem from="1516283641825" duration="8467000" />
     </task>
     <task id="LOCAL-00019" summary="href direction">
       <created>1514584149845</created>
@@ -1531,11 +1569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516283606300</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Pagination is complete">
+      <created>1516291476237</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1516291476238</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671915000" />
+    <option name="totallyTimeSpent" value="672675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1600,7 +1645,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="changes all css files" />
     <MESSAGE value="delete vitalyaRegistr" />
     <MESSAGE value="calculator page with adapt" />
     <MESSAGE value="condition page with adapt" />
@@ -1625,7 +1669,8 @@
     <MESSAGE value="pagination some changes&#10;was added a new th for table" />
     <MESSAGE value="was deleted unnecessary rows of code" />
     <MESSAGE value="pagination almost in good condition" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination almost in good condition" />
+    <MESSAGE value="Pagination is complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination is complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1853,37 +1898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/language_ua.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/language_en.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="76" column="25" lean-forward="false" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/language.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="76" column="22" lean-forward="false" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1978,13 +1992,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/language.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/language_en.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/language_ua.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="51" column="125" lean-forward="false" selection-start-line="51" selection-start-column="125" selection-end-line="51" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="188" column="18" lean-forward="false" selection-start-line="188" selection-start-column="18" selection-end-line="188" selection-end-column="18" />
+        <state relative-caret-position="200">
+          <caret line="183" column="26" lean-forward="false" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
           <folding>
-            <element signature="e#7636#7643#1#HTML" expanded="true" />
-            <element signature="e#8436#8443#1#HTML" expanded="true" />
+            <element signature="e#7354#7361#1#HTML" expanded="true" />
+            <element signature="e#8206#8213#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
