@@ -10,66 +10,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log/Polik.log" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/TestClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CalculateCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CalculateCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CalculatorCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CalculatorCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ContactCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ContactCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderFromCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderFromCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderToCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderToCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ForRegistrCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ForRegistrCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/HomeCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/HomeCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LogoutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LogoutCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/MissingCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/MissingCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/OrderCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/PaginationCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/RegistrationCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageEnCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageEnCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageUkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageUkCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/ControllerHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/tag/TagForName.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/tag/TagForName.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/MessageHelper.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/MessageHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/PageConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/PageConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/AbstractFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/AbstractFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IAbstractFactory.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IAbstractFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IDirectionDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IParcelPriceDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IParcelPriceDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/IUserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/UserImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/UserImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/entity/Administrator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/entity/ParcelPrice.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/entity/ParcelPrice.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/utilDao/SimpleConnection.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/utilDao/SimpleConnection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/AdministratorService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/AdministratorService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DateService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/DateService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/LoginService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/OrderService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/contactsPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/TestClass.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/Administrator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/TestClass.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/Controller.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/Controller.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/Administrator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_war.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Project_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df5872cc-a0db-4cf6-9977-56acbe21ec9a.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/olexandr.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_6_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Project.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT.war" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/META-INF/context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/command.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/database.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/pageConfiguration.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/CalculatorCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ContactCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ForRegistrCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/HomeCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ICommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LogoutCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/MissingCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/OrderCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/SignInCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/tag/TagForName.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/utilController/PageConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IParcelPriceDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IUserDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/Direction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/OrderFromWarehouse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/OrderToWarehouse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/ParcelPrice.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/utilDao/ConnectionPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/utilDao/SimpleConnection.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/AdministratorService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DateService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/LoginService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/junit-3.8.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/mainPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/registrationF.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/signInPolik.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/2.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/error.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/pattern.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/adminPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/loginPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageConfiguration.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/CalculatorCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ContactCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ForRegistrCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/HomeCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ICommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LogoutCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/MissingCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/OrderCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/SignInCommand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/Controller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/tag/TagForName.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/utilController/PageConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IParcelPriceDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IUserDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/Direction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/OrderFromWarehouse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/OrderToWarehouse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/ParcelPrice.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/utilDao/ConnectionPool.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/utilDao/SimpleConnection.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/AdministratorService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DateService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/LoginService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,16 +227,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="adminPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/adminPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="calculatorPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -227,11 +307,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -274,7 +364,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/pageConfiguration.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/loginPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/MessageException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
@@ -325,6 +414,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/orderPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -653,171 +743,6 @@
               <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-              <item name="localization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="tag" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="utilController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="utilDao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="delivery" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -839,7 +764,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Project4-master" />
@@ -860,24 +785,24 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="ua.com.delivery.persistence.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/utilCommand" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
-      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/filter" />
-      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/src/main/resources/lang" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ua.com.delivery.command.localization" />
       <recent name="ua.com.delivery.command.locale" />
       <recent name="ua.com.delivery.command" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/utilCommand" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
-      <recent name="$PROJECT_DIR$/src/main/resources/lang" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/filter" />
+      <recent name="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/locale" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1353,14 +1278,7 @@
       <workItem from="1516230470606" duration="1644000" />
       <workItem from="1516278239377" duration="5387000" />
       <workItem from="1516283641825" duration="26067000" />
-      <workItem from="1516375186025" duration="3956000" />
-    </task>
-    <task id="LOCAL-00022" summary="Addition some css style and other page">
-      <created>1514919618269</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1514919618269</updated>
+      <workItem from="1516375186025" duration="5167000" />
     </task>
     <task id="LOCAL-00023" summary="Some jsp pages and front for pages">
       <created>1514978710084</created>
@@ -1698,11 +1616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516321651269</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="JCC was done">
+      <created>1516379190485</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1516379190487</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="694231000" />
+    <option name="totallyTimeSpent" value="695442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1807,7 +1732,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="condition page with adapt" />
     <MESSAGE value="contact page with adapt" />
     <MESSAGE value="error page with adapt" />
     <MESSAGE value="order page with adapt" />
@@ -1832,7 +1756,8 @@
     <MESSAGE value="Pagination is complete" />
     <MESSAGE value="Changes in pagination" />
     <MESSAGE value="Was created some logs and was added new messages after  wrong login/registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Was created some logs and was added new messages after  wrong login/registration" />
+    <MESSAGE value="JCC was done" />
+    <option name="LAST_COMMIT_MESSAGE" value="JCC was done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1845,14 +1770,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ContactCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderFromCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -2282,6 +2199,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
