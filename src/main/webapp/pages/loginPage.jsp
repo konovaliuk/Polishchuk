@@ -2,7 +2,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
-<%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
 
 <fmt:message key="login.placeholderUsername" var="Username"/>
