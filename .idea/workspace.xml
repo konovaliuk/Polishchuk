@@ -10,41 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/ConditionCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/LoginCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/RegistrationCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageEnCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageEnCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageUkCommand.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/command/localization/LanguageUkCommand.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/MessageException.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/MessageHelper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/PageConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/controller/utilController/PageConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/UserImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/dao/daoimpl/UserImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/persistence/entity/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/ua/com/delivery/service/LoginService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/language.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/language_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_en.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/language_ua.properties" afterPath="$PROJECT_DIR$/src/main/resources/language_ua.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log/application.log" afterPath="$PROJECT_DIR$/src/main/resources/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messageException_en_US.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messageException_uk_UA.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pageConfiguration.properties" afterPath="$PROJECT_DIR$/src/main/resources/pageConfiguration.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/conditionPolik.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/errorPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/loginPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/loginPage.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/pages/registrationPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/messageException_en_US.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/messageException_uk_UA.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/pageConfiguration.properties" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/pageConfiguration.properties" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/RegistrationCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/utilController/MessageException.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/User.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/User.class" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/LoginService.class" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/LoginService.class" />
@@ -54,14 +26,11 @@
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/loginPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/loginPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" afterPath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/classes/log/application.log" afterPath="$PROJECT_DIR$/target/classes/log/application.log" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messageException_en_US.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messageException_uk_UA.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageConfiguration.properties" afterPath="$PROJECT_DIR$/target/classes/pageConfiguration.properties" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/RegistrationCommand.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/utilController/MessageException.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/User.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/User.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/LoginService.class" afterPath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/LoginService.class" />
@@ -1272,14 +1241,7 @@
       <workItem from="1516175952887" duration="34107000" />
       <workItem from="1516230470606" duration="1644000" />
       <workItem from="1516278239377" duration="5387000" />
-      <workItem from="1516283641825" duration="24394000" />
-    </task>
-    <task id="LOCAL-00020" summary="href direction">
-      <created>1514881232260</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1514881232260</updated>
+      <workItem from="1516283641825" duration="24477000" />
     </task>
     <task id="LOCAL-00021" summary="some changes">
       <created>1514896720204</created>
@@ -1617,11 +1579,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516292232434</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Was created some logs and was added new messages after  wrong login/registration">
+      <created>1516321639883</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1516321639884</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="688602000" />
+    <option name="totallyTimeSpent" value="688685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1686,7 +1655,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="calculator page with adapt" />
     <MESSAGE value="condition page with adapt" />
     <MESSAGE value="contact page with adapt" />
     <MESSAGE value="error page with adapt" />
@@ -1711,7 +1679,8 @@
     <MESSAGE value="pagination almost in good condition" />
     <MESSAGE value="Pagination is complete" />
     <MESSAGE value="Changes in pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in pagination" />
+    <MESSAGE value="Was created some logs and was added new messages after  wrong login/registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Was created some logs and was added new messages after  wrong login/registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
