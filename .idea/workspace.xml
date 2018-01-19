@@ -11,131 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3acfdfc-692e-4bb8-a027-358d2c5d0fad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/META-INF/context.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/command.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/database.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log/application.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/pageConfiguration.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/CalculatorCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ContactCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ForRegistrCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/HomeCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/ICommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LoginCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/LogoutCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/MissingCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/OrderCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/command/SignInCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/tag/TagForName.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/controller/utilController/PageConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IParcelPriceDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/IUserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/Direction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/OrderFromWarehouse.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/OrderToWarehouse.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/ParcelPrice.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/entity/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/utilDao/ConnectionPool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/persistence/utilDao/SimpleConnection.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/AdministratorService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DateService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/DirectionService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/classes/ua/com/delivery/service/LoginService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/junit-3.8.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/calculatorPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/conditionPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/contactPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/mainPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/orderPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/registrationF.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/css/signInPolik.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/error.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/img/pattern.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/index.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/adminPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/calculatorPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/conditionPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/contactsPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/errorPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/loginPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/orderPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/Delivery-1.0-SNAPSHOT/pages/registrationPage.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/command.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageConfiguration.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/CalculatorCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ConditionCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ContactCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ForRegistrCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/HomeCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/ICommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LoginCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/LogoutCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/MissingCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/OrderCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/RegistrationCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/command/SignInCommand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/ControllerHelper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/tag/TagForName.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/controller/utilController/PageConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/AbstractFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IAbstractFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IDirectionDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IOrderFromWarehouseDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IOrderToWarehouseDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IParcelPriceDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/IUserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/DirectionImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/OrderFromWarehouseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/OrderToWarehouseImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/ParcelPriceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/dao/daoimpl/UserImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/Direction.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/OrderFromWarehouse.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/OrderToWarehouse.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/ParcelPrice.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/entity/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/utilDao/ConnectionPool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/persistence/utilDao/SimpleConnection.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/AdministratorService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DateService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/DirectionService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/com/delivery/service/LoginService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -203,16 +78,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calculatorPage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/calculatorPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="conditionPage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/conditionPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -297,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -719,6 +584,32 @@
               <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Delivery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -762,8 +653,8 @@
       <recent name="ua.com.delivery.persistence.entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources/lang" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
@@ -1254,14 +1145,7 @@
       <workItem from="1516230470606" duration="1644000" />
       <workItem from="1516278239377" duration="5387000" />
       <workItem from="1516283641825" duration="26067000" />
-      <workItem from="1516375186025" duration="5309000" />
-    </task>
-    <task id="LOCAL-00024" summary="Add some changes with login/order/condition">
-      <created>1514994111692</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1514994111692</updated>
+      <workItem from="1516375186025" duration="5678000" />
     </task>
     <task id="LOCAL-00025" summary="Was added get command">
       <created>1515019898101</created>
@@ -1599,11 +1483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516380381865</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Maybe without /target">
+      <created>1516380514242</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1516380514242</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="695584000" />
+    <option name="totallyTimeSpent" value="695953000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1630,7 +1521,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53965783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1643,6 +1534,7 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30227274" sideWeight="0.5598756" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5116641" order="7" side_tool="true" content_ui="tabs" />
@@ -1653,7 +1545,6 @@
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1707,7 +1598,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Polishchuk" />
     </ignored-roots>
-    <MESSAGE value="error page with adapt" />
     <MESSAGE value="order page with adapt" />
     <MESSAGE value="changes language ukr" />
     <MESSAGE value="without changes in db" />
@@ -1732,7 +1622,8 @@
     <MESSAGE value="Was created some logs and was added new messages after  wrong login/registration" />
     <MESSAGE value="JCC was done" />
     <MESSAGE value="Attempt to delete .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempt to delete .idea" />
+    <MESSAGE value="Maybe without /target" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maybe without /target" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1745,14 +1636,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderFromCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="91" lean-forward="false" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/com/delivery/command/CreateOrderToCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -2178,10 +2061,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/login.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
