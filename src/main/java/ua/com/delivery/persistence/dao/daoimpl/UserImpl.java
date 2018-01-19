@@ -26,7 +26,6 @@ public class UserImpl implements IUserDao {
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER)
         ) {
-//            preparedStatement.setLong(1, user.getUserID());
             preparedStatement.setString(1, user.getUsername());
             preparedStatement.setString(2, user.getPassword());
             preparedStatement.setString(3, user.getFirstName());
@@ -34,7 +33,7 @@ public class UserImpl implements IUserDao {
             preparedStatement.setString(5, user.getEmail());
             preparedStatement.setString(6, user.getAddress());
             preparedStatement.setString(7, user.getCity());
-            preparedStatement.setLong(8, user.getPhone());
+            preparedStatement.setInt(8, user.getPhone());
 //            preparedStatement.setBoolean(9, user.getAdmin());
 
             preparedStatement.executeUpdate();
@@ -66,7 +65,7 @@ public class UserImpl implements IUserDao {
                 user.setEmail(resultSet.getString("email"));
                 user.setAddress(resultSet.getString("address"));
                 user.setCity(resultSet.getString("city"));
-                user.setPhone(resultSet.getLong("phone"));
+                user.setPhone(resultSet.getInt("phone"));
                 user.setAdmin(resultSet.getBoolean("admin"));
                 userList.add(user);
             }
@@ -105,17 +104,10 @@ public class UserImpl implements IUserDao {
                 user.setEmail(resultSet.getString("email"));
                 user.setAddress(resultSet.getString("address"));
                 user.setCity(resultSet.getString("city"));
-                user.setPhone(resultSet.getLong("phone"));
+                user.setPhone(resultSet.getInt("phone"));
                 user.setAdmin(resultSet.getBoolean("admin"));
                 preparedStatement.executeUpdate();
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//
-//            }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
@@ -141,7 +133,7 @@ public class UserImpl implements IUserDao {
                 user.setEmail(resultSet.getString("email"));
                 user.setAddress(resultSet.getString("address"));
                 user.setCity(resultSet.getString("city"));
-                user.setPhone(resultSet.getLong("phone"));
+                user.setPhone(resultSet.getInt("phone"));
                 user.setAdmin(resultSet.getBoolean("admin"));
                 preparedStatement.execute();
                 } while (resultSet.next());

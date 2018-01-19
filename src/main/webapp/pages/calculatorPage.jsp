@@ -28,6 +28,7 @@
 <fmt:message key="calculator.priceBetweenCity" var="BetweenCityPrice"/>
 <fmt:message key="calculator.price" var="Price"/>
 <fmt:message key="calculator.totalPrice" var="TotalPrice"/>
+<fmt:message key="calculator.money" var="Money"/>
 <fmt:message key="calculator.address" var="Address"/>
 <fmt:message key="calculator.allRight" var="AllRight"/>
 
@@ -183,16 +184,16 @@
                             <span>${BetweenCityPrice}</span><br>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <h3>${Price}</h3>
-                            <span>${priceByWeight} грн.</span><br>
-                            <span>${priceBetweenCity} грн.</span><br>
+                            <h3>${Price} (${Money})</h3>
+                            <span>${priceByWeight} </span><br>
+                            <span>${priceBetweenCity}</span><br>
 
                         </div>
                         <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">
                             <h3>${TotalPrice}</h3>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <h3><span>${priceFromToCity} грн.</span></h3>
+                            <h3><span>${priceFromToCity}</span></h3>
                         </div>
                         <div class="col-md-12 col-lg-12">
                             <div class="line"></div>

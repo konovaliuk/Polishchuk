@@ -2,7 +2,7 @@ package ua.com.delivery.controller;
 
 import org.apache.log4j.Logger;
 import ua.com.delivery.command.ICommand;
-import ua.com.delivery.controller.utilController.MessageException;
+import ua.com.delivery.controller.utilController.MessageHelper;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 
 import javax.servlet.RequestDispatcher;
@@ -10,7 +10,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
@@ -18,8 +17,6 @@ public class Controller extends HttpServlet {
     private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
     private static final String ENCODING = "UTF-8";
     private static final String CONTENT_TYPE = "text/html;charset=utf-8";
-    private static final String MESSAGE_ERROR_ATTRIBUTE = "messageError";
-    private static final String PAGE_IS_NULL = "Page is NULL";
 
     //controllerHelper - обєкт в якому лежить список моїх можливих команд
     private ControllerHelper controllerHelper = ControllerHelper.getInstance();
@@ -39,10 +36,6 @@ public class Controller extends HttpServlet {
 
         String page;
         try {
-            HttpSession session = request.getSession(false);
-            if (session == null) {
-                session = request.getSession(true);
-            }
             //определение команды, пришедшей из JSP
             ICommand command = controllerHelper.getCommand(request);
             /*вызов реализованного метода execute() интерфейса ICommand и передача параметров
@@ -50,29 +43,26 @@ public class Controller extends HttpServlet {
             page = command.execute(request, response);
             //метод возвращает страницу ответа
         } catch (ServletException e) {
-            LOGGER.info(e.getMessage());
-            request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
-                    MessageException.getInstance().getMessageException(MessageException.SERVLET_EXCEPTION));
+            request.setAttribute("servletException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.SERVLET_EXCEPTION));
             //вызов JSP-страницы с сообщением об ошибке
-            e.printStackTrace();
+            LOGGER.error("Exception in controller (Servlet Exception)");
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (IOException e) {
-            LOGGER.info(e.getMessage());
-            request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
-                    MessageException.getInstance().getMessageException(MessageException.IO_EXCEPTION));
-            e.printStackTrace();
+            request.setAttribute("IOException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.IO_EXCEPTION));
+            LOGGER.error("Exception in controller (IOException)");
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (Exception e) {
-            LOGGER.info(e.getMessage());
-            request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
-                    MessageException.getInstance().getMessageException(MessageException.EXCEPTION));
-            e.printStackTrace();
+            request.setAttribute("exception",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.EXCEPTION));
+            LOGGER.error("Exception in controller");
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         }
         if (page == null) {
-            LOGGER.info(PAGE_IS_NULL);
-            request.setAttribute(MESSAGE_ERROR_ATTRIBUTE,
-                    MessageException.getInstance().getMessageException(MessageException.PAGE_IS_NULL));
+            request.setAttribute("nullPage",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.PAGE_IS_NULL));
+            LOGGER.error("Problem in controller. Page is null");
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         }
 
@@ -80,29 +70,9 @@ public class Controller extends HttpServlet {
         response.setContentType(CONTENT_TYPE);
         //вызов страницы ответа на запрос
         RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher(page);
-        LOGGER.info("Redirect to: " + page);
+        LOGGER.info("Forward to: " + page);
         requestDispatcher.forward(request, response);
     }
 }
 
 
-
-   /* IAbstractFactory factory = new AbstractFactory();
-    CargoPriceImpl cargoPrice = factory.createCargoDao();
-//        cargoPrice.createCargoPrice(new CargoPrice(11L, 5,8));
-//        cargoPrice.deleteCargoPriceByWeight(5);
-        request.getRequestDispatcher("WEB-INF/pages/loginPage.jsp").forward(request,response);
-       *//* Cookie[] cookies = request.getCookies();
-        for (Cookie cookie: cookies) {
-            System.out.println(cookie.getName());
-            System.out.println(cookie.getValue());
-        }
-        Cookie cookie = new Cookie("testCookie", "valuecookie");
-        //время жизни куки 5с
-//        cookie.setMaxAge(5);
-        //тільки по цій урлі буде працювати кукі
-//        cookie.setPath("/someLink");
-         //кукі будуть видні якщо тільки https зєднання
-        cookie.setSecure(true);
-        response.addCookie(cookie);*//*
-//            request.getRequestDispatcher("WEB-INF/pages/registrationPage.jsp").forward(request,response);*/

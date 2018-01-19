@@ -13,8 +13,8 @@ import java.util.Locale;
 public class LanguageEnCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       request.getSession().setAttribute("user", null);
-        Config.set(request.getSession(), Config.FMT_LOCALE, Locale.ENGLISH);
+//       request.getSession(false).setAttribute("user", null);
+        Config.set(request.getSession(false), Config.FMT_LOCALE, Locale.ENGLISH);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }
 }

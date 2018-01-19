@@ -26,6 +26,8 @@
 <body>
 <%--REGISTRATION--%>
 <section id="registrrationForm" class="registrationForm">
+    ${existUsername}
+    ${createUser}
     <div class="box">
         <h2>${Registration}</h2>
         <form action="con" method="post" name="registrationForm">

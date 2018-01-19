@@ -1,5 +1,7 @@
 package ua.com.delivery.command;
 
+import org.apache.log4j.Logger;
+import ua.com.delivery.controller.utilController.MessageHelper;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 import ua.com.delivery.persistence.dao.AbstractFactory;
 import ua.com.delivery.persistence.dao.daoimpl.UserImpl;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class RegistrationCommand implements ICommand{
+    private static final Logger LOGGER = Logger.getLogger(RegistrationCommand.class);
     private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
     private static final String FIRST_NAME = "firstName";
@@ -44,19 +47,21 @@ public class RegistrationCommand implements ICommand{
                 user.setEmail(email);
                 user.setAddress(address);
                 user.setCity(city);
-                user.setPhone(Long.valueOf(phone));
+                user.setPhone(Integer.valueOf(phone));
                 user.setAdmin(false);
 
                 userImpl.createUser(user);
                 if (user.getUserID() == null) {
+                    request.setAttribute("createUser",
+                            MessageHelper.getInstance().getMessageException(MessageHelper.USER_CREATE));
                     page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
                 } else {
-                    page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
+                    page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
                 }
-                /* Дописати вивід успішної реєстрації або помилки на якомусь*/
             } else {
-                System.out.println("this username is exist';s");
-                request.setAttribute("You have some trouble, bro", true);
+                LOGGER.info("Was attempt to registr with exist username");
+                request.setAttribute("existUsername",
+                        MessageHelper.getInstance().getMessageException(MessageHelper.EXIST_USERNAME));
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
             }
 //        }

@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
 <%--<fmt:setLocale value="${sessionScope.locale}"/>--%>
 <fmt:setBundle basename="language"/>
@@ -13,7 +13,6 @@
 <fmt:message key="login.signIn" var="SignIn"/>
 <fmt:message key="login.invalidMessage" var="InvalidMessage"/>
 <fmt:message key="login.home" var="Home"/>
-
 
 
 <html>
@@ -47,13 +46,14 @@
                         <label for="inputPassword">${Password} </label>
                     </div>
                     <div class="btn-login">
-                        <button type="submit" class="btn btn-success btn-block" >${Submit}</button>
+                        <button type="submit" class="btn btn-success btn-block">${Submit}</button>
                         <a href="/con?command=forRegist"> ${Registration}</a>
-                        <a href="/">${Home}</a>
+                        <a href="/con?command=home">${Home}</a>
                     </div>
                 </form>
                 <!-- form end -->
-
+                ${wrongUsername}
+                ${wrongPassword}
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
         </div>

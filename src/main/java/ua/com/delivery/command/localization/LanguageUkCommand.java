@@ -14,7 +14,7 @@ public class LanguageUkCommand implements ICommand {
     private static final Locale UKRAINIAN = new Locale("ua", "UA");
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getSession().setAttribute("user", null);
+//        request.getSession().setAttribute("user", null);
         Config.set(request.getSession(), Config.FMT_LOCALE, UKRAINIAN);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }

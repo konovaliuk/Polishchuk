@@ -122,12 +122,12 @@
                 <h2>${Condition}</h2>
             </div>
 
-                <div>
-                    <a href="/con?command=pagination&page=1">${viewTarif}</a>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <div class="line"></div>
-                </div>
+            <div>
+                <a href="/con?command=pagination&page=1" class="buttonA"><span>${viewTarif}</span></a>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="line"></div>
+            </div>
             <div class="col-md-12 col-lg-12">
                 <c:if test="${visibleTable == true}">
                     <div class="terms__priceList d-flex justify-content-center">
@@ -184,16 +184,15 @@
                     </div>
                 </c:if>
             </div>
-
-                <div class="terms__text">
-                    <p>${firstPar}</p>
-                    <p>${secondPar} </p>
-                    <p>${thirdPar}</p>
-                    <p>${fourthPar}(063)-625-48-22 </p>
-                </div>
-                <div class="col-md-12 col-lg-12">
-                    <div class="line"></div>
-                </div>
+            <div class="terms__text">
+                <p>${firstPar}</p>
+                <p>${secondPar} </p>
+                <p>${thirdPar}</p>
+                <p>${fourthPar}(063)-625-48-22 </p>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="line"></div>
+            </div>
 
 
         </div>

@@ -18,14 +18,8 @@ public class User implements Serializable {
     private String email;
     private String address;
     private String city;
-    private Long phone;
+    private Integer phone;
     private Boolean admin;
-
-//    public boolean isAdmin(){
-//        return admin;
-//    }
-//
-//
 
 }
 

@@ -1,5 +1,7 @@
 package ua.com.delivery.command;
 
+import org.apache.log4j.Logger;
+import ua.com.delivery.controller.utilController.MessageHelper;
 import ua.com.delivery.controller.utilController.PageConfiguration;
 import ua.com.delivery.persistence.entity.User;
 import ua.com.delivery.service.LoginService;
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class LoginCommand implements ICommand {
+    private static final Logger LOGGER = Logger.getLogger(LoginCommand.class);
     private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
 
@@ -20,15 +23,14 @@ public class LoginCommand implements ICommand {
         String password = request.getParameter(PASSWORD);
 
         User user = LoginService.getInstance().existUsername(username);
-
         if (user == null) {
             page = redirectOnErrorPage(request);
+            request.setAttribute("wrongUsername",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.WRONG_USERNAME));
+            LOGGER.info("Was trying to sign in with wrong username");
         } else {
             page = checkUserPassword(request, user, password);
         }
-        request.getSession().setAttribute("visibleUser", username);
-        request.getSession().setAttribute("visibleOrder", true);
-        request.getSession().setAttribute("visibleLogout", true);
         return page;
     }
 
@@ -37,6 +39,7 @@ public class LoginCommand implements ICommand {
         if (LoginService.getInstance().checkPasswordForUsername(user, password)) {
             page = checkIfAdmin(user, request);
         } else {
+
             page = redirectOnErrorPage(request);
         }
         return page;
@@ -58,12 +61,18 @@ public class LoginCommand implements ICommand {
     }
 
     private String redirectOnUserPage(User user, HttpServletRequest request) {
+        request.getSession().setAttribute("visibleOrder", true);
+        request.getSession().setAttribute("visibleLogout", true);
+        request.getSession().setAttribute("visibleUser", user.getUsername());
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }
 
 
     private String redirectOnErrorPage(HttpServletRequest request) {
-//        перенапралвення на логін пейдж, якщоне правильно ввів логігн
+//        перенапралвення на логін пейдж, якщоне правильно ввів логін
+        request.setAttribute("wrongPassword",
+                MessageHelper.getInstance().getMessageException(MessageHelper.WRONG_PASSWORD));
+        LOGGER.info("User wrote a wrong password");
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.LOGIN_PAGE);
     }
 

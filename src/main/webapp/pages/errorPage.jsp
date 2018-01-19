@@ -33,7 +33,7 @@
             <div class="col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>Schedule 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="col-md-9 col-lg-9">
                 <nav>
                     <ul class="menu d-flex align-items-center">
-                        <li><a href="/con?command=home" >Main</a ></li>
+                        <li><a href="/con?command=home">Main</a></li>
                         <li><a href="/con?command=condition">Condition</a></li>
                         <li><a href="/con?command=calculator">Calculator</a></li>
                         <li><a href="/con?command=contact">Contact</a></li>
@@ -90,7 +90,10 @@
 <section id="error" class="error">
     <div class="container">
         <div class="row">
-
+            ${servletException}
+            ${IOException}
+            ${exception}
+            ${nullPage}
             <div class="col-lg-12">
                 <img src="../img/error.jpg" width="100%" alt="error">
             </div>
@@ -103,7 +106,8 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-8 col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.540206722022!2d30.50255354272231!3d50.44966448382961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1513559315737"
+                        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="col-md-4 col-lg-4">
                 <div class="adress ">
