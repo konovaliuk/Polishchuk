@@ -91,7 +91,7 @@
                         <span class="lang__item"><a href="con?command=localeUa">
                         <img src="img/lang_icon-ukr.png" width="16">
                     </a></span>
-                        <span class="lang__item"><a href="con?command=localeEn">
+                    <span class="lang__item"><a href="con?command=localeEn">
                         <img src="img/lang_icon-uk.png" width="16">
                     </a></span>
                     <c:choose>

@@ -35,8 +35,6 @@
 <fmt:message key="order.allRight" var="AllRight"/>
 
 
-
-
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -150,7 +148,7 @@
                                        required=""
                                        name="dateOfReceipt"/>
                                 <label for="recPhone">${Phone}</label>
-                                <input type="text" id="recPhone"   required=""
+                                <input type="text" id="recPhone" required=""
                                        name="phone"/>
                             </div>
                             <div class="receiptTab__element">
@@ -170,12 +168,12 @@
                                        name="userName"/>
                                 <label for="recWeight">${Weight}</label>
                                 <input type="number" id="recWeight" min="1" max="20" required=""
-                                name="weightOfParcel"/>
+                                       name="weightOfParcel"/>
                             </div>
                             <div class="receiptTab__element">
                                 <label for="recEmail">${Email}</label>
                                 <input type="email" id="recEmail" required=""
-                                name="email"/>
+                                       name="email"/>
                                 <label for="recType">${Type}</label>
                                 <input type="text" id="recType" required="" name="typeOfParcel"/>
                             </div>
@@ -185,10 +183,10 @@
                         </div>
                     </div>
                 </form>
-                    <!-- /Забор груза -->
-                    <!-- Line -->
-                    <div class="line"></div>
-                    <!-- /Line -->
+                <!-- /Забор груза -->
+                <!-- Line -->
+                <div class="line"></div>
+                <!-- /Line -->
                 <!-- Доставка груза -->
                 <form action="con" name="orderForm" method="post" class="orderForm">
                     <input type="hidden" name="command" value="createOrderTo">
