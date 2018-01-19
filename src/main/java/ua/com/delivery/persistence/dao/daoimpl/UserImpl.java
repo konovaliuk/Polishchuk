@@ -52,10 +52,10 @@ public class UserImpl implements IUserDao {
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_USERS)
         ) {
-            if (resultSet == null){
+            if (resultSet == null) {
                 LOGGER.info("List Users is empty.");
             }
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 User user = new User();
                 user.setUserID(resultSet.getLong("userID"));
                 user.setUsername(resultSet.getString("username"));
@@ -92,10 +92,10 @@ public class UserImpl implements IUserDao {
             //вказую значення id, яке приходить до нас із параметра
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if (resultSet == null){
+            if (resultSet == null) {
                 LOGGER.info("No given id");
             }
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 user.setUserID(resultSet.getLong("userID"));
                 user.setUsername(resultSet.getString("username"));
                 user.setPassword(resultSet.getString("password"));
@@ -119,29 +119,29 @@ public class UserImpl implements IUserDao {
         User user = new User();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_USER_BY_USERNAME)
-        ){
+        ) {
             preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
 
-                user.setUserID(resultSet.getLong("userID"));
-                user.setUsername(resultSet.getString("username"));
-                user.setPassword(resultSet.getString("password"));
-                user.setFirstName(resultSet.getString("first_name"));
-                user.setSecondName(resultSet.getString("second_name"));
-                user.setEmail(resultSet.getString("email"));
-                user.setAddress(resultSet.getString("address"));
-                user.setCity(resultSet.getString("city"));
-                user.setPhone(resultSet.getInt("phone"));
-                user.setAdmin(resultSet.getBoolean("admin"));
-                preparedStatement.execute();
+                    user.setUserID(resultSet.getLong("userID"));
+                    user.setUsername(resultSet.getString("username"));
+                    user.setPassword(resultSet.getString("password"));
+                    user.setFirstName(resultSet.getString("first_name"));
+                    user.setSecondName(resultSet.getString("second_name"));
+                    user.setEmail(resultSet.getString("email"));
+                    user.setAddress(resultSet.getString("address"));
+                    user.setCity(resultSet.getString("city"));
+                    user.setPhone(resultSet.getInt("phone"));
+                    user.setAdmin(resultSet.getBoolean("admin"));
+                    preparedStatement.execute();
                 } while (resultSet.next());
             } else {
                 user = null;
 
             }
-        } catch (SQLException e){
+        } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
         return user;

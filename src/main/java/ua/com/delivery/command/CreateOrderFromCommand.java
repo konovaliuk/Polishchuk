@@ -13,19 +13,18 @@ import java.io.IOException;
 import java.sql.Date;
 
 public class CreateOrderFromCommand implements ICommand {
-    private static final String DATE_OF_RECEIPT = "dateOfReceipt";
-    private static final String CITY_DEPARTURE = "cityDeparture";
-    private static final String USER_NAME = "userName";
-    private static final String PHONE = "phone";
-    private static final String ADDRESS_OF_DELIVERY = "addressOfDelivery";
-    private static final String WEIGHT_OF_PARCEL = "weightOfParcel";
     private static final String EMAIL = "email";
+    private static final String PHONE = "phone";
+    private static final String USER_NAME = "userName";
     private static final String TYPE_OF_PARCEL = "typeOfParcel";
+    private static final String CITY_DEPARTURE = "cityDeparture";
+    private static final String DATE_OF_RECEIPT = "dateOfReceipt";
+    private static final String WEIGHT_OF_PARCEL = "weightOfParcel";
+    private static final String ADDRESS_OF_DELIVERY = "addressOfDelivery";
 
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String page;
         Date dateOfReceipt = Date.valueOf(request.getParameter(DATE_OF_RECEIPT));
         String cityDeparture = request.getParameter(CITY_DEPARTURE);
         String userName = request.getParameter(USER_NAME);

@@ -88,7 +88,7 @@
             </div>
             <div class="col-6 col-md-3 col-lg-3 d-flex justify-content-end align-items-center ml-auto colLang">
                 <div class="lang">
-                    <span class="lang__item"><a href="con?command=localeUa">
+                        <span class="lang__item"><a href="con?command=localeUa">
                         <img src="img/lang_icon-ukr.png" width="16">
                     </a></span>
                     <span class="lang__item"><a href="con?command=localeEn">

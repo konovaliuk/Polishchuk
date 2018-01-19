@@ -36,9 +36,4 @@ public class PageConfiguration {
     public String getPageConfiguration(String pageConfigurationMessage) {
         return resourceBundle.getString(pageConfigurationMessage);
     }
-
-//    public String createPathForLang(String url) {
-//        return "/pages/" + url + "Page.jsp";
-//    }
-
 }

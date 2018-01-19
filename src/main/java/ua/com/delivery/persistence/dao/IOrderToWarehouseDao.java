@@ -3,9 +3,9 @@ package ua.com.delivery.persistence.dao;
 import ua.com.delivery.persistence.entity.OrderToWarehouse;
 
 import java.util.List;
+
 /**
  * This interface represents a contract for a DAO for the {@link OrderToWarehouse} model.
- *
  */
 public interface IOrderToWarehouseDao {
     //create new orderToWarehouse

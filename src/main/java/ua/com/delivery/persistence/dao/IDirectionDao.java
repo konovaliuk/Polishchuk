@@ -3,9 +3,9 @@ package ua.com.delivery.persistence.dao;
 import ua.com.delivery.persistence.entity.Direction;
 
 import java.util.List;
+
 /**
  * This interface represents a contract for a DAO for the {@link Direction} model.
- *
  */
 public interface IDirectionDao {
     //create new direction(from-to-price)
@@ -21,7 +21,7 @@ public interface IDirectionDao {
     List<Direction> getListDirections();
 
     //will return us one directions by field
-    Direction getDirectionByFromCity(String  fromCity);
+    Direction getDirectionByFromCity(String fromCity);
 
     //this part will be update our data
     void updateDirection(Direction direction);

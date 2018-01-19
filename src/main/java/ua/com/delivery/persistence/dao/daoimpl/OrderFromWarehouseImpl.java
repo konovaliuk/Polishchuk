@@ -26,7 +26,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try  (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE)
-        ){
+        ) {
 //            preparedStatement.setLong(1, orderFromWarehouse.getOrderFromWarehouseID());
             preparedStatement.setInt(1, orderFromWarehouse.getNumberOfOrder());
             preparedStatement.setDate(2, orderFromWarehouse.getDateToDelivery());
@@ -142,7 +142,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     @Override
     public void deleteOrderFromWarehouseById(Long id) {
-                try (Connection connection = ConnectionPool.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ORDER_FROM_WAREHOUSE_BY_ID)
         ) {

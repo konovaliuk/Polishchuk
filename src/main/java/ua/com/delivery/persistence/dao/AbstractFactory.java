@@ -8,19 +8,19 @@ public class AbstractFactory implements IAbstractFactory {
         return new DirectionImpl();
     }
 
-    public OrderFromWarehouseImpl createOrderFromWarehouseDao(){
+    public OrderFromWarehouseImpl createOrderFromWarehouseDao() {
         return new OrderFromWarehouseImpl();
     }
 
-    public OrderToWarehouseImpl createOrderToWarehouseDao(){
+    public OrderToWarehouseImpl createOrderToWarehouseDao() {
         return new OrderToWarehouseImpl();
     }
 
-    public ParcelPriceImpl createParcelPriceDao(){
+    public ParcelPriceImpl createParcelPriceDao() {
         return new ParcelPriceImpl();
     }
 
-    public UserImpl createUserDao(){
+    public UserImpl createUserDao() {
         return new UserImpl();
     }
 }

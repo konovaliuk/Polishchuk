@@ -34,7 +34,7 @@ public class OrderService {
         return random.nextInt(666) + 1;
     }
 
-    public Integer totalPriceOfReceipt(int weight){
+    public Integer totalPriceOfReceipt(int weight) {
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
         Random random = new Random();
         int cityPrice = random.nextInt(500) + 1;

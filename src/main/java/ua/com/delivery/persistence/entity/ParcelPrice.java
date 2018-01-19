@@ -10,7 +10,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @ToString
 public class ParcelPrice implements Serializable {
-        private Long parcelpriceID;
-        private int weight;
-        private int price;
+    private Long parcelpriceID;
+    private int weight;
+    private int price;
 }

@@ -16,7 +16,7 @@ public class DateService {
         this.date = now();
     }
 
-    private String now(){
+    private String now() {
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         return sdf.format(date);

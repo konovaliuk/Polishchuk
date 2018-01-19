@@ -17,8 +17,6 @@
 <fmt:message key="contact.logout" var="Logout"/>
 
 
-
-
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -40,13 +38,15 @@
                     <img src="img/logo.png" alt="logo" width="100">
                 </div>
                 <div class="logo__text">
-                    <h1>Polik <small>${Delivery}</small></h1>
+                    <h1>Polik
+                        <small>${Delivery}</small>
+                    </h1>
                 </div>
             </div>
             <div class="col-12 col-md-4 col-lg-4 ml-auto d-flex justify-content-end">
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
-                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>
+                    <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
                     <c:if test="${visibleOrder == true}">
                         <p>Hello my friend ${visibleUser}</p>
                     </c:if>
@@ -68,7 +68,7 @@
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a href="/con?command=home" >${Main}</a ></li>
+                        <li><a href="/con?command=home">${Main}</a></li>
                         <li><a href="/con?command=condition">${Condition}</a></li>
                         <li><a href="/con?command=calculator">${Calculator}</a></li>
                         <li class="active"><a href="/con?command=contact">${Contact}</a></li>

@@ -11,14 +11,14 @@ public class LoginService {
 
     private IAbstractFactory factory;
 
-    private LoginService(){
+    private LoginService() {
         factory = new AbstractFactory();
     }
 
-    public static LoginService getInstance(){
-        if (INSTANCE == null){
-            synchronized (LoginService.class){
-                if (INSTANCE == null){
+    public static LoginService getInstance() {
+        if (INSTANCE == null) {
+            synchronized (LoginService.class) {
+                if (INSTANCE == null) {
                     INSTANCE = new LoginService();
                 }
             }
@@ -26,16 +26,16 @@ public class LoginService {
         return INSTANCE;
     }
 
-    public boolean checkPasswordForUsername(User user, String password){
+    public boolean checkPasswordForUsername(User user, String password) {
         return user.getPassword().equals(password);
     }
 
-    public User existUsername(String username){
+    public User existUsername(String username) {
         User user = factory.createUserDao().getUserByUsername(username);
-        if (user != null){
+        if (user != null) {
             LOGGER.info(username + ": is present in our DB");
         } else {
-            LOGGER.info(username+ ": isn't present in our DB");
+            LOGGER.info(username + ": isn't present in our DB");
         }
         return user;
     }

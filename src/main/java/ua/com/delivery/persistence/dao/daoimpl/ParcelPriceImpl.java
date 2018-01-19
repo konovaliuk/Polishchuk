@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParcelPriceImpl implements IParcelPriceDao{
+public class ParcelPriceImpl implements IParcelPriceDao {
     private static final Logger LOGGER = Logger.getLogger(ParcelPriceImpl.class);
     private static final String GET_LIST_PARCEL_PRICE = "SELECT * FROM ParcelPrice";
     private static final String GET_PARCEL_PRICE_BY_WEIGHT = "SELECT price FROM ParcelPrice WHERE weight=?";
@@ -20,9 +20,9 @@ public class ParcelPriceImpl implements IParcelPriceDao{
 
     @Override
     public void createParcelPrice(ParcelPrice parcelPrice) {
-                try (Connection connection = ConnectionPool.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
-                     PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PARCEL_PRICE)
+             PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PARCEL_PRICE)
         ) {
             preparedStatement.setLong(1, parcelPrice.getParcelpriceID());
             preparedStatement.setInt(2, parcelPrice.getWeight());
@@ -82,7 +82,7 @@ public class ParcelPriceImpl implements IParcelPriceDao{
 
     @Override
     public void updateParcelPrice(ParcelPrice parcelPrice) {
-                try (Connection connection = ConnectionPool.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PARCEL_PRICE_DATA)
         ) {

@@ -25,7 +25,6 @@ public class CalculateCommand implements ICommand {
         request.setAttribute("priceFromToCity", price);
         request.setAttribute("priceByWeight", priceByWeight);
         request.setAttribute("priceBetweenCity", priceBetweenCity);
-//        request.setAttribute("w", weight);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CALCULATOR_PAGE);
     }
 }

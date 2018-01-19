@@ -17,7 +17,7 @@ public class ControllerHelper {
     private static final String PARAMETER = "command";
     private static ControllerHelper instance;
 
-    private ControllerHelper(){
+    private ControllerHelper() {
         ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);
 //        //заполнение таблицы командами
         commandMap.put(bundle.getString("command.home"), new HomeCommand());
@@ -44,12 +44,12 @@ public class ControllerHelper {
 
     }
 
-    public ICommand getCommand(HttpServletRequest request){
+    public ICommand getCommand(HttpServletRequest request) {
         //извлечение команды из запроса
         //получение объекта, соответствующего команде
         String parameter = request.getParameter("command");
         ICommand command = commandMap.get(parameter);
-        if (command == null ){
+        if (command == null) {
             //якщо команди немає, то переходить на missing
             command = commandMap.get("missingCommand");
         }

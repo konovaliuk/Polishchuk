@@ -9,16 +9,17 @@ public class SimpleConnection {
     private SimpleConnection() {
 
     }
+
     private static SimpleConnection instance = null;
 
-    public static SimpleConnection getInstance(){
-        if (instance==null){
+    public static SimpleConnection getInstance() {
+        if (instance == null) {
             instance = new SimpleConnection();
         }
         return instance;
     }
 
-    public Connection getConnection(){
+    public Connection getConnection() {
         Connection connection = null;
         ResourceBundle resourceBundle = ResourceBundle.getBundle("database");
         try {
@@ -28,7 +29,7 @@ public class SimpleConnection {
                     resourceBundle.getString("password"));
             System.out.println("Connection Ok");
             connection.setAutoCommit(false);
-        } catch (ClassNotFoundException | SQLException e){
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
         return connection;

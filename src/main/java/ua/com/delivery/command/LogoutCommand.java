@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class LogoutCommand implements ICommand {
     private static final Logger LOGGER = Logger.getLogger(LogoutCommand.class);
+
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();

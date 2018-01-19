@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-public class CalculatorCommand implements ICommand{
-       @Override
+public class CalculatorCommand implements ICommand {
+    @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Direction> list = DirectionService.getInstance().searchFromToCity();
         request.getSession().setAttribute("listFromToCity", list);

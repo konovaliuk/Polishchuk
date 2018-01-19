@@ -82,7 +82,7 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
     @Override
     public OrderToWarehouse getById(Long id) {
         OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
-                try (Connection connection = ConnectionPool.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_ORDER_BY_ID)
         ) {
@@ -139,7 +139,7 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
 
     @Override
     public void deleteOrderToWarehouseById(Long id) {
-                try (Connection connection = ConnectionPool.getInstance().getConnection();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ORDER_TO_WAREHOUSE_BY_ID)
         ) {

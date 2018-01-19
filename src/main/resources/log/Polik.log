@@ -1,0 +1,16 @@
+18:07:21,739 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@1044edbe
+18:07:22,553 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:07:27,921 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@19e90e90
+18:07:27,940 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:07:37,149 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@19e90e90
+18:07:37,163 INFO  Controller.http-nio-8080-exec-1:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:07:47,461 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@7cc554bb
+18:07:47,462 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /index.jsp
+18:07:49,138 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@1044edbe
+18:07:49,142 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:07:50,640 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@19e90e90
+18:07:50,656 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:08:41,206 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@39dff3f0
+18:08:41,581 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+18:08:51,319 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ContactCommand@77c75b74
+18:08:51,327 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/contactsPage.jsp

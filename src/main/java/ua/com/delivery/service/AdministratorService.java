@@ -53,16 +53,16 @@ public class AdministratorService {
         return onlyUsersList;
     }
 
-    public User updateUser(User user){
+    public User updateUser(User user) {
         User updatedUser = factory.createUserDao().updateUser(user);
-        if (updatedUser == null){
+        if (updatedUser == null) {
             LOGGER.info("Nothing to update");
         }
         LOGGER.info("User " + user.getUsername() + " was updated");
         return updatedUser;
     }
 
-    public void deleteUser(User user){
+    public void deleteUser(User user) {
         factory.createUserDao().deleteUserByUsername(user.getUsername());
         LOGGER.info("User with username " + user.getUsername() + " was successful deleted.");
 

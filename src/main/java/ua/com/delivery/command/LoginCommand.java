@@ -17,7 +17,7 @@ public class LoginCommand implements ICommand {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        String page = null;
+        String page;
         //извлечение из запроса логина и пароля
         String username = request.getParameter(USERNAME);
         String password = request.getParameter(PASSWORD);
