@@ -14,3 +14,226 @@
 18:08:41,581 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
 18:08:51,319 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ContactCommand@77c75b74
 18:08:51,327 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/contactsPage.jsp
+22:23:56,998 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@b38517c
+22:23:57,582 INFO  DirectionService.http-nio-8080-exec-5:searchFromToCity:35 - It's a list from/to city
+22:23:57,589 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/calculatorPage.jsp
+22:23:59,480 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@2922764c
+22:23:59,484 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/loginPage.jsp
+22:24:04,428 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@790f314e
+22:24:04,464 INFO  LoginService.http-nio-8080-exec-3:existUsername:36 - Polik: is present in our DB
+22:24:04,465 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /index.jsp
+22:24:05,892 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@e0694ad
+22:24:05,896 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+22:24:05,900 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:21:19,421 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@63d911a1
+23:21:19,431 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:21:24,584 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@549380de
+23:21:25,006 INFO  LoginService.http-nio-8080-exec-3:existUsername:36 - Polik: is present in our DB
+23:21:25,008 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /index.jsp
+23:21:27,068 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@43006ddf
+23:21:27,090 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+23:21:27,090 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:23:38,122 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@13f104de
+23:23:38,128 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:23:42,737 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@b128650
+23:23:43,290 INFO  LoginService.http-nio-8080-exec-6:existUsername:36 - Polik: is present in our DB
+23:23:43,291 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /index.jsp
+23:23:44,742 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@68c10f02
+23:23:44,783 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+23:23:44,784 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:24:50,693 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.CreateOrderFromCommand@f904ae4
+23:24:50,722 INFO  OrderFromWarehouseImpl.http-nio-8080-exec-5:createOrderFromWarehouse:42 - Order from warehouse was successful created
+23:24:50,722 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+23:26:49,431 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@68c10f02
+23:26:49,438 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+23:26:49,439 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:27:59,250 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.CreateOrderToCommand@1d547fae
+23:27:59,280 INFO  OrderToWarehouse.http-nio-8080-exec-8:createOrderToWarehouse:42 - Order to warehouse was successful created
+23:27:59,286 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+23:30:44,900 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:56 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@41e1fcd5
+23:30:44,901 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /index.jsp
+23:30:46,248 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@68c10f02
+23:30:46,252 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+23:30:46,253 INFO  Controller.http-nio-8080-exec-1:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:37:37,709 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:56 - Was called command: ua.com.delivery.command.ContactCommand@523f9f6b
+23:37:37,709 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/contactsPage.jsp
+23:42:29,530 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@44e53e41
+23:42:29,536 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:42:36,565 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@594d22e9
+23:42:36,969 INFO  LoginService.http-nio-8080-exec-9:existUsername:36 - Polik: is present in our DB
+23:42:36,969 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /index.jsp
+23:42:38,663 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@63a48f6f
+23:42:38,679 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+23:42:38,679 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:42:44,339 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.ConditionCommand@45756820
+23:42:44,346 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:42:46,917 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@63a48f6f
+23:42:46,921 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:35 - It's a list from/to city
+23:42:46,922 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:42:59,697 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:57 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@96a38ef
+23:42:59,698 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /index.jsp
+23:45:04,216 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@b29424a
+23:45:04,224 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /index.jsp
+23:45:05,132 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@2922764c
+23:45:05,136 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:45:11,304 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@7df068b9
+23:45:11,667 INFO  LoginService.http-nio-8080-exec-9:existUsername:36 - Polik: is present in our DB
+23:45:11,667 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /index.jsp
+23:45:12,875 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:57 - Was called command: ua.com.delivery.command.ConditionCommand@e0694ad
+23:45:12,891 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:14,862 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@4a8eda6
+23:45:14,871 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:18,155 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@4a8eda6
+23:45:18,162 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:20,668 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@4a8eda6
+23:45:20,676 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:24,117 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@4a8eda6
+23:45:24,122 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:27,710 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@4a8eda6
+23:45:27,718 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+23:45:31,313 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:57 - Was called command: ua.com.delivery.command.CalculatorCommand@4473fc56
+23:45:31,320 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+23:45:31,322 INFO  Controller.http-nio-8080-exec-1:processRequest:73 - Forwardto: /pages/calculatorPage.jsp
+23:45:33,224 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@27dd0921
+23:45:33,228 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:35 - It's a list from/to city
+23:45:33,228 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:45:37,281 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@1e78659
+23:45:37,282 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+23:46:50,531 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@519bf16b
+23:46:50,537 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:46:55,276 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@b128650
+23:46:55,647 INFO  LoginService.http-nio-8080-exec-6:existUsername:36 - Polik: is present in our DB
+23:46:55,648 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /index.jsp
+23:46:57,685 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@68c10f02
+23:46:57,704 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+23:46:57,704 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:47:02,459 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@5cf86b5c
+23:47:02,460 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+23:48:59,010 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@7eb5dad5
+23:48:59,020 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:49:03,447 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@7f214ef1
+23:49:03,820 INFO  LoginService.http-nio-8080-exec-7:existUsername:36 - Polik: is present in our DB
+23:49:03,821 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /index.jsp
+23:49:05,175 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@4dc78a17
+23:49:05,189 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:35 - It's a list from/to city
+23:49:05,190 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:52:42,032 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@519bf16b
+23:52:42,041 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:52:45,642 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@68c10f02
+23:52:45,645 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+23:52:49,166 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@519bf16b
+23:52:49,167 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /pages/loginPage.jsp
+23:52:53,229 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@4c43b601
+23:52:53,603 INFO  LoginService.http-nio-8080-exec-5:existUsername:36 - Polik: is present in our DB
+23:52:53,603 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /index.jsp
+23:52:55,159 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@5d56942
+23:52:55,177 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+23:52:55,178 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:52:56,605 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.localization.LanguageUkCommand@22eba60d
+23:52:56,606 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /index.jsp
+23:52:57,878 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@5d56942
+23:52:57,882 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:35 - It's a list from/to city
+23:52:57,886 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/orderPage.jsp
+23:53:02,791 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@68c10f02
+23:53:02,792 INFO  Controller.http-nio-8080-exec-10:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+00:34:52,316 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.ConditionCommand@707a382a
+00:34:53,010 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+00:34:56,830 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@42710a29
+00:34:56,844 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+00:35:02,595 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@42710a29
+00:35:02,608 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+00:35:06,142 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@47520668
+00:35:06,143 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /pages/loginPage.jsp
+00:35:15,022 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@6c049812
+00:35:15,051 INFO  LoginService.http-nio-8080-exec-5:existUsername:36 - Polik: is present in our DB
+00:35:15,051 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /index.jsp
+00:35:16,840 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@4c43b601
+00:35:16,852 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:35 - It's a list from/to city
+00:35:16,853 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/orderPage.jsp
+00:35:18,874 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@b128650
+00:35:18,875 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+00:36:51,320 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@114c6afc
+00:36:51,329 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+00:36:56,815 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@7d8aabb7
+00:36:57,231 INFO  LoginService.http-nio-8080-exec-6:existUsername:36 - Polik: is present in our DB
+00:36:57,232 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /index.jsp
+00:36:58,837 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@2c34a2c1
+00:36:58,860 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:35 - It's a list from/to city
+00:36:58,860 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /pages/orderPage.jsp
+00:37:00,992 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@4a830a83
+00:37:00,993 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+00:37:05,346 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.PaginationCommand@61d97aec
+00:37:05,359 ERROR DirectionImpl.http-nio-8080-exec-4:getRecords:98 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,5' at line 1
+00:37:05,366 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+00:42:32,753 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:57 - Was called command: ua.com.delivery.command.ContactCommand@78fadf7c
+00:42:32,754 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/contactsPage.jsp
+00:42:32,832 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:57 - Was called command: ua.com.delivery.command.ContactCommand@78fadf7c
+00:42:32,836 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /pages/contactsPage.jsp
+00:42:38,631 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:57 - Was called command: ua.com.delivery.command.CalculatorCommand@5901db36
+00:42:38,640 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:35 - It's a list from/to city
+00:42:38,640 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/calculatorPage.jsp
+00:42:41,862 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:57 - Was called command: ua.com.delivery.command.ConditionCommand@6518dee6
+00:42:41,865 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/conditionPage.jsp
+00:42:43,697 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.HomeCommand@70913cbd
+00:42:43,698 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /index.jsp
+00:42:45,353 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.ContactCommand@78fadf7c
+00:42:45,353 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/contactsPage.jsp
+00:42:47,364 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:57 - Was called command: ua.com.delivery.command.CalculatorCommand@5901db36
+00:42:47,369 INFO  DirectionService.http-nio-8080-exec-9:searchFromToCity:35 - It's a list from/to city
+00:42:47,372 INFO  Controller.http-nio-8080-exec-9:processRequest:73 - Forwardto: /pages/calculatorPage.jsp
+00:42:51,148 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:57 - Was called command: ua.com.delivery.command.SignInCommand@114c6afc
+00:42:51,148 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /pages/loginPage.jsp
+00:42:55,202 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:57 - Was called command: ua.com.delivery.command.LoginCommand@7d8aabb7
+00:42:55,205 INFO  LoginService.http-nio-8080-exec-5:existUsername:36 - Polik: is present in our DB
+00:42:55,206 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /index.jsp
+00:42:56,692 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@2c34a2c1
+00:42:56,697 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:35 - It's a list from/to city
+00:42:56,697 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/orderPage.jsp
+00:43:00,881 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:57 - Was called command: ua.com.delivery.command.OrderCommand@2c34a2c1
+00:43:00,885 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:35 - It's a list from/to city
+00:43:00,887 INFO  Controller.http-nio-8080-exec-1:processRequest:73 - Forwardto: /pages/orderPage.jsp
+00:43:02,324 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:57 - Was called command: ua.com.delivery.command.PayCommand@4a830a83
+00:43:02,325 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+00:46:02,068 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@3de8151e
+00:46:02,080 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+00:46:06,851 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@139383ac
+00:46:07,260 INFO  LoginService.http-nio-8080-exec-6:existUsername:36 - Polik: is present in our DB
+00:46:07,260 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /index.jsp
+00:46:09,405 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@7fdf99b7
+00:46:09,427 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:35 - It's a list from/to city
+00:46:09,428 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/orderPage.jsp
+00:46:54,506 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@54d519fa
+00:46:54,512 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/loginPage.jsp
+00:47:00,409 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@4c43b601
+00:47:00,780 INFO  LoginService.http-nio-8080-exec-2:existUsername:36 - Polik: is present in our DB
+00:47:00,781 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forwardto: /index.jsp
+00:47:01,906 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@7d582384
+00:47:01,928 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:35 - It's a list from/to city
+00:47:01,929 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /pages/orderPage.jsp
+01:13:43,507 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.CalculatorCommand@707a382a
+01:13:44,036 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+01:13:44,041 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/calculatorPage.jsp
+01:13:47,205 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@42710a29
+01:13:47,210 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forwardto: /pages/loginPage.jsp
+01:13:54,877 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@46bbdd71
+01:13:54,939 INFO  LoginService.http-nio-8080-exec-8:existUsername:36 - Polik: is present in our DB
+01:13:54,940 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forwardto: /index.jsp
+01:13:57,486 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@35840317
+01:13:57,489 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+01:13:57,490 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/orderPage.jsp
+01:15:18,509 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.CreateOrderToCommand@594d22e9
+01:15:18,553 INFO  OrderToWarehouse.http-nio-8080-exec-6:createOrderToWarehouse:42 - Order to warehouse was successful created
+01:15:18,555 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forwardto: /pages/paymentPage.jsp
+01:17:49,047 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@5b22ab25
+01:17:49,059 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/loginPage.jsp
+01:17:54,588 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@4c43b601
+01:17:55,062 INFO  LoginService.http-nio-8080-exec-7:existUsername:38 - Зщдшл: isn't present in our DB
+01:17:55,063 INFO  LoginCommand.http-nio-8080-exec-7:redirectOnErrorPage:75 - User wrote a wrong password
+01:17:55,064 INFO  LoginCommand.http-nio-8080-exec-7:execute:30 - Was trying to sign in with wrong username
+01:17:55,064 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forwardto: /pages/loginPage.jsp
+01:18:08,290 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@4c43b601
+01:18:08,297 INFO  LoginService.http-nio-8080-exec-3:existUsername:36 - Polik: is present in our DB
+01:18:08,298 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forwardto: /index.jsp
+01:18:11,376 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.OrderCommand@129c48fa
+01:18:11,411 INFO  DirectionService.http-nio-8080-exec-4:searchFromToCity:35 - It's a list from/to city
+01:18:11,413 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forwardto: /pages/orderPage.jsp

@@ -11,12 +11,12 @@ import java.util.List;
 
 public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
     private static final Logger LOGGER = Logger.getLogger(OrderToWarehouse.class);
-    private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderToWarehouse WHERE ordertowarehouseID=?";
+    private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderToWarehouse WHERE order_to_warehouseID=?";
     private static final String GET_LIST_ORDER_TO_WAREHOUSE = "SELECT * FROM OrderToWarehouse";
-    private static final String DELETE_ORDER_TO_WAREHOUSE_BY_ID = "DELETE FROM OrderToWarehouse WHERE ordertowarehouseID=?";
+    private static final String DELETE_ORDER_TO_WAREHOUSE_BY_ID = "DELETE FROM OrderToWarehouse WHERE order_to_warehouseID=?";
     private static final String UPDATE_DATA_ORDER_TO_WAREHOUSE = "UPDATE OrderToWarehouse SET date_of_departure=?," +
             " departure_address=?, city_of_receipt=?, user_name=?, phone=?,  weight=?, number_of_order=?, " +
-            "email=?, type_of_parcel=?, total_price=? WHERE ordertowarehouseID=?";
+            "email=?, type_of_parcel=?, total_price=? WHERE order_to_warehouseID=?";
     private static final String CREATE_ORDER_TO_WAREHOUSE = "INSERT INTO OrderToWarehouse (date_of_departure, " +
             "departure_address, city_of_receipt, user_name, phone, weight, email, type_of_parcel, number_of_order, total_price)" +
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -57,7 +57,7 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
             if (resultSet.next()) {
                 do {
                     OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
-                    orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("ordertowarehouseID"));
+                    orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("order_to_warehouseID"));
                     orderToWarehouse.setDateOfDeparture(resultSet.getDate("date_of_departure"));
                     orderToWarehouse.setDepartureAddress(resultSet.getString("departure_address"));
                     orderToWarehouse.setCityOfReceipt(resultSet.getString("city_of_receipt"));
@@ -90,7 +90,7 @@ public class OrderToWarehouseImpl implements IOrderToWarehouseDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
-                    orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("ordertowarehouseID"));
+                    orderToWarehouse.setOrderToWarehouseID(resultSet.getLong("order_to_warehouseID"));
                     orderToWarehouse.setDateOfDeparture(resultSet.getDate("date_of_departure"));
                     orderToWarehouse.setDepartureAddress((resultSet.getString("departure_address")));
                     orderToWarehouse.setCityOfReceipt(resultSet.getString("city_of_receipt"));

@@ -9,12 +9,10 @@ import java.util.Random;
 public class OrderService {
     private static final Logger LOGGER = Logger.getLogger(OrderService.class);
     private static OrderService INSTANCE;
-    private static final String orderFromWarehouse = "OrderFromWarehouseDao";
-    private static final String orderToWarehouse = "OrderToWarehouseDao";
 
     private IAbstractFactory factory;
 
-    public OrderService() {
+    private OrderService() {
         factory = new AbstractFactory();
     }
 

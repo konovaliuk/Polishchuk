@@ -12,11 +12,11 @@ import java.util.List;
 public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     private static final Logger LOGGER = Logger.getLogger(OrderFromWarehouseImpl.class);
     private static final String GET_LIST_ORDER_FROM_WAREHOUSE = "SELECT * FROM OrderFromWarehouse";
-    private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderFromWarehouse WHERE orderfromwarehouseID=?";
-    private static final String DELETE_ORDER_FROM_WAREHOUSE_BY_ID = "DELETE FROM OrderFromWarehouse WHERE orderfromwarehouseID=?";
+    private static final String GET_ORDER_BY_ID = "SELECT * FROM OrderFromWarehouse WHERE order_from_warehouseID=?";
+    private static final String DELETE_ORDER_FROM_WAREHOUSE_BY_ID = "DELETE FROM OrderFromWarehouse WHERE order_from_warehouseID=?";
     private static final String UPDATE_DATA_ORDER_FROM_WAREHOUSE = "UPDATE OrderFromWarehouse SET number_of_order=?," +
             " date_to_delivery=?, city_departure=?, user_name=?, phone=?, address_to_delivery=?, weight=?,  email=?, " +
-            "type_of_parcel=?, total_price=? WHERE orderfromwarehouseID=?";
+            "type_of_parcel=?, total_price=? WHERE order_from_warehouseID=?";
     private static final String CREATE_ORDER_FROM_WAREHOUSE = "INSERT INTO OrderFromWarehouse (number_of_order, " +
             "date_to_delivery, city_departure, user_name, phone, address_to_delivery, weight, email, type_of_parcel,  total_price)" +
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -27,7 +27,6 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 //        try  (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE)
         ) {
-//            preparedStatement.setLong(1, orderFromWarehouse.getOrderFromWarehouseID());
             preparedStatement.setInt(1, orderFromWarehouse.getNumberOfOrder());
             preparedStatement.setDate(2, orderFromWarehouse.getDateToDelivery());
             preparedStatement.setString(3, orderFromWarehouse.getCityDeparture());
@@ -58,7 +57,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             if (resultSet.next()) {
                 do {
                     OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
-                    orderFromWarehouse.setOrderFromWarehouseID(resultSet.getLong("orderfromwarehouseID"));
+                    orderFromWarehouse.setOrderFromWarehouseID(resultSet.getLong("order_from_warehouseID"));
                     orderFromWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
                     orderFromWarehouse.setDateToDelivery(resultSet.getDate("date_to_delivery"));
                     orderFromWarehouse.setCityDeparture(resultSet.getString("city_departure"));
@@ -92,7 +91,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
-                    orderFromWarehouse.setOrderFromWarehouseID(resultSet.getLong("orderfromwarehouseID"));
+                    orderFromWarehouse.setOrderFromWarehouseID(resultSet.getLong("order_from_warehouseID"));
                     orderFromWarehouse.setNumberOfOrder(resultSet.getInt("number_of_order"));
                     orderFromWarehouse.setDateToDelivery(resultSet.getDate("date_to_delivery"));
                     orderFromWarehouse.setCityDeparture(resultSet.getString("city_departure"));

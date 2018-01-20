@@ -15,7 +15,7 @@
 <fmt:message key="order.signIn" var="SignIn"/>
 <fmt:message key="order.logout" var="Logout"/>
 <fmt:message key="order.createOrder" var="CreateOrder"/>
-<fmt:message key="order.payment" var="Pay"/>
+<fmt:message key="order.myOrders" var="Orders"/>
 <fmt:message key="order.cabinet" var="Cabinet"/>
 <fmt:message key="order.receipt" var="Receipt"/>
 <fmt:message key="order.dateOfReceipt" var="DateR"/>
@@ -130,6 +130,7 @@
                 <!-- /Line -->
                 <input type="checkbox" id="test">
                 <label class="myButton" for="test">${CreateOrder}</label>
+
                 <%--<input class="myButton" type="button" value="${Pay}">--%>
                 <!-- Line -->
                 <div class="line"></div>

@@ -112,7 +112,7 @@
             <c:if test="${totalPriceOfDelivery != null}">
                 <h1>${CostOfOrder}: ${totalPriceOfDelivery}</h1>
             </c:if>
-            <a href="#">${Pay}</a>
+            <a href="#" class="myButton">${Pay}</a>
         </div>
         <div class="col-md-12 col-lg-12">
             <div class="line"></div>
