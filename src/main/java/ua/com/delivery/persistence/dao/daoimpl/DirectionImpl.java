@@ -114,12 +114,15 @@ public class DirectionImpl implements IDirectionDao {
             if (resultSet == null) {
                 LOGGER.info("City " + fromCity + " doesn't have in list");
             }
-            while (resultSet.next()) {
+            if (resultSet.next()) {
                 direction.setDirectionID(resultSet.getLong("directionID"));
                 direction.setFromCity(resultSet.getString("from_city"));
                 direction.setToCity(resultSet.getString("to_city"));
                 direction.setPriceDirection(resultSet.getInt("price_direction"));
-                preparedStatement.executeUpdate();
+                preparedStatement.executeQuery();
+            }
+            else {
+                LOGGER.info("No city from this place: " + fromCity);
             }
 //            if (resultSet.next()) {
 //                do {

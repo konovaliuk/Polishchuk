@@ -2,7 +2,7 @@ package ua.com.delivery.persistence.dao;
 
 import ua.com.delivery.persistence.dao.daoimpl.*;
 
-public class AbstractFactory implements IAbstractFactory {
+public  class AbstractFactory implements IAbstractFactory {
 
     public DirectionImpl createDirectionDao() {
         return new DirectionImpl();

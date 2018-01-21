@@ -18,8 +18,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             " date_to_delivery=?, city_departure=?, user_name=?, phone=?, address_to_delivery=?, weight=?,  email=?, " +
             "type_of_parcel=?, total_price=? WHERE order_from_warehouseID=?";
     private static final String CREATE_ORDER_FROM_WAREHOUSE = "INSERT INTO OrderFromWarehouse (number_of_order, " +
-            "date_to_delivery, city_departure, user_name, phone, address_to_delivery, weight, email, type_of_parcel,  total_price)" +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            "date_to_delivery, city_departure, user_name, phone, address_to_delivery, weight, email, " +
+            "type_of_parcel,  total_price, user_id, direction_id, parcel_price_id)" +
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void createOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
@@ -37,6 +38,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setString(8, orderFromWarehouse.getEmail());
             preparedStatement.setString(9, orderFromWarehouse.getTypeOfParcel());
             preparedStatement.setInt(10, orderFromWarehouse.getTotalPrice());
+            preparedStatement.setLong(11, orderFromWarehouse.getUserId());
+            preparedStatement.setLong(12, orderFromWarehouse.getDirectionId());
+            preparedStatement.setLong(13, orderFromWarehouse.getParcelPriceId());
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Order from warehouse was successful created");

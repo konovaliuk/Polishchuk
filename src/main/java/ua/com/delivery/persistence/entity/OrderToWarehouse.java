@@ -22,5 +22,8 @@ public class OrderToWarehouse implements Serializable {
     private String email;
     private String typeOfParcel;
     private int totalPrice;
+    private Long userId;
+    private Long directionId;
+    private Long parcelPriceId;
 
 }

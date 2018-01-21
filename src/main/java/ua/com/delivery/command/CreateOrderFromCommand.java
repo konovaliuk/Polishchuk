@@ -1,9 +1,6 @@
 package ua.com.delivery.command;
 
 import ua.com.delivery.controller.utilController.PageConfiguration;
-import ua.com.delivery.persistence.dao.AbstractFactory;
-import ua.com.delivery.persistence.dao.daoimpl.OrderFromWarehouseImpl;
-import ua.com.delivery.persistence.entity.OrderFromWarehouse;
 import ua.com.delivery.service.OrderService;
 
 import javax.servlet.ServletException;
@@ -29,30 +26,15 @@ public class CreateOrderFromCommand implements ICommand {
         String cityDeparture = request.getParameter(CITY_DEPARTURE);
         String userName = request.getParameter(USER_NAME);
         int phone = Integer.parseInt(request.getParameter(PHONE));
-        String addressOfDelivery = request.getParameter(ADDRESS_OF_DELIVERY);
+        String addressToDelivery = request.getParameter(ADDRESS_OF_DELIVERY);
         int weightOfParcel = Integer.parseInt(request.getParameter(WEIGHT_OF_PARCEL));
         String email = request.getParameter(EMAIL);
         String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
-
         Integer numberOfOrder = OrderService.getInstance().numberOfOrder();
         Integer totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
-        request.setAttribute("totalPriceOfReceipt", totalPrice);
-
-        OrderFromWarehouseImpl orderFromWarehouseImpl = new AbstractFactory().createOrderFromWarehouseDao();
-        OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
-        orderFromWarehouse.setNumberOfOrder(numberOfOrder);
-        orderFromWarehouse.setDateToDelivery(dateOfReceipt);
-        orderFromWarehouse.setCityDeparture(cityDeparture);
-        orderFromWarehouse.setUserName(userName);
-        orderFromWarehouse.setPhone(phone);
-        orderFromWarehouse.setAddressToDelivery(addressOfDelivery);
-        orderFromWarehouse.setWeight(weightOfParcel);
-        orderFromWarehouse.setEmail(email);
-        orderFromWarehouse.setTotalPrice(totalPrice);
-        orderFromWarehouse.setTypeOfParcel(typeOfParcel);
-
-        orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
+        OrderService.getInstance().createOrderFrom(request, numberOfOrder, dateOfReceipt, cityDeparture,
+                userName, phone, addressToDelivery, weightOfParcel, email, totalPrice, typeOfParcel);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }

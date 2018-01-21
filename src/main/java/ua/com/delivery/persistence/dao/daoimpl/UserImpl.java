@@ -106,7 +106,7 @@ public class UserImpl implements IUserDao {
                 user.setCity(resultSet.getString("city"));
                 user.setPhone(resultSet.getInt("phone"));
                 user.setAdmin(resultSet.getBoolean("admin"));
-                preparedStatement.executeUpdate();
+                preparedStatement.executeQuery();
             }
         } catch (SQLException e) {
             LOGGER.error(e.toString());

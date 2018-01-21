@@ -12,7 +12,7 @@ import java.util.List;
 public class ParcelPriceImpl implements IParcelPriceDao {
     private static final Logger LOGGER = Logger.getLogger(ParcelPriceImpl.class);
     private static final String GET_LIST_PARCEL_PRICE = "SELECT * FROM ParcelPrice";
-    private static final String GET_PARCEL_PRICE_BY_WEIGHT = "SELECT price FROM ParcelPrice WHERE weight=?";
+    private static final String GET_PARCEL_PRICE_BY_WEIGHT = "SELECT * FROM ParcelPrice WHERE weight=?";
     private static final String DELETE_PARCEL_PRICE_BY_WEIGHT = "DELETE FROM ParcelPrice WHERE weight=?";
     private static final String UPDATE_PARCEL_PRICE_DATA = "UPDATE ParcelPrice SET weight=?, price=? WHERE parcelpriceID=?";
     private static final String CREATE_PARCEL_PRICE = "INSERT INTO ParcelPrice (parcelpriceID, weight, price) " +
@@ -62,22 +62,30 @@ public class ParcelPriceImpl implements IParcelPriceDao {
     }
 
     @Override
-    public Integer getByWeight(int weight) {
-        Integer priceByWeight = null;
+    public ParcelPrice getByWeight(int weight) {
+        ParcelPrice parcelPrice = new ParcelPrice();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
 //        try (Connection connection = SimpleConnection.getInstance().getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_WEIGHT)) {
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_WEIGHT)
+        ) {
             preparedStatement.setInt(1, weight);
             ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet == null) {
+                LOGGER.info("Weight " + weight + " doesn't have in list");
+            }
             if (resultSet.next()) {
-                priceByWeight = resultSet.getInt(1);
+                parcelPrice.setParcelpriceID(resultSet.getLong("parcelpriceID"));
+                parcelPrice.setWeight(resultSet.getInt("weight"));
+                parcelPrice.setPrice(resultSet.getInt("price"));
+
+                preparedStatement.executeQuery();
             } else {
                 LOGGER.info("No ParcelPrice with weight: " + weight);
             }
         } catch (SQLException e) {
             LOGGER.error(e.toString());
         }
-        return priceByWeight;
+        return parcelPrice;
     }
 
     @Override

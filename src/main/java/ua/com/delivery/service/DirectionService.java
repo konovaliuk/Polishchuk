@@ -33,7 +33,6 @@ public class DirectionService {
         List<Direction> directionList = factory.createDirectionDao().getListDirections();
         directionList.sort(Comparator.comparing(Direction::getFromCity));
         LOGGER.info("It's a list from/to city");
-
         return directionList;
     }
 
@@ -46,7 +45,7 @@ public class DirectionService {
     }
 
     public Integer priceForCity(String from, String to, int weight) {
-        Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
+        Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight).getWeight();
         Integer cityPrice = factory.createDirectionDao().getPriceByCity(from, to);
         Integer resultPrice;
         if (weightPrice != null) {
@@ -66,7 +65,7 @@ public class DirectionService {
     }
 
     public Integer priceByWeight(int weight) {
-        Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight);
+        Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight).getWeight();
         if (weightPrice == null) {
             LOGGER.error("Table hasn't data for this weight: " + weight);
         }
