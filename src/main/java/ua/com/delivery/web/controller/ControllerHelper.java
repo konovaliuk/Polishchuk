@@ -1,9 +1,9 @@
-package ua.com.delivery.controller;
+package ua.com.delivery.web.controller;
 
 import org.apache.log4j.Logger;
-import ua.com.delivery.command.*;
-import ua.com.delivery.command.localization.LanguageEnCommand;
-import ua.com.delivery.command.localization.LanguageUkCommand;
+import ua.com.delivery.web.command.*;
+import ua.com.delivery.web.command.localization.LanguageEnCommand;
+import ua.com.delivery.web.command.localization.LanguageUkCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;

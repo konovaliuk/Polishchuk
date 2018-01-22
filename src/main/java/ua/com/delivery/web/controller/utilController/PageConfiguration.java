@@ -1,4 +1,4 @@
-package ua.com.delivery.controller.utilController;
+package ua.com.delivery.web.controller.utilController;
 
 import java.util.ResourceBundle;
 

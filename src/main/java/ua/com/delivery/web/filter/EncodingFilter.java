@@ -1,4 +1,4 @@
-package ua.com.delivery.controller.filter;
+package ua.com.delivery.web.filter;
 
 
 import javax.servlet.*;

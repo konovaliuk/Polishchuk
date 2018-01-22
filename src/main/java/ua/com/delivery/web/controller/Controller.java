@@ -1,9 +1,9 @@
-package ua.com.delivery.controller;
+package ua.com.delivery.web.controller;
 
 import org.apache.log4j.Logger;
-import ua.com.delivery.command.ICommand;
-import ua.com.delivery.controller.utilController.MessageHelper;
-import ua.com.delivery.controller.utilController.PageConfiguration;
+import ua.com.delivery.web.command.ICommand;
+import ua.com.delivery.web.controller.utilController.MessageHelper;
+import ua.com.delivery.web.controller.utilController.PageConfiguration;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

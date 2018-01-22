@@ -1,8 +1,8 @@
 package ua.com.delivery.service;
 
 import org.apache.log4j.Logger;
-import ua.com.delivery.controller.utilController.MessageHelper;
-import ua.com.delivery.controller.utilController.PageConfiguration;
+import ua.com.delivery.web.controller.utilController.MessageHelper;
+import ua.com.delivery.web.controller.utilController.PageConfiguration;
 import ua.com.delivery.persistence.dao.AbstractFactory;
 import ua.com.delivery.persistence.dao.IAbstractFactory;
 import ua.com.delivery.persistence.entity.User;
