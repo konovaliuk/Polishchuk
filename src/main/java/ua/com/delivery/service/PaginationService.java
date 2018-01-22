@@ -12,12 +12,15 @@ public class PaginationService {
     private static final Logger LOGGER = Logger.getLogger(PaginationService.class);
     private static PaginationService  INSTANCE;
 
-    private IAbstractFactory factory;
-
     private PaginationService() {
-        factory = new AbstractFactory();
+        IAbstractFactory factory = new AbstractFactory();
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static PaginationService getInstance() {
         if (INSTANCE == null) {
             synchronized (PaginationService.class) {
@@ -29,6 +32,12 @@ public class PaginationService {
         return INSTANCE;
     }
 
+    /**
+     * Method for pagination
+     *
+     * @param request
+     * @param parameterPage
+     */
     public void conditionPagination(HttpServletRequest request, String parameterPage){
         int startPage = 1;
         if (request.getParameter(parameterPage) != null) {

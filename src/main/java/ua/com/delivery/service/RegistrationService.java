@@ -20,6 +20,11 @@ public class RegistrationService {
         factory = new AbstractFactory();
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static RegistrationService getInstance(){
         if (INSTANCE == null){
             synchronized (RegistrationService.class) {
@@ -31,6 +36,20 @@ public class RegistrationService {
         return INSTANCE;
     }
 
+    /**
+     * Method for registration
+     *
+     * @param request
+     * @param username
+     * @param password
+     * @param firstName
+     * @param secondName
+     * @param email
+     * @param address
+     * @param city
+     * @param phone
+     * @return page
+     */
     public String registration(HttpServletRequest request, String username, String password, String firstName,
                                String secondName, String email, String address, String city, String phone){
         String page;
@@ -48,9 +67,11 @@ public class RegistrationService {
             user.setAdmin(false);
 
             userImpl.createUser(user);
+
             if (user.getUserID() == null) {
                 request.setAttribute("createUser",
                         MessageHelper.getInstance().getMessageException(MessageHelper.USER_CREATE));
+                LOGGER.info("User was created: " + username);
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
             } else {
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);

@@ -9,7 +9,6 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-//я запускаю але як зробити щоб дії заносились в бд
 public class ConnectionPool {
     private static final Logger LOGGER = Logger.getLogger(ConnectionPool.class);
 
@@ -17,7 +16,6 @@ public class ConnectionPool {
     }
 
     private static ConnectionPool instance = null;
-
     public static ConnectionPool getInstance() {
         if (instance == null) {
             instance = new ConnectionPool();
@@ -34,7 +32,7 @@ public class ConnectionPool {
             context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/delivery");
             connection = dataSource.getConnection();
-            //для транзакций,чтобы после каждого запроса делать коммит
+            //для транзакцій,щоб після запитів робити коміти
             connection.setAutoCommit(false);
         } catch (NamingException | SQLException e) {
             e.printStackTrace();

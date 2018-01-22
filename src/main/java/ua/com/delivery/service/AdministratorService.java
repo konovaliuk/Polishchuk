@@ -18,6 +18,10 @@ public class AdministratorService {
         factory = new AbstractFactory();
     }
 
+    /**
+     * Singleton
+     * @return INSTANCE
+     */
     public static AdministratorService getInstance() {
         if (INSTANCE == null) {
             synchronized (AdministratorService.class) {
@@ -29,6 +33,10 @@ public class AdministratorService {
         return INSTANCE;
     }
 
+    /**
+     * Method give us list of all admins and users
+     * @return userList
+     */
     public List<User> getAdminsAndUsers() {
         List<User> userList = factory.createUserDao().getListUsers();
         if (userList == null) {
@@ -38,12 +46,17 @@ public class AdministratorService {
         return userList;
     }
 
+    /**
+     * Method give us list of users
+     * @return onlyUsersList
+     */
     public List<User> getOnlyUsers() {
         List<User> userList = factory.createUserDao().getListUsers();
         List<User> onlyUsersList = new ArrayList<>();
         if (userList == null) {
             LOGGER.info("Your users list is empty");
         } else {
+            LOGGER.info("Your successful get list of users ");
             for (User user : userList) {
                 if (!user.getAdmin()) {
                     onlyUsersList.add(user);
@@ -53,6 +66,11 @@ public class AdministratorService {
         return onlyUsersList;
     }
 
+    /**
+     * Method for update user
+     * @param user
+     * @return updatedUser
+     */
     public User updateUser(User user) {
         User updatedUser = factory.createUserDao().updateUser(user);
         if (updatedUser == null) {
@@ -62,6 +80,10 @@ public class AdministratorService {
         return updatedUser;
     }
 
+    /**
+     * Method for deleting user
+     * @param user
+     */
     public void deleteUser(User user) {
         factory.createUserDao().deleteUserByUsername(user.getUsername());
         LOGGER.info("User with username " + user.getUsername() + " was successful deleted.");

@@ -16,6 +16,10 @@ public class DateService {
         this.date = now();
     }
 
+    /**
+     * Method give us date in format for mysql
+     * @return formatDate
+     */
     private String now() {
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();

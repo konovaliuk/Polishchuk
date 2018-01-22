@@ -14,7 +14,6 @@ public class OrderService {
     private static final Logger LOGGER = Logger.getLogger(OrderService.class);
     private static OrderService INSTANCE;
 
-//    private IAbstractFactory factory;
     private AbstractFactory factory;
 
 
@@ -22,6 +21,11 @@ public class OrderService {
         factory = new AbstractFactory();
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static OrderService getInstance() {
         if (INSTANCE == null) {
             synchronized (OrderService.class) {
@@ -33,9 +37,22 @@ public class OrderService {
         return INSTANCE;
     }
 
-    public void createOrderFrom (HttpServletRequest request, Date dateOfReceipt, String cityDeparture, String userName,
-                                 int phone, String addressToDelivery,
-                                 int weightOfParcel, String email, String typeOfParcel){
+    /**
+     * Method for create order from warehouse
+     *
+     * @param request
+     * @param dateOfReceipt
+     * @param cityDeparture
+     * @param userName
+     * @param phone
+     * @param addressToDelivery
+     * @param weightOfParcel
+     * @param email
+     * @param typeOfParcel
+     */
+    public void createOrderFrom(HttpServletRequest request, Date dateOfReceipt, String cityDeparture, String userName,
+                                int phone, String addressToDelivery,
+                                int weightOfParcel, String email, String typeOfParcel) {
 
         IUserDao userDao = factory.createUserDao();
         IDirectionDao directionDao = factory.createDirectionDao();
@@ -57,8 +74,22 @@ public class OrderService {
         orderFromWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
         request.setAttribute("totalPriceOfReceipt", totalPriceOfReceipt(weightOfParcel));
+        LOGGER.info("Was successful created order from warehouse");
     }
 
+    /**
+     * Method for create order from warehouse
+     *
+     * @param request
+     * @param dateOfDelivery
+     * @param addressOfDeparture
+     * @param userName
+     * @param phone
+     * @param cityReceipt
+     * @param weightOfParcel
+     * @param email
+     * @param typeOfParcel
+     */
     public void createOrderTo(HttpServletRequest request, Date dateOfDelivery, String addressOfDeparture,
                               String cityReceipt, String userName, int phone, int weightOfParcel, String email,
                               String typeOfParcel) {
@@ -83,16 +114,27 @@ public class OrderService {
         orderToWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
         request.setAttribute("totalPriceOfDelivery", totalPriceOfReceipt(weightOfParcel));
+        LOGGER.info("Was successful created order to warehouse");
     }
 
-
-    public Integer numberOfOrder() {
-        return (int)(Math.random()*666+1);
+    /**
+     * Method for create order from warehouse
+     *
+     * @return numberOfOrder
+     */
+    private Integer numberOfOrder() {
+        return (int) (Math.random() * 666 + 1);
     }
 
-    public Integer totalPriceOfReceipt(int weight) {
+    /**
+     * Method for create order from warehouse
+     *
+     * @param weight
+     * @return totalPriceOfReceipt
+     */
+    private Integer totalPriceOfReceipt(int weight) {
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight).getWeight();
-        int cityPrice = (int)(Math.random()* 500 + 1);
+        int cityPrice = (int) (Math.random() * 500 + 1);
         return weightPrice + cityPrice;
     }
 

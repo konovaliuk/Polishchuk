@@ -1,8 +1,6 @@
 package ua.com.delivery.service;
 
 import org.apache.log4j.Logger;
-import ua.com.delivery.persistence.dao.AbstractFactory;
-import ua.com.delivery.persistence.dao.IAbstractFactory;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,12 +8,10 @@ public class CalculateService {
     private static final Logger LOGGER = Logger.getLogger(CalculateService.class);
     private static CalculateService  INSTANCE;
 
-    private IAbstractFactory factory;
-
-    private CalculateService() {
-        factory = new AbstractFactory();
-    }
-
+    /**
+     * Singleton
+     * @return INSTANCE
+     */
     public static CalculateService getInstance() {
         if (INSTANCE == null) {
             synchronized (CalculateService.class) {
@@ -27,6 +23,10 @@ public class CalculateService {
         return INSTANCE;
     }
 
+    /**
+     * Method for calculating price between city
+     * with weight from user
+     */
     public void calculatePrice(HttpServletRequest request, String fromCity, String toCity, int weight) {
         Integer price = DirectionService.getInstance().priceForCity(fromCity, toCity, weight);
         Integer priceByWeight = DirectionService.getInstance().priceByWeight(weight);

@@ -23,11 +23,15 @@ public class DirectionImpl implements IDirectionDao {
             "price_direction) VALUES (?, ?, ?, ?)";
 
 
+    /**
+     * Create direction  in database
+     *
+     * @param direction instance of entity {@code Direction}
+     */
     @Override
     public void createDirection(Direction direction) {
         PreparedStatement preparedStatement;
         try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             preparedStatement = connection.prepareStatement(CREATE_DIRECTION);
             preparedStatement.setLong(1, direction.getDirectionID());
             preparedStatement.setString(2, direction.getFromCity());
@@ -37,17 +41,20 @@ public class DirectionImpl implements IDirectionDao {
             connection.commit();
             LOGGER.info("Direction from: " + direction.getFromCity() + " to: " + direction.getToCity() + " was successful created");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method createDirection" );
         }
 
     }
 
+    /**
+     * Method for getting list of directions from database
+     * @return direction List
+     */
     @Override
     public List<Direction> getListDirections() {
         List<Direction> directionList = new ArrayList<>();
         Statement statement;
         try (Connection connection = ConnectionPool.getInstance().getConnection()) {
-//        try (Connection connection = SimpleConnection.getInstance().getConnection()) {
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(GET_LIST_DIRECTIONS);
             if (resultSet == null) {
@@ -58,25 +65,22 @@ public class DirectionImpl implements IDirectionDao {
                 direction.setFromCity(resultSet.getString("from_city"));
                 directionList.add(direction);
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//
-//            }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method getListDirections" );
         }
         return directionList;
     }
 
-    //////////////////////////////
+    /**
+     * Method for getting list of records with two parameters
+     * @param start
+     * @param total
+     * @return directionList
+     */
     @Override
     public List<Direction> getRecords(int start, int total) {
         List<Direction> directionList = new ArrayList<>();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_LIST_RECORDS)
         ) {
             preparedStatement.setInt(1, start);
@@ -95,18 +99,20 @@ public class DirectionImpl implements IDirectionDao {
                 directionList.add(direction);
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method getRecords" );
         }
         return directionList;
     }
 
-    //////////////////////////
-
+    /**
+     * Method for getting direction by from_city  of records with parameter
+     * @param fromCity
+     * @return direction
+     */
     @Override
     public Direction getDirectionByFromCity(String fromCity) {
         Direction direction = new Direction();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_DIRECTION_BY_FROM_CITY)
         ) {
             preparedStatement.setString(1, fromCity);
@@ -124,23 +130,19 @@ public class DirectionImpl implements IDirectionDao {
             else {
                 LOGGER.info("No city from this place: " + fromCity);
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//                LOGGER.info("City " + fromCity + " doesn't have in list");
-//
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method getDirectionByFromCity" );
         }
         return direction;
     }
 
+    /**
+     * Method for update direction in database
+     * @param direction
+     */
     @Override
     public void updateDirection(Direction direction) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DIRECTION_DATA)
         ) {
             preparedStatement.setString(1, direction.getFromCity());
@@ -150,15 +152,18 @@ public class DirectionImpl implements IDirectionDao {
             connection.commit();
             LOGGER.info("Direction with id:  " + direction.getDirectionID() + " was updated");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method updateDirection" );
         }
     }
 
+    /**
+     * Method counts the number of records in Direction table in database
+     * @return count
+     */
     @Override
     public Integer countDirectionRecord() {
         int count = 0;
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_COUNT_RECORD)
         ) {
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -169,17 +174,22 @@ public class DirectionImpl implements IDirectionDao {
                 return null;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.error("Problem in DirectionImpl, in method countDirectionRecord");
         }
         return count;
     }
 
 
+    /**
+     * Method for getting price between city in Direction table in database
+     * @param from
+     * @param to
+     * @return price
+     */
     @Override
     public Integer getPriceByCity(String from, String to) {
         int price = 0;
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_PRICE_FROM_TO_CITY)
         ) {
             preparedStatement.setString(1, from);
@@ -192,16 +202,19 @@ public class DirectionImpl implements IDirectionDao {
                 return null;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.error("Problem in DirectionImpl, in method countDirectionRecord");
         }
         return price;
     }
 
 
+    /**
+     * Method for deleting direction by id in database
+     * @param id
+     */
     @Override
     public void deleteDirectionById(Long id) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_DIRECTION_BY_ID)
         ) {
             preparedStatement.setLong(1, id);
@@ -209,7 +222,7 @@ public class DirectionImpl implements IDirectionDao {
             connection.commit();
             LOGGER.info("Direction with id: " + id + " was successful deleted");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in DirectionImpl, in method deleteDirectionById");
         }
     }
 }

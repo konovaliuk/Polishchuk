@@ -22,10 +22,13 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             "type_of_parcel,  total_price, user_id, direction_id, parcel_price_id)" +
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
+    /**
+     * Method create order from warehouse to address of delivery in database
+     * @param orderFromWarehouse
+     */
     @Override
     public void createOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try  (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_ORDER_FROM_WAREHOUSE)
         ) {
             preparedStatement.setInt(1, orderFromWarehouse.getNumberOfOrder());
@@ -46,15 +49,17 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             LOGGER.info("Order from warehouse was successful created");
         } catch (SQLException e) {
             LOGGER.info("Order from warehouse wasn't created");
-            LOGGER.error(e.toString());
         }
     }
 
+    /**
+     * Method for getting list orders from warehouse in database
+     * @return  orderFromWarehouseList
+     */
     @Override
     public List<OrderFromWarehouse> getListOrdersFromWarehouse() {
         List<OrderFromWarehouse> orderFromWarehouseList = new ArrayList<>();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_ORDER_FROM_WAREHOUSE)
         ) {
@@ -81,16 +86,20 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                 LOGGER.info("List Orders from warehouse is empty.");
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in OrderFromWarehouseImpl, in method getListOrdersFromWarehouse");
         }
         return orderFromWarehouseList;
     }
 
+    /**
+     * Method for getting order from warehouse by id
+     * @param id
+     * @return  orderFromWarehouse
+     */
     @Override
     public OrderFromWarehouse getById(Long id) {
         OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_ORDER_BY_ID)
         ) {
             //вказую значення id, яке приходить до нас із параметра
@@ -119,15 +128,18 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                 LOGGER.info("Order with id: " + id + " doesn't in the list");
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in OrderFromWarehouseImpl, in method getById");
         }
         return orderFromWarehouse;
     }
 
+    /**
+     * Method for updating order from warehouse
+     * @param orderFromWarehouse
+     */
     @Override
     public void updateOrderFromWarehouse(OrderFromWarehouse orderFromWarehouse) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_ORDER_FROM_WAREHOUSE)
         ) {
             preparedStatement.setInt(1, orderFromWarehouse.getNumberOfOrder());
@@ -148,14 +160,17 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             connection.commit();
             LOGGER.info("Order from warehouse with id:  " + orderFromWarehouse.getOrderFromWarehouseID() + " was updated");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in OrderFromWarehouseImpl, in method updateOrderFromWarehouse");
         }
     }
 
+    /**
+     * Method for deleting order from warehouese by id
+     * @param id
+     */
     @Override
     public void deleteOrderFromWarehouseById(Long id) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_ORDER_FROM_WAREHOUSE_BY_ID)
         ) {
             preparedStatement.setLong(1, id);
@@ -163,7 +178,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             connection.commit();
             LOGGER.info("Order from warehouse with id: " + id + " was successful deleted");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in OrderFromWarehouseImpl, in method deleteOrderFromWarehouseById");
         }
     }
 }

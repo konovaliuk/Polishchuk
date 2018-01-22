@@ -11,10 +11,13 @@ public interface IDirectionDao {
     //create new direction(from-to-price)
     void createDirection(Direction direction);
 
+    //counts the number of track entries
     Integer countDirectionRecord();
 
+    //get records for pagination from start, and total count on page
     List<Direction> getRecords(int start, int total);
 
+    //return price between city
     Integer getPriceByCity(String from, String to);
 
     //will return us list all directions

@@ -20,10 +20,13 @@ public class UserImpl implements IUserDao {
     private static final String CREATE_USER = "INSERT INTO Users (username, password, first_name, second_name," +
             "email, address, city, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
+    /**
+     * Method create user  in database
+     * @param user
+     */
     @Override
     public void createUser(User user) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_USER)
         ) {
             preparedStatement.setString(1, user.getUsername());
@@ -34,21 +37,22 @@ public class UserImpl implements IUserDao {
             preparedStatement.setString(6, user.getAddress());
             preparedStatement.setString(7, user.getCity());
             preparedStatement.setInt(8, user.getPhone());
-//            preparedStatement.setBoolean(9, user.getAdmin());
-
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("User " + user.getUsername() + " was created");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in UserImpl, in method createUser");
         }
     }
 
+    /**
+     * Method for getting list of users
+     * @return  userList
+     */
     @Override
     public List<User> getListUsers() {
         List<User> userList = new ArrayList<>();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_USERS)
         ) {
@@ -69,24 +73,21 @@ public class UserImpl implements IUserDao {
                 user.setAdmin(resultSet.getBoolean("admin"));
                 userList.add(user);
             }
-//            if (resultSet.next()) {
-//                do {
-//
-//                } while (resultSet.next());
-//            } else {
-//                LOGGER.info("List Users is empty.");
-//            }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in UserImpl, in method getListUsers");
         }
         return userList;
     }
 
+    /**
+     * Method for getting user by id
+     * @param id
+     * @return user
+     */
     @Override
     public User getById(Long id) {
         User user = new User();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_BY_ID)
         ) {
             //вказую значення id, яке приходить до нас із параметра
@@ -109,11 +110,16 @@ public class UserImpl implements IUserDao {
                 preparedStatement.executeQuery();
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in UserImpl, in method getById");
         }
         return user;
     }
 
+    /**
+     * Method for getting user by username
+     * @param username
+     * @return user
+     */
     @Override
     public User getUserByUsername(String username) {
         User user = new User();
@@ -138,19 +144,22 @@ public class UserImpl implements IUserDao {
                     preparedStatement.execute();
                 } while (resultSet.next());
             } else {
+                LOGGER.info("No user with this username");
                 user = null;
-
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in UserImpl, in method getUserByUsername");
         }
         return user;
     }
 
+    /**
+     * Method for updating user
+     * @param user
+     */
     @Override
     public User updateUser(User user) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DATA_USER)
         ) {
             preparedStatement.setString(1, user.getUsername());
@@ -165,25 +174,28 @@ public class UserImpl implements IUserDao {
             preparedStatement.setBoolean(10, user.getAdmin());
             preparedStatement.executeUpdate();
             connection.commit();
-//            LOGGER.info("User " + user.getUsername() + " was updated");
+            LOGGER.error("User " + user.getUsername() + " was updated");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("User " + user.getUsername() + " wasn't updated");
         }
         return user;
     }
 
+    /**
+     * Method for deleting user by username
+     * @param username
+     */
     @Override
     public void deleteUserByUsername(String username) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_USER_BY_USERNAME)
         ) {
             preparedStatement.setString(1, username);
             preparedStatement.executeUpdate();
             connection.commit();
-//            LOGGER.info("User with username " + username + " was successful deleted.");
+            LOGGER.info("User with username " + username + " was successful deleted.");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.info("User with username " + username + " wasn'r deleted.");
         }
     }
 }

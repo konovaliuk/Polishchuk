@@ -18,10 +18,13 @@ public class ParcelPriceImpl implements IParcelPriceDao {
     private static final String CREATE_PARCEL_PRICE = "INSERT INTO ParcelPrice (parcelpriceID, weight, price) " +
             "VALUES (?, ?, ?)";
 
+    /**
+     * Method create parcel price in database
+     * @param parcelPrice
+     */
     @Override
     public void createParcelPrice(ParcelPrice parcelPrice) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(CREATE_PARCEL_PRICE)
         ) {
             preparedStatement.setLong(1, parcelPrice.getParcelpriceID());
@@ -31,21 +34,23 @@ public class ParcelPriceImpl implements IParcelPriceDao {
             connection.commit();
             LOGGER.info("Parcel price was created");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.info("Parcel price wasn't created, we catch exception in ParcelPriceImpl, createParcelPrice method");
         }
     }
 
+    /**
+     * Method for getting list of parcel price
+     * @return  parcelPriceList
+     */
     @Override
     public List<ParcelPrice> getListParcelPrices() {
         List<ParcelPrice> parcelPriceList = new ArrayList<>();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(GET_LIST_PARCEL_PRICE)
         ) {
             if (resultSet.next()) {
                 do {
-
                     ParcelPrice parcelPrice = new ParcelPrice();
                     parcelPrice.setParcelpriceID(resultSet.getLong("parcelpriceID"));
                     parcelPrice.setWeight(resultSet.getInt("weight"));
@@ -56,16 +61,20 @@ public class ParcelPriceImpl implements IParcelPriceDao {
                 LOGGER.info("Parcel price list doesn't have next element");
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in ParcelPriceImpl, in method getListParcelPrices");
         }
         return parcelPriceList;
     }
 
+    /**
+     * Method for getting parcel price by weight
+     * @param weight
+     * @return parcelPrice
+     */
     @Override
     public ParcelPrice getByWeight(int weight) {
         ParcelPrice parcelPrice = new ParcelPrice();
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_PARCEL_PRICE_BY_WEIGHT)
         ) {
             preparedStatement.setInt(1, weight);
@@ -83,15 +92,18 @@ public class ParcelPriceImpl implements IParcelPriceDao {
                 LOGGER.info("No ParcelPrice with weight: " + weight);
             }
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in ParcelPriceImpl, in method getByWeight");
         }
         return parcelPrice;
     }
 
+    /**
+     * Method for updating parcel price
+     * @param parcelPrice
+     */
     @Override
     public void updateParcelPrice(ParcelPrice parcelPrice) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PARCEL_PRICE_DATA)
         ) {
             preparedStatement.setInt(1, parcelPrice.getWeight());
@@ -101,14 +113,17 @@ public class ParcelPriceImpl implements IParcelPriceDao {
             connection.commit();
             LOGGER.info("Updating parcel price was successful");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in ParcelPriceImpl, in method updateParcelPrice");
         }
     }
 
+    /**
+     * Method for deleting parcel price by weight
+     * @param weight
+     */
     @Override
     public void deleteParcelPriceByWeight(Integer weight) {
         try (Connection connection = ConnectionPool.getInstance().getConnection();
-//        try (Connection connection = SimpleConnection.getInstance().getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(DELETE_PARCEL_PRICE_BY_WEIGHT)
         ) {
             preparedStatement.setInt(1, weight);
@@ -116,7 +131,7 @@ public class ParcelPriceImpl implements IParcelPriceDao {
             connection.commit();
             LOGGER.info("Parcel price with weight: " + weight + " was successful deleted.");
         } catch (SQLException e) {
-            LOGGER.error(e.toString());
+            LOGGER.error("Problem in ParcelPriceImpl, in method deleteParcelPriceByWeight");
         }
     }
 }
