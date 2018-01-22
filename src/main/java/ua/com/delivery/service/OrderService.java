@@ -3,17 +3,20 @@ package ua.com.delivery.service;
 import org.apache.log4j.Logger;
 import ua.com.delivery.persistence.dao.*;
 import ua.com.delivery.persistence.dao.daoimpl.OrderFromWarehouseImpl;
+import ua.com.delivery.persistence.dao.daoimpl.OrderToWarehouseImpl;
 import ua.com.delivery.persistence.entity.OrderFromWarehouse;
+import ua.com.delivery.persistence.entity.OrderToWarehouse;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
-import java.util.Random;
 
 public class OrderService {
     private static final Logger LOGGER = Logger.getLogger(OrderService.class);
     private static OrderService INSTANCE;
 
-    private IAbstractFactory factory;
+//    private IAbstractFactory factory;
+    private AbstractFactory factory;
+
 
     private OrderService() {
         factory = new AbstractFactory();
@@ -34,10 +37,10 @@ public class OrderService {
                                  String cityDeparture, String userName, int phone, String addressToDelivery,
                                  int weightOfParcel, String email, int totalPrice, String typeOfParcel){
 
-        IUserDao userDao = new  AbstractFactory().createUserDao();
-        IDirectionDao directionDao = new AbstractFactory().createDirectionDao();
-        IParcelPriceDao parcelPriceDao = new AbstractFactory().createParcelPriceDao();
-        OrderFromWarehouseImpl orderFromWarehouseImpl = new AbstractFactory().createOrderFromWarehouseDao();
+        IUserDao userDao = factory.createUserDao();
+        IDirectionDao directionDao = factory.createDirectionDao();
+        IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
+        OrderFromWarehouseImpl orderFromWarehouseImpl = factory.createOrderFromWarehouseDao();
         OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
         orderFromWarehouse.setNumberOfOrder(numberOfOrder);
         orderFromWarehouse.setDateToDelivery(dateOfReceipt);
@@ -56,15 +59,40 @@ public class OrderService {
         request.setAttribute("totalPriceOfReceipt", totalPrice);
     }
 
+    public void createOrderTo(HttpServletRequest request, Date dateOfDelivery, String addressOfDeparture,
+                              String cityReceipt, String userName, int phone, int weightOfParcel, String email,
+                              String typeOfParcel) {
+
+        IUserDao userDao = factory.createUserDao();
+        IDirectionDao directionDao = factory.createDirectionDao();
+        IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
+        OrderToWarehouseImpl orderToWarehouseImpl = factory.createOrderToWarehouseDao();
+        OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
+        orderToWarehouse.setDateOfDeparture(dateOfDelivery);
+        orderToWarehouse.setDepartureAddress(addressOfDeparture);
+        orderToWarehouse.setCityOfReceipt(cityReceipt);
+        orderToWarehouse.setUserName(userName);
+        orderToWarehouse.setPhone(phone);
+        orderToWarehouse.setWeight(weightOfParcel);
+        orderToWarehouse.setEmail(email);
+        orderToWarehouse.setTypeOfParcel(typeOfParcel);
+        orderToWarehouse.setNumberOfOrder(numberOfOrder());
+        orderToWarehouse.setTotalPrice(totalPriceOfReceipt(weightOfParcel));
+        orderToWarehouse.setUserId(userDao.getUserByUsername((String) request.getSession().getAttribute("visibleUser")).getUserID());
+        orderToWarehouse.setDirectionId(directionDao.getDirectionByFromCity(cityReceipt).getDirectionID());
+        orderToWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
+        orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
+        request.setAttribute("totalPriceOfDelivery", totalPriceOfReceipt(weightOfParcel));
+    }
+
+
     public Integer numberOfOrder() {
-        Random random = new Random();
-        return random.nextInt(666) + 1;
+        return (int)(Math.random()*666+1);
     }
 
     public Integer totalPriceOfReceipt(int weight) {
         Integer weightPrice = factory.createParcelPriceDao().getByWeight(weight).getWeight();
-        Random random = new Random();
-        int cityPrice = random.nextInt(500) + 1;
+        int cityPrice = (int)(Math.random()* 500 + 1);
         return weightPrice + cityPrice;
     }
 

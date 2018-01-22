@@ -70,7 +70,7 @@ public class Controller extends HttpServlet {
         response.setContentType(CONTENT_TYPE);
         //вызов страницы ответа на запрос
         RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher(page);
-        LOGGER.info("Forwardto: " + page);
+        LOGGER.info("Forward to: " + page);
         requestDispatcher.forward(request, response);
     }
 }

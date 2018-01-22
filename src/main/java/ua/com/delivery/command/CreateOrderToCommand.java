@@ -1,9 +1,6 @@
 package ua.com.delivery.command;
 
 import ua.com.delivery.controller.utilController.PageConfiguration;
-import ua.com.delivery.persistence.dao.AbstractFactory;
-import ua.com.delivery.persistence.dao.daoimpl.OrderToWarehouseImpl;
-import ua.com.delivery.persistence.entity.OrderToWarehouse;
 import ua.com.delivery.service.OrderService;
 
 import javax.servlet.ServletException;
@@ -34,25 +31,11 @@ public class CreateOrderToCommand implements ICommand {
         String email = request.getParameter(EMAIL);
         String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
 
-        int numberOfOrder = OrderService.getInstance().numberOfOrder();
-        int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
+//        Integer numberOfOrder = OrderService.getInstance().numberOfOrder();
+//        Integer totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
-        request.setAttribute("totalPriceOfDelivery", totalPrice);
-
-        OrderToWarehouseImpl orderToWarehouseImpl = new AbstractFactory().createOrderToWarehouseDao();
-        OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
-        orderToWarehouse.setDateOfDeparture(dateOfDelivery);
-        orderToWarehouse.setDepartureAddress(addressOfDeparture);
-        orderToWarehouse.setCityOfReceipt(cityReceipt);
-        orderToWarehouse.setUserName(userName);
-        orderToWarehouse.setPhone(phone);
-        orderToWarehouse.setWeight(weightOfParcel);
-        orderToWarehouse.setEmail(email);
-        orderToWarehouse.setTypeOfParcel(typeOfParcel);
-        orderToWarehouse.setNumberOfOrder(numberOfOrder);
-        orderToWarehouse.setTotalPrice(totalPrice);
-
-        orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
+        OrderService.getInstance().createOrderTo(request, dateOfDelivery, addressOfDeparture, cityReceipt, userName,
+                phone, weightOfParcel, email, typeOfParcel);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }
