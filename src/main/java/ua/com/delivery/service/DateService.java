@@ -18,6 +18,7 @@ public class DateService {
 
     /**
      * Method give us date in format for mysql
+     *
      * @return formatDate
      */
     private String now() {

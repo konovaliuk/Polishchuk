@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PaginationService {
     private static final Logger LOGGER = Logger.getLogger(PaginationService.class);
-    private static PaginationService  INSTANCE;
+    private static PaginationService INSTANCE;
 
     private PaginationService() {
         IAbstractFactory factory = new AbstractFactory();
@@ -38,7 +38,7 @@ public class PaginationService {
      * @param request
      * @param parameterPage
      */
-    public void conditionPagination(HttpServletRequest request, String parameterPage){
+    public void conditionPagination(HttpServletRequest request, String parameterPage) {
         int startPage = 1;
         if (request.getParameter(parameterPage) != null) {
             startPage = Integer.parseInt(request.getParameter(parameterPage));

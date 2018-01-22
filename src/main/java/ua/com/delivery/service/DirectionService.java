@@ -20,6 +20,7 @@ public class DirectionService {
 
     /**
      * Singleton
+     *
      * @return INSTANCE
      */
     public static DirectionService getInstance() {
@@ -35,6 +36,7 @@ public class DirectionService {
 
     /**
      * Method give us list of all city in database
+     *
      * @return directionList
      */
     public List<Direction> searchFromToCity() {
@@ -46,6 +48,7 @@ public class DirectionService {
 
     /**
      * Method give us counts records of directions
+     *
      * @return count of records
      */
     public Integer countDirectionRecords() {
@@ -55,6 +58,7 @@ public class DirectionService {
 
     /**
      * Method give us counts records of directions with two param
+     *
      * @param start
      * @param total
      * @return count of records
@@ -67,6 +71,7 @@ public class DirectionService {
     /**
      * Method give us price between city and
      * for total price adding a price by weight
+     *
      * @param from
      * @param to
      * @param weight
@@ -88,6 +93,7 @@ public class DirectionService {
 
     /**
      * Method give us price between city
+     *
      * @param from
      * @param to
      * @return cityPrice
@@ -103,6 +109,7 @@ public class DirectionService {
 
     /**
      * Method give us price by weight
+     *
      * @param weight
      * @return weightPrice
      */

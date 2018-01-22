@@ -22,6 +22,11 @@ public class MessageHelper {
         resourceBundle = ResourceBundle.getBundle("language");
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static MessageHelper getInstance() {
         if (INSTANCE == null) {
             synchronized (MessageHelper.class) {
@@ -33,6 +38,11 @@ public class MessageHelper {
         return INSTANCE;
     }
 
+    /**
+     * Method which return message from bungle
+     *
+     * @return INSTANCE
+     */
     public String getMessageException(String messageException) {
         return resourceBundle.getString(messageException);
     }

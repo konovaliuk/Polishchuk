@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 public class RegistrationService {
     private static final Logger LOGGER = Logger.getLogger(RegistrationService.class);
-    private static RegistrationService  INSTANCE;
+    private static RegistrationService INSTANCE;
 
     private IAbstractFactory factory;
 
@@ -25,10 +25,10 @@ public class RegistrationService {
      *
      * @return INSTANCE
      */
-    public static RegistrationService getInstance(){
-        if (INSTANCE == null){
+    public static RegistrationService getInstance() {
+        if (INSTANCE == null) {
             synchronized (RegistrationService.class) {
-                if (INSTANCE == null){
+                if (INSTANCE == null) {
                     INSTANCE = new RegistrationService();
                 }
             }
@@ -51,7 +51,7 @@ public class RegistrationService {
      * @return page
      */
     public String registration(HttpServletRequest request, String username, String password, String firstName,
-                               String secondName, String email, String address, String city, String phone){
+                               String secondName, String email, String address, String city, String phone) {
         String page;
         if (LoginService.getInstance().existUsername(username) == null) {
             UserImpl userImpl = factory.createUserDao();

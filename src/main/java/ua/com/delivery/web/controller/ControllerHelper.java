@@ -17,46 +17,54 @@ public class ControllerHelper {
     private static final String PARAMETER = "command";
     private static ControllerHelper instance;
 
+    /**
+     * Constructor in which filling the table with commands
+     */
     private ControllerHelper() {
         ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);
-//        //заполнение таблицы командами
         commandMap.put(bundle.getString("command.home"), new HomeCommand());
         commandMap.put(bundle.getString("command.order"), new OrderCommand());
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
         commandMap.put(bundle.getString("command.signIn"), new SignInCommand());
         commandMap.put(bundle.getString("command.contact"), new ContactCommand());
+        commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
+        commandMap.put(bundle.getString("command.localeUa"), new LanguageUkCommand());
         commandMap.put(bundle.getString("command.calculate"), new CalculateCommand());
         commandMap.put(bundle.getString("command.condition"), new ConditionCommand());
         commandMap.put(bundle.getString("command.forRegist"), new ForRegistrCommand());
+        commandMap.put(bundle.getString("command.pagination"), new PaginationCommand());
         commandMap.put(bundle.getString("command.calculator"), new CalculatorCommand());
+        commandMap.put(bundle.getString("command.missingCommand"), new MissingCommand());
         commandMap.put(bundle.getString("command.registration"), new RegistrationCommand());
         commandMap.put(bundle.getString("command.createOrderTo"), new CreateOrderToCommand());
         commandMap.put(bundle.getString("command.createOrderFrom"), new CreateOrderFromCommand());
-
-        commandMap.put(bundle.getString("command.pagination"), new PaginationCommand());
-
-        /* Locale commands */
-        commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
-        commandMap.put(bundle.getString("command.localeUa"), new LanguageUkCommand());
-
-        commandMap.put("command.missingCommand", new MissingCommand());
-
     }
 
+    /**
+     * Method for getting command
+     * extracting a command from a request
+     * receiving an object corresponding the command
+     * if command is missing = missingCommand
+     *
+     * @param request
+     * @return page
+     */
     public ICommand getCommand(HttpServletRequest request) {
-        //извлечение команды из запроса
-        //получение объекта, соответствующего команде
         String parameter = request.getParameter("command");
         ICommand command = commandMap.get(parameter);
         if (command == null) {
-            //якщо команди немає, то переходить на missing
             command = commandMap.get("missingCommand");
         }
         LOGGER.info("Was called command: " + command);
         return command;
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static ControllerHelper getInstance() {
         if (instance == null) {
             synchronized (ControllerHelper.class) {

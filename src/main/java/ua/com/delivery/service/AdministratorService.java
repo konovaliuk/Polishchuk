@@ -20,6 +20,7 @@ public class AdministratorService {
 
     /**
      * Singleton
+     *
      * @return INSTANCE
      */
     public static AdministratorService getInstance() {
@@ -35,6 +36,7 @@ public class AdministratorService {
 
     /**
      * Method give us list of all admins and users
+     *
      * @return userList
      */
     public List<User> getAdminsAndUsers() {
@@ -48,6 +50,7 @@ public class AdministratorService {
 
     /**
      * Method give us list of users
+     *
      * @return onlyUsersList
      */
     public List<User> getOnlyUsers() {
@@ -68,6 +71,7 @@ public class AdministratorService {
 
     /**
      * Method for update user
+     *
      * @param user
      * @return updatedUser
      */
@@ -82,6 +86,7 @@ public class AdministratorService {
 
     /**
      * Method for deleting user
+     *
      * @param user
      */
     public void deleteUser(User user) {

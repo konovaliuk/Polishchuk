@@ -22,6 +22,7 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method create user  in database
+     *
      * @param user
      */
     @Override
@@ -47,7 +48,8 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method for getting list of users
-     * @return  userList
+     *
+     * @return userList
      */
     @Override
     public List<User> getListUsers() {
@@ -81,6 +83,7 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method for getting user by id
+     *
      * @param id
      * @return user
      */
@@ -117,6 +120,7 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method for getting user by username
+     *
      * @param username
      * @return user
      */
@@ -155,6 +159,7 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method for updating user
+     *
      * @param user
      */
     @Override
@@ -183,6 +188,7 @@ public class UserImpl implements IUserDao {
 
     /**
      * Method for deleting user by username
+     *
      * @param username
      */
     @Override

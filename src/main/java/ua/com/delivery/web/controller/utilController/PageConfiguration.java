@@ -22,6 +22,11 @@ public class PageConfiguration {
         resourceBundle = ResourceBundle.getBundle(NAME_OF_BUNDLE);
     }
 
+    /**
+     * Singleton
+     *
+     * @return INSTANCE
+     */
     public static PageConfiguration getInstance() {
         if (INSTANCE == null) {
             synchronized (PageConfiguration.class) {
@@ -33,6 +38,11 @@ public class PageConfiguration {
         return INSTANCE;
     }
 
+    /**
+     * Method which return message from bungle (page)
+     *
+     * @return INSTANCE
+     */
     public String getPageConfiguration(String pageConfigurationMessage) {
         return resourceBundle.getString(pageConfigurationMessage);
     }

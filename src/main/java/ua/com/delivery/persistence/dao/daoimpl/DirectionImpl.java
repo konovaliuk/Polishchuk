@@ -41,13 +41,14 @@ public class DirectionImpl implements IDirectionDao {
             connection.commit();
             LOGGER.info("Direction from: " + direction.getFromCity() + " to: " + direction.getToCity() + " was successful created");
         } catch (SQLException e) {
-            LOGGER.error("Problem in DirectionImpl, in method createDirection" );
+            LOGGER.error("Problem in DirectionImpl, in method createDirection");
         }
 
     }
 
     /**
      * Method for getting list of directions from database
+     *
      * @return direction List
      */
     @Override
@@ -66,13 +67,14 @@ public class DirectionImpl implements IDirectionDao {
                 directionList.add(direction);
             }
         } catch (SQLException e) {
-            LOGGER.error("Problem in DirectionImpl, in method getListDirections" );
+            LOGGER.error("Problem in DirectionImpl, in method getListDirections");
         }
         return directionList;
     }
 
     /**
      * Method for getting list of records with two parameters
+     *
      * @param start
      * @param total
      * @return directionList
@@ -99,13 +101,14 @@ public class DirectionImpl implements IDirectionDao {
                 directionList.add(direction);
             }
         } catch (SQLException e) {
-            LOGGER.error("Problem in DirectionImpl, in method getRecords" );
+            LOGGER.error("Problem in DirectionImpl, in method getRecords");
         }
         return directionList;
     }
 
     /**
      * Method for getting direction by from_city  of records with parameter
+     *
      * @param fromCity
      * @return direction
      */
@@ -126,18 +129,18 @@ public class DirectionImpl implements IDirectionDao {
                 direction.setToCity(resultSet.getString("to_city"));
                 direction.setPriceDirection(resultSet.getInt("price_direction"));
                 preparedStatement.executeQuery();
-            }
-            else {
+            } else {
                 LOGGER.info("No city from this place: " + fromCity);
             }
         } catch (SQLException e) {
-            LOGGER.error("Problem in DirectionImpl, in method getDirectionByFromCity" );
+            LOGGER.error("Problem in DirectionImpl, in method getDirectionByFromCity");
         }
         return direction;
     }
 
     /**
      * Method for update direction in database
+     *
      * @param direction
      */
     @Override
@@ -152,12 +155,13 @@ public class DirectionImpl implements IDirectionDao {
             connection.commit();
             LOGGER.info("Direction with id:  " + direction.getDirectionID() + " was updated");
         } catch (SQLException e) {
-            LOGGER.error("Problem in DirectionImpl, in method updateDirection" );
+            LOGGER.error("Problem in DirectionImpl, in method updateDirection");
         }
     }
 
     /**
      * Method counts the number of records in Direction table in database
+     *
      * @return count
      */
     @Override
@@ -182,6 +186,7 @@ public class DirectionImpl implements IDirectionDao {
 
     /**
      * Method for getting price between city in Direction table in database
+     *
      * @param from
      * @param to
      * @return price
@@ -210,6 +215,7 @@ public class DirectionImpl implements IDirectionDao {
 
     /**
      * Method for deleting direction by id in database
+     *
      * @param id
      */
     @Override

@@ -20,6 +20,7 @@ public class ParcelPriceImpl implements IParcelPriceDao {
 
     /**
      * Method create parcel price in database
+     *
      * @param parcelPrice
      */
     @Override
@@ -40,7 +41,8 @@ public class ParcelPriceImpl implements IParcelPriceDao {
 
     /**
      * Method for getting list of parcel price
-     * @return  parcelPriceList
+     *
+     * @return parcelPriceList
      */
     @Override
     public List<ParcelPrice> getListParcelPrices() {
@@ -68,6 +70,7 @@ public class ParcelPriceImpl implements IParcelPriceDao {
 
     /**
      * Method for getting parcel price by weight
+     *
      * @param weight
      * @return parcelPrice
      */
@@ -99,6 +102,7 @@ public class ParcelPriceImpl implements IParcelPriceDao {
 
     /**
      * Method for updating parcel price
+     *
      * @param parcelPrice
      */
     @Override
@@ -119,6 +123,7 @@ public class ParcelPriceImpl implements IParcelPriceDao {
 
     /**
      * Method for deleting parcel price by weight
+     *
      * @param weight
      */
     @Override

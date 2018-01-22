@@ -24,6 +24,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     /**
      * Method create order from warehouse to address of delivery in database
+     *
      * @param orderFromWarehouse
      */
     @Override
@@ -54,7 +55,8 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     /**
      * Method for getting list orders from warehouse in database
-     * @return  orderFromWarehouseList
+     *
+     * @return orderFromWarehouseList
      */
     @Override
     public List<OrderFromWarehouse> getListOrdersFromWarehouse() {
@@ -93,8 +95,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     /**
      * Method for getting order from warehouse by id
+     *
      * @param id
-     * @return  orderFromWarehouse
+     * @return orderFromWarehouse
      */
     @Override
     public OrderFromWarehouse getById(Long id) {
@@ -135,6 +138,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     /**
      * Method for updating order from warehouse
+     *
      * @param orderFromWarehouse
      */
     @Override
@@ -166,6 +170,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
 
     /**
      * Method for deleting order from warehouese by id
+     *
      * @param id
      */
     @Override

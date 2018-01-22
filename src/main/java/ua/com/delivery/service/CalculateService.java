@@ -6,10 +6,11 @@ import javax.servlet.http.HttpServletRequest;
 
 public class CalculateService {
     private static final Logger LOGGER = Logger.getLogger(CalculateService.class);
-    private static CalculateService  INSTANCE;
+    private static CalculateService INSTANCE;
 
     /**
      * Singleton
+     *
      * @return INSTANCE
      */
     public static CalculateService getInstance() {

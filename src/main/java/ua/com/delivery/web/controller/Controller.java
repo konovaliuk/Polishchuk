@@ -31,21 +31,24 @@ public class Controller extends HttpServlet {
         processRequest(request, response);
     }
 
+    /**
+     * Definition command which went from jsp
+     * call the implemented  execute() method of the ICommand interface and pass parameters
+     * the class-processor of a specific command
+     *
+     * @return page
+     */
     private void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String page;
         try {
-            //определение команды, пришедшей из JSP
             ICommand command = controllerHelper.getCommand(request);
-            /*вызов реализованного метода execute() интерфейса ICommand и передача параметров
-             классу-обработчику конкретной команды*/
             page = command.execute(request, response);
-            //метод возвращает страницу ответа
         } catch (ServletException e) {
             request.setAttribute("servletException",
                     MessageHelper.getInstance().getMessageException(MessageHelper.SERVLET_EXCEPTION));
-            //вызов JSP-страницы с сообщением об ошибке
+            //call jsp-page with error message
             LOGGER.error("Exception in controller (Servlet Exception)");
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ERROR_PAGE);
         } catch (IOException e) {
@@ -68,7 +71,7 @@ public class Controller extends HttpServlet {
 
         response.setCharacterEncoding(ENCODING);
         response.setContentType(CONTENT_TYPE);
-        //вызов страницы ответа на запрос
+        //call page response on request
         RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher(page);
         LOGGER.info("Forward to: " + page);
         requestDispatcher.forward(request, response);
