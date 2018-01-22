@@ -71,13 +71,13 @@
                 <label for="hideMenu"><i class="fa fa-bars"></i></label>
                 <nav>
                     <ul class="menu d-flex">
-                        <li><a class="active" href="/con?command=home">${Main}</a></li>
-                        <li><a href="/con?command=condition">${Condition}</a></li>
-                        <li><a href="/con?command=calculator">${Calculator}</a></li>
-                        <li><a href="/con?command=contact">${Contact}</a></li>
+                        <li><a class="active" href="con?command=home">${Main}</a></li>
+                        <li><a href="con?command=condition">${Condition}</a></li>
+                        <li><a href="con?command=calculator">${Calculator}</a></li>
+                        <li><a href="con?command=contact">${Contact}</a></li>
 
                         <c:if test="${visibleOrder == true}">
-                            <li><a href="/con?command=order">${Order}</a></li>
+                            <li><a href="con?command=order">${Order}</a></li>
                         </c:if>
 
                     </ul>
@@ -93,10 +93,10 @@
                     </a></span>
                     <c:choose>
                         <c:when test="${visibleLogout == true}">
-                            <a href="/con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
+                            <a href="con?command=logout">${Logout}<i class="fa fa-sign-out"></i> </a>
                         </c:when>
                         <c:otherwise>
-                            <a href="/con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
+                            <a href="con?command=signIn">${SignIn} <i class=" fa fa-sign-in"></i></a>
                         </c:otherwise>
                     </c:choose>
                 </div>

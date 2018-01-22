@@ -46,8 +46,8 @@
                     </div>
                     <div class="btn-login">
                         <button type="submit" class="btn btn-success btn-block">${Submit}</button>
-                        <a href="/con?command=forRegist"> ${Registration}</a>
-                        <a href="/con?command=home">${Home}</a>
+                        <a href="con?command=forRegist"> ${Registration}</a>
+                        <a href="con?command=home">${Home}</a>
                     </div>
                 </form>
                 <!-- form end -->

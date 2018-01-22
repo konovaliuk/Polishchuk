@@ -22,7 +22,7 @@ public class LanguageUkCommand implements ICommand {
      */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Config.set(request.getSession(), Config.FMT_LOCALE, UKRAINIAN);
+        Config.set(request.getSession(false), Config.FMT_LOCALE, UKRAINIAN);
         LOGGER.info("Language was changed on UA");
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
     }

@@ -671,3 +671,323 @@
 17:22:30,047 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:56 - Was called command: ua.com.delivery.web.command.ConditionCommand@4e7c4578
 17:22:30,047 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:52 - You are successful getting counts of records
 17:22:30,056 INFO  Controller.http-nio-8080-exec-2:processRequest:73 - Forward to: /pages/conditionPage.jsp
+00:31:56,852 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@72c1dedf
+00:31:56,863 INFO  DirectionService.http-nio-8080-exec-4:countDirectionRecords:55 - You are successful getting counts of records
+00:31:57,441 INFO  ConditionCommand.http-nio-8080-exec-4:execute:25 - Was showed table with tariff
+00:31:57,448 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/conditionPage.jsp
+00:32:03,979 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@10a3926b
+00:32:03,981 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /index.jsp
+00:32:05,891 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@10a3926b
+00:32:05,892 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /index.jsp
+00:32:10,666 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@72c1dedf
+00:32:10,667 INFO  DirectionService.http-nio-8080-exec-4:countDirectionRecords:55 - You are successful getting counts of records
+00:32:10,670 INFO  ConditionCommand.http-nio-8080-exec-4:execute:25 - Was showed table with tariff
+00:32:10,670 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/conditionPage.jsp
+00:54:46,991 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6247e20
+00:54:46,996 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:55 - You are successful getting counts of records
+00:54:47,713 INFO  ConditionCommand.http-nio-8080-exec-2:execute:25 - Was showed table with tariff
+00:54:47,720 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/conditionPage.jsp
+00:56:58,748 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@6fd740f6
+00:56:58,754 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /index.jsp
+00:57:00,216 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@6fd740f6
+00:57:00,218 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
+00:59:25,310 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@5b533403
+00:59:25,320 INFO  DirectionService.http-nio-8080-exec-1:countDirectionRecords:55 - You are successful getting counts of records
+00:59:25,928 INFO  ConditionCommand.http-nio-8080-exec-1:execute:25 - Was showed table with tariff
+00:59:25,936 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/conditionPage.jsp
+00:59:33,067 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@5b533403
+00:59:33,068 INFO  DirectionService.http-nio-8080-exec-10:countDirectionRecords:55 - You are successful getting counts of records
+00:59:33,074 INFO  ConditionCommand.http-nio-8080-exec-10:execute:25 - Was showed table with tariff
+00:59:33,074 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:01:57,687 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@32dfba25
+01:01:57,696 INFO  DirectionService.http-nio-8080-exec-6:countDirectionRecords:55 - You are successful getting counts of records
+01:01:58,511 INFO  ConditionCommand.http-nio-8080-exec-6:execute:25 - Was showed table with tariff
+01:01:58,518 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:02:04,340 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@32dfba25
+01:02:04,342 INFO  DirectionService.http-nio-8080-exec-1:countDirectionRecords:55 - You are successful getting counts of records
+01:02:04,348 INFO  ConditionCommand.http-nio-8080-exec-1:execute:25 - Was showed table with tariff
+01:02:04,349 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:03:04,304 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@4a2cd53d
+01:03:04,315 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:55 - You are successful getting counts of records
+01:03:04,922 INFO  ConditionCommand.http-nio-8080-exec-2:execute:25 - Was showed table with tariff
+01:03:04,929 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:03:07,860 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@3072067e
+01:03:07,895 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:45 - It's a list from/to city
+01:03:07,895 INFO  CalculatorCommand.http-nio-8080-exec-6:execute:27 - To the page was added all list of cities
+01:03:07,896 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:03:16,578 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@33274b6c
+01:03:16,578 INFO  ContactCommand.http-nio-8080-exec-2:execute:21 - Was forward to contact page.
+01:03:16,579 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:03:20,554 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@3072067e
+01:03:20,557 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:45 - It's a list from/to city
+01:03:20,558 INFO  CalculatorCommand.http-nio-8080-exec-6:execute:27 - To the page was added all list of cities
+01:03:20,558 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:03:24,313 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@290f3bf7
+01:03:24,315 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /index.jsp
+01:03:29,365 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@4a2cd53d
+01:03:29,365 INFO  DirectionService.http-nio-8080-exec-10:countDirectionRecords:55 - You are successful getting counts of records
+01:03:29,368 INFO  ConditionCommand.http-nio-8080-exec-10:execute:25 - Was showed table with tariff
+01:03:29,369 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:05:27,076 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@7ebd67c5
+01:05:27,094 INFO  ContactCommand.http-nio-8080-exec-4:execute:21 - Was forward to contact page.
+01:05:27,105 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:05:29,708 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@411a844a
+01:05:29,714 INFO  DirectionService.http-nio-8080-exec-6:countDirectionRecords:55 - You are successful getting counts of records
+01:05:30,639 INFO  ConditionCommand.http-nio-8080-exec-6:execute:25 - Was showed table with tariff
+01:05:30,641 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:05:32,869 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@2a36363a
+01:05:32,893 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:45 - It's a list from/to city
+01:05:32,903 INFO  CalculatorCommand.http-nio-8080-exec-2:execute:27 - To the page was added all list of cities
+01:05:32,904 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:05:39,260 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@c6a2c33
+01:05:39,261 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
+01:05:39,721 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@c6a2c33
+01:05:39,722 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:05:40,974 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@7ebd67c5
+01:05:40,976 INFO  ContactCommand.http-nio-8080-exec-6:execute:21 - Was forward to contact page.
+01:05:40,978 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:10:06,550 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@2b534068
+01:10:06,560 INFO  DirectionService.http-nio-8080-exec-4:countDirectionRecords:55 - You are successful getting counts of records
+01:10:07,120 INFO  ConditionCommand.http-nio-8080-exec-4:execute:25 - Was showed table with tariff
+01:10:07,131 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:19:54,435 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@185b7658
+01:19:54,446 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:55 - You are successful getting counts of records
+01:19:54,960 INFO  ConditionCommand.http-nio-8080-exec-2:execute:25 - Was showed table with tariff
+01:19:54,970 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:19:57,563 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@6448c7f5
+01:19:57,581 INFO  DirectionService.http-nio-8080-exec-10:searchFromToCity:45 - It's a list from/to city
+01:19:57,582 INFO  CalculatorCommand.http-nio-8080-exec-10:execute:27 - To the page was added all list of cities
+01:19:57,582 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:20:00,719 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@1a484985
+01:20:00,720 INFO  ContactCommand.http-nio-8080-exec-2:execute:21 - Was forward to contact page.
+01:20:00,720 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:20:02,600 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@284f4cd
+01:20:02,601 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/loginPage.jsp
+01:20:06,515 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5f30b546
+01:20:06,537 INFO  LoginService.http-nio-8080-exec-5:existUsername:136 - Polik: is present in our DB
+01:20:06,537 INFO  LoginService.http-nio-8080-exec-5:checkUserPassword:50 - Password is ok for admin or user
+01:20:06,539 INFO  LoginService.http-nio-8080-exec-5:checkIfAdmin:72 - Password is ok for user
+01:20:06,540 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:20:38,370 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@185b7658
+01:20:38,371 INFO  DirectionService.http-nio-8080-exec-8:countDirectionRecords:55 - You are successful getting counts of records
+01:20:38,381 INFO  ConditionCommand.http-nio-8080-exec-8:execute:25 - Was showed table with tariff
+01:20:38,382 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:20:42,549 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@76340001
+01:20:42,551 INFO  DirectionService.http-nio-8080-exec-3:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+01:20:42,555 INFO  DirectionService.http-nio-8080-exec-3:countDirectionRecords:55 - You are successful getting counts of records
+01:20:42,560 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:31:04,372 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@69fe868f
+01:31:04,381 INFO  DirectionService.http-nio-8080-exec-5:countDirectionRecords:55 - You are successful getting counts of records
+01:31:04,791 INFO  ConditionCommand.http-nio-8080-exec-5:execute:25 - Was showed table with tariff
+01:31:04,797 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:31:07,052 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@6448c7f5
+01:31:07,069 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:45 - It's a list from/to city
+01:31:07,070 INFO  CalculatorCommand.http-nio-8080-exec-6:execute:27 - To the page was added all list of cities
+01:31:07,071 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:31:11,550 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@1eca5e0c
+01:31:11,550 INFO  ContactCommand.http-nio-8080-exec-8:execute:21 - Was forward to contact page.
+01:31:11,551 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:31:13,893 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@21537013
+01:31:13,894 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:31:15,828 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@313f9b91
+01:31:15,829 INFO  LanguageUkCommand.http-nio-8080-exec-4:execute:26 - Language was changed on UA
+01:31:15,829 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+01:31:21,272 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageEnCommand@8d6415b
+01:31:21,273 INFO  LanguageEnCommand.http-nio-8080-exec-6:execute:25 - Language was changed on EN
+01:31:21,274 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /index.jsp
+01:31:36,678 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@60e4fd11
+01:31:36,678 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/loginPage.jsp
+01:31:41,327 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@3fc49cf9
+01:31:41,346 INFO  LoginService.http-nio-8080-exec-3:existUsername:136 - Polik: is present in our DB
+01:31:41,346 INFO  LoginService.http-nio-8080-exec-3:checkUserPassword:50 - Password is ok for admin or user
+01:31:41,346 INFO  LoginService.http-nio-8080-exec-3:checkIfAdmin:72 - Password is ok for user
+01:31:41,347 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
+01:31:43,531 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@313f9b91
+01:31:43,531 INFO  LanguageUkCommand.http-nio-8080-exec-10:execute:26 - Language was changed on UA
+01:31:43,532 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /index.jsp
+01:31:46,194 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@6448c7f5
+01:31:46,198 INFO  DirectionService.http-nio-8080-exec-5:searchFromToCity:45 - It's a list from/to city
+01:31:46,199 INFO  CalculatorCommand.http-nio-8080-exec-5:execute:27 - To the page was added all list of cities
+01:31:46,201 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:31:47,893 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@69fe868f
+01:31:47,893 INFO  DirectionService.http-nio-8080-exec-4:countDirectionRecords:55 - You are successful getting counts of records
+01:31:47,899 INFO  ConditionCommand.http-nio-8080-exec-4:execute:25 - Was showed table with tariff
+01:31:47,900 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:31:49,706 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@313f9b91
+01:31:49,707 INFO  LanguageUkCommand.http-nio-8080-exec-6:execute:26 - Language was changed on UA
+01:31:49,707 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /index.jsp
+01:31:52,676 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@69fe868f
+01:31:52,676 INFO  DirectionService.http-nio-8080-exec-7:countDirectionRecords:55 - You are successful getting counts of records
+01:31:52,681 INFO  ConditionCommand.http-nio-8080-exec-7:execute:25 - Was showed table with tariff
+01:31:52,681 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:32:05,740 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@7d10f764
+01:32:05,743 INFO  DirectionService.http-nio-8080-exec-9:searchFromToCity:45 - It's a list from/to city
+01:32:05,744 INFO  OrderCommand.http-nio-8080-exec-9:execute:30 - Was forward to order page
+01:32:05,744 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/orderPage.jsp
+01:32:59,748 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@776cf71f
+01:32:59,751 INFO  LanguageUkCommand.http-nio-8080-exec-4:execute:26 - Language was changed on UA
+01:32:59,756 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+01:33:04,536 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@3256439c
+01:33:04,539 INFO  ContactCommand.http-nio-8080-exec-6:execute:21 - Was forward to contact page.
+01:33:04,539 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:33:07,231 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@6b08ed82
+01:33:07,232 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /index.jsp
+01:33:09,435 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@776cf71f
+01:33:09,435 INFO  LanguageUkCommand.http-nio-8080-exec-3:execute:26 - Language was changed on UA
+01:33:09,439 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
+01:33:10,799 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageEnCommand@5d8856c4
+01:33:10,800 INFO  LanguageEnCommand.http-nio-8080-exec-5:execute:25 - Language was changed on EN
+01:33:10,800 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:33:12,898 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@f126b9d
+01:33:12,905 INFO  DirectionService.http-nio-8080-exec-4:countDirectionRecords:55 - You are successful getting counts of records
+01:33:13,719 INFO  ConditionCommand.http-nio-8080-exec-4:execute:25 - Was showed table with tariff
+01:33:13,720 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:33:15,883 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@1b12460a
+01:33:15,899 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+01:33:15,899 INFO  CalculatorCommand.http-nio-8080-exec-7:execute:27 - To the page was added all list of cities
+01:33:15,900 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:33:18,274 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@3256439c
+01:33:18,275 INFO  ContactCommand.http-nio-8080-exec-2:execute:21 - Was forward to contact page.
+01:33:18,275 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:33:22,485 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@776cf71f
+01:33:22,486 INFO  LanguageUkCommand.http-nio-8080-exec-1:execute:26 - Language was changed on UA
+01:33:22,486 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /index.jsp
+01:33:23,896 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@1b12460a
+01:33:23,900 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:45 - It's a list from/to city
+01:33:23,900 INFO  CalculatorCommand.http-nio-8080-exec-8:execute:27 - To the page was added all list of cities
+01:33:23,901 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:33:25,218 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@f126b9d
+01:33:25,219 INFO  DirectionService.http-nio-8080-exec-3:countDirectionRecords:55 - You are successful getting counts of records
+01:33:25,226 INFO  ConditionCommand.http-nio-8080-exec-3:execute:25 - Was showed table with tariff
+01:33:25,227 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:33:26,528 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@6b08ed82
+01:33:26,529 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:33:29,341 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@3256439c
+01:33:29,342 INFO  ContactCommand.http-nio-8080-exec-4:execute:21 - Was forward to contact page.
+01:33:29,342 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:34:40,519 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@584a6c41
+01:34:40,526 INFO  LanguageUkCommand.http-nio-8080-exec-5:execute:26 - Language was changed on UA
+01:34:40,532 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:34:45,959 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@70265c7e
+01:34:45,964 INFO  ContactCommand.http-nio-8080-exec-6:execute:21 - Was forward to contact page.
+01:34:45,964 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:34:48,023 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@9e732db
+01:34:48,852 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+01:34:48,852 INFO  CalculatorCommand.http-nio-8080-exec-7:execute:27 - To the page was added all list of cities
+01:34:48,854 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:34:51,960 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageEnCommand@4bcc346b
+01:34:51,961 INFO  LanguageEnCommand.http-nio-8080-exec-1:execute:25 - Language was changed on EN
+01:34:51,961 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /index.jsp
+01:34:53,797 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@1d854db9
+01:34:53,798 INFO  DirectionService.http-nio-8080-exec-5:countDirectionRecords:55 - You are successful getting counts of records
+01:34:53,821 INFO  ConditionCommand.http-nio-8080-exec-5:execute:25 - Was showed table with tariff
+01:34:53,822 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:34:55,425 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@9e732db
+01:34:55,430 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:45 - It's a list from/to city
+01:34:55,430 INFO  CalculatorCommand.http-nio-8080-exec-1:execute:27 - To the page was added all list of cities
+01:34:55,436 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:34:56,312 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@70265c7e
+01:34:56,312 INFO  ContactCommand.http-nio-8080-exec-7:execute:21 - Was forward to contact page.
+01:34:56,313 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:34:57,476 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@40a5b5bd
+01:34:57,477 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
+01:35:11,833 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@584a6c41
+01:35:11,834 INFO  LanguageUkCommand.http-nio-8080-exec-9:execute:26 - Language was changed on UA
+01:35:11,835 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /index.jsp
+01:40:26,258 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6b499294
+01:40:26,265 INFO  DirectionService.http-nio-8080-exec-5:countDirectionRecords:55 - You are successful getting counts of records
+01:40:26,674 INFO  ConditionCommand.http-nio-8080-exec-5:execute:25 - Was showed table with tariff
+01:40:26,679 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:28,612 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@70265c7e
+01:40:28,645 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+01:40:28,646 INFO  CalculatorCommand.http-nio-8080-exec-7:execute:27 - To the page was added all list of cities
+01:40:28,647 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:40:30,571 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@1eca5e0c
+01:40:30,571 INFO  ContactCommand.http-nio-8080-exec-10:execute:21 - Was forward to contact page.
+01:40:30,572 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:40:32,071 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@70265c7e
+01:40:32,075 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:45 - It's a list from/to city
+01:40:32,076 INFO  CalculatorCommand.http-nio-8080-exec-6:execute:27 - To the page was added all list of cities
+01:40:32,076 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:40:33,165 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6b499294
+01:40:33,167 INFO  DirectionService.http-nio-8080-exec-7:countDirectionRecords:55 - You are successful getting counts of records
+01:40:33,170 INFO  ConditionCommand.http-nio-8080-exec-7:execute:25 - Was showed table with tariff
+01:40:33,171 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:34,855 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@6448c7f5
+01:40:34,863 INFO  DirectionService.http-nio-8080-exec-8:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+01:40:34,866 INFO  DirectionService.http-nio-8080-exec-8:countDirectionRecords:55 - You are successful getting counts of records
+01:40:34,869 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:36,886 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@6448c7f5
+01:40:36,886 INFO  DirectionService.http-nio-8080-exec-1:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+01:40:36,889 INFO  DirectionService.http-nio-8080-exec-1:countDirectionRecords:55 - You are successful getting counts of records
+01:40:36,893 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:39,285 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@6448c7f5
+01:40:39,286 INFO  DirectionService.http-nio-8080-exec-2:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+01:40:39,289 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:55 - You are successful getting counts of records
+01:40:39,292 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:40,671 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@6448c7f5
+01:40:40,672 INFO  DirectionService.http-nio-8080-exec-3:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+01:40:40,676 INFO  DirectionService.http-nio-8080-exec-3:countDirectionRecords:55 - You are successful getting counts of records
+01:40:40,679 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:40:42,181 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@65f9f88b
+01:40:42,181 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/loginPage.jsp
+01:40:46,442 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@1aa47ce9
+01:40:46,456 INFO  LoginService.http-nio-8080-exec-6:existUsername:136 - Polik: is present in our DB
+01:40:46,457 INFO  LoginService.http-nio-8080-exec-6:checkUserPassword:50 - Password is ok for admin or user
+01:40:46,457 INFO  LoginService.http-nio-8080-exec-6:checkIfAdmin:72 - Password is ok for user
+01:40:46,457 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /index.jsp
+01:40:48,227 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@70265c7e
+01:40:48,236 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+01:40:48,236 INFO  CalculatorCommand.http-nio-8080-exec-7:execute:27 - To the page was added all list of cities
+01:40:48,237 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:40:49,552 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@9e732db
+01:40:49,556 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:45 - It's a list from/to city
+01:40:49,557 INFO  OrderCommand.http-nio-8080-exec-8:execute:30 - Was forward to order page
+01:40:49,557 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/orderPage.jsp
+01:40:52,565 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@62267fc1
+01:40:52,565 INFO  LanguageUkCommand.http-nio-8080-exec-2:execute:26 - Language was changed on UA
+01:40:52,566 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /index.jsp
+01:40:54,346 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@70265c7e
+01:40:54,353 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:45 - It's a list from/to city
+01:40:54,353 INFO  CalculatorCommand.http-nio-8080-exec-3:execute:27 - To the page was added all list of cities
+01:40:54,354 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:40:56,825 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@62267fc1
+01:40:56,826 INFO  LanguageUkCommand.http-nio-8080-exec-4:execute:26 - Language was changed on UA
+01:40:56,827 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+01:40:58,311 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@70265c7e
+01:40:58,314 INFO  DirectionService.http-nio-8080-exec-9:searchFromToCity:45 - It's a list from/to city
+01:40:58,314 INFO  CalculatorCommand.http-nio-8080-exec-9:execute:27 - To the page was added all list of cities
+01:40:58,314 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:41:02,616 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6b499294
+01:41:02,617 INFO  DirectionService.http-nio-8080-exec-5:countDirectionRecords:55 - You are successful getting counts of records
+01:41:02,620 INFO  ConditionCommand.http-nio-8080-exec-5:execute:25 - Was showed table with tariff
+01:41:02,620 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:41:03,855 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@381de7c1
+01:41:03,855 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /index.jsp
+01:41:05,230 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6b499294
+01:41:05,231 INFO  DirectionService.http-nio-8080-exec-7:countDirectionRecords:55 - You are successful getting counts of records
+01:41:05,233 INFO  ConditionCommand.http-nio-8080-exec-7:execute:25 - Was showed table with tariff
+01:41:05,233 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:41:06,419 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@381de7c1
+01:41:06,420 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /index.jsp
+01:42:55,484 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@584a6c41
+01:42:55,488 INFO  LanguageUkCommand.http-nio-8080-exec-5:execute:26 - Language was changed on UA
+01:42:55,494 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /index.jsp
+01:42:58,468 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@1432357c
+01:42:58,470 INFO  ContactCommand.http-nio-8080-exec-9:execute:21 - Was forward to contact page.
+01:42:58,471 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/contactsPage.jsp
+01:42:59,980 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@7eb51c3e
+01:43:00,969 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:45 - It's a list from/to city
+01:43:00,970 INFO  CalculatorCommand.http-nio-8080-exec-8:execute:27 - To the page was added all list of cities
+01:43:00,975 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:43:01,603 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@7eb51c3e
+01:43:01,608 INFO  DirectionService.http-nio-8080-exec-10:searchFromToCity:45 - It's a list from/to city
+01:43:01,609 INFO  CalculatorCommand.http-nio-8080-exec-10:execute:27 - To the page was added all list of cities
+01:43:01,610 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+01:43:02,734 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@4bcc346b
+01:43:02,734 INFO  DirectionService.http-nio-8080-exec-1:countDirectionRecords:55 - You are successful getting counts of records
+01:43:02,798 INFO  ConditionCommand.http-nio-8080-exec-1:execute:25 - Was showed table with tariff
+01:43:02,800 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/conditionPage.jsp
+01:43:05,033 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageEnCommand@147cc5ba
+01:43:05,033 INFO  LanguageEnCommand.http-nio-8080-exec-3:execute:25 - Language was changed on EN
+01:43:05,034 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /index.jsp
