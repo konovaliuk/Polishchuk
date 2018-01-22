@@ -31,9 +31,6 @@ public class CreateOrderToCommand implements ICommand {
         String email = request.getParameter(EMAIL);
         String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
 
-//        Integer numberOfOrder = OrderService.getInstance().numberOfOrder();
-//        Integer totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
-
         OrderService.getInstance().createOrderTo(request, dateOfDelivery, addressOfDeparture, cityReceipt, userName,
                 phone, weightOfParcel, email, typeOfParcel);
 

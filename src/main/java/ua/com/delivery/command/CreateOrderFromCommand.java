@@ -30,11 +30,9 @@ public class CreateOrderFromCommand implements ICommand {
         int weightOfParcel = Integer.parseInt(request.getParameter(WEIGHT_OF_PARCEL));
         String email = request.getParameter(EMAIL);
         String typeOfParcel = request.getParameter(TYPE_OF_PARCEL);
-        int numberOfOrder = OrderService.getInstance().numberOfOrder();
-        int totalPrice = OrderService.getInstance().totalPriceOfReceipt(weightOfParcel);
 
-        OrderService.getInstance().createOrderFrom(request, numberOfOrder, dateOfReceipt, cityDeparture,
-                userName, phone, addressToDelivery, weightOfParcel, email, totalPrice, typeOfParcel);
+        OrderService.getInstance().createOrderFrom(request, dateOfReceipt, cityDeparture,
+                userName, phone, addressToDelivery, weightOfParcel, email, typeOfParcel);
 
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }

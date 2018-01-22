@@ -615,3 +615,23 @@
 03:02:04,701 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.CreateOrderToCommand@4d6ae84c
 03:02:04,760 INFO  OrderToWarehouse.http-nio-8080-exec-6:createOrderToWarehouse:46 - Order to warehouse was successful created
 03:02:04,764 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forward to: /pages/paymentPage.jsp
+03:29:51,992 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.SignInCommand@66271915
+03:29:52,001 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forward to: /pages/loginPage.jsp
+03:29:57,244 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:56 - Was called command: ua.com.delivery.command.LoginCommand@523f9f6b
+03:29:57,723 INFO  LoginService.http-nio-8080-exec-8:existUsername:82 - Polik: is present in our DB
+03:29:57,724 INFO  Controller.http-nio-8080-exec-8:processRequest:73 - Forward to: /index.jsp
+03:30:00,982 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.LogoutCommand@5d56942
+03:30:00,982 INFO  LogoutCommand.http-nio-8080-exec-4:execute:19 - Was destroyed session: 3817906627EB05B53F79EFD4BBC6A7A5
+03:30:00,983 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forward to: /index.jsp
+03:57:47,232 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:56 - Was called command: ua.com.delivery.command.ConditionCommand@5c542abe
+03:57:47,845 INFO  Controller.http-nio-8080-exec-1:processRequest:73 - Forward to: /pages/conditionPage.jsp
+03:57:51,762 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@a9a1b4
+03:57:51,823 INFO  Controller.http-nio-8080-exec-3:processRequest:73 - Forward to: /pages/conditionPage.jsp
+03:57:55,785 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@a9a1b4
+03:57:55,793 INFO  Controller.http-nio-8080-exec-4:processRequest:73 - Forward to: /pages/conditionPage.jsp
+03:57:58,581 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@a9a1b4
+03:57:58,589 INFO  Controller.http-nio-8080-exec-7:processRequest:73 - Forward to: /pages/conditionPage.jsp
+03:58:02,780 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:56 - Was called command: ua.com.delivery.command.PaginationCommand@a9a1b4
+03:58:02,789 INFO  Controller.http-nio-8080-exec-5:processRequest:73 - Forward to: /pages/conditionPage.jsp
+03:58:05,697 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:56 - Was called command: ua.com.delivery.command.HomeCommand@578ac7b0
+03:58:05,697 INFO  Controller.http-nio-8080-exec-6:processRequest:73 - Forward to: /index.jsp

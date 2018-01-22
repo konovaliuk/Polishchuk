@@ -1,7 +1,7 @@
 package ua.com.delivery.command;
 
 import ua.com.delivery.controller.utilController.PageConfiguration;
-import ua.com.delivery.service.DirectionService;
+import ua.com.delivery.service.CalculateService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -19,12 +19,7 @@ public class CalculateCommand implements ICommand {
         String toCity = request.getParameter(TO_CITY);
         int weight = Integer.parseInt(request.getParameter(WEIGHT));
 
-        Integer price = DirectionService.getInstance().priceForCity(fromCity, toCity, weight);
-        Integer priceByWeight = DirectionService.getInstance().priceByWeight(weight);
-        Integer priceBetweenCity = DirectionService.getInstance().priceBetweenCity(fromCity, toCity);
-        request.setAttribute("priceFromToCity", price);
-        request.setAttribute("priceByWeight", priceByWeight);
-        request.setAttribute("priceBetweenCity", priceBetweenCity);
+        CalculateService.getInstance().calculatePrice(request, fromCity, toCity, weight);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CALCULATOR_PAGE);
     }
 }

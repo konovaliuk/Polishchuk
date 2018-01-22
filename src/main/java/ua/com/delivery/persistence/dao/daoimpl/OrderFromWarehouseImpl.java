@@ -16,7 +16,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
     private static final String DELETE_ORDER_FROM_WAREHOUSE_BY_ID = "DELETE FROM OrderFromWarehouse WHERE order_from_warehouseID=?";
     private static final String UPDATE_DATA_ORDER_FROM_WAREHOUSE = "UPDATE OrderFromWarehouse SET number_of_order=?," +
             " date_to_delivery=?, city_departure=?, user_name=?, phone=?, address_to_delivery=?, weight=?,  email=?, " +
-            "type_of_parcel=?, total_price=? WHERE order_from_warehouseID=?";
+            "type_of_parcel=?, total_price=?, user_id=?, direction_id=?, parcel_price_id=? WHERE order_from_warehouseID=?";
     private static final String CREATE_ORDER_FROM_WAREHOUSE = "INSERT INTO OrderFromWarehouse (number_of_order, " +
             "date_to_delivery, city_departure, user_name, phone, address_to_delivery, weight, email, " +
             "type_of_parcel,  total_price, user_id, direction_id, parcel_price_id)" +
@@ -72,6 +72,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setEmail(resultSet.getString("email"));
                     orderFromWarehouse.setTypeOfParcel(resultSet.getString("type_of_parcel"));
                     orderFromWarehouse.setTotalPrice(resultSet.getInt("total_price"));
+                    orderFromWarehouse.setUserId(resultSet.getLong("user_id"));
+                    orderFromWarehouse.setUserId(resultSet.getLong("direction_id"));
+                    orderFromWarehouse.setUserId(resultSet.getLong("parcel_price_id"));
                     orderFromWarehouseList.add(orderFromWarehouse);
                 } while (resultSet.next());
             } else {
@@ -106,6 +109,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setEmail(resultSet.getString("email"));
                     orderFromWarehouse.setTypeOfParcel(resultSet.getString("type_of_parcel"));
                     orderFromWarehouse.setTotalPrice(resultSet.getInt("total_price"));
+                    orderFromWarehouse.setUserId(resultSet.getLong("user_id"));
+                    orderFromWarehouse.setDirectionId(resultSet.getLong("direction_id"));
+                    orderFromWarehouse.setParcelPriceId(resultSet.getLong("parcel_price_id"));
 
                     preparedStatement.executeUpdate();
                 } while (resultSet.next());
@@ -135,6 +141,9 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setString(9, orderFromWarehouse.getTypeOfParcel());
             preparedStatement.setInt(10, orderFromWarehouse.getTotalPrice());
             preparedStatement.setLong(11, orderFromWarehouse.getOrderFromWarehouseID());
+            preparedStatement.setLong(12, orderFromWarehouse.getUserId());
+            preparedStatement.setLong(13, orderFromWarehouse.getDirectionId());
+            preparedStatement.setLong(14, orderFromWarehouse.getParcelPriceId());
             preparedStatement.executeUpdate();
             connection.commit();
             LOGGER.info("Order from warehouse with id:  " + orderFromWarehouse.getOrderFromWarehouseID() + " was updated");
