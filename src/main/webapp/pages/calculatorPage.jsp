@@ -161,7 +161,7 @@
                         </div>
                         <div class="block__element">
                             <label>${DeclaredPrice}</label>
-                            <input type="number" min="10" required=""/>
+                            <input type="number" min="10" required="" name="declaredPrice"/>
                         </div>
                         <div class="block__element">
                             <label>${Weight}</label>
@@ -182,11 +182,13 @@
                             <h3>${CalculationPrice}</h3>
                             <span>${ParcelWeightPrice}</span><br>
                             <span>${BetweenCityPrice}</span><br>
+                            <span>${DeclaredPrice}</span><br>
                         </div>
                         <div class="col-md-4 col-lg-4">
                             <h3>${Price} (${Money})</h3>
                             <span>${priceByWeight} </span><br>
                             <span>${priceBetweenCity}</span><br>
+                            <span>${declaredPrice}</span><br>
 
                         </div>
                         <div class="offset-md-3 col-md-5 offset-lg-3 col-lg-5">

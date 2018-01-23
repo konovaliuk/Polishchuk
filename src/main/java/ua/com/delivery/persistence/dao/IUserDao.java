@@ -20,6 +20,9 @@ public interface IUserDao {
     //will return us one user by username
     User getUserByUsername(String username);
 
+    //will return us one user by email
+    User getUserByEmail(String email);
+
     //this part will be update our user
     User updateUser(User user);
 

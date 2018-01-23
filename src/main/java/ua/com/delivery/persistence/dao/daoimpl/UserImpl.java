@@ -13,7 +13,8 @@ public class UserImpl implements IUserDao {
     private static final Logger LOGGER = Logger.getLogger(UserImpl.class);
     private static final String GET_LIST_USERS = "SELECT * FROM Users";
     private static final String GET_BY_ID = "SELECT * FROM Users WHERE userID=?";
-    private static final String GET_USER_BY_USERNAME = "SELECT * FROM Users WHERE username=?";
+    private static final String GET_USER_BY_USERNAME = "SELECT * FROM Users WHERE BINARY username=?";
+    private static final String GET_USER_BY_EMAIL = "SELECT * FROM Users WHERE email=?";
     private static final String DELETE_USER_BY_USERNAME = "DELETE FROM Users WHERE username=?";
     private static final String UPDATE_DATA_USER = "UPDATE Users SET username=?, password=?, first_name=?," +
             "second_name=?, email=?, address=?, city=?, phone=?, admin=? WHERE userID=?";
@@ -134,7 +135,7 @@ public class UserImpl implements IUserDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
-
+                    System.out.println("saaaaaaaaaaaaaaaaa");
                     user.setUserID(resultSet.getLong("userID"));
                     user.setUsername(resultSet.getString("username"));
                     user.setPassword(resultSet.getString("password"));
@@ -156,6 +157,50 @@ public class UserImpl implements IUserDao {
         }
         return user;
     }
+    ////////////////////////////////
+
+    /**
+     * Method for getting user by email
+     *
+     * @param email
+     * @return user
+     */
+    @Override
+    public User getUserByEmail(String email) {
+        User user = new User();
+        try (Connection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(GET_USER_BY_EMAIL)
+        ) {
+            preparedStatement.setString(1, email);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                do {
+
+                    user.setUserID(resultSet.getLong("userID"));
+                    user.setUsername(resultSet.getString("username"));
+                    user.setPassword(resultSet.getString("password"));
+                    user.setFirstName(resultSet.getString("first_name"));
+                    user.setSecondName(resultSet.getString("second_name"));
+                    user.setEmail(resultSet.getString("email"));
+                    user.setAddress(resultSet.getString("address"));
+                    user.setCity(resultSet.getString("city"));
+                    user.setPhone(resultSet.getInt("phone"));
+                    user.setAdmin(resultSet.getBoolean("admin"));
+                    preparedStatement.execute();
+                } while (resultSet.next());
+            } else {
+                LOGGER.info("No user with this email");
+                user = null;
+            }
+        } catch (SQLException e) {
+            LOGGER.error("Problem in UserImpl, in method getUserByEmail");
+        }
+
+        return user;
+    }
+
+
+    ////////////////////////////
 
     /**
      * Method for updating user

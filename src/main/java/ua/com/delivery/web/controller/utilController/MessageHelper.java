@@ -12,6 +12,9 @@ public class MessageHelper {
     public static final String USER_CREATE = "messageHelper.userCreate";
     public static final String PAGE_IS_NULL = "messageHelper.pageIsNull";
     public static final String SERVLET_EXCEPTION = "messageHelper.servlet";
+    public static final String USERNAME_EXCEPTION = "messageHelper.username";
+    public static final String PASSWORD_EXCEPTION = "messageHelper.password";
+    public static final String EMAIL_EXCEPTION = "messageHelper.email";
     public static final String WRONG_USERNAME = "messageHelper.wrongUsername";
     public static final String WRONG_PASSWORD = "messageHelper.wrongPassword";
     public static final String EXIST_USERNAME = "messageHelper.existUsername";

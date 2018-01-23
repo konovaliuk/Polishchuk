@@ -52,15 +52,39 @@ public class RegistrationService {
      */
     public String registration(HttpServletRequest request, String username, String password, String firstName,
                                String secondName, String email, String address, String city, String phone) {
+        boolean usernameOk = Validation.getInstance().validUsername(username);
+        boolean passwordOk = Validation.getInstance().validPassword(password);
+        boolean emailOk = Validation.getInstance().validEmail(email);
         String page;
         if (LoginService.getInstance().existUsername(username) == null) {
             UserImpl userImpl = factory.createUserDao();
             User user = new User();
-            user.setUsername(username);
-            user.setPassword(password);
+            if (usernameOk) {
+                user.setUsername(username);
+            } else {
+                request.setAttribute("usernameBoolean", true);
+                request.setAttribute("usernameException",
+                        MessageHelper.getInstance().getMessageException(MessageHelper.USERNAME_EXCEPTION));
+                return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+            }
+            if (passwordOk){
+                user.setPassword(password);
+            } else {
+                request.setAttribute("passwordBoolean", true);
+                request.setAttribute("passwordException",
+                        MessageHelper.getInstance().getMessageException(MessageHelper.PASSWORD_EXCEPTION));
+                return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+            }
             user.setFirstName(firstName);
             user.setSecondName(secondName);
-            user.setEmail(email);
+            if (emailOk && existEmail(email) == null){
+                user.setEmail(email);
+            } else {
+                request.setAttribute("emailBoolean", true);
+                request.setAttribute("emailException",
+                        MessageHelper.getInstance().getMessageException(MessageHelper.EMAIL_EXCEPTION));
+                return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+            }
             user.setAddress(address);
             user.setCity(city);
             user.setPhone(Integer.valueOf(phone));
@@ -77,11 +101,22 @@ public class RegistrationService {
                 page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.MAIN_PAGE);
             }
         } else {
-            LOGGER.info("Was attempt to registration with exist username");
+            LOGGER.info("Was attempt to registration with existing data");
             request.setAttribute("existUsername",
-                    MessageHelper.getInstance().getMessageException(MessageHelper.EXIST_USERNAME));
+                    MessageHelper.getInstance().getMessageException(
+                            MessageHelper.EXIST_USERNAME));
             page = PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
         }
         return page;
+    }
+
+    private User existEmail(String email) {
+        User user = factory.createUserDao().getUserByEmail(email);
+        if (user != null) {
+            LOGGER.info(email + ": is present in our DB");
+        } else {
+            LOGGER.info(email + ": isn't present in our DB");
+        }
+        return user;
     }
 }

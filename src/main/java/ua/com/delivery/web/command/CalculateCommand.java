@@ -14,6 +14,7 @@ public class CalculateCommand implements ICommand {
     private static final String FROM_CITY = "from_city";
     private static final String TO_CITY = "to_city";
     private static final String WEIGHT = "weight";
+    private static final String DECLARED_PRICE = "declaredPrice";
 
     /**
      * Method for calculate price of delivery
@@ -25,8 +26,9 @@ public class CalculateCommand implements ICommand {
         String fromCity = request.getParameter(FROM_CITY);
         String toCity = request.getParameter(TO_CITY);
         int weight = Integer.parseInt(request.getParameter(WEIGHT));
+        int declaredPrice = Integer.parseInt(request.getParameter(DECLARED_PRICE));
 
-        CalculateService.getInstance().calculatePrice(request, fromCity, toCity, weight);
+        CalculateService.getInstance().calculatePrice(request, fromCity, toCity, weight, declaredPrice);
         LOGGER.info("Was calculating price of delivery.");
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.CALCULATOR_PAGE);
     }

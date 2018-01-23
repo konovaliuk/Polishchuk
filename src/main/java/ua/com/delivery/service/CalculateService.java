@@ -28,12 +28,13 @@ public class CalculateService {
      * Method for calculating price between city
      * with weight from user
      */
-    public void calculatePrice(HttpServletRequest request, String fromCity, String toCity, int weight) {
+    public void calculatePrice(HttpServletRequest request, String fromCity, String toCity, int weight, int declaredPrice) {
         Integer price = DirectionService.getInstance().priceForCity(fromCity, toCity, weight);
         Integer priceByWeight = DirectionService.getInstance().priceByWeight(weight);
         Integer priceBetweenCity = DirectionService.getInstance().priceBetweenCity(fromCity, toCity);
         request.setAttribute("priceFromToCity", price);
         request.setAttribute("priceByWeight", priceByWeight);
         request.setAttribute("priceBetweenCity", priceBetweenCity);
+        request.setAttribute("declaredPrice", declaredPrice);
     }
 }

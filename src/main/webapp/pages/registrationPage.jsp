@@ -1,4 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 
 <fmt:setBundle basename="language"/>
@@ -27,10 +28,26 @@
 <%--REGISTRATION--%>
 <section id="registrrationForm" class="registrationForm">
     <div class="existUsername">
-        ${existUsername} </div>
-    <div class="createUser">
-        ${createUser}
+        <c:choose>
+            <c:when test="${usernameBoolean == true}">
+                ${usernameException}
+            </c:when>
+            <c:when test="${passwordBoolean == true}">
+                ${passwordException}
+            </c:when>
+            <c:when test="${emailBoolean == true}">
+                ${emailException}
+            </c:when>
+            <c:otherwise>
+                <div class="createUser">
+                        ${createUser}
+                </div>
+            </c:otherwise>
+        </c:choose>
+
+        ${existUsername}
     </div>
+
     <div class="box">
         <h2>${Registration}</h2>
         <form action="con" method="post" name="registrationForm">

@@ -25,9 +25,9 @@ public class RegistrationCommand implements ICommand {
      *
      * @param request
      * @param response
-     * @return page
      * @throws ServletException
      * @throws IOException
+     * @return page
      */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
