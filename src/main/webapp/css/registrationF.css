@@ -79,6 +79,16 @@ body {
 .box {
     width: 600px;
 }
+.existUsername{
+    font-size: 20px;
+    color: #ff4548;
+    text-align: center;
+}
+.createUser {
+    font-size: 20px;
+    color: #00b13d;
+    text-align: center;
+}
 .inputWrap {
     display: flex;
 }

@@ -75,6 +75,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
         </plugins>
         <finalName>PolikDelivery</finalName>
     </build>

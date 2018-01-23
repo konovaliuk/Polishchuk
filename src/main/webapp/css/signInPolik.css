@@ -2,7 +2,6 @@ body{
 	color: #020303;
 }
 .bg{
-	/*background: url("../images/bg.jpg") no-repeat; */
 	background: url(../img/login.jpg);
 	background-size: cover;
 	width: 100%;
@@ -66,4 +65,9 @@ body{
 }
 .btn-login .btn-success{
 	margin-bottom: 11px;
+}
+.wrongUsername {
+	color: #ff4548;
+	text-align: center;
+
 }

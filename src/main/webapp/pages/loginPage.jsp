@@ -51,8 +51,12 @@
                     </div>
                 </form>
                 <!-- form end -->
-                ${wrongUsername}
-                ${wrongPassword}
+                <div class="wrongUsername">
+                    ${wrongUsername} <br/>
+                    ${wrongPassword}
+                </div>
+
+
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
         </div>
