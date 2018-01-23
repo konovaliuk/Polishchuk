@@ -16,17 +16,17 @@
 git clone https://github.com/konovaliuk/Polishchuk.git
 
 2. Наступним кроком потрібно запустити ваш, попередньо встановлений, MySQL Server у терміналі, за допомогою команди: 
->                                         `sudo /etc/init.d/mysql start`
+>                                         sudo /etc/init.d/mysql start
 3. Далі використовуємо наш script, у якому знахиться код створення нашої бази та таблиць запускаємо його із командного рядка, за допомогою команди:
->                                 `sudo mysql -u  root -p root PolikDelivery.sql` 
+>                                 sudo mysql -u  root -p root PolikDelivery.sql
 Після чого ми повинні заповнити наші таблиці даними, тому використовуємо наступний script, у терміналі записуємо: 
->	                                    `sudo mysql -u  root -p root PolikDeliveryInsert.sql`
+>	                                    sudo mysql -u  root -p root PolikDeliveryInsert.sql
 4. Наступним кроком потрібно за допомогою Apache Maven виконати наступні команди для збирання нашого проекту: 
->                                                 `mvn clean install`
+>                                                 mvn clean install
 дана команда спочатку очистить папку target проекта, після чого вже  проведе компіляцію та перемістить проект у папку target, а також до вас у локальну директорію
 >
 5. Далі ми повинні запустити наш, відповідно встановлений, Apache Tomcat, для цього відкриваємо термінал і записуємо у ньому команду:  
->                                                   `cd /opt/tomcat9/bin` 
+>                                                   cd /opt/tomcat9/bin 
 після неї запускаємо наш сервер 
->	                                                     `sh startup.sh`
+>	                                                     sh startup.sh
 6. Осnаннім кроком буде перехід на сайт за посиланням у браузері: http://localhost:8080/PolikDelivery
