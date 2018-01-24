@@ -131,7 +131,6 @@
                 <input type="checkbox" id="test">
                 <label class="myButton" for="test">${CreateOrder}</label>
 
-                <%--<input class="myButton" type="button" value="${Pay}">--%>
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->

@@ -44,6 +44,10 @@ ul, li, p {
 }
 /* /HEADER */
 /* MENU */
+.buttonPay a{
+	background: #03a9f4;
+	color: darkred;
+}
 .topMenu {
 	padding: 20px 0;
 }

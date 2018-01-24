@@ -55,6 +55,7 @@ public class RegistrationService {
         boolean usernameOk = Validation.getInstance().validUsername(username);
         boolean passwordOk = Validation.getInstance().validPassword(password);
         boolean emailOk = Validation.getInstance().validEmail(email);
+        boolean phoneOk = Validation.getInstance().validPhone(phone);
         String page;
         if (LoginService.getInstance().existUsername(username) == null) {
             UserImpl userImpl = factory.createUserDao();
@@ -67,7 +68,7 @@ public class RegistrationService {
                         MessageHelper.getInstance().getMessageException(MessageHelper.USERNAME_EXCEPTION));
                 return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
             }
-            if (passwordOk){
+            if (passwordOk) {
                 user.setPassword(password);
             } else {
                 request.setAttribute("passwordBoolean", true);
@@ -77,7 +78,7 @@ public class RegistrationService {
             }
             user.setFirstName(firstName);
             user.setSecondName(secondName);
-            if (emailOk && existEmail(email) == null){
+            if (emailOk && existEmail(email) == null) {
                 user.setEmail(email);
             } else {
                 request.setAttribute("emailBoolean", true);
@@ -87,7 +88,14 @@ public class RegistrationService {
             }
             user.setAddress(address);
             user.setCity(city);
-            user.setPhone(Integer.valueOf(phone));
+            if (phoneOk) {
+                user.setPhone(Integer.valueOf(phone));
+            } else {
+                request.setAttribute("phoneBoolean", true);
+                request.setAttribute("phoneException",
+                        MessageHelper.getInstance().getMessageException(MessageHelper.PHONE_EXCEPTION));
+                return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.REGISTRATION_PAGE);
+            }
             user.setAdmin(false);
 
             userImpl.createUser(user);

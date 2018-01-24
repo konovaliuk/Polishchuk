@@ -38,6 +38,9 @@
             <c:when test="${emailBoolean == true}">
                 ${emailException}
             </c:when>
+            <c:when test="${phoneBoolean == true}">
+                ${phoneException}
+            </c:when>
             <c:otherwise>
                 <div class="createUser">
                         ${createUser}

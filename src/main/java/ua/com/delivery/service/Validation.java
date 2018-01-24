@@ -8,6 +8,7 @@ public class Validation {
     private static final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
     private static final String EMAIL_PATTERN = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
     private static final String USERNAME_PATTERN = "^[a-zA-Z]{3,15}$";
+    private static final String PHONE_PATTERN = "^\\+?([0-9]{3})\\)?[-. ]?([0-9]{4})[-. ]?([0-9]{5})$";
 
     /**
      * Singleton
@@ -71,5 +72,21 @@ public class Validation {
             LOGGER.info("Username wasn't passed the validation");
         }
         return validationUsername;
+    }
+
+    /**
+     * Validate Phone with regular expression
+     *
+     * @param phone for validation
+     * @return true valid Phone, false invalid Phone
+     */
+    public boolean validPhone(String phone) {
+        boolean validationPhone;
+        if (validationPhone = phone.matches(PHONE_PATTERN)) {
+            LOGGER.info("Phone successful passed the validation");
+        } else {
+            LOGGER.info("Phone wasn't passed the validation");
+        }
+        return validationPhone;
     }
 }

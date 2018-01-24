@@ -157,7 +157,6 @@ public class UserImpl implements IUserDao {
         }
         return user;
     }
-    ////////////////////////////////
 
     /**
      * Method for getting user by email
@@ -200,7 +199,6 @@ public class UserImpl implements IUserDao {
     }
 
 
-    ////////////////////////////
 
     /**
      * Method for updating user

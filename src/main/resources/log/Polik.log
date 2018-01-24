@@ -1747,3 +1747,93 @@
 16:37:51,338 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
 16:37:56,219 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.ForRegistrCommand@24bd6def
 16:37:56,220 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/registrationPage.jsp
+17:08:57,146 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@3bbdfdff
+17:08:57,183 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+17:11:06,115 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.CreateOrderFromCommand@541765ab
+17:11:06,118 ERROR Controller.http-nio-8080-exec-5:processRequest:62 - Exception in controller
+17:11:06,118 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/errorPage.jsp
+17:11:13,446 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@3bbdfdff
+17:11:13,451 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/loginPage.jsp
+17:11:43,073 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@1b12460a
+17:11:43,541 INFO  LoginService.http-nio-8080-exec-6:existUsername:136 - Polik: is present in our DB
+17:11:43,542 INFO  LoginService.http-nio-8080-exec-6:checkUserPassword:50 - Password is ok for admin or user
+17:11:43,542 INFO  LoginService.http-nio-8080-exec-6:checkIfAdmin:72 - Password is ok for user
+17:11:43,542 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /index.jsp
+17:11:47,122 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@276f9f5f
+17:11:47,123 INFO  ContactCommand.http-nio-8080-exec-7:execute:21 - Was forward to contact page.
+17:11:47,123 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/contactsPage.jsp
+17:11:50,981 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.CreateOrderFromCommand@541765ab
+17:11:50,983 ERROR Controller.http-nio-8080-exec-9:processRequest:62 - Exception in controller
+17:11:50,983 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/errorPage.jsp
+17:11:53,826 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@38c1e197
+17:11:53,847 INFO  DirectionService.http-nio-8080-exec-1:searchFromToCity:45 - It's a list from/to city
+17:11:53,847 INFO  OrderCommand.http-nio-8080-exec-1:execute:30 - Was forward to order page
+17:11:53,847 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/orderPage.jsp
+17:11:59,845 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@3bbdfdff
+17:11:59,846 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/loginPage.jsp
+17:12:10,063 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@1b12460a
+17:12:10,071 INFO  LoginService.http-nio-8080-exec-4:existUsername:136 - Superman: is present in our DB
+17:12:10,072 INFO  LoginService.http-nio-8080-exec-4:checkUserPassword:50 - Password is ok for admin or user
+17:12:10,072 INFO  LoginService.http-nio-8080-exec-4:checkIfAdmin:72 - Password is ok for user
+17:12:10,073 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+17:12:12,536 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@38c1e197
+17:12:12,540 INFO  DirectionService.http-nio-8080-exec-10:searchFromToCity:45 - It's a list from/to city
+17:12:12,541 INFO  OrderCommand.http-nio-8080-exec-10:execute:30 - Was forward to order page
+17:12:12,546 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/orderPage.jsp
+17:12:19,415 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.localization.LanguageUkCommand@19cdcd9f
+17:12:19,415 INFO  LanguageUkCommand.http-nio-8080-exec-2:execute:26 - Language was changed on UA
+17:12:19,416 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /index.jsp
+17:12:20,462 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@38c1e197
+17:12:20,466 INFO  DirectionService.http-nio-8080-exec-3:searchFromToCity:45 - It's a list from/to city
+17:12:20,467 INFO  OrderCommand.http-nio-8080-exec-3:execute:30 - Was forward to order page
+17:12:20,467 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/orderPage.jsp
+17:13:40,865 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.CreateOrderToCommand@4c6d07ee
+17:13:40,866 ERROR Controller.http-nio-8080-exec-6:processRequest:62 - Exception in controller
+17:13:40,866 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/errorPage.jsp
+17:14:06,641 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.CreateOrderToCommand@4c6d07ee
+17:14:06,705 INFO  OrderToWarehouse.http-nio-8080-exec-3:createOrderToWarehouse:50 - Order to warehouse was successful created
+17:14:06,711 INFO  OrderService.http-nio-8080-exec-3:createOrderTo:117 - Was successful created order to warehouse
+17:14:06,711 INFO  CreateOrderToCommand.http-nio-8080-exec-3:execute:48 - Was created order to warehouse
+17:14:06,711 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/paymentPage.jsp
+17:28:00,222 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@596c19d5
+17:28:00,235 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+17:28:02,182 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.ForRegistrCommand@7d10f764
+17:28:02,186 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/registrationPage.jsp
+17:29:18,074 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.RegistrationCommand@7ee1bc0a
+17:29:18,075 INFO  RegistrationCommand.http-nio-8080-exec-4:execute:42 - Was successful registration on page
+17:29:18,086 INFO  Validation.http-nio-8080-exec-4:validUsername:70 - Username successful passed the validation
+17:29:18,087 INFO  Validation.http-nio-8080-exec-4:validPassword:40 - Password wasn't passed the validation
+17:29:18,089 INFO  Validation.http-nio-8080-exec-4:validEmail:54 - Email successful passed the validation
+17:29:18,090 INFO  Validation.http-nio-8080-exec-4:validPhone:88 - Phone wasn't passed the validation
+17:29:18,763 INFO  UserImpl.http-nio-8080-exec-4:getUserByUsername:152 - No user with this username
+17:29:18,771 INFO  LoginService.http-nio-8080-exec-4:existUsername:138 - Butterfly: isn't present in our DB
+17:29:18,781 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/registrationPage.jsp
+17:30:02,502 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.RegistrationCommand@7ee1bc0a
+17:30:02,503 INFO  RegistrationCommand.http-nio-8080-exec-8:execute:42 - Was successful registration on page
+17:30:02,503 INFO  Validation.http-nio-8080-exec-8:validUsername:70 - Username successful passed the validation
+17:30:02,505 INFO  Validation.http-nio-8080-exec-8:validPassword:40 - Password wasn't passed the validation
+17:30:02,506 INFO  Validation.http-nio-8080-exec-8:validEmail:54 - Email successful passed the validation
+17:30:02,506 INFO  Validation.http-nio-8080-exec-8:validPhone:88 - Phone wasn't passed the validation
+17:30:02,514 INFO  UserImpl.http-nio-8080-exec-8:getUserByUsername:152 - No user with this username
+17:30:02,515 INFO  LoginService.http-nio-8080-exec-8:existUsername:138 - Butterfly: isn't present in our DB
+17:30:02,515 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/registrationPage.jsp
+17:31:12,300 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.RegistrationCommand@7ee1bc0a
+17:31:12,300 INFO  RegistrationCommand.http-nio-8080-exec-9:execute:42 - Was successful registration on page
+17:31:12,301 INFO  Validation.http-nio-8080-exec-9:validUsername:70 - Username successful passed the validation
+17:31:12,301 INFO  Validation.http-nio-8080-exec-9:validPassword:40 - Password wasn't passed the validation
+17:31:12,302 INFO  Validation.http-nio-8080-exec-9:validEmail:54 - Email successful passed the validation
+17:31:12,302 INFO  Validation.http-nio-8080-exec-9:validPhone:88 - Phone wasn't passed the validation
+17:31:12,304 INFO  UserImpl.http-nio-8080-exec-9:getUserByUsername:152 - No user with this username
+17:31:12,305 INFO  LoginService.http-nio-8080-exec-9:existUsername:138 - Butterfly: isn't present in our DB
+17:31:12,306 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/registrationPage.jsp
+17:32:12,756 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.RegistrationCommand@7ee1bc0a
+17:32:12,757 INFO  RegistrationCommand.http-nio-8080-exec-1:execute:42 - Was successful registration on page
+17:32:12,757 INFO  Validation.http-nio-8080-exec-1:validUsername:70 - Username successful passed the validation
+17:32:12,757 INFO  Validation.http-nio-8080-exec-1:validPassword:38 - Password successful passed the validation
+17:32:12,758 INFO  Validation.http-nio-8080-exec-1:validEmail:54 - Email successful passed the validation
+17:32:12,758 INFO  Validation.http-nio-8080-exec-1:validPhone:88 - Phone wasn't passed the validation
+17:32:12,761 INFO  UserImpl.http-nio-8080-exec-1:getUserByUsername:152 - No user with this username
+17:32:12,762 INFO  LoginService.http-nio-8080-exec-1:existUsername:138 - Butterfly: isn't present in our DB
+17:32:12,765 INFO  UserImpl.http-nio-8080-exec-1:getUserByEmail:191 - No user with this email
+17:32:12,766 INFO  RegistrationService.http-nio-8080-exec-1:existEmail:126 - zinno4ka@gmail.com: isn't present in our DB
+17:32:12,766 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/registrationPage.jsp
