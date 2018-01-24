@@ -63,7 +63,7 @@ public class LoginService {
      * @param user
      * @return page
      */
-    private String checkIfAdmin(User user, HttpServletRequest request) {
+    public String checkIfAdmin(User user, HttpServletRequest request) {
         String page;
         if (user.getAdmin()) {
             LOGGER.info("Password is ok for admin");

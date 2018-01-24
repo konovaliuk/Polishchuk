@@ -23,6 +23,7 @@ public class DirectionImpl implements IDirectionDao {
             "price_direction) VALUES (?, ?, ?, ?)";
 
 
+
     /**
      * Create direction  in database
      *

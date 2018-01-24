@@ -27,7 +27,6 @@ public class SimpleConnection {
             connection = DriverManager.getConnection(resourceBundle.getString("db_url"),
                     resourceBundle.getString("user"),
                     resourceBundle.getString("password"));
-            System.out.println("Connection Ok");
             connection.setAutoCommit(false);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();

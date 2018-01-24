@@ -1538,3 +1538,212 @@
 21:02:51,322 INFO  DirectionService.http-nio-8080-exec-8:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
 21:02:51,324 INFO  DirectionService.http-nio-8080-exec-8:countDirectionRecords:55 - You are successful getting counts of records
 21:02:51,326 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/conditionPage.jsp
+21:30:54,483 INFO  LogoutCommand.main:execute:28 - Was destroyed session: null
+22:31:16,434 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+22:31:59,701 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+22:33:34,609 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+22:36:05,575 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+22:37:56,041 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:04:54,513 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:04:54,518 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:04:54,518 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:04:54,519 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:04:54,519 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:04:54,520 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:16,481 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:05:16,485 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:16,486 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:16,486 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:05:16,486 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:16,487 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:51,727 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:05:51,740 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:51,742 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:51,743 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:05:51,744 INFO  Validation.main:validPassword:39 - Password wasn't passed the validation
+23:05:51,745 INFO  Validation.main:validPassword:37 - Password successful passed the validation
+23:07:33,804 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:07:33,811 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:07:33,812 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:07:33,813 INFO  Validation.main:validUsername:71 - Username wasn't passed the validation
+23:07:33,814 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:07:33,814 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:08:07,441 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:08:07,447 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:08:07,447 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:08:07,447 INFO  Validation.main:validUsername:71 - Username wasn't passed the validation
+23:08:07,448 INFO  Validation.main:validUsername:71 - Username wasn't passed the validation
+23:08:07,448 INFO  Validation.main:validUsername:69 - Username successful passed the validation
+23:09:39,656 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:39,661 INFO  Validation.main:validEmail:55 - Email wasn't passed the validation
+23:09:39,662 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:39,663 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:39,664 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:39,665 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:57,114 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:57,121 INFO  Validation.main:validEmail:55 - Email wasn't passed the validation
+23:09:57,122 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:57,122 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:57,123 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:09:57,124 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:39,625 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:39,631 INFO  Validation.main:validEmail:55 - Email wasn't passed the validation
+23:10:39,632 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:39,632 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:39,634 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:39,634 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:52,825 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:52,830 INFO  Validation.main:validEmail:55 - Email wasn't passed the validation
+23:10:52,830 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:52,831 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:52,832 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:10:52,833 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:11:21,728 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:11:21,732 INFO  Validation.main:validEmail:55 - Email wasn't passed the validation
+23:11:21,733 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:11:21,733 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:11:21,734 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+23:11:21,735 INFO  Validation.main:validEmail:53 - Email successful passed the validation
+02:01:07,103 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@596c19d5
+02:01:07,112 INFO  DirectionService.http-nio-8080-exec-9:countDirectionRecords:55 - You are successful getting counts of records
+02:01:07,622 INFO  ConditionCommand.http-nio-8080-exec-9:execute:25 - Was showed table with tariff
+02:01:07,630 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/conditionPage.jsp
+02:01:09,994 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@744d774e
+02:01:10,001 INFO  DirectionService.http-nio-8080-exec-10:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+02:01:10,013 INFO  DirectionService.http-nio-8080-exec-10:countDirectionRecords:55 - You are successful getting counts of records
+02:01:10,017 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/conditionPage.jsp
+02:01:12,211 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@2bc454a
+02:01:12,211 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/loginPage.jsp
+02:01:17,869 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5f30b546
+02:01:17,887 INFO  LoginService.http-nio-8080-exec-4:existUsername:136 - Polik: is present in our DB
+02:01:17,887 INFO  LoginService.http-nio-8080-exec-4:checkUserPassword:50 - Password is ok for admin or user
+02:01:17,887 INFO  LoginService.http-nio-8080-exec-4:checkIfAdmin:72 - Password is ok for user
+02:01:17,888 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+02:01:19,688 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@7f5eab49
+02:01:19,705 INFO  DirectionService.http-nio-8080-exec-6:searchFromToCity:45 - It's a list from/to city
+02:01:19,705 INFO  OrderCommand.http-nio-8080-exec-6:execute:30 - Was forward to order page
+02:01:19,705 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/orderPage.jsp
+02:01:20,063 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@7f5eab49
+02:01:20,069 INFO  DirectionService.http-nio-8080-exec-8:searchFromToCity:45 - It's a list from/to city
+02:01:20,070 INFO  OrderCommand.http-nio-8080-exec-8:execute:30 - Was forward to order page
+02:01:20,075 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/orderPage.jsp
+02:13:20,654 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@584a6c41
+02:13:20,665 INFO  ContactCommand.http-nio-8080-exec-5:execute:21 - Was forward to contact page.
+02:13:20,675 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/contactsPage.jsp
+02:17:14,258 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@68b2cebd
+02:17:14,266 INFO  ContactCommand.http-nio-8080-exec-4:execute:21 - Was forward to contact page.
+02:17:14,276 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/contactsPage.jsp
+02:20:50,103 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@16f01c8e
+02:20:50,118 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/loginPage.jsp
+02:20:54,645 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.MissingCommand@6bb5dbe
+02:20:54,649 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/errorPage.jsp
+02:21:01,794 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@16f01c8e
+02:21:01,794 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/loginPage.jsp
+02:21:07,760 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@765013f
+02:21:08,264 INFO  LoginService.http-nio-8080-exec-2:existUsername:136 - Polik: is present in our DB
+02:21:08,265 INFO  LoginService.http-nio-8080-exec-2:checkUserPassword:50 - Password is ok for admin or user
+02:21:08,265 INFO  LoginService.http-nio-8080-exec-2:checkIfAdmin:72 - Password is ok for user
+02:21:08,266 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /index.jsp
+02:21:09,806 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@7f5eab49
+02:21:09,828 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+02:21:09,829 INFO  OrderCommand.http-nio-8080-exec-7:execute:30 - Was forward to order page
+02:21:09,829 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/orderPage.jsp
+02:21:19,756 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.MissingCommand@6bb5dbe
+02:21:19,758 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/errorPage.jsp
+02:22:10,887 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.OrderCommand@7f5eab49
+02:22:10,891 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+02:22:10,891 INFO  OrderCommand.http-nio-8080-exec-7:execute:30 - Was forward to order page
+02:22:10,893 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/orderPage.jsp
+02:23:17,610 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.CreateOrderToCommand@48748cd
+02:23:17,664 INFO  OrderToWarehouse.http-nio-8080-exec-3:createOrderToWarehouse:50 - Order to warehouse was successful created
+02:23:17,667 INFO  OrderService.http-nio-8080-exec-3:createOrderTo:117 - Was successful created order to warehouse
+02:23:17,668 INFO  CreateOrderToCommand.http-nio-8080-exec-3:execute:48 - Was created order to warehouse
+02:23:17,668 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/paymentPage.jsp
+03:05:38,258 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@2e4ebdbd
+03:05:38,262 INFO  ContactCommand.http-nio-8080-exec-4:execute:21 - Was forward to contact page.
+03:05:38,279 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /pages/contactsPage.jsp
+14:45:37,842 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@1110fad1
+14:45:37,866 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+14:45:59,291 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5dac41b3
+14:45:59,808 INFO  UserImpl.http-nio-8080-exec-5:getUserByUsername:152 - No user with this username
+14:45:59,813 INFO  LoginService.http-nio-8080-exec-5:existUsername:138 - <script>("alert")</script>: isn't present in our DB
+14:45:59,815 INFO  LoginService.http-nio-8080-exec-5:redirectOnErrorPage:112 - User wrote a wrong password
+14:45:59,815 INFO  LoginCommand.http-nio-8080-exec-5:execute:37 - Was trying to sign in with wrong username
+14:45:59,816 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+14:46:11,166 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5dac41b3
+14:46:11,174 INFO  UserImpl.http-nio-8080-exec-10:getUserByUsername:152 - No user with this username
+14:46:11,176 INFO  LoginService.http-nio-8080-exec-10:existUsername:138 - <script>("alert")</script>: isn't present in our DB
+14:46:11,176 INFO  LoginService.http-nio-8080-exec-10:redirectOnErrorPage:112 - User wrote a wrong password
+14:46:11,177 INFO  LoginCommand.http-nio-8080-exec-10:execute:37 - Was trying to sign in with wrong username
+14:46:11,178 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/loginPage.jsp
+14:46:14,035 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@231d4e33
+14:46:14,035 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+14:47:04,542 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@1110fad1
+14:47:04,543 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/loginPage.jsp
+14:47:12,236 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5dac41b3
+14:47:12,238 INFO  UserImpl.http-nio-8080-exec-3:getUserByUsername:152 - No user with this username
+14:47:12,239 INFO  LoginService.http-nio-8080-exec-3:existUsername:138 - gjksoe1`: isn't present in our DB
+14:47:12,240 INFO  LoginService.http-nio-8080-exec-3:redirectOnErrorPage:112 - User wrote a wrong password
+14:47:12,240 INFO  LoginCommand.http-nio-8080-exec-3:execute:37 - Was trying to sign in with wrong username
+14:47:12,240 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/loginPage.jsp
+14:47:18,432 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ForRegistrCommand@24bd6def
+14:47:18,433 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/registrationPage.jsp
+14:48:19,975 INFO  ControllerHelper.http-nio-8080-exec-10:getCommand:59 - Was called command: ua.com.delivery.web.command.RegistrationCommand@440b895b
+14:48:19,975 INFO  RegistrationCommand.http-nio-8080-exec-10:execute:42 - Was successful registration on page
+14:48:19,982 INFO  Validation.http-nio-8080-exec-10:validUsername:71 - Username wasn't passed the validation
+14:48:19,984 INFO  Validation.http-nio-8080-exec-10:validPassword:39 - Password wasn't passed the validation
+14:48:19,987 INFO  Validation.http-nio-8080-exec-10:validEmail:53 - Email successful passed the validation
+14:48:19,989 INFO  UserImpl.http-nio-8080-exec-10:getUserByUsername:152 - No user with this username
+14:48:19,989 INFO  LoginService.http-nio-8080-exec-10:existUsername:138 - Apostol`: isn't present in our DB
+14:48:19,990 INFO  Controller.http-nio-8080-exec-10:processRequest:76 - Forward to: /pages/registrationPage.jsp
+14:50:28,603 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@7a73641f
+14:50:28,701 INFO  DirectionService.http-nio-8080-exec-7:searchFromToCity:45 - It's a list from/to city
+14:50:28,701 INFO  CalculatorCommand.http-nio-8080-exec-7:execute:27 - To the page was added all list of cities
+14:50:28,702 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+14:50:43,589 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@4c460203
+14:50:43,589 INFO  ContactCommand.http-nio-8080-exec-5:execute:21 - Was forward to contact page.
+14:50:43,589 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/contactsPage.jsp
+14:50:43,739 INFO  ControllerHelper.http-nio-8080-exec-6:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@4c460203
+14:50:43,739 INFO  ContactCommand.http-nio-8080-exec-6:execute:21 - Was forward to contact page.
+14:50:43,740 INFO  Controller.http-nio-8080-exec-6:processRequest:76 - Forward to: /pages/contactsPage.jsp
+16:02:16,692 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@231d4e33
+16:02:16,696 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /index.jsp
+16:26:12,214 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6ca31374
+16:26:12,252 INFO  DirectionService.http-nio-8080-exec-2:countDirectionRecords:55 - You are successful getting counts of records
+16:26:12,427 INFO  ConditionCommand.http-nio-8080-exec-2:execute:25 - Was showed table with tariff
+16:26:12,433 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/conditionPage.jsp
+16:26:15,925 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.PaginationCommand@1b1c6770
+16:26:15,930 INFO  DirectionService.http-nio-8080-exec-9:getDirectionRecords:67 - You are successful getting counts of records with two param (start, total)
+16:26:15,940 INFO  DirectionService.http-nio-8080-exec-9:countDirectionRecords:55 - You are successful getting counts of records
+16:26:15,947 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/conditionPage.jsp
+16:26:20,050 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@1110fad1
+16:26:20,051 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/loginPage.jsp
+16:26:21,251 INFO  ControllerHelper.http-nio-8080-exec-3:getCommand:59 - Was called command: ua.com.delivery.web.command.ForRegistrCommand@24bd6def
+16:26:21,252 INFO  Controller.http-nio-8080-exec-3:processRequest:76 - Forward to: /pages/registrationPage.jsp
+16:26:56,475 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@1110fad1
+16:26:56,477 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+16:27:03,326 INFO  ControllerHelper.http-nio-8080-exec-7:getCommand:59 - Was called command: ua.com.delivery.web.command.LoginCommand@5dac41b3
+16:27:03,342 INFO  UserImpl.http-nio-8080-exec-7:getUserByUsername:152 - No user with this username
+16:27:03,345 INFO  LoginService.http-nio-8080-exec-7:existUsername:138 - Pols`: isn't present in our DB
+16:27:03,345 INFO  LoginService.http-nio-8080-exec-7:redirectOnErrorPage:112 - User wrote a wrong password
+16:27:03,346 INFO  LoginCommand.http-nio-8080-exec-7:execute:37 - Was trying to sign in with wrong username
+16:27:03,347 INFO  Controller.http-nio-8080-exec-7:processRequest:76 - Forward to: /pages/loginPage.jsp
+16:36:20,424 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@231d4e33
+16:36:20,425 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /index.jsp
+16:36:21,843 INFO  ControllerHelper.http-nio-8080-exec-8:getCommand:59 - Was called command: ua.com.delivery.web.command.ContactCommand@4c460203
+16:36:21,844 INFO  ContactCommand.http-nio-8080-exec-8:execute:21 - Was forward to contact page.
+16:36:21,846 INFO  Controller.http-nio-8080-exec-8:processRequest:76 - Forward to: /pages/contactsPage.jsp
+16:36:23,139 INFO  ControllerHelper.http-nio-8080-exec-9:getCommand:59 - Was called command: ua.com.delivery.web.command.ConditionCommand@6ca31374
+16:36:23,145 INFO  DirectionService.http-nio-8080-exec-9:countDirectionRecords:55 - You are successful getting counts of records
+16:36:23,229 INFO  ConditionCommand.http-nio-8080-exec-9:execute:25 - Was showed table with tariff
+16:36:23,231 INFO  Controller.http-nio-8080-exec-9:processRequest:76 - Forward to: /pages/conditionPage.jsp
+16:36:24,054 INFO  ControllerHelper.http-nio-8080-exec-2:getCommand:59 - Was called command: ua.com.delivery.web.command.CalculatorCommand@7a73641f
+16:36:24,065 INFO  DirectionService.http-nio-8080-exec-2:searchFromToCity:45 - It's a list from/to city
+16:36:24,066 INFO  CalculatorCommand.http-nio-8080-exec-2:execute:27 - To the page was added all list of cities
+16:36:24,067 INFO  Controller.http-nio-8080-exec-2:processRequest:76 - Forward to: /pages/calculatorPage.jsp
+16:36:28,176 INFO  ControllerHelper.http-nio-8080-exec-4:getCommand:59 - Was called command: ua.com.delivery.web.command.HomeCommand@231d4e33
+16:36:28,178 INFO  Controller.http-nio-8080-exec-4:processRequest:76 - Forward to: /index.jsp
+16:37:51,337 INFO  ControllerHelper.http-nio-8080-exec-5:getCommand:59 - Was called command: ua.com.delivery.web.command.SignInCommand@1110fad1
+16:37:51,338 INFO  Controller.http-nio-8080-exec-5:processRequest:76 - Forward to: /pages/loginPage.jsp
+16:37:56,219 INFO  ControllerHelper.http-nio-8080-exec-1:getCommand:59 - Was called command: ua.com.delivery.web.command.ForRegistrCommand@24bd6def
+16:37:56,220 INFO  Controller.http-nio-8080-exec-1:processRequest:76 - Forward to: /pages/registrationPage.jsp

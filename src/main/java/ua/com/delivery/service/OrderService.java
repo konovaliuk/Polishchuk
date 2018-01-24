@@ -14,7 +14,7 @@ public class OrderService {
     private static final Logger LOGGER = Logger.getLogger(OrderService.class);
     private static OrderService INSTANCE;
 
-    private AbstractFactory factory;
+    private IAbstractFactory factory;
 
 
     private OrderService() {
