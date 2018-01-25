@@ -26,6 +26,7 @@
 <fmt:message key="order.weight" var="Weight"/>
 <fmt:message key="order.email" var="Email"/>
 <fmt:message key="order.typeOfParcel" var="Type"/>
+<fmt:message key="order.myOrder" var="Orders"/>
 <fmt:message key="order.dateOfDeparture" var="DateD"/>
 <fmt:message key="order.addressFrom" var="FromAddress"/>
 <fmt:message key="order.cityTo" var="CityReceipt"/>
@@ -129,7 +130,7 @@
                 <div class="line"></div>
                 <!-- /Line -->
                 <c:if test="${visibleAllOrder == true}">
-                    <a href="con?command=payment" class="myButton">Мої заявки </a>
+                    <a href="con?command=payment" class="aButton">${Orders} </a>
                 </c:if>
                 <input type="checkbox" id="test">
                 <label class="myButton" for="test">${CreateOrder}</label>
@@ -141,10 +142,10 @@
                         ${emailException}
                     </c:if>
                 </div>
-                <!-- Line -->
-                <div class="line"></div>
-                <!-- /Line -->
                 <form action="con" name="orderForm" method="post" class="orderForm">
+                    <!-- Line -->
+                    <div class="line"></div>
+                    <!-- /Line -->
                     <input type="hidden" name="command" value="createOrderFrom"/>
                     <!-- Забор груза -->
                     <div class="col-md-12 col-lg-12 d-flex justify-content-center">

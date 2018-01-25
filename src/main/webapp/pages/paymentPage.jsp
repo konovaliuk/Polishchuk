@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/mainPolik.css">
+    <link rel="stylesheet" href="../css/orderPolik.css">
     <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
@@ -113,7 +114,7 @@
                 <h1>${CostOfOrder}: ${totalPriceOfDelivery}</h1>
             </c:if>
             <div>
-                <a href="https://www.paymate.com/PayMate/ExpressPayment" class="myButton">${Pay}</a>
+                <a href="https://www.paymate.com/PayMate/ExpressPayment" class="aButton">${Pay}</a>
             </div>
         </div>
         <div class="col-md-12 col-lg-12">

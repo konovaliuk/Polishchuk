@@ -37,11 +37,11 @@
                     <input type="hidden" name="command" value="login">
                     <h1>${SignIn}</h1>
                     <div class="form-group">
-                        <input type="text" id="inputUsername" required="" name="username">
+                        <input type="text" id="inputUsername" required="" name="username" autocomplete="off">
                         <label for="inputUsername">${Username} </label>
                     </div>
                     <div class="form-group">
-                        <input type="password" id="inputPassword" required="" name="password">
+                        <input type="password" id="inputPassword" required="" name="password" autocomplete="off">
                         <label for="inputPassword">${Password} </label>
                     </div>
                     <div class="btn-login">

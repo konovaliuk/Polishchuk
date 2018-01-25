@@ -98,5 +98,20 @@ input[type="checkbox"]:checked  ~ .orderForm {
     font-size: 18px;
     text-align: center;
 }
+a.aButton{
+    display: block;
+    text-decoration: none;
+    color: rgba(43, 123, 78, 0.92);
+    background: rgba(62, 230, 255, 0.53);
+    padding: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 400px;
+    margin: 1% 0% 1% 32.5%;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
 
 /* ORDER */

@@ -57,37 +57,37 @@
             <div class="inputWrap">
                 <div class="inputWrap__element">
                     <div class="inputBox">
-                        <input type="text" name="username" required="">
+                        <input type="text" name="username" required="" autocomplete="off">
                         <label>${Username}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="password" name="password" required="">
+                        <input type="password" name="password" required="" autocomplete="off">
                         <label>${Password}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="firstName" required="">
+                        <input type="text" name="firstName" required="" autocomplete="off">
                         <label>${FirstName}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="secondName" required="">
+                        <input type="text" name="secondName" required="" autocomplete="off">
                         <label>${SecondName}</label>
                     </div>
                 </div>
                 <div class="inputWrap__element">
                     <div class="inputBox">
-                        <input type="email" name="email" required="">
+                        <input type="email" name="email" required="" autocomplete="off">
                         <label>${Email}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="address" required="">
+                        <input type="text" name="address" required="" autocomplete="off">
                         <label>${Address}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="city" required="">
+                        <input type="text" name="city" required="" autocomplete="off">
                         <label>${City}</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="phone" required="">
+                        <input type="text" name="phone" required="" autocomplete="off">
                         <label>${Phone}</label>
                     </div>
                 </div>
