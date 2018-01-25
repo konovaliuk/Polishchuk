@@ -128,9 +128,19 @@
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->
+                <c:if test="${visibleAllOrder == true}">
+                    <a href="con?command=payment" class="myButton">Мої заявки </a>
+                </c:if>
                 <input type="checkbox" id="test">
                 <label class="myButton" for="test">${CreateOrder}</label>
-
+                <div class="existUsername">
+                    <c:if test="${phoneBoolean == true}">
+                        ${phoneException}
+                    </c:if>
+                    <c:if test="${emailBoolean == true}">
+                        ${emailException}
+                    </c:if>
+                </div>
                 <!-- Line -->
                 <div class="line"></div>
                 <!-- /Line -->

@@ -36,7 +36,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setDate(2, orderFromWarehouse.getDateToDelivery());
             preparedStatement.setString(3, orderFromWarehouse.getCityDeparture());
             preparedStatement.setString(4, orderFromWarehouse.getUserName());
-            preparedStatement.setInt(5, orderFromWarehouse.getPhone());
+            preparedStatement.setString(5, orderFromWarehouse.getPhone());
             preparedStatement.setString(6, orderFromWarehouse.getAddressToDelivery());
             preparedStatement.setInt(7, orderFromWarehouse.getWeight());
             preparedStatement.setString(8, orderFromWarehouse.getEmail());
@@ -73,7 +73,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setDateToDelivery(resultSet.getDate("date_to_delivery"));
                     orderFromWarehouse.setCityDeparture(resultSet.getString("city_departure"));
                     orderFromWarehouse.setUserName(resultSet.getString("user_name"));
-                    orderFromWarehouse.setPhone(resultSet.getInt("phone"));
+                    orderFromWarehouse.setPhone(resultSet.getString("phone"));
                     orderFromWarehouse.setAddressToDelivery(resultSet.getString("address_to_delivery"));
                     orderFromWarehouse.setWeight(resultSet.getInt("weight"));
                     orderFromWarehouse.setEmail(resultSet.getString("email"));
@@ -115,7 +115,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
                     orderFromWarehouse.setDateToDelivery(resultSet.getDate("date_to_delivery"));
                     orderFromWarehouse.setCityDeparture(resultSet.getString("city_departure"));
                     orderFromWarehouse.setUserName(resultSet.getString("user_name"));
-                    orderFromWarehouse.setPhone(resultSet.getInt("phone"));
+                    orderFromWarehouse.setPhone(resultSet.getString("phone"));
                     orderFromWarehouse.setAddressToDelivery(resultSet.getString("address_to_delivery"));
                     orderFromWarehouse.setWeight(resultSet.getInt("weight"));
                     orderFromWarehouse.setEmail(resultSet.getString("email"));
@@ -150,7 +150,7 @@ public class OrderFromWarehouseImpl implements IOrderFromWarehouseDao {
             preparedStatement.setDate(2, orderFromWarehouse.getDateToDelivery());
             preparedStatement.setString(3, orderFromWarehouse.getCityDeparture());
             preparedStatement.setString(4, orderFromWarehouse.getUserName());
-            preparedStatement.setInt(5, orderFromWarehouse.getPhone());
+            preparedStatement.setString(5, orderFromWarehouse.getPhone());
             preparedStatement.setString(6, orderFromWarehouse.getAddressToDelivery());
             preparedStatement.setInt(7, orderFromWarehouse.getWeight());
             preparedStatement.setString(8, orderFromWarehouse.getEmail());

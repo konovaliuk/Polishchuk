@@ -49,7 +49,6 @@
                 <div class="schedule">
                     <span>(063)-625-48-22</span>
                     <p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup></p>
-                    <%--<p>${Schedule} 9<sup>00</sup> &#8212; 21<sup>00</sup> </p>--%>
                     <c:if test="${visibleOrder == true}">
                         <p>Hello my friend ${visibleUser}</p>
                     </c:if>

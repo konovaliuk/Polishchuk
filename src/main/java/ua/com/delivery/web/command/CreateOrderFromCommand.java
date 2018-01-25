@@ -37,7 +37,7 @@ public class CreateOrderFromCommand implements ICommand {
         Date dateOfReceipt = Date.valueOf(request.getParameter(DATE_OF_RECEIPT));
         String cityDeparture = request.getParameter(CITY_DEPARTURE);
         String userName = request.getParameter(USER_NAME);
-        int phone = Integer.parseInt(request.getParameter(PHONE));
+        String phone = request.getParameter(PHONE);
         String addressToDelivery = request.getParameter(ADDRESS_OF_DELIVERY);
         int weightOfParcel = Integer.parseInt(request.getParameter(WEIGHT_OF_PARCEL));
         String email = request.getParameter(EMAIL);
@@ -45,7 +45,7 @@ public class CreateOrderFromCommand implements ICommand {
 
         OrderService.getInstance().createOrderFrom(request, dateOfReceipt, cityDeparture,
                 userName, phone, addressToDelivery, weightOfParcel, email, typeOfParcel);
-        LOGGER.info("Was created order from warehouse");
+//        return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.ORDER_PAGE);
         return PageConfiguration.getInstance().getPageConfiguration(PageConfiguration.PAYMENT_PAGE);
     }
 }

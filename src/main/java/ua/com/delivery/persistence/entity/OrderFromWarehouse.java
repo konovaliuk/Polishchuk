@@ -16,7 +16,7 @@ public class OrderFromWarehouse implements Serializable {
     private Date dateToDelivery;
     private String userName;
     private String cityDeparture;
-    private int phone;
+    private String phone;
     private int weight;
     private String addressToDelivery;
     private String email;

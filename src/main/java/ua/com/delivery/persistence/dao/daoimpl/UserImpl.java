@@ -135,7 +135,6 @@ public class UserImpl implements IUserDao {
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 do {
-                    System.out.println("saaaaaaaaaaaaaaaaa");
                     user.setUserID(resultSet.getLong("userID"));
                     user.setUsername(resultSet.getString("username"));
                     user.setPassword(resultSet.getString("password"));

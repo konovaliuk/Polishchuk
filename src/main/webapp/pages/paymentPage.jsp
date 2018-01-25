@@ -112,7 +112,9 @@
             <c:if test="${totalPriceOfDelivery != null}">
                 <h1>${CostOfOrder}: ${totalPriceOfDelivery}</h1>
             </c:if>
-            <a href="https://www.paymate.com/PayMate/ExpressPayment" class="myButton">${Pay}</a>
+            <div>
+                <a href="https://www.paymate.com/PayMate/ExpressPayment" class="myButton">${Pay}</a>
+            </div>
         </div>
         <div class="col-md-12 col-lg-12">
             <div class="line"></div>

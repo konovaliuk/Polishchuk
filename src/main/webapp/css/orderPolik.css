@@ -6,6 +6,11 @@
 .order h2 {
     padding: 15px 0;
 }
+.existUsername{
+    font-size: 20px;
+    color: #ff4548;
+    text-align: center;
+}
 input[type="radio"] {
     display: none;
 }
@@ -77,7 +82,7 @@ input[type="checkbox"],
 form {
     display: none;
 }
-input[type="checkbox"]:checked  ~ form {
+input[type="checkbox"]:checked  ~ .orderForm {
     display: block;
 }
 .myButton {

@@ -27,6 +27,7 @@ public class ControllerHelper {
         commandMap.put(bundle.getString("command.login"), new LoginCommand());
         commandMap.put(bundle.getString("command.logout"), new LogoutCommand());
         commandMap.put(bundle.getString("command.signIn"), new SignInCommand());
+        commandMap.put(bundle.getString("command.payment"), new PaymentCommand());
         commandMap.put(bundle.getString("command.contact"), new ContactCommand());
         commandMap.put(bundle.getString("command.localeEn"), new LanguageEnCommand());
         commandMap.put(bundle.getString("command.localeUa"), new LanguageUkCommand());

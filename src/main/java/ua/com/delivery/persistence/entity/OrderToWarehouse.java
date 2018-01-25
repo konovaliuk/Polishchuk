@@ -16,7 +16,7 @@ public class OrderToWarehouse implements Serializable {
     private String departureAddress;
     private String cityOfReceipt;
     private String userName;
-    private int phone;
+    private String phone;
     private int weight;
     private int numberOfOrder;
     private String email;

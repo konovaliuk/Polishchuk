@@ -140,32 +140,24 @@
                                 <c:forEach items="${listFromToCity}" var="elem">
                                     <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
                                 </c:forEach>
-                                <%--<option value="Odessa">Одесса</option>--%>
-                                <%--<option value="Lviv">Львов</option>--%>
                             </select>
                             <i class="fa fa-arrow-right"></i>
                             <select name="to_city" id="to">
                                 <c:forEach items="${listFromToCity}" var="elem">
                                     <option value="${elem.fromCity}"><c:out value="${elem.fromCity}"/></option>
                                 </c:forEach>
-                                <%--<option value="Lviv">Львов</option>--%>
                             </select>
                         </div>
                         <div class="block__element">
                             <label>${DepartureDate}</label>
                             <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
                                    required=""/>
-                            <label>${DesiredDate}</label>
-                            <input class="forDate" type="date" min="<jsp:getProperty name="nowDate" property="date"/>"
-                                   required=""/>
+                            <label>${Weight}</label>
+                            <input type="number" name="weight" min="1" max="20" required=""/>
                         </div>
                         <div class="block__element">
                             <label>${DeclaredPrice}</label>
                             <input type="number" min="10" required="" name="declaredPrice"/>
-                        </div>
-                        <div class="block__element">
-                            <label>${Weight}</label>
-                            <input type="number" name="weight" min="1" max="20" required=""/>
                         </div>
                     </div>
                     <div class="offset-md-4 col-md-4 offset-lg-4 col-lg-4">

@@ -6,6 +6,7 @@ import ua.com.delivery.persistence.dao.daoimpl.OrderFromWarehouseImpl;
 import ua.com.delivery.persistence.dao.daoimpl.OrderToWarehouseImpl;
 import ua.com.delivery.persistence.entity.OrderFromWarehouse;
 import ua.com.delivery.persistence.entity.OrderToWarehouse;
+import ua.com.delivery.web.controller.utilController.MessageHelper;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
@@ -51,9 +52,11 @@ public class OrderService {
      * @param typeOfParcel
      */
     public void createOrderFrom(HttpServletRequest request, Date dateOfReceipt, String cityDeparture, String userName,
-                                int phone, String addressToDelivery,
+                                String phone, String addressToDelivery,
                                 int weightOfParcel, String email, String typeOfParcel) {
 
+        boolean emailOk = Validation.getInstance().validEmail(email);
+        boolean phoneOk = Validation.getInstance().validPhone(phone);
         IUserDao userDao = factory.createUserDao();
         IDirectionDao directionDao = factory.createDirectionDao();
         IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
@@ -63,17 +66,32 @@ public class OrderService {
         orderFromWarehouse.setDateToDelivery(dateOfReceipt);
         orderFromWarehouse.setCityDeparture(cityDeparture);
         orderFromWarehouse.setUserName(userName);
-        orderFromWarehouse.setPhone(phone);
+        if (phoneOk){
+            orderFromWarehouse.setPhone(phone);
+        }else {
+            request.setAttribute("phoneBoolean", true);
+            request.setAttribute("phoneException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.PHONE_EXCEPTION));
+            return;
+        }
         orderFromWarehouse.setAddressToDelivery(addressToDelivery);
         orderFromWarehouse.setWeight(weightOfParcel);
-        orderFromWarehouse.setEmail(email);
+        if (emailOk ) {
+            orderFromWarehouse.setEmail(email);
+        } else {
+            request.setAttribute("emailBoolean", true);
+            request.setAttribute("emailException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.EMAIL_EXCEPTION));
+            return;
+        }
         orderFromWarehouse.setTotalPrice(totalPriceOfReceipt(weightOfParcel));
         orderFromWarehouse.setTypeOfParcel(typeOfParcel);
         orderFromWarehouse.setUserId(userDao.getUserByUsername((String) request.getSession().getAttribute("visibleUser")).getUserID());
         orderFromWarehouse.setDirectionId(directionDao.getDirectionByFromCity(cityDeparture).getDirectionID());
         orderFromWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
-        request.setAttribute("totalPriceOfReceipt", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("totalPriceOfReceipt", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("visibleAllOrder", true);
         LOGGER.info("Was successful created order from warehouse");
     }
 
@@ -91,9 +109,11 @@ public class OrderService {
      * @param typeOfParcel
      */
     public void createOrderTo(HttpServletRequest request, Date dateOfDelivery, String addressOfDeparture,
-                              String cityReceipt, String userName, int phone, int weightOfParcel, String email,
+                              String cityReceipt, String userName, String phone, int weightOfParcel, String email,
                               String typeOfParcel) {
 
+        boolean emailOk = Validation.getInstance().validEmail(email);
+        boolean phoneOk = Validation.getInstance().validPhone(phone);
         IUserDao userDao = factory.createUserDao();
         IDirectionDao directionDao = factory.createDirectionDao();
         IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
@@ -103,9 +123,23 @@ public class OrderService {
         orderToWarehouse.setDepartureAddress(addressOfDeparture);
         orderToWarehouse.setCityOfReceipt(cityReceipt);
         orderToWarehouse.setUserName(userName);
-        orderToWarehouse.setPhone(phone);
+        if (phoneOk){
+            orderToWarehouse.setPhone(phone);
+        }else {
+            request.setAttribute("phoneBoolean", true);
+            request.setAttribute("phoneException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.PHONE_EXCEPTION));
+            return;
+        }
         orderToWarehouse.setWeight(weightOfParcel);
-        orderToWarehouse.setEmail(email);
+        if (emailOk ) {
+            orderToWarehouse.setEmail(email);
+        } else {
+            request.setAttribute("emailBoolean", true);
+            request.setAttribute("emailException",
+                    MessageHelper.getInstance().getMessageException(MessageHelper.EMAIL_EXCEPTION));
+            return;
+        }
         orderToWarehouse.setTypeOfParcel(typeOfParcel);
         orderToWarehouse.setNumberOfOrder(numberOfOrder());
         orderToWarehouse.setTotalPrice(totalPriceOfReceipt(weightOfParcel));
@@ -113,7 +147,8 @@ public class OrderService {
         orderToWarehouse.setDirectionId(directionDao.getDirectionByFromCity(cityReceipt).getDirectionID());
         orderToWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
-        request.setAttribute("totalPriceOfDelivery", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("totalPriceOfDelivery", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("visibleAllOrder", true);
         LOGGER.info("Was successful created order to warehouse");
     }
 
@@ -137,5 +172,8 @@ public class OrderService {
         int cityPrice = (int) (Math.random() * 500 + 1);
         return weightPrice + cityPrice;
     }
+
+
+
 
 }

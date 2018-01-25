@@ -63,9 +63,9 @@ public class LoginService {
      * @param user
      * @return page
      */
-    public String checkIfAdmin(User user, HttpServletRequest request) {
+    private String checkIfAdmin(User user, HttpServletRequest request) {
         String page;
-        if (user.getAdmin()) {
+        if (user.getAdmin() != null && user.getAdmin() ) {
             LOGGER.info("Password is ok for admin");
             page = redirectOnAdminPage(user, request);
         } else {
