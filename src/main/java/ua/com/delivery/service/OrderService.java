@@ -60,6 +60,7 @@ public class OrderService {
         IUserDao userDao = factory.createUserDao();
         IDirectionDao directionDao = factory.createDirectionDao();
         IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
+        int totalPriceOfRec = totalPriceOfReceipt(weightOfParcel);
         OrderFromWarehouseImpl orderFromWarehouseImpl = factory.createOrderFromWarehouseDao();
         OrderFromWarehouse orderFromWarehouse = new OrderFromWarehouse();
         orderFromWarehouse.setNumberOfOrder(numberOfOrder());
@@ -84,13 +85,13 @@ public class OrderService {
                     MessageHelper.getInstance().getMessageException(MessageHelper.EMAIL_EXCEPTION));
             return;
         }
-        orderFromWarehouse.setTotalPrice(totalPriceOfReceipt(weightOfParcel));
+        orderFromWarehouse.setTotalPrice(totalPriceOfRec);
         orderFromWarehouse.setTypeOfParcel(typeOfParcel);
         orderFromWarehouse.setUserId(userDao.getUserByUsername((String) request.getSession().getAttribute("visibleUser")).getUserID());
         orderFromWarehouse.setDirectionId(directionDao.getDirectionByFromCity(cityDeparture).getDirectionID());
         orderFromWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderFromWarehouseImpl.createOrderFromWarehouse(orderFromWarehouse);
-        request.getSession().setAttribute("totalPriceOfReceipt", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("totalPriceOfReceipt", totalPriceOfRec);
         request.getSession().setAttribute("visibleAllOrder", true);
         LOGGER.info("Was successful created order from warehouse");
     }
@@ -117,6 +118,7 @@ public class OrderService {
         IUserDao userDao = factory.createUserDao();
         IDirectionDao directionDao = factory.createDirectionDao();
         IParcelPriceDao parcelPriceDao = factory.createParcelPriceDao();
+        int totalPriceOfRec = totalPriceOfReceipt(weightOfParcel);
         OrderToWarehouseImpl orderToWarehouseImpl = factory.createOrderToWarehouseDao();
         OrderToWarehouse orderToWarehouse = new OrderToWarehouse();
         orderToWarehouse.setDateOfDeparture(dateOfDelivery);
@@ -142,12 +144,12 @@ public class OrderService {
         }
         orderToWarehouse.setTypeOfParcel(typeOfParcel);
         orderToWarehouse.setNumberOfOrder(numberOfOrder());
-        orderToWarehouse.setTotalPrice(totalPriceOfReceipt(weightOfParcel));
+        orderToWarehouse.setTotalPrice(totalPriceOfRec);
         orderToWarehouse.setUserId(userDao.getUserByUsername((String) request.getSession().getAttribute("visibleUser")).getUserID());
         orderToWarehouse.setDirectionId(directionDao.getDirectionByFromCity(cityReceipt).getDirectionID());
         orderToWarehouse.setParcelPriceId(parcelPriceDao.getByWeight(weightOfParcel).getParcelpriceID());
         orderToWarehouseImpl.createOrderToWarehouse(orderToWarehouse);
-        request.getSession().setAttribute("totalPriceOfDelivery", totalPriceOfReceipt(weightOfParcel));
+        request.getSession().setAttribute("totalPriceOfDelivery", totalPriceOfRec);
         request.getSession().setAttribute("visibleAllOrder", true);
         LOGGER.info("Was successful created order to warehouse");
     }
